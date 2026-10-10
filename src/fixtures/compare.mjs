@@ -10,7 +10,7 @@ export default {
   sitemap: false,
   body: `<section class="section"><div class="container" style="max-width:56rem">
   <h1 class="section-title">Comparison slider fixture</h1>
-  ${compareSlider({ id: 'fx1', label: 'Fixture comparison', before: 'deck-treated-wooded-lot', after: 'deck-aerial-cedar', beforeAlt: 'Fixture before image', afterAlt: 'Fixture after image', eager: true })}
+  ${compareSlider({ id: 'fx1', label: 'Fixture comparison', before: 'deck-treated-wooded-lot', after: 'fence-backyard-gray', beforeAlt: 'Fixture before image', afterAlt: 'Fixture after image', eager: true })}
   <div style="height:120vh"></div>
 </div></section>`,
 };

@@ -1,25 +1,25 @@
-PASS  No horizontal overflow @320px (13 pages)
+PASS  No horizontal overflow @320px (14 pages)
 PASS  All images load @320px
 PASS  No console/JS errors @320px
-PASS  No horizontal overflow @375px (13 pages)
+PASS  No horizontal overflow @375px (14 pages)
 PASS  All images load @375px
 PASS  No console/JS errors @375px
-PASS  No horizontal overflow @414px (13 pages)
+PASS  No horizontal overflow @414px (14 pages)
 PASS  All images load @414px
 PASS  No console/JS errors @414px
-PASS  No horizontal overflow @768px (13 pages)
+PASS  No horizontal overflow @768px (14 pages)
 PASS  All images load @768px
 PASS  No console/JS errors @768px
-PASS  No horizontal overflow @1024px (13 pages)
+PASS  No horizontal overflow @1024px (14 pages)
 PASS  All images load @1024px
 PASS  No console/JS errors @1024px
-PASS  No horizontal overflow @1280px (13 pages)
+PASS  No horizontal overflow @1280px (14 pages)
 PASS  All images load @1280px
 PASS  No console/JS errors @1280px
-PASS  No horizontal overflow @1440px (13 pages)
+PASS  No horizontal overflow @1440px (14 pages)
 PASS  All images load @1440px
 PASS  No console/JS errors @1440px
-PASS  No horizontal overflow @1920px (13 pages)
+PASS  No horizontal overflow @1920px (14 pages)
 PASS  All images load @1920px
 PASS  No console/JS errors @1920px
 PASS  axe-core WCAG 2.2 AA + best-practice — mobile
@@ -34,6 +34,7 @@ PASS  generate_lead fires exactly once after submission — count=1
 PASS  Reloading /thank-you/ does not re-fire generate_lead — count=0
 PASS  Failed submission shows error with phone fallback and re-enables button — Sorry — your request didn’t go through. Please try again, or call (734) 497-6773.
 PASS  Phone link click pushes one click_call event — count=1
+PASS  Project viewer: opens full photo, arrow keys page through, alt carried over, Esc closes, focus returns — cards=5 open=true Waterfront deck with a covered section -> Deck with wraparound corner stairs closed=true focusBack=true
 PASS  Titles/descriptions unique & sized, canonical, single H1, OG, JSON-LD, heading order, alt, dimensions
 PASS  Unknown URL returns 404 status with custom page — status=404
 PASS  Skip link first in tab order, visible on focus, targets main — skip=true visible=true main=true
@@ -42,4 +43,4 @@ PASS  Production Content-Security-Policy causes no violations
 SKIP  webkit: engine not installed in this environment
 SKIP  firefox: engine not installed in this environment
 
-41 passed, 0 failed, 2 skipped
+42 passed, 0 failed, 2 skipped

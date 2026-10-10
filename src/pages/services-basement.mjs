@@ -9,7 +9,7 @@ export default servicePage({
   eyebrow: 'Basement Remodeling',
   h1: 'Basement remodeling in Monroe, MI',
   lede: 'Turn an unfinished or dated basement into comfortable living space — family room, home office, gym or guest area.',
-  heroAlt: 'Finished basement family room with navy walls, recessed lighting, bookshelves and wood-look flooring',
+  heroAlt: 'Basement remodeled by DK Quality Construction with a black painted open ceiling, recessed lights, plank flooring and white built-in cabinets',
   introHeading: 'Square footage you already own.',
   intro: `
     <p>For a lot of homes in Monroe and Toledo’s suburbs, the basement is the cheapest square footage you’ll ever add: the foundation, roof and walls are already there. Finishing or remodeling it can give you a family room, an office away from the household noise, a place for guests, or simply storage that isn’t a mess.</p>
@@ -56,6 +56,7 @@ export default servicePage({
       a: `<p>Products made for below-grade use, like luxury vinyl plank and tile, are the usual picks because they tolerate humidity. We can install flooring as part of the project — see <a href="/services/#flooring">flooring</a>.</p>`,
     },
   ],
+  projects: ['P-005'],
   related: ['bathroom-remodeling', 'flooring', 'kitchen-remodeling'],
   ctaHeading: 'Ready to use your basement?',
   ctaText: 'Tell us how you want to use the space and roughly how big it is. Photos of the current basement help.',

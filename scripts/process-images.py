@@ -27,27 +27,28 @@ HERO_WIDTHS = [640, 1024, 1600, 2000]
 
 # Per-image processing. "crop" is (left, top, right, bottom) on the original.
 PHOTOS = {
-    "deck-multilevel-cedar": {"widths": HERO_WIDTHS},
-    # Art-directed 4:5 crop of the hero for phones (smaller download, better framing).
-    "deck-multilevel-cedar-portrait": {"source": "deck-multilevel-cedar", "crop": (980, 0, 2259, 1599), "widths": [480, 720, 960]},
-    "deck-aerial-cedar": {},
     "deck-treated-wooded-lot": {},
-    "deck-composite-black-rail": {},
-    "deck-railing-evening": {},
-    "deck-hardwood-modern": {},
     "fence-backyard-gray": {},
-    # Original carries another company's watermark in the lower-left corner; crop it out.
-    "basement-living-room": {"crop": (0, 0, 2400, 1380)},
     "bathroom-walk-in-shower": {},
     "kitchen-white-cabinets": {},
     "flooring-plank-install": {},
-    "carpentry-measuring-board": {},
+    # ---- DK Quality Construction's own project photos (client uploads; originals untouched) ----
+    # Batch 1 — see project-assets-manifest.json for IDs.
+    "project-deck-aerial-privacy-screen": {"src": "assets-src/uploads/batch-01/3.jpg", "widths": HERO_WIDTHS},
+    "project-deck-aerial-privacy-screen-portrait": {"src": "assets-src/uploads/batch-01/3.jpg", "crop": (520, 0, 1720, 1500), "widths": [480, 720, 960]},
+    "project-deck-waterfront-covered": {"src": "assets-src/uploads/batch-01/2.jpg", "widths": HERO_WIDTHS},
+    "project-deck-cedar-tone-stairs": {"src": "assets-src/uploads/batch-01/4.jpg"},
+    "project-deck-gray-corner-stairs": {"src": "assets-src/uploads/batch-01/5.jpg"},
+    "project-basement-remodel-built-ins": {"src": "assets-src/uploads/batch-01/1.jpg"},
     "framing-new-construction": {},
 }
 
 
 def save_variants(im: Image.Image, name: str, widths: list[int]) -> dict:
     out = []
+    # Sources narrower than the largest target also get a native-width variant (no upscaling).
+    if im.width < max(widths) and im.width not in widths:
+        widths = sorted([w for w in widths if w < im.width] + [im.width])
     for w in widths:
         if w > im.width:
             continue
@@ -66,7 +67,8 @@ def process_photos() -> dict:
     OUT_PHOTOS.mkdir(parents=True, exist_ok=True)
     manifest = {}
     for name, opts in PHOTOS.items():
-        im = Image.open(SRC_PHOTOS / f"{opts.get('source', name)}.jpg")
+        src = ROOT / opts["src"] if "src" in opts else SRC_PHOTOS / f"{opts.get('source', name)}.jpg"
+        im = Image.open(src)
         im = ImageOps.exif_transpose(im).convert("RGB")
         if "crop" in opts:
             im = im.crop(opts["crop"])
@@ -135,8 +137,8 @@ def process_brand():
     icon(48, 0.03).save(ROOT / "src" / "static" / "favicon.ico", sizes=[(16, 16), (32, 32), (48, 48)])
 
     # Open Graph image: hero photo, darkened, with the full logo.
-    hero = Image.open(SRC_PHOTOS / "deck-multilevel-cedar.jpg").convert("RGB")
-    hero = ImageOps.fit(hero, (1200, 630), Image.LANCZOS, centering=(0.5, 0.55))
+    hero = Image.open(ROOT / "assets-src/uploads/batch-01/3.jpg").convert("RGB")  # DKQ-01-03, aerial deck
+    hero = ImageOps.fit(hero, (1200, 630), Image.LANCZOS, centering=(0.6, 0.6))
     shade = Image.new("RGBA", (1200, 630), (10, 10, 12, 0))
     # Darkest on the left where the logo sits, easing off to the right.
     grad = Image.linear_gradient("L").rotate(90).resize((1200, 630))

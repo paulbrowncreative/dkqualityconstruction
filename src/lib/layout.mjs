@@ -65,7 +65,7 @@ ${preload}
 <meta property="og:image" content="${og}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="${esc(business.name)} logo over a backyard deck">
+<meta property="og:image:alt" content="${esc(business.name)} logo over an aerial view of a completed deck">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${esc(title)}">
 <meta name="twitter:description" content="${esc(description)}">
@@ -101,6 +101,7 @@ function header(path) {
           </ul>
         </li>
         <li><a href="/services/decks/"${isCurrent('/services/decks/')}>Decks</a></li>
+        <li><a href="/projects/"${isCurrent('/projects/')}>Projects</a></li>
         <li><a href="/service-area/"${isCurrent('/service-area/')}>Service Area</a></li>
         <li><a href="/about/"${isCurrent('/about/')}>About</a></li>
         <li><a href="/contact/"${isCurrent('/contact/')}>Contact</a></li>
@@ -126,6 +127,7 @@ function header(path) {
         <li><a href="/services/"${isCurrent('/services/')}>All services</a></li>
       </ul>
       <ul class="mobile-menu__main" role="list">
+        <li><a href="/projects/"${isCurrent('/projects/')}>Projects</a></li>
         <li><a href="/service-area/"${isCurrent('/service-area/')}>Service Area</a></li>
         <li><a href="/about/"${isCurrent('/about/')}>About</a></li>
         <li><a href="/contact/"${isCurrent('/contact/')}>Contact</a></li>
@@ -160,6 +162,7 @@ function footer() {
       <h2 class="site-footer__h">Company</h2>
       <ul role="list">
         <li><a href="/about/">About</a></li>
+        <li><a href="/projects/">Projects</a></li>
         <li><a href="/service-area/">Service Area</a></li>
         <li><a href="/contact/">Contact &amp; Estimates</a></li>
         <li><a href="/privacy-policy/">Privacy Policy</a></li>
@@ -179,7 +182,7 @@ function footer() {
   </div>
   <div class="container site-footer__legal">
     <p>&copy; ${year} ${esc(business.legalName)}. All rights reserved.</p>
-    <p>Photography on this site is licensed stock imagery used for illustration.</p>
+    <p>Project photos show DK Quality Construction’s own work. Other photos are licensed stock used for illustration.</p>
   </div>
 </footer>
 <nav class="mobile-cta" aria-label="Quick contact" data-mobile-cta>

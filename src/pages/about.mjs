@@ -52,12 +52,12 @@ ${pageHero({
   <div class="container split split--reverse">
     <div class="split__copy prose">
       <h2 id="work-h" class="section-title">See recent work.</h2>
-      <p>We share projects as they’re finished on our Facebook page — the quickest way to see the kind of decks and remodels we build right now.</p>
+      <p>Browse photos of finished decks and remodels on our <a href="/projects/">projects page</a>. We also share new builds on Facebook as they’re completed.</p>
       <p><a class="btn btn--ink" href="${business.facebook}" rel="noopener" target="_blank">${icon('facebook')}<span>DK Quality Construction on Facebook</span><span class="visually-hidden"> (opens in a new tab)</span></a></p>
     </div>
     <div class="split__aside">
-      ${picture('carpentry-measuring-board', {
-        alt: 'Carpenter marking a board for a cut on a job site',
+      ${picture('project-deck-gray-corner-stairs', {
+        alt: 'Dark gray deck built by DK Quality Construction with black metal railings and wraparound corner stairs',
         sizes: '(min-width: 960px) 40vw, 100vw',
         cls: 'frame',
       })}

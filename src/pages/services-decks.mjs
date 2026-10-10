@@ -33,8 +33,8 @@ const materials = `
         </div>
       </article>
       <article class="material card">
-        ${picture('deck-composite-black-rail', {
-          alt: 'Raised deck with gray composite boards, fascia and black metal balusters',
+        ${picture('project-deck-cedar-tone-stairs', {
+          alt: 'Brown-toned deck by DK Quality Construction with black metal railings, matching skirting and stairs to a paver patio',
           sizes: '(min-width: 960px) 44vw, 100vw',
           cls: 'material__img',
         })}
@@ -68,7 +68,7 @@ export default servicePage({
   eyebrow: 'Decks · Our specialty',
   h1: 'Deck builder in Monroe, MI',
   lede: 'New pressure-treated and composite decks for homes across Monroe County, Michigan and Lucas County, Ohio — framed right, finished clean.',
-  heroAlt: 'Aerial view of a large two-zone wood deck with stairs, railings and a built-in planter',
+  heroAlt: 'Large gray deck built by DK Quality Construction, partly covered, with white railings and black balusters overlooking a lake',
   introHeading: 'Decks are what we do most.',
   intro: `
     <p>A deck is the most-used “room” of a lot of Monroe-area homes from May through October. Decking is DK Quality Construction’s specialty, and we build in both <strong>pressure-treated lumber</strong> and <strong>composite decking systems</strong>.</p>
@@ -103,11 +103,7 @@ export default servicePage({
       p: `<p>Deck surfaces more than 30 inches above grade need guards, and stairs need consistent rise and run with a graspable handrail. Most new decks also need a building permit — the specifics depend on your city or township, and we’ll talk it through at the estimate.</p>`,
     },
   ],
-  gallery: [
-    { image: 'deck-hardwood-modern', alt: 'Wide deck with smooth brown boards outside sliding glass doors at dusk' },
-    { image: 'deck-railing-evening', alt: 'Two wicker chairs on a deck with dark-stained posts and railings at sunset' },
-    { image: 'deck-multilevel-cedar', alt: 'Two-level deck with planters and stairs leading to a stone patio' },
-  ],
+  projects: ['P-001', 'P-003', 'P-004'],
   faqs: [
     {
       q: 'How much does a new deck cost in Monroe?',

@@ -1,60 +1,5 @@
 {
-  "deck-multilevel-cedar": {
-    "widths": [
-      640,
-      1024,
-      1600,
-      2000
-    ],
-    "width": 2400,
-    "height": 1599
-  },
-  "deck-multilevel-cedar-portrait": {
-    "widths": [
-      480,
-      720,
-      960
-    ],
-    "width": 1279,
-    "height": 1599
-  },
-  "deck-aerial-cedar": {
-    "widths": [
-      640,
-      1024,
-      1600
-    ],
-    "width": 2400,
-    "height": 1599
-  },
   "deck-treated-wooded-lot": {
-    "widths": [
-      640,
-      1024,
-      1600
-    ],
-    "width": 2400,
-    "height": 1600
-  },
-  "deck-composite-black-rail": {
-    "widths": [
-      640,
-      1024,
-      1600
-    ],
-    "width": 2400,
-    "height": 1600
-  },
-  "deck-railing-evening": {
-    "widths": [
-      640,
-      1024,
-      1600
-    ],
-    "width": 2400,
-    "height": 1600
-  },
-  "deck-hardwood-modern": {
     "widths": [
       640,
       1024,
@@ -71,15 +16,6 @@
     ],
     "width": 2400,
     "height": 1600
-  },
-  "basement-living-room": {
-    "widths": [
-      640,
-      1024,
-      1600
-    ],
-    "width": 2400,
-    "height": 1380
   },
   "bathroom-walk-in-shower": {
     "widths": [
@@ -108,14 +44,61 @@
     "width": 2400,
     "height": 3600
   },
-  "carpentry-measuring-board": {
+  "project-deck-aerial-privacy-screen": {
     "widths": [
       640,
       1024,
-      1600
+      1600,
+      2000
     ],
-    "width": 2400,
-    "height": 1603
+    "width": 2000,
+    "height": 1500
+  },
+  "project-deck-aerial-privacy-screen-portrait": {
+    "widths": [
+      480,
+      720,
+      960
+    ],
+    "width": 1200,
+    "height": 1500
+  },
+  "project-deck-waterfront-covered": {
+    "widths": [
+      640,
+      1024,
+      1600,
+      2000
+    ],
+    "width": 2000,
+    "height": 1500
+  },
+  "project-deck-cedar-tone-stairs": {
+    "widths": [
+      640,
+      1024,
+      1500
+    ],
+    "width": 1500,
+    "height": 2000
+  },
+  "project-deck-gray-corner-stairs": {
+    "widths": [
+      640,
+      1024,
+      1500
+    ],
+    "width": 1500,
+    "height": 2000
+  },
+  "project-basement-remodel-built-ins": {
+    "widths": [
+      640,
+      1024,
+      1500
+    ],
+    "width": 1500,
+    "height": 2000
   },
   "framing-new-construction": {
     "widths": [

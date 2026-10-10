@@ -12,23 +12,22 @@
 
 **Image enhancement:** all images were resized with Lanczos resampling and given light unsharp masking. They were encoded as AVIF (quality 52) and progressive JPEG (quality 78). **No AI upscaling or generative editing was used**; no such tool was available, and none was needed because every source is 2400 px wide.
 
-## Photos
+## Client project photos (DK Quality Construction's own work)
+
+See `PROJECT-ASSET-REGISTER.md` and `project-assets-manifest.json` for the full record. The originals are kept unmodified in `assets-src/uploads/batch-NN/`.
+
+## Stock photos
+
+These are the stock photos still in use. Retired stock photos are listed in the asset register.
+
 
 | File (`assets-src/photos/`) | Source | Photographer | Original px | Used on | Notes |
 |---|---|---|---|---|---|
-| deck-multilevel-cedar.jpg | [unsplash.com/photos/90Y7tjHJbFo](https://unsplash.com/photos/90Y7tjHJbFo) | Point3D Commercial Imaging Ltd. | 2400×1599 | Home hero (desktop), decks gallery, OG image | |
-| deck-multilevel-cedar-portrait (derived) | 4:5 crop of the image above | — | 1279×1599 | Home hero (phones) | Art-directed crop |
-| deck-aerial-cedar.jpg | [unsplash.com/photos/adTeb8MrQZs](https://unsplash.com/photos/adTeb8MrQZs) | Point3D Commercial Imaging Ltd. | 2400×1599 | Decks hero, Services | |
 | deck-treated-wooded-lot.jpg | [unsplash.com/photos/jxr6sCglU9s](https://unsplash.com/photos/jxr6sCglU9s) | Clay Banks | 2400×1600 | Decks: pressure-treated card | |
-| deck-composite-black-rail.jpg | [unsplash.com/photos/h8LlhD7_V7I](https://unsplash.com/photos/h8LlhD7_V7I) | Proper Construction | 2400×1600 | Home specialty, decks composite card | Another contractor's project |
-| deck-railing-evening.jpg | [unsplash.com/photos/Rdh-OCcBqC0](https://unsplash.com/photos/Rdh-OCcBqC0) | Frames For Your Heart | 2400×1600 | Decks gallery | |
-| deck-hardwood-modern.jpg | [unsplash.com/photos/3uTIHzq_8kQ](https://unsplash.com/photos/3uTIHzq_8kQ) | Alex Tyson | 2400×1600 | Decks gallery | |
 | fence-backyard-gray.jpg | [unsplash.com/photos/gyOmQE2vzWs](https://unsplash.com/photos/gyOmQE2vzWs) | Proper Construction | 2400×1600 | Fencing hero, Services | Another contractor's project |
-| basement-living-room.jpg | [unsplash.com/photos/YBxrveqHAFU](https://unsplash.com/photos/YBxrveqHAFU) | Smart Renovations | 2400×1597 | Basement hero, Services | **Bottom 217 px cropped to remove the photographer's company watermark.** Another contractor's project. Replace first. |
 | bathroom-walk-in-shower.jpg | [unsplash.com/photos/Ies-rhvusTs](https://unsplash.com/photos/Ies-rhvusTs) | Smart Renovations | 2400×1600 | Bathroom hero, Services | Another contractor's project |
 | kitchen-white-cabinets.jpg | [unsplash.com/photos/j1XuL3mwi8U](https://unsplash.com/photos/j1XuL3mwi8U) | Clay Banks | 2400×1600 | Kitchen hero, Services | |
 | flooring-plank-install.jpg | [unsplash.com/photos/EO_KlX-A6SY](https://unsplash.com/photos/EO_KlX-A6SY) | Ernys | 2400×3600 | Services: flooring | Black and white |
-| carpentry-measuring-board.jpg | [unsplash.com/photos/o8C5SxNCGaw](https://unsplash.com/photos/o8C5SxNCGaw) | Samuel Cruz | 2400×1603 | About | |
 | framing-new-construction.jpg | [unsplash.com/photos/dUYELbt-H-E](https://unsplash.com/photos/dUYELbt-H-E) | Troy Mortier | 2400×1600 | Services: garages | |
 
 ### Output sizes
@@ -47,7 +46,7 @@
 | `src/assets/img/brand/dk-logo-480.webp` | Same | 480×261 | Footer, About |
 | `src/assets/img/brand/dk-emblem-160.webp` | Rooflines and hammers crop | 160×62 | Header (2× density) |
 | `favicon.ico`, `icon-192.png`, `icon-512.png`, `apple-touch-icon.png` | Emblem on #111113 | 48/192/512/180 px | Favicons, web manifest |
-| `src/assets/img/og-default.jpg` | Hero photo, darkened, plus logo | 1200×630 | Open Graph and Twitter cards |
+| `src/assets/img/og-default.jpg` | DK's aerial deck photo (DKQ-01-03), darkened, plus logo | 1200×630 | Open Graph and Twitter cards |
 
 ## Font
 

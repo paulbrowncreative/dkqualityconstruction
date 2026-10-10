@@ -61,7 +61,7 @@
     menu.addEventListener('click', (e) => {
       if (e.target.closest('a')) setMenu(false);
     });
-    window.matchMedia('(min-width: 64em)').addEventListener('change', (mq) => {
+    window.matchMedia('(min-width: 72em)').addEventListener('change', (mq) => {
       if (mq.matches) setMenu(false);
     });
   }
@@ -135,6 +135,56 @@
     });
     set(50);
   });
+
+  /* ---------- Project photo viewer (native <dialog>) ----------
+     Without JS (or <dialog> support) the links simply open the full-size image. */
+  const dialog = document.querySelector('[data-lightbox-dialog]');
+  const triggers = [...document.querySelectorAll('[data-lightbox]')];
+  if (dialog && typeof dialog.showModal === 'function' && triggers.length) {
+    // Created on first open so the page never carries an empty <img>.
+    let img = null;
+    const title = dialog.querySelector('#lightbox-title');
+    const caption = dialog.querySelector('[data-lb-caption]');
+    const prev = dialog.querySelector('[data-lb-prev]');
+    const next = dialog.querySelector('[data-lb-next]');
+    let index = 0;
+    let opener = null;
+    const show = (i) => {
+      index = (i + triggers.length) % triggers.length;
+      const t = triggers[index];
+      const source = t.querySelector('img');
+      if (!img) {
+        img = document.createElement('img');
+        img.setAttribute('data-lb-img', '');
+        img.decoding = 'async';
+        dialog.querySelector('[data-lb-stage]').append(img);
+      }
+      img.src = t.getAttribute('href');
+      img.alt = source ? source.alt : '';
+      img.width = +t.dataset.w;
+      img.height = +t.dataset.h;
+      title.textContent = t.dataset.title || '';
+      caption.textContent = `${t.dataset.caption || ''}${triggers.length > 1 ? ` (${index + 1} of ${triggers.length})` : ''}`;
+    };
+    prev.hidden = next.hidden = triggers.length < 2;
+    triggers.forEach((t, i) =>
+      t.addEventListener('click', (e) => {
+        e.preventDefault();
+        opener = t;
+        show(i);
+        dialog.showModal();
+      }),
+    );
+    prev.addEventListener('click', () => show(index - 1));
+    next.addEventListener('click', () => show(index + 1));
+    dialog.querySelector('[data-lb-close]').addEventListener('click', () => dialog.close());
+    dialog.addEventListener('click', (e) => { if (e.target === dialog) dialog.close(); });
+    dialog.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') show(index - 1);
+      if (e.key === 'ArrowRight') show(index + 1);
+    });
+    dialog.addEventListener('close', () => { if (opener) opener.focus(); });
+  }
 
   /* ---------- Estimate form ---------- */
   const MAX_FILE = 8 * 1024 * 1024;

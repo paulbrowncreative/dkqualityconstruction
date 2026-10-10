@@ -113,6 +113,19 @@ Edit the matching file in `src/pages/`. Service pages share their structure thro
 
 The page then joins the sitemap automatically.
 
+### Adding client project photos
+
+1. Register the batch. Originals are copied unchanged and given stable IDs:
+
+   ```bash
+   python3 scripts/intake.py <batch> <files…>
+   ```
+
+2. Add each photo to `PHOTOS` in `scripts/process-images.py` with `"src": "assets-src/uploads/batch-NN/<file>"`, then run the script.
+3. Add the project to `src/data/projects.mjs`. It then appears on `/projects/`, and service pages can feature it via `projects: ['P-00X']`.
+4. Before-and-after pairs use `compareSlider({ id, label, before, after, beforeAlt, afterAlt })` from `src/lib/components.mjs`.
+5. Update `project-assets-manifest.json` and `PROJECT-ASSET-REGISTER.md`.
+
 ### Replacing photos
 
 1. Put the originals (at least 2000 px wide) in `assets-src/photos/`.

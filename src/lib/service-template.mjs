@@ -1,7 +1,8 @@
 // Shared structure for individual service pages, so every service page has the same
 // rhythm: hero → intro → scope → considerations → process note → FAQ → related → CTA.
 import { site, business, services, serviceUrl } from '../../site.config.mjs';
-import { pageHero, picture, icon, faq, ctaBand, esc } from './components.mjs';
+import { pageHero, picture, icon, faq, ctaBand, esc, projectCard, lightboxDialog } from './components.mjs';
+import { projects as allProjects } from '../data/projects.mjs';
 import { ORG_ID } from './layout.mjs';
 
 export function servicePage(cfg) {
@@ -88,6 +89,21 @@ ${cfg.feature || ''}
     </div>
   </div>
 </section>
+
+${
+  cfg.projects
+    ? `<section class="section" aria-labelledby="work-h">
+  <div class="container">
+    <div class="project-group__head">
+      <h2 id="work-h" class="section-title">Recent ${esc(svc.name.toLowerCase())} projects</h2>
+      <a class="link-arrow" href="/projects/">See all projects ${icon('arrow')}</a>
+    </div>
+    <div class="project-grid">${cfg.projects.map((id) => projectCard(allProjects.find((p) => p.id === id))).join('')}</div>
+  </div>
+</section>
+${lightboxDialog()}`
+    : ''
+}
 
 ${
   cfg.gallery

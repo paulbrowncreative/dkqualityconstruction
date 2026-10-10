@@ -8,7 +8,7 @@ import { writeFileSync, mkdirSync } from 'node:fs';
 
 const BASE = process.argv[2] || 'http://localhost:8080';
 const PAGES = ['/', '/services/', '/services/decks/', '/services/fencing/', '/services/basement-finishing/',
-  '/services/bathroom-remodeling/', '/services/kitchen-remodeling/', '/service-area/', '/about/', '/contact/',
+  '/services/bathroom-remodeling/', '/services/kitchen-remodeling/', '/projects/', '/service-area/', '/about/', '/contact/',
   '/thank-you/', '/privacy-policy/', '/404.html'];
 const WIDTHS = [320, 375, 414, 768, 1024, 1280, 1440, 1920];
 
@@ -171,6 +171,26 @@ for (const [label, vp] of [['mobile', { width: 375, height: 812 }], ['desktop', 
   await page.locator('.nav-phone').click();
   const calls = await page.evaluate(() => (window.dataLayer || []).filter((a) => a[1] === 'click_call').length);
   record('Phone link click pushes one click_call event', calls === 1, `count=${calls}`);
+  await page.close();
+}
+
+/* 5b. Project photo viewer (dialog) */
+{
+  const page = await browser.newPage({ viewport: { width: 1280, height: 800 } });
+  await page.goto(BASE + '/projects/');
+  const cards = page.locator('[data-lightbox]');
+  const n = await cards.count();
+  await cards.nth(1).click();
+  const open = await page.locator('[data-lightbox-dialog]').evaluate((d) => d.open);
+  await page.waitForFunction(() => { const i = document.querySelector('[data-lb-img]'); return i.complete && i.naturalWidth > 0; });
+  const t1 = await page.locator('#lightbox-title').innerText();
+  await page.keyboard.press('ArrowRight');
+  const t2 = await page.locator('#lightbox-title').innerText();
+  const alt = await page.locator('[data-lb-img]').getAttribute('alt');
+  await page.keyboard.press('Escape');
+  const closed = !(await page.locator('[data-lightbox-dialog]').evaluate((d) => d.open));
+  const focusBack = await page.evaluate(() => document.activeElement?.matches('[data-lightbox]'));
+  record('Project viewer: opens full photo, arrow keys page through, alt carried over, Esc closes, focus returns', n >= 5 && open && t1 !== t2 && !!alt && closed && focusBack, `cards=${n} open=${open} ${t1} -> ${t2} closed=${closed} focusBack=${focusBack}`);
   await page.close();
 }
 

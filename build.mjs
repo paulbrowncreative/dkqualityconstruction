@@ -15,7 +15,7 @@ const DIST = join(ROOT, 'dist');
 
 const pageModules = [
   'home', 'services', 'services-decks', 'services-fencing', 'services-basement',
-  'services-bathroom', 'services-kitchen', 'service-area', 'about', 'contact',
+  'services-bathroom', 'services-kitchen', 'projects', 'service-area', 'about', 'contact',
   'thank-you', 'privacy', 'not-found',
 ];
 

@@ -90,7 +90,7 @@ export const services = [
     navName: 'Decks — Treated & Composite',
     short: 'New decks in pressure-treated lumber or low-maintenance composite, designed around how you use your yard.',
     page: true,
-    image: 'deck-aerial-cedar',
+    image: 'project-deck-waterfront-covered',
   },
   {
     slug: 'fencing',
@@ -106,7 +106,7 @@ export const services = [
     navName: 'Basement Remodeling',
     short: 'Turn an unfinished or dated basement into usable living space — family rooms, offices, guest areas.',
     page: true,
-    image: 'basement-living-room',
+    image: 'project-basement-remodel-built-ins',
   },
   {
     slug: 'bathroom-remodeling',

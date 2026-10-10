@@ -1,6 +1,7 @@
 import { business } from '../../site.config.mjs';
+import { projects } from '../data/projects.mjs';
 import {
-  picture, preloadImage, icon, estimateButton, phoneLink, serviceIndex, faq, estimateForm,
+  picture, preloadImage, icon, estimateButton, phoneLink, serviceIndex, faq, estimateForm, projectCard, lightboxDialog,
 } from '../lib/components.mjs';
 
 const heroSizes = '100vw';
@@ -37,16 +38,16 @@ export default {
   title: 'Deck Builder & Remodeler in Monroe, MI | DK Quality Construction',
   description:
     'Owner-led deck builder and remodeler in Monroe, MI. Treated and composite decks, fences, basements, kitchens and baths in Monroe County and Lucas County, OH.',
-  preload: preloadImage('deck-multilevel-cedar', heroSizes, 'deck-multilevel-cedar-portrait'),
+  preload: preloadImage('project-deck-aerial-privacy-screen', heroSizes, 'project-deck-aerial-privacy-screen-portrait'),
   bodyClass: 'page-home',
   body: `
 <section class="hero" aria-labelledby="hero-title">
   <div class="hero__media">
-    ${picture('deck-multilevel-cedar', {
-      alt: 'Two-level cedar-toned deck with stairs, railings and built-in planters behind a green two-story home',
+    ${picture('project-deck-aerial-privacy-screen', {
+      alt: 'Aerial view of a raised gray deck built by DK Quality Construction, with white-and-black railings, a decorative privacy screen and a wide staircase',
       sizes: heroSizes,
       eager: true,
-      mobile: 'deck-multilevel-cedar-portrait',
+      mobile: 'project-deck-aerial-privacy-screen-portrait',
     })}
   </div>
   <div class="container hero__inner">
@@ -80,8 +81,8 @@ export default {
 <section class="section specialty" aria-labelledby="specialty-h">
   <div class="container specialty__grid">
     <div class="specialty__media">
-      ${picture('deck-composite-black-rail', {
-        alt: 'Raised gray composite deck with black metal balusters beside a brick home',
+      ${picture('project-deck-waterfront-covered', {
+        alt: 'Large gray deck by DK Quality Construction, partly covered, with white railings and black balusters overlooking a lake',
         sizes: '(min-width: 960px) 46vw, 100vw',
         cls: 'frame',
       })}
@@ -108,6 +109,20 @@ export default {
     </div>
   </div>
 </section>
+
+<section class="section section--flush-top" aria-labelledby="recent-h">
+  <div class="container">
+    <div class="project-group__head">
+      <div>
+        <p class="eyebrow">Recent work</p>
+        <h2 id="recent-h" class="section-title">Built by DK Quality.</h2>
+      </div>
+      <a class="link-arrow" href="/projects/">See all projects ${icon('arrow')}</a>
+    </div>
+    <div class="project-grid">${['P-003', 'P-004', 'P-005'].map((id) => projectCard(projects.find((p) => p.id === id))).join('')}</div>
+  </div>
+</section>
+${lightboxDialog()}
 
 <section class="section section--paper2" aria-labelledby="services-h">
   <div class="container">

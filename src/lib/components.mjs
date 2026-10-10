@@ -264,3 +264,41 @@ export function compareSlider({ id, before, after, beforeAlt, afterAlt, label, r
   </figcaption>
 </figure>`;
 }
+
+/* ---------- Project portfolio cards + full-image viewer ----------
+   Cards crop to a consistent 4:3 for a tidy grid; the full, uncropped photo opens in a
+   native <dialog> (or, without JS, as the image file itself). */
+export const largestJpg = (name) => {
+  const m = imageManifest[name];
+  return `/assets/img/photos/${name}-${m.widths[m.widths.length - 1]}.jpg`;
+};
+
+export function projectCard(p, { headingLevel = 3, sizes = '(min-width: 1100px) 33vw, (min-width: 600px) 50vw, 100vw' } = {}) {
+  const h = `h${headingLevel}`;
+  const meta = imageManifest[p.image];
+  return `<figure class="project-card" id="${p.id.toLowerCase()}">
+  <a class="project-card__media" href="${largestJpg(p.image)}" data-lightbox data-caption="${esc(p.caption)}" data-title="${esc(p.title)}" data-image="${p.image}" aria-label="View full photo: ${esc(p.title)}">
+    ${picture(p.image, { alt: p.alt, sizes, cls: 'project-card__pic' })}
+    <span class="project-card__zoom" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" fill="none" stroke="currentColor" stroke-width="2"/></svg></span>
+  </a>
+  <figcaption class="project-card__body">
+    <${h} class="project-card__title">${esc(p.title)}</${h}>
+    <p>${esc(p.caption)}</p>
+  </figcaption>
+</figure>`.replace('data-image', `data-w="${meta.width}" data-h="${meta.height}" data-image`);
+}
+
+export const lightboxDialog = () => `<dialog class="lightbox" data-lightbox-dialog aria-labelledby="lightbox-title">
+  <div class="lightbox__inner">
+    <div class="lightbox__bar">
+      <p class="lightbox__title" id="lightbox-title"></p>
+      <button class="lightbox__btn" type="button" data-lb-close aria-label="Close photo">${icon('close')}</button>
+    </div>
+    <div class="lightbox__stage" data-lb-stage></div>
+    <div class="lightbox__foot">
+      <button class="lightbox__btn" type="button" data-lb-prev aria-label="Previous photo"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2"/></svg></button>
+      <p class="lightbox__caption" data-lb-caption aria-live="polite"></p>
+      <button class="lightbox__btn" type="button" data-lb-next aria-label="Next photo"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2"/></svg></button>
+    </div>
+  </div>
+</dialog>`;
