@@ -103,7 +103,7 @@ export default servicePage({
       p: `<p>Deck surfaces more than 30 inches above grade need guards, and stairs need consistent rise and run with a graspable handrail. Most new decks also need a building permit — the specifics depend on your city or township, and we’ll talk it through at the estimate.</p>`,
     },
   ],
-  projects: ['P-001', 'P-003', 'P-004'],
+  projects: ['P-001', 'P-006', 'P-007'],
   faqs: [
     {
       q: 'How much does a new deck cost in Monroe?',

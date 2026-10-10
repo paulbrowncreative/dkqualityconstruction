@@ -1,45 +1,71 @@
 // DK Quality Construction's own project photos. Descriptions state only what is visible
 // in the photos; locations, materials/brands, costs and timelines are not claimed until
 // the owner confirms them (see PROJECT-ASSET-REGISTER.md → open questions).
+// images[0] is the card/cover photo; every image opens in the full-photo viewer.
 export const categories = [
   { id: 'decks', name: 'Decks', service: '/services/decks/' },
+  { id: 'kitchens', name: 'Kitchen Remodeling', service: '/services/kitchen-remodeling/' },
   { id: 'basements', name: 'Basement Remodeling', service: '/services/basement-finishing/' },
 ];
 
 export const projects = [
   {
-    id: 'P-001', category: 'decks', assetIds: ['DKQ-01-03'],
+    id: 'P-001', category: 'decks',
     title: 'Raised deck with privacy screen and wide stairs',
-    image: 'project-deck-aerial-privacy-screen',
-    alt: 'Aerial view of a raised gray deck with a dark border, white posts and black balusters, a decorative black privacy screen along one side, and a wide staircase down to the yard',
     caption: 'Gray deck with a contrasting border, white-and-black railings, a decorative privacy screen and a wide staircase.',
+    images: [{ asset: 'DKQ-01-03', name: 'project-deck-aerial-privacy-screen', alt: 'Aerial view of a raised gray deck with a dark border, white posts and black balusters, a decorative black privacy screen along one side, and a wide staircase down to the yard' }],
   },
   {
-    id: 'P-002', category: 'decks', assetIds: ['DKQ-01-02'],
+    id: 'P-002', category: 'decks',
     title: 'Waterfront deck with a covered section',
-    image: 'project-deck-waterfront-covered',
-    alt: 'Wide view across a large gray deck, partly under a roof overhang supported by white posts, with white railings and black balusters facing a lake',
     caption: 'Large deck that runs from a covered area out to the water, with white-and-black railings around the edge.',
+    images: [{ asset: 'DKQ-01-02', name: 'project-deck-waterfront-covered', alt: 'Wide view across a large gray deck, partly under a roof overhang supported by white posts, with white railings and black balusters facing a lake' }],
   },
   {
-    id: 'P-003', category: 'decks', assetIds: ['DKQ-01-05'],
+    id: 'P-003', category: 'decks',
     title: 'Deck with wraparound corner stairs',
-    image: 'project-deck-gray-corner-stairs',
-    alt: 'Dark gray deck with black metal railings and box steps that wrap around the corner, in front of a screened porch',
     caption: 'Gray deck with black metal railings, matching skirting and box steps that wrap the corner.',
+    images: [{ asset: 'DKQ-01-05', name: 'project-deck-gray-corner-stairs', alt: 'Dark gray deck with black metal railings and box steps that wrap around the corner, in front of a screened porch' }],
   },
   {
-    id: 'P-004', category: 'decks', assetIds: ['DKQ-01-04'],
+    id: 'P-004', category: 'decks',
     title: 'Deck with stairs down to a paver patio',
-    image: 'project-deck-cedar-tone-stairs',
-    alt: 'Brown-toned deck with black metal railings, matching skirting and a staircase leading down to a paver patio beside a white house',
     caption: 'Brown-toned deck with black metal railings, matching skirting and stairs down to the patio.',
+    images: [{ asset: 'DKQ-01-04', name: 'project-deck-cedar-tone-stairs', alt: 'Brown-toned deck with black metal railings, matching skirting and a staircase leading down to a paver patio beside a white house' }],
   },
   {
-    id: 'P-005', category: 'basements', assetIds: ['DKQ-01-01'],
+    id: 'P-005', category: 'basements',
     title: 'Basement remodel with built-in cabinets',
-    image: 'project-basement-remodel-built-ins',
-    alt: 'Remodeled basement with a black painted open ceiling, recessed lights, wood-look plank flooring and white built-in cabinets with wood tops',
     caption: 'Open basement room with a painted open-joist ceiling, recessed lighting, plank flooring and white built-ins.',
+    images: [{ asset: 'DKQ-01-01', name: 'project-basement-remodel-built-ins', alt: 'Remodeled basement with a black painted open ceiling, recessed lights, wood-look plank flooring and white built-in cabinets with wood tops' }],
+  },
+  {
+    id: 'P-006', category: 'decks',
+    title: 'Covered deck with a stained wood ceiling',
+    caption: 'Covered deck with a stained plank ceiling, black beams and gable bracing, dark brown boards and black metal railings.',
+    images: [{ asset: 'DKQ-02-01', name: 'project-deck-covered-stained-ceiling', alt: 'Covered deck with a stained wood plank ceiling, black beams and gable bracing, dark brown deck boards and black metal railings, with a DK Quality Construction trailer parked in the background' }],
+  },
+  {
+    id: 'P-007', category: 'decks',
+    title: 'Covered deck with white columns',
+    caption: 'Deck under a flat roof on square white columns, with white metal railings, gray boards, matching skirting and stairs.',
+    images: [{ asset: 'DKQ-02-02', name: 'project-deck-covered-white-columns', alt: 'Covered deck with a flat roof on square white columns, white metal railings, gray deck boards with matching skirting and stairs, beside a light brick home' }],
+  },
+  {
+    id: 'P-008', category: 'decks',
+    title: 'Two-level deck by a screened porch',
+    caption: 'Brown deck with a contrasting border board, steps up to a covered screened porch and wide steps down to the yard.',
+    images: [{ asset: 'DKQ-02-03', name: 'project-deck-brown-screened-porch', alt: 'Brown deck with a contrasting border board, a step up to a covered screened porch and wide steps down to a flagstone path and lawn' }],
+  },
+  {
+    id: 'P-009', category: 'kitchens',
+    title: 'Kitchen remodel with white shaker cabinets',
+    caption: 'White shaker cabinets, granite counters, a tile backsplash, recessed lighting and plank flooring.',
+    images: [
+      { asset: 'DKQ-02-05', name: 'project-kitchen-white-shaker', alt: 'Remodeled kitchen with white shaker cabinets, gray granite counters, a black double sink, white mosaic tile backsplash, stainless appliances and plank flooring against teal walls' },
+      { asset: 'DKQ-02-04', name: 'project-kitchen-white-shaker-fridge-wall', alt: 'Another view of the same kitchen: a stainless side-by-side refrigerator with cabinets above, recessed lights, teal walls and plank flooring' },
+    ],
   },
 ];
+
+export const projectById = (id) => projects.find((p) => p.id === id);

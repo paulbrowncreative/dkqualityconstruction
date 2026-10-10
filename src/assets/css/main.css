@@ -711,3 +711,8 @@ body { padding-bottom: calc(4rem + env(safe-area-inset-bottom)); }
 .lightbox__btn { display: inline-grid; place-items: center; width: 2.9rem; height: 2.9rem; flex: none; border: 1.5px solid var(--line-dark); border-radius: 50%; background: transparent; color: var(--white); cursor: pointer; }
 .lightbox__btn:hover { border-color: var(--brass); color: var(--brass); }
 .lightbox__btn[hidden] { display: none; }
+.project-card__count { position: absolute; left: var(--space-3); bottom: var(--space-3); padding: 0.25rem 0.6rem; border-radius: var(--radius-sm); background: rgb(18 18 20 / 0.78); color: var(--white); font-size: var(--fs-xs); font-weight: 700; }
+.project-card__thumbs { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-4); }
+.project-card__thumb { display: block; width: 4.5rem; aspect-ratio: 4 / 3; overflow: hidden; border-radius: var(--radius-sm); outline-offset: 2px; }
+.project-card__thumb img { width: 100%; height: 100%; object-fit: cover; }
+.project-card__thumb:hover { box-shadow: 0 0 0 2px var(--brass); }

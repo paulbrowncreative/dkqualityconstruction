@@ -26,7 +26,6 @@ These are the stock photos still in use. Retired stock photos are listed in the 
 | deck-treated-wooded-lot.jpg | [unsplash.com/photos/jxr6sCglU9s](https://unsplash.com/photos/jxr6sCglU9s) | Clay Banks | 2400×1600 | Decks: pressure-treated card | |
 | fence-backyard-gray.jpg | [unsplash.com/photos/gyOmQE2vzWs](https://unsplash.com/photos/gyOmQE2vzWs) | Proper Construction | 2400×1600 | Fencing hero, Services | Another contractor's project |
 | bathroom-walk-in-shower.jpg | [unsplash.com/photos/Ies-rhvusTs](https://unsplash.com/photos/Ies-rhvusTs) | Smart Renovations | 2400×1600 | Bathroom hero, Services | Another contractor's project |
-| kitchen-white-cabinets.jpg | [unsplash.com/photos/j1XuL3mwi8U](https://unsplash.com/photos/j1XuL3mwi8U) | Clay Banks | 2400×1600 | Kitchen hero, Services | |
 | flooring-plank-install.jpg | [unsplash.com/photos/EO_KlX-A6SY](https://unsplash.com/photos/EO_KlX-A6SY) | Ernys | 2400×3600 | Services: flooring | Black and white |
 | framing-new-construction.jpg | [unsplash.com/photos/dUYELbt-H-E](https://unsplash.com/photos/dUYELbt-H-E) | Troy Mortier | 2400×1600 | Services: garages | |
 

@@ -275,17 +275,21 @@ export const largestJpg = (name) => {
 
 export function projectCard(p, { headingLevel = 3, sizes = '(min-width: 1100px) 33vw, (min-width: 600px) 50vw, 100vw' } = {}) {
   const h = `h${headingLevel}`;
-  const meta = imageManifest[p.image];
+  const trigger = (img, i, inner, cls) => {
+    const meta = imageManifest[img.name];
+    const n = p.images.length > 1 ? ` (photo ${i + 1} of ${p.images.length})` : '';
+    return `<a class="${cls}" href="${largestJpg(img.name)}" data-lightbox data-title="${esc(p.title)}" data-caption="${esc(p.caption)}" data-w="${meta.width}" data-h="${meta.height}" aria-label="View full photo: ${esc(p.title)}${n}">${inner}</a>`;
+  };
+  const [cover, ...more] = p.images;
+  const zoom = `<span class="project-card__zoom" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" fill="none" stroke="currentColor" stroke-width="2"/></svg></span>`;
   return `<figure class="project-card" id="${p.id.toLowerCase()}">
-  <a class="project-card__media" href="${largestJpg(p.image)}" data-lightbox data-caption="${esc(p.caption)}" data-title="${esc(p.title)}" data-image="${p.image}" aria-label="View full photo: ${esc(p.title)}">
-    ${picture(p.image, { alt: p.alt, sizes, cls: 'project-card__pic' })}
-    <span class="project-card__zoom" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" fill="none" stroke="currentColor" stroke-width="2"/></svg></span>
-  </a>
+  ${trigger(cover, 0, `${picture(cover.name, { alt: cover.alt, sizes, cls: 'project-card__pic' })}${zoom}${more.length ? `<span class="project-card__count">${p.images.length} photos</span>` : ''}`, 'project-card__media')}
   <figcaption class="project-card__body">
     <${h} class="project-card__title">${esc(p.title)}</${h}>
     <p>${esc(p.caption)}</p>
+    ${more.length ? `<ul class="project-card__thumbs" role="list">${more.map((img, i) => `<li>${trigger(img, i + 1, picture(img.name, { alt: img.alt, sizes: '6rem' }), 'project-card__thumb')}</li>`).join('')}</ul>` : ''}
   </figcaption>
-</figure>`.replace('data-image', `data-w="${meta.width}" data-h="${meta.height}" data-image`);
+</figure>`;
 }
 
 export const lightboxDialog = () => `<dialog class="lightbox" data-lightbox-dialog aria-labelledby="lightbox-title">

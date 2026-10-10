@@ -30,7 +30,6 @@ PHOTOS = {
     "deck-treated-wooded-lot": {},
     "fence-backyard-gray": {},
     "bathroom-walk-in-shower": {},
-    "kitchen-white-cabinets": {},
     "flooring-plank-install": {},
     # ---- DK Quality Construction's own project photos (client uploads; originals untouched) ----
     # Batch 1 — see project-assets-manifest.json for IDs.
@@ -40,6 +39,12 @@ PHOTOS = {
     "project-deck-cedar-tone-stairs": {"src": "assets-src/uploads/batch-01/4.jpg"},
     "project-deck-gray-corner-stairs": {"src": "assets-src/uploads/batch-01/5.jpg"},
     "project-basement-remodel-built-ins": {"src": "assets-src/uploads/batch-01/1.jpg"},
+    # Batch 2
+    "project-deck-covered-stained-ceiling": {"src": "assets-src/uploads/batch-02/6.jpg"},
+    "project-deck-covered-white-columns": {"src": "assets-src/uploads/batch-02/7.jpg"},
+    "project-deck-brown-screened-porch": {"src": "assets-src/uploads/batch-02/8.jpg"},
+    "project-kitchen-white-shaker-fridge-wall": {"src": "assets-src/uploads/batch-02/9.jpg"},
+    "project-kitchen-white-shaker": {"src": "assets-src/uploads/batch-02/10.jpg", "widths": HERO_WIDTHS},
     "framing-new-construction": {},
 }
 

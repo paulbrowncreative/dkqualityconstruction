@@ -122,7 +122,7 @@ export const services = [
     navName: 'Kitchen Remodeling',
     short: 'Kitchen updates and remodels — cabinets, counters, layout changes and the finish work that ties it together.',
     page: true,
-    image: 'kitchen-white-cabinets',
+    image: 'project-kitchen-white-shaker',
   },
   {
     slug: 'flooring',

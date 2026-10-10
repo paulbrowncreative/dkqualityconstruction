@@ -56,8 +56,8 @@ ${pageHero({
       <p><a class="btn btn--ink" href="${business.facebook}" rel="noopener" target="_blank">${icon('facebook')}<span>DK Quality Construction on Facebook</span><span class="visually-hidden"> (opens in a new tab)</span></a></p>
     </div>
     <div class="split__aside">
-      ${picture('project-deck-gray-corner-stairs', {
-        alt: 'Dark gray deck built by DK Quality Construction with black metal railings and wraparound corner stairs',
+      ${picture('project-deck-covered-stained-ceiling', {
+        alt: 'Covered deck built by DK Quality Construction, with a stained wood ceiling and black railings; the company trailer is parked in the yard beyond',
         sizes: '(min-width: 960px) 40vw, 100vw',
         cls: 'frame',
       })}

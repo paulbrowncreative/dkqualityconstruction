@@ -15,20 +15,20 @@ export default {
   path: '/projects/',
   title: 'Deck & Remodeling Projects | DK Quality Construction, Monroe MI',
   description:
-    'Photos of decks and remodeling projects built by DK Quality Construction for homeowners in Monroe County, MI and Lucas County, OH.',
+    'Photos of decks, kitchens and basements built by DK Quality Construction for homeowners in Monroe County, MI and Lucas County, OH.',
   breadcrumbs: trail,
   schema: [
     {
       '@type': 'ImageGallery',
       name: 'DK Quality Construction projects',
-      image: projects.map((p) => ({ '@type': 'ImageObject', name: p.title, caption: p.caption, contentUrl: `${site.url}${largestJpg(p.image)}` })),
+      image: projects.flatMap((p) => p.images.map((img) => ({ '@type': 'ImageObject', name: p.title, caption: img.alt, contentUrl: `${site.url}${largestJpg(img.name)}` }))),
     },
   ],
   body: `
 ${pageHero({
   eyebrow: 'Our work',
   title: 'Projects',
-  lede: 'Real decks and remodels built by DK Quality Construction. Select any photo to see it full size.',
+  lede: 'Decks, kitchens and basements built by DK Quality Construction. Select any photo to see it full size.',
   image: 'project-deck-aerial-privacy-screen',
   imageAlt: 'Aerial view of a raised gray deck with white-and-black railings, a privacy screen and wide stairs',
   trail,

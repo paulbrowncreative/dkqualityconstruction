@@ -26,15 +26,6 @@
     "width": 2400,
     "height": 1600
   },
-  "kitchen-white-cabinets": {
-    "widths": [
-      640,
-      1024,
-      1600
-    ],
-    "width": 2400,
-    "height": 1600
-  },
   "flooring-plank-install": {
     "widths": [
       640,
@@ -99,6 +90,52 @@
     ],
     "width": 1500,
     "height": 2000
+  },
+  "project-deck-covered-stained-ceiling": {
+    "widths": [
+      640,
+      1024,
+      1500
+    ],
+    "width": 1500,
+    "height": 2000
+  },
+  "project-deck-covered-white-columns": {
+    "widths": [
+      640,
+      1024,
+      1500
+    ],
+    "width": 1500,
+    "height": 2000
+  },
+  "project-deck-brown-screened-porch": {
+    "widths": [
+      640,
+      1024,
+      1500
+    ],
+    "width": 1500,
+    "height": 2000
+  },
+  "project-kitchen-white-shaker-fridge-wall": {
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "width": 2000,
+    "height": 1500
+  },
+  "project-kitchen-white-shaker": {
+    "widths": [
+      640,
+      1024,
+      1600,
+      2000
+    ],
+    "width": 2000,
+    "height": 1500
   },
   "framing-new-construction": {
     "widths": [

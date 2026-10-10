@@ -9,7 +9,7 @@ export default servicePage({
   eyebrow: 'Kitchen Remodeling',
   h1: 'Kitchen remodeling in Monroe, MI',
   lede: 'Kitchen updates and full remodels — cabinets, counters, layout and the finish work that ties it together — for homes across Monroe County and Lucas County.',
-  heroAlt: 'Bright kitchen with white shaker cabinets, brass pulls, a range hood and stainless appliances',
+  heroAlt: 'Kitchen remodeled by DK Quality Construction with white shaker cabinets, granite counters, a tile backsplash, stainless appliances and plank flooring',
   introHeading: 'Built around how you cook and gather.',
   intro: `
     <p>The kitchen is where a remodel pays off every single day. Whether you’re replacing tired cabinets and counters or reworking a layout that never made sense, the goal is the same: more usable counter space, storage that fits what you own, and a room that’s easy to move around in.</p>
@@ -56,6 +56,7 @@ export default servicePage({
       a: `<p>Kitchen costs swing widely with cabinet quality, counter material and whether walls, plumbing or electrical move. An on-site estimate is the only reliable way to a number — <a href="/contact/#estimate">request one here</a>.</p>`,
     },
   ],
+  projects: ['P-009'],
   related: ['bathroom-remodeling', 'flooring', 'basement-finishing'],
   ctaHeading: 'Let’s talk about your kitchen.',
   ctaText: 'Tell us what you want to change — cabinets, counters, layout — and add a photo of the kitchen as it is now.',
