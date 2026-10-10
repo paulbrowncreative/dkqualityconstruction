@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "project": "DK Quality Construction website — client-supplied project photos and reviews",
+  "updated": "2026-10-10",
+  "conventions": {
+    "assetId": "DKQ-<batch 2 digits>-<seq 2 digits>, e.g. DKQ-01-03. Never reused or renumbered.",
+    "originals": "assets-src/uploads/batch-NN/<original filename, sanitized> — never modified",
+    "derivatives": "src/assets/img/projects/<stored filename>-<width>.{avif,jpg} (photos) and src/assets/img/reviews/ (screenshots)",
+    "types": ["project-photo", "before-photo", "after-photo", "review-screenshot", "logo", "supporting-graphic", "other"],
+    "status": ["received", "inspected", "integrated", "needs-clarification", "held", "rejected"]
+  },
+  "batches": [],
+  "projects": [],
+  "pairs": [],
+  "reviews": [],
+  "assets": []
+}

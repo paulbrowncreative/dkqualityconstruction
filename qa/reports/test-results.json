@@ -1,6 +1,6 @@
 {
   "base": "http://localhost:8080",
-  "ranAt": "2026-10-10T21:11:25.666Z",
+  "ranAt": "2026-10-10T21:39:00.786Z",
   "checks": [
     {
       "name": "No horizontal overflow @320px (13 pages)",

@@ -77,6 +77,65 @@
     forms.forEach((f) => io.observe(f));
   }
 
+  /* ---------- Before / after comparison sliders ----------
+     Value = % of the frame showing BEFORE (left). Right → more BEFORE, left → more AFTER. */
+  document.querySelectorAll('[data-compare]').forEach((root) => {
+    const frame = root.querySelector('.compare-slider__frame');
+    const handle = root.querySelector('[data-compare-handle]');
+    let pos = 50;
+    let drag = null;
+    const set = (v) => {
+      pos = Math.round(Math.min(100, Math.max(0, v)) * 10) / 10;
+      root.style.setProperty('--pos', `${pos}%`);
+      const r = Math.round(pos);
+      handle.setAttribute('aria-valuenow', String(r));
+      handle.setAttribute('aria-valuetext', `${r}% before, ${100 - r}% after`);
+    };
+    const fromX = (x) => {
+      const b = frame.getBoundingClientRect();
+      return ((x - b.left) / b.width) * 100;
+    };
+    frame.addEventListener('pointerdown', (e) => {
+      if (e.button !== 0) return;
+      // Touch on the photo itself waits for a horizontal intent so vertical scrolling still works;
+      // the handle, mouse and pen start dragging immediately.
+      drag = { id: e.pointerId, x: e.clientX, y: e.clientY, active: e.pointerType !== 'touch' || e.target.closest('[data-compare-handle]') };
+      if (drag.active) {
+        frame.setPointerCapture(e.pointerId);
+        root.classList.add('is-dragging');
+        set(fromX(e.clientX));
+        e.preventDefault();
+      }
+    });
+    frame.addEventListener('pointermove', (e) => {
+      if (!drag || drag.id !== e.pointerId) return;
+      if (!drag.active) {
+        const dx = Math.abs(e.clientX - drag.x);
+        const dy = Math.abs(e.clientY - drag.y);
+        if (dy > dx && dy > 6) { drag = null; return; }
+        if (dx < 6) return;
+        drag.active = true;
+        frame.setPointerCapture(e.pointerId);
+        root.classList.add('is-dragging');
+      }
+      set(fromX(e.clientX));
+    });
+    const end = (e) => {
+      if (!drag || drag.id !== e.pointerId) return;
+      if (!drag.active && e.type === 'pointerup') set(fromX(e.clientX)); // tap to jump
+      drag = null;
+      root.classList.remove('is-dragging');
+    };
+    frame.addEventListener('pointerup', end);
+    frame.addEventListener('pointercancel', end);
+    handle.addEventListener('keydown', (e) => {
+      const step = e.shiftKey ? 10 : 2;
+      const map = { ArrowLeft: pos - step, ArrowDown: pos - step, ArrowRight: pos + step, ArrowUp: pos + step, PageDown: pos - 10, PageUp: pos + 10, Home: 0, End: 100 };
+      if (e.key in map) { e.preventDefault(); set(map[e.key]); }
+    });
+    set(50);
+  });
+
   /* ---------- Estimate form ---------- */
   const MAX_FILE = 8 * 1024 * 1024;
   const rules = {

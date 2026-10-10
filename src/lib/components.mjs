@@ -234,3 +234,33 @@ ${items
   .join('\n')}
 </div>`;
 }
+
+/* ---------- Before / after comparison slider ----------
+   Two aligned photos layered in one frame. BEFORE sits on top, clipped to the left of
+   the divider; AFTER fills the frame underneath. The handle is an ARIA slider whose
+   value is the share of the frame showing BEFORE (default 50). Works without JS at 50%.
+   before/after: image manifest names. ratio: shared frame, e.g. '4 / 3'.
+   position: optional object-position for both layers (keep identical so they align). */
+export function compareSlider({ id, before, after, beforeAlt, afterAlt, label, ratio = '4 / 3', position = '50% 50%', sizes = '(min-width: 960px) 60vw, 100vw', eager = false }) {
+  if (!id || !label) throw new Error('compareSlider needs id and label');
+  const hint = `${id}-hint`;
+  return `<figure class="compare-slider" data-compare style="--ratio: ${ratio}; --pos: 50%; --obj: ${position}">
+  <div class="compare-slider__frame">
+    <div class="compare-slider__layer compare-slider__layer--after">${picture(after, { alt: afterAlt, sizes, eager })}</div>
+    <div class="compare-slider__layer compare-slider__layer--before" data-compare-before>${picture(before, { alt: beforeAlt, sizes, eager })}</div>
+    <span class="compare-slider__tag compare-slider__tag--before" aria-hidden="true">Before</span>
+    <span class="compare-slider__tag compare-slider__tag--after" aria-hidden="true">After</span>
+    <div class="compare-slider__divider" aria-hidden="true"></div>
+    <div class="compare-slider__handle" role="slider" tabindex="0" data-compare-handle
+      aria-label="${esc(label)}: before and after comparison" aria-describedby="${hint}"
+      aria-orientation="horizontal" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"
+      aria-valuetext="50% before, 50% after">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+    </div>
+  </div>
+  <figcaption class="compare-slider__caption">
+    <span>${esc(label)}</span>
+    <span class="compare-slider__hint" id="${hint}">Drag the handle or use the arrow keys to compare before and after.</span>
+  </figcaption>
+</figure>`;
+}

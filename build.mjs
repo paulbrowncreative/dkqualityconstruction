@@ -65,8 +65,11 @@ async function build() {
 
   // Pages.
   const pages = [];
-  for (const name of pageModules) {
-    const mod = await import(`./src/pages/${name}.mjs`);
+  // QA fixtures are opt-in and never part of a production build.
+  const modules = pageModules.map((n) => `./src/pages/${n}.mjs`);
+  if (process.env.BUILD_FIXTURES === '1' && site.context !== 'production') modules.push('./src/fixtures/compare.mjs');
+  for (const modPath of modules) {
+    const mod = await import(modPath);
     const page = mod.default;
     const html = renderPage(page).replace('{{css}}', cssName).replace('{{js}}', jsName);
     const out = page.outFile || join(page.path.replace(/^\//, ''), 'index.html');
