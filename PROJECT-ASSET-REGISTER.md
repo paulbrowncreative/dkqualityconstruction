@@ -5,6 +5,16 @@ The readable companion to `project-assets-manifest.json`, which is the source of
 **Last updated:** October 10, 2026
 **Workflow status:** waiting for batch 1. No client files have been received yet.
 
+## Hero image rule (client instruction)
+
+Page heroes use DK's own photos in this order of preference:
+
+1. **Aerial views of completed decks.** Decks are the main revenue source, so these always come first.
+2. Wide-angle views of completed decks.
+3. Wide-angle views of other completed projects.
+
+Within each tier, the most visually compelling shot wins. These photos replace the stock heroes on the homepage first, then the Decks page, then other pages as suitable photos arrive.
+
 ## Totals
 
 | | Count |

@@ -6,12 +6,37 @@
     "assetId": "DKQ-<batch 2 digits>-<seq 2 digits>, e.g. DKQ-01-03. Never reused or renumbered.",
     "originals": "assets-src/uploads/batch-NN/<original filename, sanitized> — never modified",
     "derivatives": "src/assets/img/projects/<stored filename>-<width>.{avif,jpg} (photos) and src/assets/img/reviews/ (screenshots)",
-    "types": ["project-photo", "before-photo", "after-photo", "review-screenshot", "logo", "supporting-graphic", "other"],
-    "status": ["received", "inspected", "integrated", "needs-clarification", "held", "rejected"]
+    "types": [
+      "project-photo",
+      "before-photo",
+      "after-photo",
+      "review-screenshot",
+      "logo",
+      "supporting-graphic",
+      "other"
+    ],
+    "status": [
+      "received",
+      "inspected",
+      "integrated",
+      "needs-clarification",
+      "held",
+      "rejected"
+    ]
   },
   "batches": [],
   "projects": [],
   "pairs": [],
   "reviews": [],
-  "assets": []
+  "assets": [],
+  "heroSelectionRule": {
+    "source": "Client instruction, 2026-10-10",
+    "priority": [
+      "Aerial views of completed decks (main revenue source) — always first choice",
+      "Wide-angle views of completed decks",
+      "Wide-angle views of other completed projects"
+    ],
+    "applyTo": "Homepage hero and page heroes (decks pages first); choose the most visually compelling within each tier",
+    "constraints": "Real DK projects only; hero crops must keep the deck legible on desktop and phone (art-directed mobile crop where needed)"
+  }
 }
