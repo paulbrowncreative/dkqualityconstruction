@@ -1,0 +1,8 @@
+node_modules/
+dist/
+qa/node_modules/
+qa/reports/
+.env
+.netlify/
+*.log
+.DS_Store

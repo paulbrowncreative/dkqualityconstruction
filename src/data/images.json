@@ -1,0 +1,129 @@
+{
+  "deck-multilevel-cedar": {
+    "widths": [
+      640,
+      1024,
+      1600,
+      2000
+    ],
+    "width": 2400,
+    "height": 1599
+  },
+  "deck-aerial-cedar": {
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "width": 2400,
+    "height": 1599
+  },
+  "deck-treated-wooded-lot": {
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "width": 2400,
+    "height": 1600
+  },
+  "deck-composite-black-rail": {
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "width": 2400,
+    "height": 1600
+  },
+  "deck-railing-evening": {
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "width": 2400,
+    "height": 1600
+  },
+  "deck-hardwood-modern": {
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "width": 2400,
+    "height": 1600
+  },
+  "fence-backyard-gray": {
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "width": 2400,
+    "height": 1600
+  },
+  "basement-living-room": {
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "width": 2400,
+    "height": 1380
+  },
+  "bathroom-walk-in-shower": {
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "width": 2400,
+    "height": 1600
+  },
+  "kitchen-white-cabinets": {
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "width": 2400,
+    "height": 1600
+  },
+  "flooring-plank-install": {
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "width": 2400,
+    "height": 3600
+  },
+  "carpentry-circular-saw": {
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "width": 2400,
+    "height": 1349
+  },
+  "carpentry-measuring-board": {
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "width": 2400,
+    "height": 1603
+  },
+  "framing-new-construction": {
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "width": 2400,
+    "height": 1600
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "dk-qa",
+  "private": true,
+  "type": "module",
+  "description": "QA tooling (not deployed). Run from the qa/ folder after building the site.",
+  "scripts": {
+    "screens": "node screens.mjs",
+    "test": "node test.mjs",
+    "lighthouse": "node lighthouse.mjs"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.11.0",
+    "html-validate": "9.7.1",
+    "lighthouse": "12.8.2",
+    "playwright": "1.56.1"
+  }
+}

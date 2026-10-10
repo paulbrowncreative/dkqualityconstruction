@@ -1,0 +1,70 @@
+import { business } from '../../site.config.mjs';
+import { pageHero, picture, icon, ctaBand } from '../lib/components.mjs';
+
+const trail = [
+  { name: 'Home', path: '/' },
+  { name: 'About', path: '/about/' },
+];
+
+export default {
+  path: '/about/',
+  title: `About DK Quality Construction | Owner ${business.owner} | Monroe, MI`,
+  description:
+    'DK Quality Construction is an owner-led Monroe, MI contractor founded in 2021 by David Kelly. BBB Accredited with an A+ rating. Decks, fencing and remodeling.',
+  breadcrumbs: trail,
+  body: `
+${pageHero({
+  eyebrow: 'About',
+  title: 'A Monroe contractor, run by its owner',
+  lede: `DK Quality Construction was founded in Monroe, Michigan in 2021 by ${business.owner}.`,
+  trail,
+  actions: false,
+})}
+
+<section class="section" aria-labelledby="story-h">
+  <div class="container split split--about">
+    <div class="split__copy prose">
+      <h2 id="story-h" class="section-title">Small on purpose.</h2>
+      <p>DK Quality Construction LLC is a Monroe-based general contractor specializing in decks — pressure-treated and composite — along with fencing, garages, flooring, and basement, bathroom and kitchen remodeling.</p>
+      <p>The company is owner-led. When you call, you’re talking with the person who will scope your project and who is accountable for how it’s built. There’s no sales team handing you off to a crew you’ve never met.</p>
+      <p>Our stated commitment is simple: give every customer top-notch quality. That shows up in the parts of a project you don’t see in photos — footings set deep enough, ledgers flashed properly, waterproofing done right behind the tile.</p>
+    </div>
+    <figure class="split__aside about-logo">
+      <img src="/assets/img/brand/dk-logo-full.webp" width="672" height="366" alt="${business.name} logo, established 2021" loading="lazy" decoding="async">
+    </figure>
+  </div>
+</section>
+
+<section class="section section--ink" aria-labelledby="facts-h">
+  <div class="container">
+    <h2 id="facts-h" class="section-title section-title--center">At a glance</h2>
+    <dl class="facts">
+      <div class="facts__item"><dt>Founded</dt><dd>2021, Monroe, MI</dd></div>
+      <div class="facts__item"><dt>Owner</dt><dd>${business.owner}</dd></div>
+      <div class="facts__item"><dt>Specialty</dt><dd>Treated &amp; composite decks</dd></div>
+      <div class="facts__item"><dt>BBB</dt><dd>Accredited since ${business.bbbAccreditedSince} · <a href="${business.bbb}" rel="noopener" target="_blank">A+ rating<span class="visually-hidden"> (opens in a new tab)</span></a></dd></div>
+      <div class="facts__item"><dt>Serving</dt><dd>Monroe County, MI · Lucas County, OH</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="work-h">
+  <div class="container split split--reverse">
+    <div class="split__copy prose">
+      <h2 id="work-h" class="section-title">See recent work.</h2>
+      <p>We share projects as they’re finished on our Facebook page — the quickest way to see the kind of decks and remodels we build right now.</p>
+      <p><a class="btn btn--ink" href="${business.facebook}" rel="noopener" target="_blank">${icon('facebook')}<span>DK Quality Construction on Facebook</span><span class="visually-hidden"> (opens in a new tab)</span></a></p>
+    </div>
+    <div class="split__aside">
+      ${picture('carpentry-measuring-board', {
+        alt: 'Carpenter marking a board for a cut on a job site',
+        sizes: '(min-width: 960px) 40vw, 100vw',
+        cls: 'frame',
+      })}
+    </div>
+  </div>
+</section>
+
+${ctaBand()}
+`,
+};

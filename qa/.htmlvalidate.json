@@ -1,0 +1,15 @@
+{
+  "extends": ["html-validate:recommended"],
+  "rules": {
+    "no-inline-style": "off",
+    "long-title": ["error", { "maxlength": 70 }],
+    "attribute-boolean-style": "off",
+    "no-trailing-whitespace": "off",
+    "void-style": "off",
+    "doctype-style": "off",
+    "attribute-empty-style": "off",
+    "no-redundant-role": "off",
+    "tel-non-breaking": "off",
+    "prefer-native-element": ["error", { "exclude": ["list"] }]
+  }
+}
