@@ -137,6 +137,52 @@
     "width": 2000,
     "height": 1500
   },
+  "project-kitchen-white-shaker-range-wall": {
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "width": 2000,
+    "height": 1500
+  },
+  "project-deck-ground-level-brown-wide": {
+    "widths": [
+      640,
+      1024,
+      1600,
+      2000
+    ],
+    "width": 2000,
+    "height": 1500
+  },
+  "project-deck-ground-level-brown-corner": {
+    "widths": [
+      640,
+      1024,
+      1500
+    ],
+    "width": 1500,
+    "height": 2000
+  },
+  "project-deck-ground-level-brown-house": {
+    "widths": [
+      640,
+      1024,
+      1125
+    ],
+    "width": 1125,
+    "height": 1500
+  },
+  "project-deck-pergola-white-railings": {
+    "widths": [
+      640,
+      1024,
+      1125
+    ],
+    "width": 1125,
+    "height": 1500
+  },
   "framing-new-construction": {
     "widths": [
       640,

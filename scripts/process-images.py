@@ -45,6 +45,12 @@ PHOTOS = {
     "project-deck-brown-screened-porch": {"src": "assets-src/uploads/batch-02/8.jpg"},
     "project-kitchen-white-shaker-fridge-wall": {"src": "assets-src/uploads/batch-02/9.jpg"},
     "project-kitchen-white-shaker": {"src": "assets-src/uploads/batch-02/10.jpg", "widths": HERO_WIDTHS},
+    # Batch 3
+    "project-kitchen-white-shaker-range-wall": {"src": "assets-src/uploads/batch-03/11.jpg"},
+    "project-deck-ground-level-brown-wide": {"src": "assets-src/uploads/batch-03/12.jpg", "widths": HERO_WIDTHS},
+    "project-deck-ground-level-brown-corner": {"src": "assets-src/uploads/batch-03/13.jpg"},
+    "project-deck-ground-level-brown-house": {"src": "assets-src/uploads/batch-03/14.jpg"},
+    "project-deck-pergola-white-railings": {"src": "assets-src/uploads/batch-03/15.jpg"},
     "framing-new-construction": {},
 }
 

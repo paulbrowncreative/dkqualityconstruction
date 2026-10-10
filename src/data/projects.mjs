@@ -63,8 +63,25 @@ export const projects = [
     caption: 'White shaker cabinets, granite counters, a tile backsplash, recessed lighting and plank flooring.',
     images: [
       { asset: 'DKQ-02-05', name: 'project-kitchen-white-shaker', alt: 'Remodeled kitchen with white shaker cabinets, gray granite counters, a black double sink, white mosaic tile backsplash, stainless appliances and plank flooring against teal walls' },
+      { asset: 'DKQ-03-01', name: 'project-kitchen-white-shaker-range-wall', alt: 'Another view of the same kitchen: corner of white shaker cabinets with a stainless range and microwave, granite counters, tile backsplash and a built-in surround for the refrigerator' },
       { asset: 'DKQ-02-04', name: 'project-kitchen-white-shaker-fridge-wall', alt: 'Another view of the same kitchen: a stainless side-by-side refrigerator with cabinets above, recessed lights, teal walls and plank flooring' },
     ],
+  },
+  {
+    id: 'P-010', category: 'decks',
+    title: 'Large ground-level deck with picture-frame border',
+    caption: 'Wide, low deck across the back of a brick home, with a contrasting picture-frame border and matching skirting.',
+    images: [
+      { asset: 'DKQ-03-02', name: 'project-deck-ground-level-brown-wide', alt: 'Wide view across a large low brown deck with a darker picture-frame border and matching skirting, running along a red-brick home into the backyard' },
+      { asset: 'DKQ-03-03', name: 'project-deck-ground-level-brown-corner', alt: 'Corner of the same deck showing the mitered border boards and skirting, with the house beside it and a DK Quality Construction trailer parked on the street' },
+      { asset: 'DKQ-03-04', name: 'project-deck-ground-level-brown-house', alt: 'The same deck seen from the yard, spanning the back of a brick and vinyl-sided home past the sliding patio door' },
+    ],
+  },
+  {
+    id: 'P-011', category: 'decks',
+    title: 'Deck with white railings under a pergola',
+    caption: 'Brown deck with white-and-black railings and white posts, shaded in part by a timber pergola.',
+    images: [{ asset: 'DKQ-03-05', name: 'project-deck-pergola-white-railings', alt: 'Brown deck with white railings and black balusters and white posts, partly shaded by a timber pergola, overlooking a backyard' }],
   },
 ];
 

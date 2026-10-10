@@ -29,8 +29,8 @@ ${pageHero({
   eyebrow: 'Our work',
   title: 'Projects',
   lede: 'Decks, kitchens and basements built by DK Quality Construction. Select any photo to see it full size.',
-  image: 'project-deck-aerial-privacy-screen',
-  imageAlt: 'Aerial view of a raised gray deck with white-and-black railings, a privacy screen and wide stairs',
+  image: 'project-deck-waterfront-covered',
+  imageAlt: 'Large gray deck by DK Quality Construction, partly covered, with white railings and black balusters overlooking a lake',
   trail,
 })}
 

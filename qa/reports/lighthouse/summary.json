@@ -2,15 +2,15 @@
   {
     "page": "/",
     "formFactor": "mobile",
-    "performance": 100,
+    "performance": 99,
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "1.9 s",
+    "LCP": "2.0 s",
     "CLS": "0",
     "TBT": "0 ms",
     "FCP": "0.8 s",
-    "weightKB": 206
+    "weightKB": 207
   },
   {
     "page": "/services/decks/",
@@ -19,24 +19,24 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "1.7 s",
+    "LCP": "1.8 s",
     "CLS": "0",
     "TBT": "0 ms",
-    "FCP": "0.8 s",
-    "weightKB": 122
+    "FCP": "0.9 s",
+    "weightKB": 138
   },
   {
     "page": "/projects/",
     "formFactor": "mobile",
-    "performance": 99,
+    "performance": 100,
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "2.1 s",
+    "LCP": "1.9 s",
     "CLS": "0",
     "TBT": "0 ms",
     "FCP": "0.8 s",
-    "weightKB": 321
+    "weightKB": 322
   },
   {
     "page": "/contact/",
@@ -45,10 +45,10 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "1.4 s",
+    "LCP": "1.5 s",
     "CLS": "0",
     "TBT": "0 ms",
-    "FCP": "0.9 s",
+    "FCP": "0.8 s",
     "weightKB": 66
   },
   {
@@ -62,7 +62,7 @@
     "CLS": "0",
     "TBT": "0 ms",
     "FCP": "0.8 s",
-    "weightKB": 283
+    "weightKB": 299
   },
   {
     "page": "/about/",
@@ -71,7 +71,7 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "1.3 s",
+    "LCP": "1.5 s",
     "CLS": "0",
     "TBT": "0 ms",
     "FCP": "0.8 s",
@@ -88,7 +88,7 @@
     "CLS": "0",
     "TBT": "0 ms",
     "FCP": "0.2 s",
-    "weightKB": 376
+    "weightKB": 362
   },
   {
     "page": "/services/decks/",
@@ -101,7 +101,7 @@
     "CLS": "0",
     "TBT": "0 ms",
     "FCP": "0.2 s",
-    "weightKB": 284
+    "weightKB": 317
   },
   {
     "page": "/projects/",
@@ -114,7 +114,7 @@
     "CLS": "0",
     "TBT": "0 ms",
     "FCP": "0.2 s",
-    "weightKB": 544
+    "weightKB": 598
   },
   {
     "page": "/contact/",
@@ -139,8 +139,8 @@
     "LCP": "0.4 s",
     "CLS": "0",
     "TBT": "0 ms",
-    "FCP": "0.2 s",
-    "weightKB": 173
+    "FCP": "0.3 s",
+    "weightKB": 178
   },
   {
     "page": "/about/",
@@ -149,7 +149,7 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "0.4 s",
+    "LCP": "0.3 s",
     "CLS": "0",
     "TBT": "0 ms",
     "FCP": "0.2 s",

@@ -119,7 +119,7 @@ export default {
       </div>
       <a class="link-arrow" href="/projects/">See all projects ${icon('arrow')}</a>
     </div>
-    <div class="project-grid">${['P-006', 'P-009', 'P-007'].map((id) => projectCard(projects.find((p) => p.id === id))).join('')}</div>
+    <div class="project-grid">${['P-010', 'P-009', 'P-006'].map((id) => projectCard(projects.find((p) => p.id === id))).join('')}</div>
   </div>
 </section>
 ${lightboxDialog()}
