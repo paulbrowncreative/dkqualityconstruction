@@ -30,7 +30,7 @@ ${pageHero({
       <p>Our stated commitment is simple: give every customer top-notch quality. That shows up in the parts of a project you don’t see in photos — footings set deep enough, ledgers flashed properly, waterproofing done right behind the tile.</p>
     </div>
     <figure class="split__aside about-logo">
-      <img src="/assets/img/brand/dk-logo-full.webp" width="672" height="366" alt="${business.name} logo, established 2021" loading="lazy" decoding="async">
+      <img src="/assets/img/brand/dk-logo-480.webp" width="480" height="261" alt="${business.name} logo, established 2021" loading="lazy" decoding="async">
     </figure>
   </div>
 </section>

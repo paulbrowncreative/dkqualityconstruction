@@ -6,8 +6,8 @@
 @font-face {
   font-family: 'Archivo';
   src: url('/assets/fonts/archivo-var.woff2') format('woff2');
-  font-weight: 100 900;
-  font-stretch: 62% 125%;
+  font-weight: 300 800;
+  font-stretch: 100% 125%;
   font-style: normal;
   font-display: swap;
 }
@@ -280,7 +280,7 @@ main:focus { outline: none; }
   gap: var(--space-2);
   transition: transform 220ms var(--ease);
 }
-.mobile-cta a { display: inline-flex; align-items: center; justify-content: center; gap: 0.45em; min-height: 3rem; padding-inline: 1.1rem; border-radius: var(--radius); font-weight: 700; text-decoration: none; }
+.mobile-cta a { display: inline-flex; align-items: center; justify-content: center; gap: 0.45em; min-height: 3rem; padding-inline: 1.1rem; border-radius: var(--radius); font-weight: 700; text-decoration: none; white-space: nowrap; }
 .mobile-cta__call { color: var(--white); border: 1.5px solid var(--line-dark); }
 .mobile-cta__estimate { background: var(--brass); color: var(--ink); }
 .mobile-cta.is-hidden { transform: translateY(110%); }
@@ -305,11 +305,11 @@ body { padding-bottom: calc(4rem + env(safe-area-inset-bottom)); }
 /* ---------- Hero (home) ---------- */
 .hero { position: relative; isolation: isolate; color: var(--white); background: var(--ink); min-height: min(88svh, 52rem); display: grid; align-items: end; }
 .hero__media, .hero__media picture { position: absolute; inset: 0; z-index: -2; }
-.hero__media img { width: 100%; height: 100%; object-fit: cover; object-position: 62% 60%; }
+.hero__media img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
 .hero::before {
   content: ''; position: absolute; inset: 0; z-index: -1;
   background:
-    linear-gradient(180deg, rgb(18 18 20 / 0.35) 0%, rgb(18 18 20 / 0.1) 30%, rgb(18 18 20 / 0.82) 72%, rgb(18 18 20 / 0.94) 100%);
+    linear-gradient(180deg, rgb(18 18 20 / 0.5) 0%, rgb(18 18 20 / 0.62) 28%, rgb(18 18 20 / 0.86) 58%, rgb(18 18 20 / 0.95) 100%);
 }
 .hero__inner { padding-block: clamp(4.5rem, 14vh, 12rem) clamp(2.5rem, 6vw, 5rem); max-width: calc(var(--container) + var(--gutter) * 2); }
 .hero__title { font-size: var(--fs-h1); max-width: 15ch; margin-bottom: var(--space-5); font-weight: 800; line-height: 1.04; }
@@ -638,4 +638,5 @@ body { padding-bottom: calc(4rem + env(safe-area-inset-bottom)); }
   .brand__name { font-size: 0.86rem; }
   .brand__sub { font-size: 0.55rem; letter-spacing: 0.22em; }
   .icon-btn { width: 2.75rem; height: 2.75rem; }
+  .mobile-cta a { padding-inline: 0.8rem; font-size: 0.95rem; }
 }

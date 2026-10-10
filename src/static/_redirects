@@ -1,0 +1,7 @@
+# Common alternate URLs → canonical pages. Unknown paths get /404.html with a 404 status.
+/contact-us      /contact/          301
+/estimate        /contact/          301
+/decks           /services/decks/   301
+/fencing         /services/fencing/ 301
+/privacy         /privacy-policy/   301
+/service-areas   /service-area/     301

@@ -240,6 +240,29 @@ for (const [label, vp] of [['mobile', { width: 375, height: 812 }], ['desktop', 
   await ctx.close();
 }
 
+/* 8b. Production CSP (from netlify.toml) enforced in-browser: no violations on any page */
+{
+  const headersFile = (await import('node:fs')).readFileSync('../dist/_headers', 'utf8');
+  const csp = headersFile.match(/Content-Security-Policy: (.+)/)[1].replace('upgrade-insecure-requests', '');
+  const ctx = await browser.newContext();
+  await ctx.route('**/*', async (route) => {
+    const req = route.request();
+    if (req.resourceType() !== 'document' || !req.url().startsWith(BASE)) return route.continue();
+    const resp = await route.fetch();
+    route.fulfill({ response: resp, headers: { ...resp.headers(), 'content-security-policy': csp } });
+  });
+  const page = await ctx.newPage();
+  const violations = [];
+  page.on('console', (m) => /Content Security Policy|Refused to/i.test(m.text()) && violations.push(m.text()));
+  for (const p of PAGES) {
+    await page.goto(BASE + p, { waitUntil: 'load' });
+    const v = await page.evaluate(() => new Promise((r) => { const out = []; document.addEventListener('securitypolicyviolation', (e) => out.push(e.violatedDirective + ' ' + e.blockedURI)); setTimeout(() => r(out), 150); }));
+    violations.push(...v.map((x) => `${p}: ${x}`));
+  }
+  record('Production Content-Security-Policy causes no violations', !violations.length, [...new Set(violations)].join(' | '));
+  await ctx.close();
+}
+
 await browser.close();
 
 /* 9. Cross-engine smoke test (WebKit ≈ Safari, Firefox) where engines are installed */

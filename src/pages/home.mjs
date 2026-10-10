@@ -37,7 +37,7 @@ export default {
   title: 'Deck Builder & Remodeler in Monroe, MI | DK Quality Construction',
   description:
     'Owner-led deck builder and remodeler in Monroe, MI. Treated and composite decks, fences, basements, kitchens and baths in Monroe County and Lucas County, OH.',
-  preload: preloadImage('deck-multilevel-cedar', heroSizes),
+  preload: preloadImage('deck-multilevel-cedar', heroSizes, 'deck-multilevel-cedar-portrait'),
   bodyClass: 'page-home',
   body: `
 <section class="hero" aria-labelledby="hero-title">
@@ -46,6 +46,7 @@ export default {
       alt: 'Two-level cedar-toned deck with stairs, railings and built-in planters behind a green two-story home',
       sizes: heroSizes,
       eager: true,
+      mobile: 'deck-multilevel-cedar-portrait',
     })}
   </div>
   <div class="container hero__inner">

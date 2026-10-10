@@ -9,6 +9,15 @@
     "width": 2400,
     "height": 1599
   },
+  "deck-multilevel-cedar-portrait": {
+    "widths": [
+      480,
+      720,
+      960
+    ],
+    "width": 1279,
+    "height": 1599
+  },
   "deck-aerial-cedar": {
     "widths": [
       640,
@@ -98,15 +107,6 @@
     ],
     "width": 2400,
     "height": 3600
-  },
-  "carpentry-circular-saw": {
-    "widths": [
-      640,
-      1024,
-      1600
-    ],
-    "width": 2400,
-    "height": 1349
   },
   "carpentry-measuring-board": {
     "widths": [

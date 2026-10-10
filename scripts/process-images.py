@@ -28,6 +28,8 @@ HERO_WIDTHS = [640, 1024, 1600, 2000]
 # Per-image processing. "crop" is (left, top, right, bottom) on the original.
 PHOTOS = {
     "deck-multilevel-cedar": {"widths": HERO_WIDTHS},
+    # Art-directed 4:5 crop of the hero for phones (smaller download, better framing).
+    "deck-multilevel-cedar-portrait": {"source": "deck-multilevel-cedar", "crop": (980, 0, 2259, 1599), "widths": [480, 720, 960]},
     "deck-aerial-cedar": {},
     "deck-treated-wooded-lot": {},
     "deck-composite-black-rail": {},
@@ -39,7 +41,6 @@ PHOTOS = {
     "bathroom-walk-in-shower": {},
     "kitchen-white-cabinets": {},
     "flooring-plank-install": {},
-    "carpentry-circular-saw": {},
     "carpentry-measuring-board": {},
     "framing-new-construction": {},
 }
@@ -65,7 +66,7 @@ def process_photos() -> dict:
     OUT_PHOTOS.mkdir(parents=True, exist_ok=True)
     manifest = {}
     for name, opts in PHOTOS.items():
-        im = Image.open(SRC_PHOTOS / f"{name}.jpg")
+        im = Image.open(SRC_PHOTOS / f"{opts.get('source', name)}.jpg")
         im = ImageOps.exif_transpose(im).convert("RGB")
         if "crop" in opts:
             im = im.crop(opts["crop"])
@@ -102,13 +103,18 @@ def process_brand():
 
     full = logo.crop(logo.getbbox())
     full.save(OUT_BRAND / "dk-logo-full.png", optimize=True)
-    full.save(OUT_BRAND / "dk-logo-full.webp", quality=90, method=6)
+    # Footer / about size (displayed ≤ 416 CSS px wide).
+    full_md = full.resize((480, round(full.height * 480 / full.width)), Image.LANCZOS)
+    full_md.save(OUT_BRAND / "dk-logo-480.webp", quality=80, method=6)
+    print("logo-480", full_md.size)
 
     # Emblem: rooflines + crossed hammers (rows 177-343 of the original artwork).
     top = logo.crop((0, 170, 720, 346))
     emblem = top.crop(top.getbbox())
-    emblem.save(OUT_BRAND / "dk-emblem.png", optimize=True)
-    emblem.save(OUT_BRAND / "dk-emblem.webp", quality=90, method=6)
+    # Header size: displayed ≤ 74 CSS px wide, so 2x = 160 px.
+    em_small = emblem.resize((160, round(emblem.height * 160 / emblem.width)), Image.LANCZOS)
+    em_small.save(OUT_BRAND / "dk-emblem-160.webp", quality=88, method=6)
+    print("emblem-160", em_small.size)
 
     # Favicons: emblem centred on the brand's near-black, rounded square.
     def icon(size: int, pad: float = 0.14) -> Image.Image:

@@ -1,4 +1,7 @@
 # Netlify configuration — DK Quality Construction
+# Response headers (security + caching) live in src/static/_headers and redirects in
+# src/static/_redirects; both are copied into dist/ so they also apply to manual deploys.
+
 [build]
   command = "node build.mjs"
   publish = "dist"
@@ -6,66 +9,5 @@
 [build.environment]
   NODE_VERSION = "22"
 
-# Non-production deploys are built with noindex + Disallow robots.txt automatically
-# (see site.config.mjs). Production must have SITE_URL set to the final domain.
-
-# ---------- Security headers (all responses) ----------
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
-    X-Content-Type-Options = "nosniff"
-    X-Frame-Options = "DENY"
-    Referrer-Policy = "strict-origin-when-cross-origin"
-    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()"
-    Cross-Origin-Opener-Policy = "same-origin"
-    Content-Security-Policy = "default-src 'self'; script-src 'self' https://www.googletagmanager.com; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; img-src 'self' data: https://*.google-analytics.com https://www.googletagmanager.com; style-src 'self'; font-src 'self'; form-action 'self'; frame-ancestors 'none'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests"
-
-# ---------- Caching ----------
-# Fingerprinted CSS/JS (file name changes whenever content changes).
-[[headers]]
-  for = "/assets/css/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-[[headers]]
-  for = "/assets/js/main.*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-[[headers]]
-  for = "/assets/fonts/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-# Images keep stable names; cache for 30 days.
-[[headers]]
-  for = "/assets/img/*"
-  [headers.values]
-    Cache-Control = "public, max-age=2592000"
-
-# ---------- Redirects ----------
-# Common alternate URLs → canonical pages (301).
-[[redirects]]
-  from = "/contact-us"
-  to = "/contact/"
-  status = 301
-[[redirects]]
-  from = "/estimate"
-  to = "/contact/"
-  status = 301
-[[redirects]]
-  from = "/decks"
-  to = "/services/decks/"
-  status = 301
-[[redirects]]
-  from = "/fencing"
-  to = "/services/fencing/"
-  status = 301
-[[redirects]]
-  from = "/privacy"
-  to = "/privacy-policy/"
-  status = 301
-[[redirects]]
-  from = "/service-areas"
-  to = "/service-area/"
-  status = 301
-# Unknown paths fall through to Netlify's built-in 404 handling, which serves /404.html
-# with a real 404 status.
+# Non-production deploys (deploy previews, branch deploys) are built with noindex and a
+# Disallow robots.txt automatically — see site.config.mjs. Production needs SITE_URL set.

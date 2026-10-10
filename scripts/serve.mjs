@@ -4,6 +4,7 @@
 import { createServer } from 'node:http';
 import { existsSync, readFileSync, statSync } from 'node:fs';
 import { extname, join, normalize } from 'node:path';
+import { gzipSync } from 'node:zlib';
 import { fileURLToPath } from 'node:url';
 
 const DIST = fileURLToPath(new URL('../dist/', import.meta.url));
@@ -33,6 +34,14 @@ createServer((req, res) => {
     res.writeHead(404, { 'content-type': types['.html'] });
     return res.end(readFileSync(join(DIST, '404.html')));
   }
-  res.writeHead(200, { 'content-type': types[extname(p)] || 'application/octet-stream' });
-  res.end(readFileSync(p));
+  const type = types[extname(p)] || 'application/octet-stream';
+  let body = readFileSync(p);
+  const headers = { 'content-type': type };
+  // Compress text like Netlify's CDN does, so local lab tests are representative.
+  if (/text|javascript|json|xml|svg|manifest/.test(type) && /gzip/.test(req.headers['accept-encoding'] || '')) {
+    body = gzipSync(body);
+    headers['content-encoding'] = 'gzip';
+  }
+  res.writeHead(200, headers);
+  res.end(body);
 }).listen(port, () => console.log(`Serving dist/ at http://localhost:${port}`));

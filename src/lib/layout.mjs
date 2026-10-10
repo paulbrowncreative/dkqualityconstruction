@@ -86,7 +86,7 @@ function header(path) {
 <header class="site-header" data-header>
   <div class="container site-header__inner">
     <a class="brand" href="/" aria-label="${esc(business.name)} — home">
-      <img class="brand__emblem" src="/assets/img/brand/dk-emblem.png" width="426" height="166" alt="">
+      <img class="brand__emblem" src="/assets/img/brand/dk-emblem-160.webp" width="160" height="62" alt="">
       <span class="brand__text"><span class="brand__name">DK Quality</span><span class="brand__sub">Construction</span></span>
     </a>
     <nav class="primary-nav" aria-label="Main" data-nav>
@@ -148,7 +148,7 @@ function footer() {
   return `<footer class="site-footer">
   <div class="container site-footer__grid">
     <div class="site-footer__brand">
-      <img src="/assets/img/brand/dk-logo-full.webp" width="672" height="366" alt="${esc(business.name)} logo — established 2021" loading="lazy" decoding="async" class="site-footer__logo">
+      <img src="/assets/img/brand/dk-logo-480.webp" width="480" height="261" alt="${esc(business.name)} logo — established 2021" loading="lazy" decoding="async" class="site-footer__logo">
       <p>Decks, fencing and interior remodeling for homeowners in ${esc(business.serviceArea.summary)}.</p>
       <a class="site-footer__bbb" href="${business.bbb}" rel="noopener" target="_blank">${icon('shield')}<span>BBB Accredited Business<span class="visually-hidden"> (opens in a new tab)</span></span></a>
     </div>

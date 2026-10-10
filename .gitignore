@@ -1,8 +1,12 @@
 node_modules/
 dist/
 qa/node_modules/
-qa/reports/
+qa/reports/screens/
+qa/reports/*.png
+qa/reports/lighthouse/*.html
+qa/vendor/
 .env
 .netlify/
 *.log
 .DS_Store
+__pycache__/

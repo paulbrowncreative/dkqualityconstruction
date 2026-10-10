@@ -39,25 +39,41 @@ export const icon = (name, { label = '', cls = '' } = {}) =>
  * <picture> with AVIF + JPEG sources. `sizes` must describe the rendered width.
  * Above-the-fold images pass eager: true (no lazy-load, high fetch priority).
  */
-export function picture(name, { alt, sizes = '100vw', eager = false, cls = '', imgCls = '' } = {}) {
+export function picture(name, { alt, sizes = '100vw', eager = false, cls = '', imgCls = '', mobile } = {}) {
   const meta = imageManifest[name];
   if (!meta) throw new Error(`Unknown image "${name}" — run scripts/process-images.py`);
   if (alt === undefined) throw new Error(`Image "${name}" needs an alt attribute (use "" if decorative)`);
   const base = `/assets/img/photos/${name}`;
   const set = (ext) => meta.widths.map((w) => `${base}-${w}.${ext} ${w}w`).join(', ');
   const fallbackW = meta.widths.includes(1024) ? 1024 : meta.widths[meta.widths.length - 1];
+  // Optional art direction: a separate crop for viewports under 48em.
+  const mobileSources = mobile
+    ? (() => {
+        const m = imageManifest[mobile];
+        const mb = `/assets/img/photos/${mobile}`;
+        const ms = (ext) => m.widths.map((w) => `${mb}-${w}.${ext} ${w}w`).join(', ');
+        return `<source media="(max-width: 47.99em)" type="image/avif" srcset="${ms('avif')}" sizes="100vw">
+  <source media="(max-width: 47.99em)" type="image/jpeg" srcset="${ms('jpg')}" sizes="100vw">
+  `;
+      })()
+    : '';
   return `<picture class="${cls}">
-  <source type="image/avif" srcset="${set('avif')}" sizes="${sizes}">
+  ${mobileSources}<source type="image/avif" srcset="${set('avif')}" sizes="${sizes}">
   <img src="${base}-${fallbackW}.jpg" srcset="${set('jpg')}" sizes="${sizes}" width="${meta.width}" height="${meta.height}" alt="${esc(alt)}" class="${imgCls}" ${
     eager ? 'fetchpriority="high" decoding="async"' : 'loading="lazy" decoding="async"'
   }>
 </picture>`;
 }
 
-export function preloadImage(name, sizes) {
-  const meta = imageManifest[name];
-  const srcset = meta.widths.map((w) => `/assets/img/photos/${name}-${w}.avif ${w}w`).join(', ');
-  return `<link rel="preload" as="image" type="image/avif" href="/assets/img/photos/${name}-1024.avif" imagesrcset="${srcset}" imagesizes="${sizes}" fetchpriority="high">`;
+export function preloadImage(name, sizes, mobile) {
+  const link = (n, media, sz) => {
+    const meta = imageManifest[n];
+    const srcset = meta.widths.map((w) => `/assets/img/photos/${n}-${w}.avif ${w}w`).join(', ');
+    const href = `/assets/img/photos/${n}-${meta.widths[Math.min(1, meta.widths.length - 1)]}.avif`;
+    return `<link rel="preload" as="image" type="image/avif" href="${href}" imagesrcset="${srcset}" imagesizes="${sz}"${media ? ` media="${media}"` : ''} fetchpriority="high">`;
+  };
+  if (!mobile) return link(name, '', sizes);
+  return `${link(mobile, '(max-width: 47.99em)', '100vw')}\n${link(name, '(min-width: 48em)', sizes)}`;
 }
 
 /* ---------- Calls to action ---------- */

@@ -1,0 +1,14 @@
+import { chromium } from 'playwright';
+const b = await chromium.launch();
+let p = await b.newPage({ viewport: { width: 375, height: 812 } });
+await p.goto('http://localhost:8080/'); await p.waitForTimeout(800); await p.click('[data-menu-toggle]'); await p.waitForTimeout(200);
+await p.screenshot({ path: 'reports/state-mobile-menu.png' });
+p = await b.newPage({ viewport: { width: 320, height: 640 } });
+await p.goto('http://localhost:8080/'); await p.waitForTimeout(1200); await p.screenshot({ path: 'reports/state-320-home.png' });
+p = await b.newPage({ viewport: { width: 1280, height: 720 } });
+await p.goto('http://localhost:8080/services/fencing/'); await p.waitForTimeout(800); await p.click('.primary-nav__toggle'); await p.waitForTimeout(200);
+await p.screenshot({ path: 'reports/state-dropdown.png' });
+p = await b.newPage({ viewport: { width: 1280, height: 900 } });
+await p.goto('http://localhost:8080/contact/'); await p.click('form button[type=submit]'); await p.waitForTimeout(300);
+await p.screenshot({ path: 'reports/state-form-errors.png' });
+await b.close();
