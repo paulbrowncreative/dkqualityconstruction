@@ -183,9 +183,10 @@ for (const [label, vp] of [['mobile', { width: 375, height: 812 }], ['desktop', 
   await cards.nth(1).click();
   const open = await page.locator('[data-lightbox-dialog]').evaluate((d) => d.open);
   await page.waitForFunction(() => { const i = document.querySelector('[data-lb-img]'); return i.complete && i.naturalWidth > 0; });
-  const t1 = await page.locator('#lightbox-title').innerText();
+  // Compare the displayed photo (multi-photo projects share one title).
+  const t1 = await page.locator('[data-lb-img]').getAttribute('src');
   await page.keyboard.press('ArrowRight');
-  const t2 = await page.locator('#lightbox-title').innerText();
+  const t2 = await page.locator('[data-lb-img]').getAttribute('src');
   const alt = await page.locator('[data-lb-img]').getAttribute('alt');
   await page.keyboard.press('Escape');
   const closed = !(await page.locator('[data-lightbox-dialog]').evaluate((d) => d.open));

@@ -1,13 +1,4 @@
 {
-  "deck-treated-wooded-lot": {
-    "widths": [
-      640,
-      1024,
-      1600
-    ],
-    "width": 2400,
-    "height": 1600
-  },
   "fence-backyard-gray": {
     "widths": [
       640,
@@ -181,6 +172,61 @@
       1125
     ],
     "width": 1125,
+    "height": 1500
+  },
+  "project-stairs-landing-brick-wide": {
+    "widths": [
+      640,
+      1024,
+      1500
+    ],
+    "width": 1500,
+    "height": 2000
+  },
+  "project-deck-pressure-treated-black-rail": {
+    "widths": [
+      640,
+      1024,
+      1500
+    ],
+    "width": 1500,
+    "height": 1125
+  },
+  "project-stairs-landing-brick-close": {
+    "widths": [
+      640,
+      1024,
+      1500
+    ],
+    "width": 1500,
+    "height": 2000
+  },
+  "project-deck-pond-platform": {
+    "widths": [
+      640,
+      1024,
+      1500
+    ],
+    "width": 1500,
+    "height": 2000
+  },
+  "project-deck-aerial-screened-room": {
+    "widths": [
+      640,
+      1024,
+      1600,
+      2000
+    ],
+    "width": 2000,
+    "height": 1500
+  },
+  "project-deck-aerial-screened-room-portrait": {
+    "widths": [
+      480,
+      720,
+      960
+    ],
+    "width": 1200,
     "height": 1500
   },
   "framing-new-construction": {

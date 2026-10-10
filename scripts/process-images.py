@@ -27,7 +27,6 @@ HERO_WIDTHS = [640, 1024, 1600, 2000]
 
 # Per-image processing. "crop" is (left, top, right, bottom) on the original.
 PHOTOS = {
-    "deck-treated-wooded-lot": {},
     "fence-backyard-gray": {},
     "bathroom-walk-in-shower": {},
     "flooring-plank-install": {},
@@ -51,6 +50,13 @@ PHOTOS = {
     "project-deck-ground-level-brown-corner": {"src": "assets-src/uploads/batch-03/13.jpg"},
     "project-deck-ground-level-brown-house": {"src": "assets-src/uploads/batch-03/14.jpg"},
     "project-deck-pergola-white-railings": {"src": "assets-src/uploads/batch-03/15.jpg"},
+    # Batch 4
+    "project-stairs-landing-brick-wide": {"src": "assets-src/uploads/batch-04/16.jpg"},
+    "project-deck-pressure-treated-black-rail": {"src": "assets-src/uploads/batch-04/17.jpg"},
+    "project-stairs-landing-brick-close": {"src": "assets-src/uploads/batch-04/18.jpg"},
+    "project-deck-pond-platform": {"src": "assets-src/uploads/batch-04/19.jpg"},
+    "project-deck-aerial-screened-room": {"src": "assets-src/uploads/batch-04/20.jpg", "widths": HERO_WIDTHS},
+    "project-deck-aerial-screened-room-portrait": {"src": "assets-src/uploads/batch-04/20.jpg", "crop": (420, 0, 1620, 1500), "widths": [480, 720, 960]},
     "framing-new-construction": {},
 }
 
@@ -148,8 +154,8 @@ def process_brand():
     icon(48, 0.03).save(ROOT / "src" / "static" / "favicon.ico", sizes=[(16, 16), (32, 32), (48, 48)])
 
     # Open Graph image: hero photo, darkened, with the full logo.
-    hero = Image.open(ROOT / "assets-src/uploads/batch-01/3.jpg").convert("RGB")  # DKQ-01-03, aerial deck
-    hero = ImageOps.fit(hero, (1200, 630), Image.LANCZOS, centering=(0.6, 0.6))
+    hero = Image.open(ROOT / "assets-src/uploads/batch-04/20.jpg").convert("RGB")  # DKQ-04-05, aerial deck (homepage hero)
+    hero = ImageOps.fit(hero, (1200, 630), Image.LANCZOS, centering=(0.62, 0.45))
     shade = Image.new("RGBA", (1200, 630), (10, 10, 12, 0))
     # Darkest on the left where the logo sits, easing off to the right.
     grad = Image.linear_gradient("L").rotate(90).resize((1200, 630))

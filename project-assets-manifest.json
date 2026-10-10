@@ -60,6 +60,18 @@
         "DKQ-03-05"
       ],
       "summary": "3rd angle of the P-009 kitchen; 3 angles of one large ground-level deck (P-010, DK trailer visible); 1 deck under a pergola (P-011). No before/after pairs, no reviews."
+    },
+    {
+      "batch": 4,
+      "received": "2026-10-10",
+      "assetIds": [
+        "DKQ-04-01",
+        "DKQ-04-02",
+        "DKQ-04-03",
+        "DKQ-04-04",
+        "DKQ-04-05"
+      ],
+      "summary": "2nd aerial deck (raised deck over screened room → new homepage hero), 1 pressure-treated deck (replaces last stock deck photo), stairs+landing project from 2 angles, 1 pond platform deck. No before/after pairs, no reviews."
     }
   ],
   "projects": [
@@ -153,6 +165,39 @@
       "category": "decks",
       "assets": [
         "DKQ-03-05"
+      ]
+    },
+    {
+      "projectId": "P-012",
+      "title": "Raised deck with an elevated dining level over a screened room",
+      "category": "decks",
+      "assets": [
+        "DKQ-04-05"
+      ]
+    },
+    {
+      "projectId": "P-013",
+      "title": "Stairs and landing on a brick home",
+      "category": "decks",
+      "assets": [
+        "DKQ-04-01",
+        "DKQ-04-03"
+      ]
+    },
+    {
+      "projectId": "P-014",
+      "title": "Pressure-treated deck with black metal railings",
+      "category": "decks",
+      "assets": [
+        "DKQ-04-02"
+      ]
+    },
+    {
+      "projectId": "P-015",
+      "title": "Platform deck at the edge of a pond",
+      "category": "decks",
+      "assets": [
+        "DKQ-04-04"
       ]
     }
   ],
@@ -284,7 +329,7 @@
       "altText": "Wide view across a large gray deck, partly under a roof overhang supported by white posts, with white railings and black balusters facing a lake",
       "caption": "Large deck that runs from a covered area out to the water, with white-and-black railings around the edge.",
       "websiteLocations": [
-        "/projects/ (page hero + card)",
+        "/projects/",
         "/ (deck specialty section)"
       ],
       "status": "integrated",
@@ -320,7 +365,7 @@
       "format": "jpeg",
       "duplicateOf": null,
       "type": "project-photo",
-      "classification": "general-portfolio (completed) — aerial; HOMEPAGE HERO per client rule",
+      "classification": "general-portfolio (completed) — aerial; DECKS PAGE HERO (homepage hero moved to DKQ-04-05)",
       "projectId": "P-001",
       "pairId": null,
       "reviewId": null,
@@ -362,10 +407,9 @@
       "altText": "Aerial view of a raised gray deck with a dark border, white posts and black balusters, a decorative black privacy screen along one side, and a wide staircase down to the yard",
       "caption": "Gray deck with a contrasting border, white-and-black railings, a decorative privacy screen and a wide staircase.",
       "websiteLocations": [
-        "/ (homepage hero, desktop + art-directed phone crop)",
-        "/projects/ (page hero + card)",
-        "/services/decks/ (Recent projects)",
-        "Open Graph / social share image"
+        "/services/decks/ (page hero)",
+        "/services/ (Decks row)",
+        "/projects/ (featured)"
       ],
       "status": "integrated",
       "questions": [
@@ -393,7 +437,7 @@
             1720,
             1500
           ],
-          "use": "homepage hero on phones (<48em)"
+          "use": "kept for possible future phone hero; not currently referenced"
         }
       ]
     },
@@ -964,7 +1008,7 @@
       "format": "jpeg",
       "duplicateOf": null,
       "type": "project-photo",
-      "classification": "general-portfolio (completed) — wide angle; cover of P-010; DECKS PAGE HERO (most compelling wide-angle deck so far)",
+      "classification": "general-portfolio (completed) — wide angle; PROJECTS PAGE HERO; cover of P-010",
       "projectId": "P-010",
       "pairId": null,
       "reviewId": null,
@@ -1006,10 +1050,9 @@
       "altText": "Wide view across a large low brown deck with a darker picture-frame border and matching skirting, running along a red-brick home into the backyard",
       "caption": "Wide, low deck across the back of a brick home, with a contrasting picture-frame border and matching skirting.",
       "websiteLocations": [
-        "/services/decks/ (page hero + Recent projects)",
-        "/projects/",
+        "/projects/ (page hero + featured card)",
         "/ (Recent work)",
-        "/services/ (Decks row)"
+        "/services/decks/ (Recent projects)"
       ],
       "status": "integrated",
       "questions": [
@@ -1230,6 +1273,366 @@
         ],
         "aspect": "1125x1500"
       }
+    },
+    {
+      "id": "DKQ-04-01",
+      "batch": 4,
+      "originalFilename": "16.jpg",
+      "original": "assets-src/uploads/batch-04/16.jpg",
+      "sha256": "46629c0ea89202da53450cd608345a3e4950873884c9a8869c99c0c0476d35de",
+      "bytes": 397028,
+      "originalDimensions": [
+        1500,
+        2000
+      ],
+      "format": "jpeg",
+      "duplicateOf": null,
+      "type": "project-photo",
+      "classification": "general-portfolio (completed) — cover of P-013 (same project as DKQ-04-03)",
+      "projectId": "P-013",
+      "pairId": null,
+      "reviewId": null,
+      "storedFilename": "project-stairs-landing-brick-wide",
+      "optimized": [
+        {
+          "file": "src/assets/img/photos/project-stairs-landing-brick-wide-1024.avif",
+          "bytes": 100113
+        },
+        {
+          "file": "src/assets/img/photos/project-stairs-landing-brick-wide-1024.jpg",
+          "bytes": 258294
+        },
+        {
+          "file": "src/assets/img/photos/project-stairs-landing-brick-wide-1500.avif",
+          "bytes": 192986
+        },
+        {
+          "file": "src/assets/img/photos/project-stairs-landing-brick-wide-1500.jpg",
+          "bytes": 434952
+        },
+        {
+          "file": "src/assets/img/photos/project-stairs-landing-brick-wide-640.avif",
+          "bytes": 44032
+        },
+        {
+          "file": "src/assets/img/photos/project-stairs-landing-brick-wide-640.jpg",
+          "bytes": 110957
+        }
+      ],
+      "altText": "Wide view of two-tone deck stairs with black metal railings climbing to a raised landing along a tan brick home above a concrete patio",
+      "caption": "Two-tone stairs with black metal railings rising to a raised landing along a brick wall.",
+      "websiteLocations": [
+        "/projects/"
+      ],
+      "status": "integrated",
+      "questions": [
+        "Did DK build the upper deck/landing as well as the stairs?",
+        "Decking/railing products (appear composite + aluminum)"
+      ],
+      "approval": "pending owner confirmation of project details",
+      "category": "Decks",
+      "processing": "Resized (Lanczos) + light unsharp mask; AVIF q52 + progressive JPEG q78. No retouching, no AI upscaling, no content changes.",
+      "optimizedDimensions": {
+        "widths": [
+          640,
+          1024,
+          1500
+        ],
+        "aspect": "1500x2000"
+      }
+    },
+    {
+      "id": "DKQ-04-02",
+      "batch": 4,
+      "originalFilename": "17.jpg",
+      "original": "assets-src/uploads/batch-04/17.jpg",
+      "sha256": "390a586611ab0605b10921311368a31343737a6cf326cc6b9967b4c2ffd9a1b5",
+      "bytes": 446946,
+      "originalDimensions": [
+        1500,
+        1125
+      ],
+      "format": "jpeg",
+      "duplicateOf": null,
+      "type": "project-photo",
+      "classification": "general-portfolio (completed) — pressure-treated deck; used on Decks page \"Pressure-treated lumber\" materials card",
+      "projectId": "P-014",
+      "pairId": null,
+      "reviewId": null,
+      "storedFilename": "project-deck-pressure-treated-black-rail",
+      "optimized": [
+        {
+          "file": "src/assets/img/photos/project-deck-pressure-treated-black-rail-1024.avif",
+          "bytes": 92657
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-pressure-treated-black-rail-1024.jpg",
+          "bytes": 221652
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-pressure-treated-black-rail-1500.avif",
+          "bytes": 193110
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-pressure-treated-black-rail-1500.jpg",
+          "bytes": 428724
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-pressure-treated-black-rail-640.avif",
+          "bytes": 41013
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-pressure-treated-black-rail-640.jpg",
+          "bytes": 92258
+        }
+      ],
+      "altText": "Newly built pressure-treated wood deck with divider boards running across it and black metal railings, beside a white-sided home and backyard",
+      "caption": "Large pressure-treated wood deck with a divider board pattern and black metal railings.",
+      "websiteLocations": [
+        "/services/decks/ (pressure-treated card + Recent projects)",
+        "/projects/"
+      ],
+      "status": "integrated",
+      "questions": [
+        "Confirm pressure-treated lumber (visually: fresh treated pine)",
+        "City (optional)"
+      ],
+      "approval": "pending owner confirmation of project details",
+      "category": "Decks",
+      "processing": "Resized (Lanczos) + light unsharp mask; AVIF q52 + progressive JPEG q78. No retouching, no AI upscaling, no content changes.",
+      "optimizedDimensions": {
+        "widths": [
+          640,
+          1024,
+          1500
+        ],
+        "aspect": "1500x1125"
+      }
+    },
+    {
+      "id": "DKQ-04-03",
+      "batch": 4,
+      "originalFilename": "18.jpg",
+      "original": "assets-src/uploads/batch-04/18.jpg",
+      "sha256": "07e5e3ac207f823c5b8471692fd93becdc4f8a9304cf4e0f2e151f998ae81661",
+      "bytes": 506379,
+      "originalDimensions": [
+        1500,
+        2000
+      ],
+      "format": "jpeg",
+      "duplicateOf": null,
+      "type": "project-photo",
+      "classification": "general-portfolio (completed) — 2nd angle of P-013",
+      "projectId": "P-013",
+      "pairId": null,
+      "reviewId": null,
+      "storedFilename": "project-stairs-landing-brick-close",
+      "optimized": [
+        {
+          "file": "src/assets/img/photos/project-stairs-landing-brick-close-1024.avif",
+          "bytes": 143118
+        },
+        {
+          "file": "src/assets/img/photos/project-stairs-landing-brick-close-1024.jpg",
+          "bytes": 321943
+        },
+        {
+          "file": "src/assets/img/photos/project-stairs-landing-brick-close-1500.avif",
+          "bytes": 283147
+        },
+        {
+          "file": "src/assets/img/photos/project-stairs-landing-brick-close-1500.jpg",
+          "bytes": 552049
+        },
+        {
+          "file": "src/assets/img/photos/project-stairs-landing-brick-close-640.avif",
+          "bytes": 61396
+        },
+        {
+          "file": "src/assets/img/photos/project-stairs-landing-brick-close-640.jpg",
+          "bytes": 136403
+        }
+      ],
+      "altText": "Closer view of the same stairs, showing the two-tone treads, matching risers and black metal railings",
+      "caption": "Two-tone stairs with black metal railings rising to a raised landing along a brick wall.",
+      "websiteLocations": [
+        "/projects/ (P-013 thumbnail + viewer)"
+      ],
+      "status": "integrated",
+      "questions": [
+        "Same as P-013"
+      ],
+      "approval": "pending owner confirmation of project details",
+      "category": "Decks",
+      "processing": "Resized (Lanczos) + light unsharp mask; AVIF q52 + progressive JPEG q78. No retouching, no AI upscaling, no content changes.",
+      "optimizedDimensions": {
+        "widths": [
+          640,
+          1024,
+          1500
+        ],
+        "aspect": "1500x2000"
+      }
+    },
+    {
+      "id": "DKQ-04-04",
+      "batch": 4,
+      "originalFilename": "19.jpg",
+      "original": "assets-src/uploads/batch-04/19.jpg",
+      "sha256": "d2bec1ced30cfc41e0fe655cc7a03f7f4b8c0f1b16027f174faf203b38b16574",
+      "bytes": 405922,
+      "originalDimensions": [
+        1500,
+        2000
+      ],
+      "format": "jpeg",
+      "duplicateOf": null,
+      "type": "project-photo",
+      "classification": "general-portfolio (completed)",
+      "projectId": "P-015",
+      "pairId": null,
+      "reviewId": null,
+      "storedFilename": "project-deck-pond-platform",
+      "optimized": [
+        {
+          "file": "src/assets/img/photos/project-deck-pond-platform-1024.avif",
+          "bytes": 113484
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-pond-platform-1024.jpg",
+          "bytes": 266928
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-pond-platform-1500.avif",
+          "bytes": 204352
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-pond-platform-1500.jpg",
+          "bytes": 445620
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-pond-platform-640.avif",
+          "bytes": 50704
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-pond-platform-640.jpg",
+          "bytes": 115314
+        }
+      ],
+      "altText": "Low gray platform deck with a picture-frame border at the edge of a pond, under a cloudy sky",
+      "caption": "Low gray platform deck with a picture-frame border, set at the edge of a pond.",
+      "websiteLocations": [
+        "/projects/"
+      ],
+      "status": "integrated",
+      "questions": [
+        "Decking product (appears composite)",
+        "City (optional)"
+      ],
+      "approval": "pending owner confirmation of project details",
+      "category": "Decks",
+      "processing": "Resized (Lanczos) + light unsharp mask; AVIF q52 + progressive JPEG q78. No retouching, no AI upscaling, no content changes.",
+      "optimizedDimensions": {
+        "widths": [
+          640,
+          1024,
+          1500
+        ],
+        "aspect": "1500x2000"
+      }
+    },
+    {
+      "id": "DKQ-04-05",
+      "batch": 4,
+      "originalFilename": "20.jpg",
+      "original": "assets-src/uploads/batch-04/20.jpg",
+      "sha256": "330c4ef94b398381a474b08b52b6d6267b2cf6ea069a5d7f0bd1fef3ab773dc1",
+      "bytes": 510578,
+      "originalDimensions": [
+        2000,
+        1500
+      ],
+      "format": "jpeg",
+      "duplicateOf": null,
+      "type": "project-photo",
+      "classification": "general-portfolio (completed) — AERIAL; HOMEPAGE HERO (desktop + phone crop) and social share image, per client aerial-first rule",
+      "projectId": "P-012",
+      "pairId": null,
+      "reviewId": null,
+      "storedFilename": "project-deck-aerial-screened-room",
+      "optimized": [
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-screened-room-1024.avif",
+          "bytes": 90705
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-screened-room-1024.jpg",
+          "bytes": 190052
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-screened-room-1600.avif",
+          "bytes": 192325
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-screened-room-1600.jpg",
+          "bytes": 429536
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-screened-room-2000.avif",
+          "bytes": 284401
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-screened-room-2000.jpg",
+          "bytes": 564669
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-screened-room-640.avif",
+          "bytes": 35973
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-screened-room-640.jpg",
+          "bytes": 74203
+        }
+      ],
+      "altText": "Aerial view of a raised brown deck with black metal railings, a dining table and a long staircase, built above a screened room with its own steps, behind a two-story home",
+      "caption": "Raised deck with black metal railings and a long staircase, above a screened room with its own steps.",
+      "websiteLocations": [
+        "/ (homepage hero)",
+        "/services/decks/ (Recent projects)",
+        "/projects/ (featured)",
+        "Open Graph / social share image"
+      ],
+      "status": "integrated",
+      "questions": [
+        "Did DK build the screened room under the deck as well as the deck and stairs?",
+        "Decking/railing products",
+        "City (optional)"
+      ],
+      "approval": "pending owner confirmation of project details",
+      "category": "Decks",
+      "processing": "Resized (Lanczos) + light unsharp mask; AVIF q52 + progressive JPEG q78. No retouching, no AI upscaling, no content changes.",
+      "derivedCrops": [
+        {
+          "name": "project-deck-aerial-screened-room-portrait",
+          "crop": [
+            420,
+            0,
+            1620,
+            1500
+          ],
+          "use": "homepage hero on phones (<48em)"
+        }
+      ],
+      "optimizedDimensions": {
+        "widths": [
+          640,
+          1024,
+          1600,
+          2000
+        ],
+        "aspect": "2000x1500"
+      }
     }
   ],
   "heroSelectionRule": {
@@ -1245,5 +1648,8 @@
   "evidence": {
     "trailerSignage": "DKQ-02-01 shows company trailer reading \"DK QUALITY CONSTRUCTION · 734-497-6773 · HOME REMODELING • DECKS • KITCHENS • BATHS\" (a further line is obscured). Corroborates phone and core services.",
     "trailerSignage2": "DKQ-03-03 shows the company trailer again at the P-010 job site."
-  }
+  },
+  "retiredStock": [
+    "deck-treated-wooded-lot (batch 4)"
+  ]
 }

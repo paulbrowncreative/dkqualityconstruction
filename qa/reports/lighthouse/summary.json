@@ -6,11 +6,11 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "2.0 s",
+    "LCP": "2.1 s",
     "CLS": "0",
     "TBT": "0 ms",
     "FCP": "0.8 s",
-    "weightKB": 207
+    "weightKB": 233
   },
   {
     "page": "/services/decks/",
@@ -22,21 +22,21 @@
     "LCP": "1.8 s",
     "CLS": "0",
     "TBT": "0 ms",
-    "FCP": "0.9 s",
-    "weightKB": 138
+    "FCP": "0.8 s",
+    "weightKB": 144
   },
   {
     "page": "/projects/",
     "formFactor": "mobile",
-    "performance": 100,
+    "performance": 98,
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "1.9 s",
+    "LCP": "2.4 s",
     "CLS": "0",
     "TBT": "0 ms",
     "FCP": "0.8 s",
-    "weightKB": 322
+    "weightKB": 413
   },
   {
     "page": "/contact/",
@@ -48,7 +48,7 @@
     "LCP": "1.5 s",
     "CLS": "0",
     "TBT": "0 ms",
-    "FCP": "0.8 s",
+    "FCP": "0.9 s",
     "weightKB": 66
   },
   {
@@ -62,7 +62,7 @@
     "CLS": "0",
     "TBT": "0 ms",
     "FCP": "0.8 s",
-    "weightKB": 299
+    "weightKB": 305
   },
   {
     "page": "/about/",
@@ -71,7 +71,7 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "1.5 s",
+    "LCP": "1.4 s",
     "CLS": "0",
     "TBT": "0 ms",
     "FCP": "0.8 s",
@@ -88,7 +88,7 @@
     "CLS": "0",
     "TBT": "0 ms",
     "FCP": "0.2 s",
-    "weightKB": 362
+    "weightKB": 390
   },
   {
     "page": "/services/decks/",
@@ -110,11 +110,11 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "0.6 s",
+    "LCP": "0.7 s",
     "CLS": "0",
     "TBT": "0 ms",
     "FCP": "0.2 s",
-    "weightKB": 598
+    "weightKB": 709
   },
   {
     "page": "/contact/",
@@ -123,10 +123,10 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "0.4 s",
+    "LCP": "0.3 s",
     "CLS": "0",
     "TBT": "0 ms",
-    "FCP": "0.2 s",
+    "FCP": "0.3 s",
     "weightKB": 102
   },
   {
@@ -139,8 +139,8 @@
     "LCP": "0.4 s",
     "CLS": "0",
     "TBT": "0 ms",
-    "FCP": "0.3 s",
-    "weightKB": 178
+    "FCP": "0.2 s",
+    "weightKB": 181
   },
   {
     "page": "/about/",
@@ -149,7 +149,7 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "0.3 s",
+    "LCP": "0.4 s",
     "CLS": "0",
     "TBT": "0 ms",
     "FCP": "0.2 s",

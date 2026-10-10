@@ -23,7 +23,6 @@ These are the stock photos still in use. Retired stock photos are listed in the 
 
 | File (`assets-src/photos/`) | Source | Photographer | Original px | Used on | Notes |
 |---|---|---|---|---|---|
-| deck-treated-wooded-lot.jpg | [unsplash.com/photos/jxr6sCglU9s](https://unsplash.com/photos/jxr6sCglU9s) | Clay Banks | 2400×1600 | Decks: pressure-treated card | |
 | fence-backyard-gray.jpg | [unsplash.com/photos/gyOmQE2vzWs](https://unsplash.com/photos/gyOmQE2vzWs) | Proper Construction | 2400×1600 | Fencing hero, Services | Another contractor's project |
 | bathroom-walk-in-shower.jpg | [unsplash.com/photos/Ies-rhvusTs](https://unsplash.com/photos/Ies-rhvusTs) | Smart Renovations | 2400×1600 | Bathroom hero, Services | Another contractor's project |
 | flooring-plank-install.jpg | [unsplash.com/photos/EO_KlX-A6SY](https://unsplash.com/photos/EO_KlX-A6SY) | Ernys | 2400×3600 | Services: flooring | Black and white |
@@ -45,7 +44,7 @@ These are the stock photos still in use. Retired stock photos are listed in the 
 | `src/assets/img/brand/dk-logo-480.webp` | Same | 480×261 | Footer, About |
 | `src/assets/img/brand/dk-emblem-160.webp` | Rooflines and hammers crop | 160×62 | Header (2× density) |
 | `favicon.ico`, `icon-192.png`, `icon-512.png`, `apple-touch-icon.png` | Emblem on #111113 | 48/192/512/180 px | Favicons, web manifest |
-| `src/assets/img/og-default.jpg` | DK's aerial deck photo (DKQ-01-03), darkened, plus logo | 1200×630 | Open Graph and Twitter cards |
+| `src/assets/img/og-default.jpg` | DK's aerial deck photo (DKQ-04-05), darkened, plus logo | 1200×630 | Open Graph and Twitter cards |
 
 ## Font
 

@@ -8,7 +8,7 @@ const trail = [
 ];
 
 const groups = categories
-  .map((c) => ({ ...c, items: projects.filter((p) => p.category === c.id) }))
+  .map((c) => ({ ...c, items: projects.filter((p) => p.category === c.id).sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0)) }))
   .filter((g) => g.items.length);
 
 export default {
@@ -29,8 +29,8 @@ ${pageHero({
   eyebrow: 'Our work',
   title: 'Projects',
   lede: 'Decks, kitchens and basements built by DK Quality Construction. Select any photo to see it full size.',
-  image: 'project-deck-waterfront-covered',
-  imageAlt: 'Large gray deck by DK Quality Construction, partly covered, with white railings and black balusters overlooking a lake',
+  image: 'project-deck-ground-level-brown-wide',
+  imageAlt: 'Large low brown deck by DK Quality Construction, with a darker picture-frame border and skirting, along a brick home',
   trail,
 })}
 

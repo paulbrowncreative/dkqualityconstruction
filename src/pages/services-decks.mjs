@@ -12,8 +12,8 @@ const materials = `
     </div>
     <div class="material-compare">
       <article class="material card">
-        ${picture('deck-treated-wooded-lot', {
-          alt: 'Pressure-treated wood deck with a grill and dining table, surrounded by trees',
+        ${picture('project-deck-pressure-treated-black-rail', {
+          alt: 'Pressure-treated wood deck built by DK Quality Construction, with divider boards and black metal railings',
           sizes: '(min-width: 960px) 44vw, 100vw',
           cls: 'material__img',
         })}
@@ -68,7 +68,7 @@ export default servicePage({
   eyebrow: 'Decks · Our specialty',
   h1: 'Deck builder in Monroe, MI',
   lede: 'New pressure-treated and composite decks for homes across Monroe County, Michigan and Lucas County, Ohio — framed right, finished clean.',
-  heroAlt: 'Large low brown deck built by DK Quality Construction, with a darker picture-frame border and skirting, along a brick home',
+  heroAlt: 'Aerial view of a raised gray deck built by DK Quality Construction, with white-and-black railings, a decorative privacy screen and a wide staircase',
   introHeading: 'Decks are what we do most.',
   intro: `
     <p>A deck is the most-used “room” of a lot of Monroe-area homes from May through October. Decking is DK Quality Construction’s specialty, and we build in both <strong>pressure-treated lumber</strong> and <strong>composite decking systems</strong>.</p>
@@ -103,7 +103,7 @@ export default servicePage({
       p: `<p>Deck surfaces more than 30 inches above grade need guards, and stairs need consistent rise and run with a graspable handrail. Most new decks also need a building permit — the specifics depend on your city or township, and we’ll talk it through at the estimate.</p>`,
     },
   ],
-  projects: ['P-001', 'P-010', 'P-006'],
+  projects: ['P-012', 'P-010', 'P-014'],
   faqs: [
     {
       q: 'How much does a new deck cost in Monroe?',

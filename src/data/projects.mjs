@@ -2,6 +2,7 @@
 // in the photos; locations, materials/brands, costs and timelines are not claimed until
 // the owner confirms them (see PROJECT-ASSET-REGISTER.md → open questions).
 // images[0] is the card/cover photo; every image opens in the full-photo viewer.
+// `featured` projects are listed first on /projects/ (aerials and the strongest wide shots).
 export const categories = [
   { id: 'decks', name: 'Decks', service: '/services/decks/' },
   { id: 'kitchens', name: 'Kitchen Remodeling', service: '/services/kitchen-remodeling/' },
@@ -10,7 +11,7 @@ export const categories = [
 
 export const projects = [
   {
-    id: 'P-001', category: 'decks',
+    id: 'P-001', category: 'decks', featured: true,
     title: 'Raised deck with privacy screen and wide stairs',
     caption: 'Gray deck with a contrasting border, white-and-black railings, a decorative privacy screen and a wide staircase.',
     images: [{ asset: 'DKQ-01-03', name: 'project-deck-aerial-privacy-screen', alt: 'Aerial view of a raised gray deck with a dark border, white posts and black balusters, a decorative black privacy screen along one side, and a wide staircase down to the yard' }],
@@ -68,7 +69,7 @@ export const projects = [
     ],
   },
   {
-    id: 'P-010', category: 'decks',
+    id: 'P-010', category: 'decks', featured: true,
     title: 'Large ground-level deck with picture-frame border',
     caption: 'Wide, low deck across the back of a brick home, with a contrasting picture-frame border and matching skirting.',
     images: [
@@ -82,6 +83,33 @@ export const projects = [
     title: 'Deck with white railings under a pergola',
     caption: 'Brown deck with white-and-black railings and white posts, shaded in part by a timber pergola.',
     images: [{ asset: 'DKQ-03-05', name: 'project-deck-pergola-white-railings', alt: 'Brown deck with white railings and black balusters and white posts, partly shaded by a timber pergola, overlooking a backyard' }],
+  },
+  {
+    id: 'P-012', category: 'decks', featured: true,
+    title: 'Raised deck with an elevated dining level over a screened room',
+    caption: 'Raised deck with black metal railings and a long staircase, above a screened room with its own steps.',
+    images: [{ asset: 'DKQ-04-05', name: 'project-deck-aerial-screened-room', alt: 'Aerial view of a raised brown deck with black metal railings, a dining table and a long staircase, built above a screened room with its own steps, behind a two-story home' }],
+  },
+  {
+    id: 'P-013', category: 'decks',
+    title: 'Stairs and landing on a brick home',
+    caption: 'Two-tone stairs with black metal railings rising to a raised landing along a brick wall.',
+    images: [
+      { asset: 'DKQ-04-01', name: 'project-stairs-landing-brick-wide', alt: 'Wide view of two-tone deck stairs with black metal railings climbing to a raised landing along a tan brick home above a concrete patio' },
+      { asset: 'DKQ-04-03', name: 'project-stairs-landing-brick-close', alt: 'Closer view of the same stairs, showing the two-tone treads, matching risers and black metal railings' },
+    ],
+  },
+  {
+    id: 'P-014', category: 'decks',
+    title: 'Pressure-treated deck with black metal railings',
+    caption: 'Large pressure-treated wood deck with a divider board pattern and black metal railings.',
+    images: [{ asset: 'DKQ-04-02', name: 'project-deck-pressure-treated-black-rail', alt: 'Newly built pressure-treated wood deck with divider boards running across it and black metal railings, beside a white-sided home and backyard' }],
+  },
+  {
+    id: 'P-015', category: 'decks',
+    title: 'Platform deck at the edge of a pond',
+    caption: 'Low gray platform deck with a picture-frame border, set at the edge of a pond.',
+    images: [{ asset: 'DKQ-04-04', name: 'project-deck-pond-platform', alt: 'Low gray platform deck with a picture-frame border at the edge of a pond, under a cloudy sky' }],
   },
 ];
 
