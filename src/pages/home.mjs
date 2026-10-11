@@ -38,13 +38,13 @@ export default {
   title: 'Deck Builder & Remodeler in Monroe, MI | DK Quality Construction',
   description:
     'Owner-led deck builder and remodeler in Monroe, MI. Treated and composite decks, fences, basements, kitchens and baths in Monroe County and Lucas County, OH.',
-  preload: preloadImage('project-deck-aerial-built-in-benches', heroSizes),
+  preload: preloadImage('project-deck-aerial-covered-porch-privacy-wall', heroSizes),
   bodyClass: 'page-home',
   body: `
-<section class="hero hero--frame-low" aria-labelledby="hero-title">
+<section class="hero" aria-labelledby="hero-title">
   <div class="hero__media">
-    ${picture('project-deck-aerial-built-in-benches', {
-      alt: 'Aerial view of a wide gray deck built by DK Quality Construction, with built-in benches on both sides and white-trimmed center stairs',
+    ${picture('project-deck-aerial-covered-porch-privacy-wall', {
+      alt: 'Aerial view of a large brown deck built by DK Quality Construction, wrapping the back of a ranch home with a covered porch section, a privacy wall and wide steps',
       sizes: heroSizes,
       eager: true,
     })}
@@ -118,7 +118,7 @@ export default {
       </div>
       <a class="link-arrow" href="/projects/">See all projects ${icon('arrow')}</a>
     </div>
-    <div class="project-grid">${['P-018', 'P-009', 'P-010'].map((id) => projectCard(projects.find((p) => p.id === id))).join('')}</div>
+    <div class="project-grid">${['P-016', 'P-009', 'P-023'].map((id) => projectCard(projects.find((p) => p.id === id))).join('')}</div>
   </div>
 </section>
 ${lightboxDialog()}

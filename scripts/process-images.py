@@ -64,6 +64,12 @@ PHOTOS = {
     "project-deck-above-ground-pool": {"src": "assets-src/uploads/batch-05/23.jpg"},
     "project-deck-pressure-treated-wood-rail": {"src": "assets-src/uploads/batch-05/24.jpg"},
     "project-deck-white-rail-dark-skirting": {"src": "assets-src/uploads/batch-05/25.jpg"},
+    # Batch 6
+    "project-porch-deck-built-in-benches": {"src": "assets-src/uploads/batch-06/26.jpg"},
+    "project-deck-planters-pond": {"src": "assets-src/uploads/batch-06/27.jpg"},
+    "project-deck-aerial-covered-porch-privacy-wall": {"src": "assets-src/uploads/batch-06/28.jpg", "widths": HERO_WIDTHS},
+    "project-covered-patio-gable-roof": {"src": "assets-src/uploads/batch-06/29.jpg"},
+    "project-screened-room-lake-view": {"src": "assets-src/uploads/batch-06/30.jpg"},
     "framing-new-construction": {},
 }
 
@@ -161,8 +167,8 @@ def process_brand():
     icon(48, 0.03).save(ROOT / "src" / "static" / "favicon.ico", sizes=[(16, 16), (32, 32), (48, 48)])
 
     # Open Graph image: hero photo, darkened, with the full logo.
-    hero = Image.open(ROOT / "assets-src/uploads/batch-05/21.jpg").convert("RGB")  # DKQ-05-01, aerial deck (homepage hero)
-    hero = ImageOps.fit(hero, (1200, 630), Image.LANCZOS, centering=(0.55, 0.62))
+    hero = Image.open(ROOT / "assets-src/uploads/batch-06/28.jpg").convert("RGB")  # DKQ-06-03, aerial deck (homepage hero)
+    hero = ImageOps.fit(hero, (1200, 630), Image.LANCZOS, centering=(0.6, 0.6))
     shade = Image.new("RGBA", (1200, 630), (10, 10, 12, 0))
     # Darkest on the left where the logo sits, easing off to the right.
     grad = Image.linear_gradient("L").rotate(90).resize((1200, 630))

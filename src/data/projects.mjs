@@ -7,6 +7,8 @@ export const categories = [
   { id: 'decks', name: 'Decks', service: '/services/decks/' },
   { id: 'kitchens', name: 'Kitchen Remodeling', service: '/services/kitchen-remodeling/' },
   { id: 'basements', name: 'Basement Remodeling', service: '/services/basement-finishing/' },
+  // No dedicated service page yet (owner to confirm scope) — the group links to the estimate form.
+  { id: 'outdoor', name: 'Covered Patios & Screened Rooms' },
 ];
 
 export const projects = [
@@ -140,6 +142,36 @@ export const projects = [
     title: 'Raised deck with white railings and dark skirting',
     caption: 'Gray deck with white-and-black railings, white fascia, dark skirting and a staircase to the yard.',
     images: [{ asset: 'DKQ-05-05', name: 'project-deck-white-rail-dark-skirting', alt: 'Raised gray deck with white railings and black balusters, white fascia trim, dark skirting and a staircase to the lawn, behind a gray two-story home' }],
+  },
+  {
+    id: 'P-021', category: 'decks', featured: true,
+    title: 'Wraparound deck with a covered porch and privacy wall',
+    caption: 'Brown deck wrapping the back of a ranch home, with a covered porch section, a privacy wall and wide steps to a stamped-concrete border.',
+    images: [{ asset: 'DKQ-06-03', name: 'project-deck-aerial-covered-porch-privacy-wall', alt: 'Aerial view of a large brown deck wrapping the back of a white ranch home, with a covered porch section on wood posts, dark railings, a privacy wall and wide steps down to a stamped-concrete border' }],
+  },
+  {
+    id: 'P-022', category: 'decks',
+    title: 'Front porch deck with built-in benches',
+    caption: 'Gray deck extending a covered front porch, with long built-in benches along two sides.',
+    images: [{ asset: 'DKQ-06-01', name: 'project-porch-deck-built-in-benches', alt: 'Gray deck extending a covered front porch, with long built-in benches on two sides, above landscaped flower beds' }],
+  },
+  {
+    id: 'P-023', category: 'decks',
+    title: 'Deck with built-in planters and bench',
+    caption: 'Gray deck with built-in planter boxes and a bench between them, overlooking a pond with a fountain.',
+    images: [{ asset: 'DKQ-06-02', name: 'project-deck-planters-pond', alt: 'Gray deck with two built-in planter boxes full of vegetables and a bench between them, with white railings and a pond with a fountain beyond' }],
+  },
+  {
+    id: 'P-024', category: 'outdoor',
+    title: 'Covered patio with a gable roof',
+    caption: 'Open gable roof over a concrete patio, with white beams and trusses, a stained wood ceiling, recessed lights and stone-wrapped column bases.',
+    images: [{ asset: 'DKQ-06-04', name: 'project-covered-patio-gable-roof', alt: 'Covered patio with an open gable roof, white beams and trusses, a stained wood ceiling with recessed lights and a fan, and white columns on stone bases over a concrete patio' }],
+  },
+  {
+    id: 'P-025', category: 'outdoor',
+    title: 'Screened room with a lake view',
+    caption: 'Screened room with brown deck flooring, black-framed screens and a door out to the yard, looking over a lake.',
+    images: [{ asset: 'DKQ-06-05', name: 'project-screened-room-lake-view', alt: 'Inside a screened room with brown deck boards, black-framed screen panels and a screen door, looking out over a lawn to a lake' }],
   },
 ];
 

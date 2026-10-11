@@ -90,7 +90,7 @@ export const services = [
     navName: 'Decks — Treated & Composite',
     short: 'New decks in pressure-treated lumber or low-maintenance composite, designed around how you use your yard.',
     page: true,
-    image: 'project-deck-aerial-screened-room',
+    image: 'project-deck-aerial-built-in-benches',
   },
   {
     slug: 'fencing',

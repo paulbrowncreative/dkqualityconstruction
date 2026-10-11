@@ -7,7 +7,7 @@ const trail = [
 ];
 
 const altText = {
-  decks: 'Aerial view of a raised deck with black metal railings and a long staircase above a screened room',
+  decks: 'Aerial view of a wide gray deck with built-in benches and white-trimmed center stairs',
   fencing: 'Gray-stained picket fence with flower boxes around a backyard',
   'basement-finishing': 'Remodeled basement with a black painted ceiling, plank flooring and white built-in cabinets',
   'bathroom-remodeling': 'Walk-in glass shower with marble-look tile',

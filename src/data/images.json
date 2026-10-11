@@ -257,6 +257,52 @@
     "width": 1125,
     "height": 1500
   },
+  "project-porch-deck-built-in-benches": {
+    "widths": [
+      640,
+      1024,
+      1500
+    ],
+    "width": 1500,
+    "height": 1125
+  },
+  "project-deck-planters-pond": {
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "width": 2000,
+    "height": 1500
+  },
+  "project-deck-aerial-covered-porch-privacy-wall": {
+    "widths": [
+      640,
+      1024,
+      1600,
+      2000
+    ],
+    "width": 2000,
+    "height": 1500
+  },
+  "project-covered-patio-gable-roof": {
+    "widths": [
+      640,
+      1024,
+      1500
+    ],
+    "width": 1500,
+    "height": 2000
+  },
+  "project-screened-room-lake-view": {
+    "widths": [
+      640,
+      1024,
+      1500
+    ],
+    "width": 1500,
+    "height": 2000
+  },
   "framing-new-construction": {
     "widths": [
       640,

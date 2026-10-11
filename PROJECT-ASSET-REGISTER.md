@@ -2,21 +2,23 @@
 
 The readable companion to `project-assets-manifest.json`, which is the source of truth. This register is updated after every batch.
 
-**Last updated:** October 11, 2026, after batch 5
-**Workflow status:** batches 1–5 are processed and integrated. Waiting for batch 6. The project stays open until you confirm all batches have been uploaded.
+**Last updated:** October 11, 2026, after batch 6
+**Workflow status:** batches 1–6 are processed and integrated. Waiting for batch 7. The project stays open until you confirm all batches have been uploaded.
 
 ## Current heroes
 
 | Page | Photo | Why |
 |---|---|---|
-| Home | **DKQ-05-01** (aerial: wide deck with built-in benches) | The cleanest, most striking aerial so far. The deck fills the frame and shows the custom bench and stair work. It's also the social share image. |
-| Decks | **DKQ-04-05** (aerial: raised deck over a screened room) | An aerial that shows the most ambitious build: two levels and a long stair run |
-| Projects | **DKQ-01-03** (aerial: privacy-screen deck) | The third aerial, so all three page heroes are now aerials |
+| Home | **DKQ-06-03** (aerial: wraparound deck with a covered porch and privacy wall) | The brightest and widest aerial so far, with blue sky, green fields and the whole deck in frame. It's also the social share image. |
+| Decks | **DKQ-05-01** (aerial: wide deck with built-in benches) | Shows custom bench and stair work |
+| Projects | **DKQ-04-05** (aerial: raised deck over a screened room) | Shows the most ambitious build |
+
+Every page hero is an aerial. DKQ-01-03 is now featured on /projects/ instead of being a hero.
 
 **Homepage hero layout (from batch 5 on):**
 
 - **Phones and tablets (under 1024 px):** the full aerial shows as a 4:3 band under the header, with the copy below it on the dark background. The deck is never hidden behind text.
-- **Desktop:** the photo runs full-bleed behind the copy, framed low so the benches and stairs stay visible.
+- **Desktop:** the photo runs full-bleed behind the copy.
 | Kitchen | DKQ-02-05 | DK's own kitchen |
 | Basement | DKQ-01-01 | DK's own basement |
 
@@ -34,16 +36,17 @@ Within each tier, the most visually compelling shot wins. These photos replace t
 
 | | Count |
 |---|---|
-| Files received (all batches) | 25 |
-| Inspected | 25 |
-| Integrated on the website | 25 |
-| Projects in the portfolio | 20 (18 decks, 1 kitchen, 1 basement) |
+| Files received (all batches) | 30 |
+| Inspected | 30 |
+| Integrated on the website | 30 |
+| Projects in the portfolio | 25 (21 decks, 2 covered patios/screened rooms, 1 kitchen, 1 basement) |
 | Confirmed before-and-after pairs | 0 |
 | Possible pairs awaiting your confirmation | 0 |
+| Possible same-project matches awaiting your confirmation | 1 (DKQ-06-05 screened room, possibly under P-012) |
 | Same project, different angles (not before-and-after) | 3 (P-009 kitchen: 3 photos; P-010 deck: 3 photos; P-013 stairs: 2 photos) |
 | Reviews transcribed | 0 |
 | Reviews published | 0 |
-| Needing clarification (details only, all already in use) | 25 |
+| Needing clarification (details only, all already in use) | 30 |
 | Could not be processed | 0 |
 
 ## Batches
@@ -52,6 +55,7 @@ Within each tier, the most visually compelling shot wins. These photos replace t
 |---|---|---|---|---|
 | 1 | 2026-10-10 | 5 | DKQ-01-01 to DKQ-01-05 | 4 completed decks (1 aerial), 1 completed basement |
 | 2 | 2026-10-10 | 5 | DKQ-02-01 to DKQ-02-05 | 3 completed decks, plus 2 angles of one completed kitchen. DK trailer visible in DKQ-02-01. |
+| 6 | 2026-10-11 | 5 | DKQ-06-01 to DKQ-06-05 | A 4th aerial deck (new homepage hero), a front porch deck with benches, a deck with planters, a covered patio roof, and a screened room |
 | 5 | 2026-10-11 | 5 | DKQ-05-01 to DKQ-05-05 | A 3rd aerial deck (new homepage hero), an above-ground pool deck, a 2nd pressure-treated deck, and 2 more completed decks |
 | 4 | 2026-10-10 | 5 | DKQ-04-01 to DKQ-04-05 | A 2nd aerial deck (new homepage hero), a pressure-treated deck, a stairs + landing project from 2 angles, and a pond platform deck |
 | 3 | 2026-10-10 | 5 | DKQ-03-01 to DKQ-03-05 | A 3rd angle of the kitchen, 3 angles of one large ground-level deck (DK trailer visible), and 1 deck under a pergola |
@@ -64,7 +68,7 @@ No EXIF data and no duplicates in any batch so far.
 |---|---|---|---|---|---|---|
 | DKQ-01-01 | 1.jpg | project-basement-remodel-built-ins | Completed basement | P-005 | 1500×2000 | Projects; **Basement page hero** + Recent projects; Services |
 | DKQ-01-02 | 2.jpg | project-deck-waterfront-covered | Completed deck, wide angle | P-002 | 2000×1500 | Projects card; Home (deck specialty) |
-| DKQ-01-03 | 3.jpg | project-deck-aerial-privacy-screen | Completed deck, **aerial** | P-001 | 2000×1500 | **Projects page hero**; Projects (featured) |
+| DKQ-01-03 | 3.jpg | project-deck-aerial-privacy-screen | Completed deck, **aerial** | P-001 | 2000×1500 | Projects (featured) |
 | DKQ-01-04 | 4.jpg | project-deck-cedar-tone-stairs | Completed deck | P-004 | 1500×2000 | Projects; Decks (composite materials card) |
 | DKQ-01-05 | 5.jpg | project-deck-gray-corner-stairs | Completed deck | P-003 | 1500×2000 | Projects |
 | DKQ-02-01 | 6.jpg | project-deck-covered-stained-ceiling | Completed covered deck, wide angle | P-006 | 1500×2000 | Projects; Home (Recent work); Decks (Recent projects); About |
@@ -81,12 +85,17 @@ No EXIF data and no duplicates in any batch so far.
 | DKQ-04-02 | 17.jpg | project-deck-pressure-treated-black-rail | Completed **pressure-treated** deck | P-014 | 1500×1125 | Decks page "Pressure-treated" card + Recent projects; Projects |
 | DKQ-04-03 | 18.jpg | project-stairs-landing-brick-close | Completed stairs (2nd angle) | P-013 | 1500×2000 | Projects (thumbnail + viewer) |
 | DKQ-04-04 | 19.jpg | project-deck-pond-platform | Completed platform deck | P-015 | 1500×2000 | Projects |
-| DKQ-04-05 | 20.jpg | project-deck-aerial-screened-room | Completed deck, **aerial** | P-012 | 2000×1500 | **Decks page hero**; Services; Projects (featured) |
-| DKQ-05-01 | 21.jpg | project-deck-aerial-built-in-benches | Completed deck, **aerial** | P-016 | 2000×1500 | **Homepage hero**; social share image; Decks (Recent projects); Projects (featured) |
+| DKQ-04-05 | 20.jpg | project-deck-aerial-screened-room | Completed deck, **aerial** | P-012 | 2000×1500 | **Projects page hero**; Projects (featured) |
+| DKQ-05-01 | 21.jpg | project-deck-aerial-built-in-benches | Completed deck, **aerial** | P-016 | 2000×1500 | **Decks page hero**; Services; Home (Recent work); Projects (featured) |
 | DKQ-05-02 | 22.jpg | project-deck-brown-black-rail-patio | Completed deck | P-017 | 1500×2000 | Projects |
 | DKQ-05-03 | 23.jpg | project-deck-above-ground-pool | Completed **pool deck** | P-018 | 1500×2000 | Projects; Home (Recent work); Decks (Recent projects) |
 | DKQ-05-04 | 24.jpg | project-deck-pressure-treated-wood-rail | Completed **pressure-treated** deck | P-019 | 1125×1500 | Projects |
 | DKQ-05-05 | 25.jpg | project-deck-white-rail-dark-skirting | Completed deck | P-020 | 1125×1500 | Projects |
+| DKQ-06-01 | 26.jpg | project-porch-deck-built-in-benches | Completed front porch deck | P-022 | 1500×1125 | Projects |
+| DKQ-06-02 | 27.jpg | project-deck-planters-pond | Completed deck with planters | P-023 | 2000×1500 | Projects; Home (Recent work) |
+| DKQ-06-03 | 28.jpg | project-deck-aerial-covered-porch-privacy-wall | Completed deck, **aerial** | P-021 | 2000×1500 | **Homepage hero**; social share image; Decks (Recent projects); Projects (featured) |
+| DKQ-06-04 | 29.jpg | project-covered-patio-gable-roof | Completed covered patio roof (not a deck) | P-024 | 1500×2000 | Projects ("Covered Patios & Screened Rooms") |
+| DKQ-06-05 | 30.jpg | project-screened-room-lake-view | Completed screened room | P-025 | 1500×2000 | Projects ("Covered Patios & Screened Rooms") |
 
 ## Projects
 
@@ -114,7 +123,15 @@ No EXIF data and no duplicates in any batch so far.
 | P-019 | Large pressure-treated deck with wood railings | Decks | DKQ-05-04 |
 | P-020 | Raised deck with white railings and dark skirting | Decks | DKQ-05-05 |
 
-Featured projects appear first on /projects/: P-016, P-012, P-001 and P-010.
+| P-021 | Wraparound deck with a covered porch and privacy wall | Decks | DKQ-06-03 |
+| P-022 | Front porch deck with built-in benches | Decks | DKQ-06-01 |
+| P-023 | Deck with built-in planters and bench | Decks | DKQ-06-02 |
+| P-024 | Covered patio with a gable roof | Covered Patios & Screened Rooms | DKQ-06-04 |
+| P-025 | Screened room with a lake view | Covered Patios & Screened Rooms | DKQ-06-05 |
+
+Featured projects appear first on /projects/: P-021, P-016, P-012, P-001 and P-010.
+
+**New category: "Covered Patios & Screened Rooms".** The BBB service list doesn't include covered patios or porch roofs. These projects are shown in the portfolio only because you supplied them as DK's work. There's no service page for them and no service claim; this group links to the estimate form instead of a service page.
 
 ### Grouping decisions
 
@@ -126,6 +143,8 @@ Featured projects appear first on /projects/: P-016, P-012, P-001 and P-010.
 - **DKQ-04-02, 04-04 and 04-05 are new projects.** None of them matches an earlier deck.
 - **DKQ-05-02 vs DKQ-05-03: separate projects.** Both have a camper at the left edge, but the decks differ: brown boards with black metal railings versus gray boards with white railings, with an in-ground pool behind a fence versus an above-ground pool.
 - **DKQ-05-04 vs DKQ-04-02: different pressure-treated decks.** DKQ-05-04 is octagonal with wood railings; DKQ-04-02 has aluminum railings and a white house.
+- **DKQ-06-05 is possibly the screened room under P-012 (DKQ-04-05).** Both show the same black screen framing system, painted joists overhead, brown boards, and a lily-pad shoreline with a dock. But the photo doesn't show enough of the house to be sure, so it's **kept as a separate project until you confirm**.
+- **DKQ-06-01 to 06-04: all new projects.** None of them matches an earlier one.
 - **DKQ-01-02 vs DKQ-01-03: judged separate projects.** The board tones and neighboring houses differ.
 - **No batch 2 deck matches a batch 1 deck.** The siding, house styles and railings all differ.
 
@@ -135,7 +154,7 @@ DKQ-02-01 shows the company trailer, which reads "DK QUALITY CONSTRUCTION · 734
 
 ## Before-and-after pairs
 
-_None yet._ All twenty-five photos so far show finished work. Pairs are matched only on visual evidence: the same fixtures, structure, materials and camera position. Upload order and file names are not used as evidence.
+_None yet._ All thirty photos so far show finished work. Pairs are matched only on visual evidence: the same fixtures, structure, materials and camera position. Upload order and file names are not used as evidence.
 
 ## Reviews
 
@@ -158,6 +177,9 @@ None of these block anything; all photos are live with neutral captions.
 8. **Stairs (P-013).** Did DK build the upper landing as well as the stairs?
 9. **Pressure-treated (P-014, P-019).** Can you confirm both are pressure-treated lumber? P-014 is on the Decks page "Pressure-treated lumber" card.
 10. **Pool deck (P-017).** Did DK build the pool fence or patio, or only the deck?
+11. **Covered patio (P-024).** DK built the roof? Also the concrete patio and stone column bases? Should covered patios and porch roofs become an advertised service with their own page?
+12. **Screened room (P-025).** Is it the screened room under the raised deck in P-012? If so, I'll merge the two.
+13. **Homepage hero aerial (P-021).** Did DK build the covered porch roof and the privacy wall? Was the stamped concrete DK's work?
 
 ## Stock imagery retired
 

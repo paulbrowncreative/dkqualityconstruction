@@ -17,7 +17,7 @@ export default {
   description:
     'Photos of decks, kitchens and basements built by DK Quality Construction for homeowners in Monroe County, MI and Lucas County, OH.',
   breadcrumbs: trail,
-  preload: preloadImage('project-deck-aerial-privacy-screen', '100vw'),
+  preload: preloadImage('project-deck-aerial-screened-room', '100vw'),
   schema: [
     {
       '@type': 'ImageGallery',
@@ -29,9 +29,9 @@ export default {
 ${pageHero({
   eyebrow: 'Our work',
   title: 'Projects',
-  lede: 'Decks, kitchens and basements built by DK Quality Construction. Select any photo to see it full size.',
-  image: 'project-deck-aerial-privacy-screen',
-  imageAlt: 'Aerial view of a raised gray deck by DK Quality Construction, with white-and-black railings, a decorative privacy screen and a wide staircase',
+  lede: 'Decks, covered outdoor spaces, kitchens and basements built by DK Quality Construction. Select any photo to see it full size.',
+  image: 'project-deck-aerial-screened-room',
+  imageAlt: 'Aerial view of a raised deck by DK Quality Construction, with black metal railings, a dining area and a long staircase, above a screened room',
   trail,
 })}
 
@@ -43,7 +43,7 @@ ${pageHero({
         (g) => `<section class="project-group" id="${g.id}" aria-labelledby="${g.id}-h">
       <div class="project-group__head">
         <h2 id="${g.id}-h" class="section-title">${esc(g.name)}</h2>
-        <a class="link-arrow" href="${g.service}">About our ${esc(g.name.toLowerCase())} ${icon('arrow')}</a>
+        ${g.service ? `<a class="link-arrow" href="${g.service}">About our ${esc(g.name.toLowerCase())} ${icon('arrow')}</a>` : `<a class="link-arrow" href="/contact/#estimate">Ask about a similar project ${icon('arrow')}</a>`}
       </div>
       <div class="project-grid">${g.items.map((p) => projectCard(p)).join('')}</div>
     </section>`,
