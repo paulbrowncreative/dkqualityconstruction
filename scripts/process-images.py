@@ -77,6 +77,12 @@ PHOTOS = {
     "project-porch-floor-composite-columns": {"src": "assets-src/uploads/batch-07/33.jpg"},
     "project-deck-ground-level-picture-frame-dusk": {"src": "assets-src/uploads/batch-07/34.jpg"},
     "project-deck-gray-white-rail-side-yard": {"src": "assets-src/uploads/batch-07/35.jpg"},
+    # Batch 8
+    "project-deck-gray-white-rail-patio-door": {"src": "assets-src/uploads/batch-08/36.jpg"},
+    "project-deck-brown-angled-picture-frame": {"src": "assets-src/uploads/batch-08/37.jpg"},
+    "project-deck-pressure-treated-pavilion": {"src": "assets-src/uploads/batch-08/38.jpg"},
+    "project-deck-aerial-stone-home-stairs": {"src": "assets-src/uploads/batch-08/39.jpg"},
+    "project-deck-composite-pavilion": {"src": "assets-src/uploads/batch-08/40.jpg"},
     "framing-new-construction": {},
 }
 

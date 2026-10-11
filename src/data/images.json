@@ -386,6 +386,55 @@
     "width": 1500,
     "height": 2000
   },
+  "project-deck-gray-white-rail-patio-door": {
+    "widths": [
+      320,
+      640,
+      1008
+    ],
+    "width": 1008,
+    "height": 756
+  },
+  "project-deck-brown-angled-picture-frame": {
+    "widths": [
+      320,
+      640,
+      1024,
+      1500
+    ],
+    "width": 1500,
+    "height": 2000
+  },
+  "project-deck-pressure-treated-pavilion": {
+    "widths": [
+      320,
+      640,
+      1024,
+      1500
+    ],
+    "width": 1500,
+    "height": 2000
+  },
+  "project-deck-aerial-stone-home-stairs": {
+    "widths": [
+      320,
+      640,
+      1024,
+      1440
+    ],
+    "width": 1440,
+    "height": 1080
+  },
+  "project-deck-composite-pavilion": {
+    "widths": [
+      320,
+      640,
+      1024,
+      1500
+    ],
+    "width": 1500,
+    "height": 2000
+  },
   "framing-new-construction": {
     "widths": [
       320,

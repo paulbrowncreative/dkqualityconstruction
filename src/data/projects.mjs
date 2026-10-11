@@ -191,6 +191,36 @@ export const projects = [
     caption: 'Gray deck with white-and-black railings, white fascia, gray skirting and stairs at each end.',
     images: [{ asset: 'DKQ-07-05', name: 'project-deck-gray-white-rail-side-yard', alt: 'Gray deck with white railings and black balusters, white fascia, gray skirting and stairs at each end, built along the side of a gray home' }],
   },
+  {
+    id: 'P-029', category: 'decks', featured: true,
+    title: 'Deck with wide white-trimmed stairs on a stone home',
+    caption: 'Gray deck with black metal railings and wide white-trimmed stairs stepping down to the lawn on two sides.',
+    images: [{ asset: 'DKQ-08-04', name: 'project-deck-aerial-stone-home-stairs', alt: 'Aerial view of a gray deck with black metal railings and wide white-trimmed stairs on two sides, built against a large stone home above a lawn' }],
+  },
+  {
+    id: 'P-030', category: 'decks',
+    title: 'Composite deck with a timber pavilion',
+    caption: 'Large brown composite deck with black metal railings and a timber pavilion with a metal roof.',
+    images: [{ asset: 'DKQ-08-05', name: 'project-deck-composite-pavilion', alt: 'Large brown composite deck with black metal railings and a timber pavilion with a metal roof, with trees behind' }],
+  },
+  {
+    id: 'P-031', category: 'decks',
+    title: 'Pressure-treated deck with a timber pavilion',
+    caption: 'Large pressure-treated wood deck with wood railings, black balusters and a timber pavilion with a metal roof.',
+    images: [{ asset: 'DKQ-08-03', name: 'project-deck-pressure-treated-pavilion', alt: 'Large pressure-treated wood deck with divider boards, wood railings with black balusters and a timber pavilion with a metal roof, overlooking a wide lawn' }],
+  },
+  {
+    id: 'P-032', category: 'decks',
+    title: 'Deck with an angled corner and picture-frame border',
+    caption: 'Brown deck with an angled corner and a contrasting picture-frame border, outside a sliding patio door.',
+    images: [{ asset: 'DKQ-08-02', name: 'project-deck-brown-angled-picture-frame', alt: 'Brown deck with an angled corner and a picture-frame border outside a sliding patio door, with the yard still being finished around it' }],
+  },
+  {
+    id: 'P-033', category: 'decks',
+    title: 'Low deck with white railings by a patio door',
+    caption: 'Gray deck with white-and-black railings and gray skirting outside a sliding patio door.',
+    images: [{ asset: 'DKQ-08-01', name: 'project-deck-gray-white-rail-patio-door', alt: 'Low gray deck with white railings, black balusters and gray skirting outside a sliding patio door on a gray home' }],
+  },
 ];
 
 export const projectById = (id) => projects.find((p) => p.id === id);
