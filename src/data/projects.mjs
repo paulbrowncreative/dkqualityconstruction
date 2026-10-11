@@ -264,7 +264,28 @@ export const projects = [
     id: 'P-039', category: 'decks',
     title: 'Large two-tone composite deck',
     caption: 'Large ground-level composite deck with a darker contrasting border and divider boards.',
-    images: [{ asset: 'DKQ-10-05', name: 'project-deck-large-composite-two-tone', alt: 'Large ground-level composite deck with a darker border and divider boards, wet after rain, beside a two-story home with a fenced yard' }],
+    images: [
+      { asset: 'DKQ-10-05', name: 'project-deck-large-composite-two-tone', alt: 'Large ground-level composite deck with a darker border and divider boards, wet after rain, beside a two-story home with a fenced yard' },
+      { asset: 'DKQ-11-01', name: 'project-deck-large-composite-divider-trailer', alt: 'The same deck looking out across the yard: the darker divider and border boards, a row of arborvitae along the fence, and the DK Quality Construction trailer parked nearby' },
+    ],
+  },
+  {
+    id: 'P-040', category: 'decks', featured: true,
+    title: 'Wraparound deck with planters and two stairways',
+    caption: 'Gray deck wrapping a sunroom, with white-and-black railings, built-in planter boxes and stairs at each end.',
+    images: [{ asset: 'DKQ-11-03', name: 'project-deck-aerial-sunroom-planters', alt: 'Aerial view of a gray deck wrapping around a sunroom, with white railings and black balusters, two built-in planter boxes and a staircase at each end' }],
+  },
+  {
+    id: 'P-041', category: 'decks',
+    title: 'Gray deck overlooking a pool and open fields',
+    caption: 'Gray composite deck with white-and-black railings, looking out over an above-ground pool and open farmland.',
+    images: [{ asset: 'DKQ-11-04', name: 'project-deck-gray-pool-field-view', alt: 'Gray composite deck with white railings and black balusters, looking out over an above-ground pool, a play set and open farm fields under a clear sky' }],
+  },
+  {
+    id: 'P-042', category: 'decks',
+    title: 'Multi-zone pressure-treated deck with angled corners',
+    caption: 'Large pressure-treated wood deck in two connected zones, with angled corners, a divider pattern and wood railings with black balusters.',
+    images: [{ asset: 'DKQ-11-05', name: 'project-deck-aerial-pressure-treated-multi-zone', alt: 'Overhead aerial view of a large pressure-treated wood deck with two connected zones, angled corners, divider boards and wood railings with black balusters, beside a paver patio' }],
   },
 ];
 

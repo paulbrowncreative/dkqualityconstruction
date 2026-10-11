@@ -6,11 +6,11 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "1.9 s",
+    "LCP": "1.7\u00a0s",
     "CLS": "0",
-    "TBT": "0 ms",
-    "FCP": "0.8 s",
-    "weightKB": 215
+    "TBT": "0\u00a0ms",
+    "FCP": "0.8\u00a0s",
+    "weightKB": 156
   },
   {
     "page": "/services/decks/",
@@ -19,24 +19,24 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "1.8 s",
+    "LCP": "1.5\u00a0s",
     "CLS": "0",
-    "TBT": "0 ms",
-    "FCP": "0.8 s",
-    "weightKB": 132
+    "TBT": "0\u00a0ms",
+    "FCP": "0.8\u00a0s",
+    "weightKB": 107
   },
   {
     "page": "/projects/",
     "formFactor": "mobile",
-    "performance": 100,
+    "performance": 99,
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "1.9 s",
+    "LCP": "2.1\u00a0s",
     "CLS": "0",
-    "TBT": "0 ms",
-    "FCP": "0.9 s",
-    "weightKB": 338
+    "TBT": "0\u00a0ms",
+    "FCP": "0.9\u00a0s",
+    "weightKB": 243
   },
   {
     "page": "/contact/",
@@ -45,10 +45,10 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "1.4 s",
+    "LCP": "1.4\u00a0s",
     "CLS": "0",
-    "TBT": "0 ms",
-    "FCP": "0.9 s",
+    "TBT": "0\u00a0ms",
+    "FCP": "0.8\u00a0s",
     "weightKB": 66
   },
   {
@@ -58,10 +58,10 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "2.0 s",
+    "LCP": "2.0\u00a0s",
     "CLS": "0",
-    "TBT": "0 ms",
-    "FCP": "0.8 s",
+    "TBT": "0\u00a0ms",
+    "FCP": "0.9\u00a0s",
     "weightKB": 293
   },
   {
@@ -71,10 +71,10 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "1.4 s",
+    "LCP": "1.3\u00a0s",
     "CLS": "0",
-    "TBT": "0 ms",
-    "FCP": "0.8 s",
+    "TBT": "0\u00a0ms",
+    "FCP": "0.8\u00a0s",
     "weightKB": 102
   },
   {
@@ -84,10 +84,10 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "0.6 s",
+    "LCP": "0.6\u00a0s",
     "CLS": "0",
-    "TBT": "0 ms",
-    "FCP": "0.3 s",
+    "TBT": "0\u00a0ms",
+    "FCP": "0.2\u00a0s",
     "weightKB": 387
   },
   {
@@ -97,10 +97,10 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "0.5 s",
+    "LCP": "0.5\u00a0s",
     "CLS": "0",
-    "TBT": "0 ms",
-    "FCP": "0.2 s",
+    "TBT": "0\u00a0ms",
+    "FCP": "0.2\u00a0s",
     "weightKB": 287
   },
   {
@@ -110,11 +110,11 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "0.7 s",
+    "LCP": "0.7\u00a0s",
     "CLS": "0",
-    "TBT": "0 ms",
-    "FCP": "0.2 s",
-    "weightKB": 610
+    "TBT": "0\u00a0ms",
+    "FCP": "0.2\u00a0s",
+    "weightKB": 662
   },
   {
     "page": "/contact/",
@@ -123,10 +123,10 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "0.3 s",
+    "LCP": "0.3\u00a0s",
     "CLS": "0",
-    "TBT": "0 ms",
-    "FCP": "0.2 s",
+    "TBT": "0\u00a0ms",
+    "FCP": "0.2\u00a0s",
     "weightKB": 102
   },
   {
@@ -136,10 +136,10 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "0.4 s",
+    "LCP": "0.4\u00a0s",
     "CLS": "0",
-    "TBT": "0 ms",
-    "FCP": "0.2 s",
+    "TBT": "0\u00a0ms",
+    "FCP": "0.2\u00a0s",
     "weightKB": 176
   },
   {
@@ -149,10 +149,10 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "0.3 s",
+    "LCP": "0.3\u00a0s",
     "CLS": "0",
-    "TBT": "0 ms",
-    "FCP": "0.2 s",
+    "TBT": "0\u00a0ms",
+    "FCP": "0.3\u00a0s",
     "weightKB": 135
   }
 ]

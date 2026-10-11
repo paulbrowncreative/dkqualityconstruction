@@ -5,7 +5,7 @@
   "conventions": {
     "assetId": "DKQ-<batch 2 digits>-<seq 2 digits>, e.g. DKQ-01-03. Never reused or renumbered.",
     "originals": "assets-src/uploads/batch-NN/<original filename, sanitized> — never modified",
-    "derivatives": "src/assets/img/photos/<stored filename>-<width>.{avif,jpg}; widths include 320 (card thumbnails) from batch 7 on",
+    "derivatives": "src/assets/img/photos/<stored filename>-<width>.{avif,jpg}; 320w (thumbnails) on all photos; 768w on hero-size photos (batch 11)",
     "types": [
       "project-photo",
       "before-photo",
@@ -144,6 +144,18 @@
         "DKQ-10-05"
       ],
       "summary": "Lakefront cable-rail deck, exact duplicate of homepage-hero aerial (DKQ-06-03), aerial of P-022 bench deck, cabin covered porch floor, large two-tone composite deck. No before/after pairs, no reviews."
+    },
+    {
+      "batch": 11,
+      "received": "2026-10-11",
+      "assetIds": [
+        "DKQ-11-01",
+        "DKQ-11-02",
+        "DKQ-11-03",
+        "DKQ-11-04",
+        "DKQ-11-05"
+      ],
+      "summary": "2nd angle of P-039 (trailer in frame — completes \"LICENSED AND INSURED\" signage reading), near-duplicate of DKQ-05-05, sunroom wraparound aerial, pool/farmland deck (possible P-018 relation flagged), pressure-treated multi-zone overhead aerial. No before/after pairs, no reviews."
     }
   ],
   "projects": [
@@ -459,7 +471,32 @@
       "title": "Large two-tone composite deck",
       "category": "decks",
       "assets": [
-        "DKQ-10-05"
+        "DKQ-10-05",
+        "DKQ-11-01"
+      ]
+    },
+    {
+      "projectId": "P-040",
+      "title": "Wraparound deck with planters and two stairways",
+      "category": "decks",
+      "assets": [
+        "DKQ-11-03"
+      ]
+    },
+    {
+      "projectId": "P-041",
+      "title": "Gray deck overlooking a pool and open fields",
+      "category": "decks",
+      "assets": [
+        "DKQ-11-04"
+      ]
+    },
+    {
+      "projectId": "P-042",
+      "title": "Multi-zone pressure-treated deck with angled corners",
+      "category": "decks",
+      "assets": [
+        "DKQ-11-05"
       ]
     }
   ],
@@ -603,6 +640,14 @@
         {
           "file": "src/assets/img/photos/project-deck-waterfront-covered-640.jpg",
           "bytes": 69507
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-waterfront-covered-768.avif",
+          "bytes": 34157
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-waterfront-covered-768.jpg",
+          "bytes": 97203
         }
       ],
       "altText": "Wide view across a large gray deck, partly under a roof overhang supported by white posts, with white railings and black balusters facing a lake",
@@ -623,6 +668,7 @@
         "widths": [
           320,
           640,
+          768,
           1024,
           1600,
           2000
@@ -690,6 +736,14 @@
         {
           "file": "src/assets/img/photos/project-deck-aerial-privacy-screen-640.jpg",
           "bytes": 76181
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-privacy-screen-768.avif",
+          "bytes": 46484
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-privacy-screen-768.jpg",
+          "bytes": 107748
         }
       ],
       "altText": "Aerial view of a raised gray deck with a dark border, white posts and black balusters, a decorative black privacy screen along one side, and a wide staircase down to the yard",
@@ -708,6 +762,7 @@
         "widths": [
           320,
           640,
+          768,
           1024,
           1600,
           2000
@@ -1240,6 +1295,14 @@
         {
           "file": "src/assets/img/photos/project-kitchen-white-shaker-640.jpg",
           "bytes": 42095
+        },
+        {
+          "file": "src/assets/img/photos/project-kitchen-white-shaker-768.avif",
+          "bytes": 21207
+        },
+        {
+          "file": "src/assets/img/photos/project-kitchen-white-shaker-768.jpg",
+          "bytes": 57166
         }
       ],
       "altText": "Remodeled kitchen with white shaker cabinets, gray granite counters, a black double sink, white mosaic tile backsplash, stainless appliances and plank flooring against teal walls",
@@ -1261,6 +1324,7 @@
         "widths": [
           320,
           640,
+          768,
           1024,
           1600,
           2000
@@ -1403,6 +1467,14 @@
         {
           "file": "src/assets/img/photos/project-deck-ground-level-brown-wide-640.jpg",
           "bytes": 70941
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-ground-level-brown-wide-768.avif",
+          "bytes": 41705
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-ground-level-brown-wide-768.jpg",
+          "bytes": 101888
         }
       ],
       "altText": "Wide view across a large low brown deck with a darker picture-frame border and matching skirting, running along a red-brick home into the backyard",
@@ -1422,6 +1494,7 @@
         "widths": [
           320,
           640,
+          768,
           1024,
           1600,
           2000
@@ -2021,6 +2094,14 @@
         {
           "file": "src/assets/img/photos/project-deck-aerial-screened-room-640.jpg",
           "bytes": 74203
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-screened-room-768.avif",
+          "bytes": 51782
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-screened-room-768.jpg",
+          "bytes": 107029
         }
       ],
       "altText": "Aerial view of a raised brown deck with black metal railings, a dining table and a long staircase, built above a screened room with its own steps, behind a two-story home",
@@ -2047,6 +2128,7 @@
         "widths": [
           320,
           640,
+          768,
           1024,
           1600,
           2000
@@ -2113,6 +2195,14 @@
         {
           "file": "src/assets/img/photos/project-deck-aerial-built-in-benches-640.jpg",
           "bytes": 67612
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-built-in-benches-768.avif",
+          "bytes": 38505
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-built-in-benches-768.jpg",
+          "bytes": 95619
         }
       ],
       "altText": "Aerial view of a wide gray deck across the back of a two-story home, with built-in benches on both sides, white-trimmed center stairs and gray skirting",
@@ -2135,6 +2225,7 @@
         "widths": [
           320,
           640,
+          768,
           1024,
           1600,
           2000
@@ -2657,6 +2748,14 @@
         {
           "file": "src/assets/img/photos/project-deck-aerial-covered-porch-privacy-wall-640.jpg",
           "bytes": 73603
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-covered-porch-privacy-wall-768.avif",
+          "bytes": 52450
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-covered-porch-privacy-wall-768.jpg",
+          "bytes": 106035
         }
       ],
       "altText": "Aerial view of a large brown deck wrapping the back of a white ranch home, with a covered porch section on wood posts, dark railings, a privacy wall and wide steps down to a stamped-concrete border",
@@ -2679,6 +2778,7 @@
         "widths": [
           320,
           640,
+          768,
           1024,
           1600,
           2000
@@ -3868,6 +3968,14 @@
         {
           "file": "src/assets/img/photos/project-deck-aerial-box-steps-trailer-640.jpg",
           "bytes": 74656
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-box-steps-trailer-768.avif",
+          "bytes": 48758
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-box-steps-trailer-768.jpg",
+          "bytes": 106282
         }
       ],
       "altText": "Aerial view of a brown composite deck with black railings with cedar-tone accents, horizontal composite skirting and angled box steps, with the DK Quality Construction trailer parked beside the house",
@@ -3888,6 +3996,7 @@
         "widths": [
           320,
           640,
+          768,
           1024,
           1600,
           2000
@@ -4135,6 +4244,14 @@
         {
           "file": "src/assets/img/photos/project-porch-deck-built-in-benches-aerial-640.jpg",
           "bytes": 76241
+        },
+        {
+          "file": "src/assets/img/photos/project-porch-deck-built-in-benches-aerial-768.avif",
+          "bytes": 48175
+        },
+        {
+          "file": "src/assets/img/photos/project-porch-deck-built-in-benches-aerial-768.jpg",
+          "bytes": 107316
         }
       ],
       "altText": "Aerial view of a gray deck extending a covered front porch, with angled built-in benches on both sides framed by flowering shrubs",
@@ -4153,6 +4270,7 @@
         "widths": [
           320,
           640,
+          768,
           1024,
           1600,
           2000
@@ -4310,6 +4428,356 @@
         ],
         "aspect": "1125x1500"
       }
+    },
+    {
+      "id": "DKQ-11-01",
+      "batch": 11,
+      "originalFilename": "51.jpg",
+      "original": "assets-src/uploads/batch-11/51.jpg",
+      "sha256": "899e0765b647d8701b43517c4edebdad27ef3f7ff40cca98413028721e2968d0",
+      "bytes": 415696,
+      "originalDimensions": [
+        1500,
+        2000
+      ],
+      "format": "jpeg",
+      "duplicateOf": null,
+      "type": "project-photo",
+      "classification": "general-portfolio (completed) — 2nd angle of P-039 (same arborvitae row, rail fence, wet day, divider/border boards); DK trailer in frame",
+      "projectId": "P-039",
+      "pairId": null,
+      "reviewId": null,
+      "storedFilename": "project-deck-large-composite-divider-trailer",
+      "optimized": [
+        {
+          "file": "src/assets/img/photos/project-deck-large-composite-divider-trailer-1024.avif",
+          "bytes": 95407
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-large-composite-divider-trailer-1024.jpg",
+          "bytes": 281687
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-large-composite-divider-trailer-1500.avif",
+          "bytes": 192495
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-large-composite-divider-trailer-1500.jpg",
+          "bytes": 454115
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-large-composite-divider-trailer-320.avif",
+          "bytes": 12627
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-large-composite-divider-trailer-320.jpg",
+          "bytes": 35723
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-large-composite-divider-trailer-640.avif",
+          "bytes": 42417
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-large-composite-divider-trailer-640.jpg",
+          "bytes": 126325
+        }
+      ],
+      "altText": "The same deck looking out across the yard: the darker divider and border boards, a row of arborvitae along the fence, and the DK Quality Construction trailer parked nearby",
+      "caption": "Large ground-level composite deck with a darker contrasting border and divider boards.",
+      "websiteLocations": [
+        "/projects/ (P-039 thumbnail + viewer)"
+      ],
+      "status": "integrated",
+      "questions": [
+        "Same as P-039"
+      ],
+      "approval": "pending owner confirmation of project details",
+      "category": "Decks",
+      "processing": "Resized (Lanczos) + light unsharp mask; AVIF q52 + progressive JPEG q78. No retouching, no AI upscaling, no content changes.",
+      "optimizedDimensions": {
+        "widths": [
+          320,
+          640,
+          1024,
+          1500
+        ],
+        "aspect": "1500x2000"
+      }
+    },
+    {
+      "id": "DKQ-11-02",
+      "batch": 11,
+      "originalFilename": "52.jpg",
+      "original": "assets-src/uploads/batch-11/52.jpg",
+      "sha256": "6c2809e8bed71418275f500dd6ff808b07e89c0fc5f9d685af6e84f4faa52638",
+      "bytes": 451861,
+      "originalDimensions": [
+        1125,
+        1500
+      ],
+      "format": "jpeg",
+      "duplicateOf": null,
+      "type": "project-photo",
+      "classification": "NEAR-DUPLICATE of DKQ-05-05 (same photo, recompressed: same size, mean pixel difference 5/255). Original kept; not published twice.",
+      "projectId": "P-020",
+      "pairId": null,
+      "reviewId": null,
+      "storedFilename": null,
+      "optimized": [],
+      "altText": null,
+      "caption": null,
+      "websiteLocations": [
+        "(served via DKQ-05-05)"
+      ],
+      "status": "duplicate — not published separately",
+      "questions": [],
+      "approval": "n/a",
+      "category": "Decks"
+    },
+    {
+      "id": "DKQ-11-03",
+      "batch": 11,
+      "originalFilename": "53.jpg",
+      "original": "assets-src/uploads/batch-11/53.jpg",
+      "sha256": "dd500e01f4930933eeb2675e2f44d0bacc3f5f35ba382fab1e414669e07c3170",
+      "bytes": 459423,
+      "originalDimensions": [
+        1500,
+        1125
+      ],
+      "format": "jpeg",
+      "duplicateOf": null,
+      "type": "project-photo",
+      "classification": "general-portfolio (completed) — AERIAL; featured (1500px, too small for a hero). Not P-023: different house/sunroom, no pond",
+      "projectId": "P-040",
+      "pairId": null,
+      "reviewId": null,
+      "storedFilename": "project-deck-aerial-sunroom-planters",
+      "optimized": [
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-sunroom-planters-1024.avif",
+          "bytes": 104634
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-sunroom-planters-1024.jpg",
+          "bytes": 214657
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-sunroom-planters-1500.avif",
+          "bytes": 227012
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-sunroom-planters-1500.jpg",
+          "bytes": 438050
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-sunroom-planters-320.avif",
+          "bytes": 11711
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-sunroom-planters-320.jpg",
+          "bytes": 22988
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-sunroom-planters-640.avif",
+          "bytes": 41682
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-sunroom-planters-640.jpg",
+          "bytes": 85100
+        }
+      ],
+      "altText": "Aerial view of a gray deck wrapping around a sunroom, with white railings and black balusters, two built-in planter boxes and a staircase at each end",
+      "caption": "Gray deck wrapping a sunroom, with white-and-black railings, built-in planter boxes and stairs at each end.",
+      "websiteLocations": [
+        "/projects/ (featured)"
+      ],
+      "status": "integrated",
+      "questions": [
+        "Did DK build the planter boxes?",
+        "Did DK build the sunroom? (caption does not claim it)"
+      ],
+      "approval": "pending owner confirmation of project details",
+      "category": "Decks",
+      "processing": "Resized (Lanczos) + light unsharp mask; AVIF q52 + progressive JPEG q78. No retouching, no AI upscaling, no content changes.",
+      "optimizedDimensions": {
+        "widths": [
+          320,
+          640,
+          1024,
+          1500
+        ],
+        "aspect": "1500x1125"
+      }
+    },
+    {
+      "id": "DKQ-11-04",
+      "batch": 11,
+      "originalFilename": "54.jpg",
+      "original": "assets-src/uploads/batch-11/54.jpg",
+      "sha256": "7269608b833ef404e5a349343caf569202a08b883961d52d53f7131588682c17",
+      "bytes": 412367,
+      "originalDimensions": [
+        1500,
+        2000
+      ],
+      "format": "jpeg",
+      "duplicateOf": null,
+      "type": "project-photo",
+      "classification": "general-portfolio (completed). Possibly same property as P-018 (gray deck, white rails, above-ground pool, farmland) but P-018 deck surrounds its pool while here the pool sits beyond the railing — kept separate, flagged",
+      "projectId": "P-041",
+      "pairId": null,
+      "reviewId": null,
+      "storedFilename": "project-deck-gray-pool-field-view",
+      "optimized": [
+        {
+          "file": "src/assets/img/photos/project-deck-gray-pool-field-view-1024.avif",
+          "bytes": 89380
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-gray-pool-field-view-1024.jpg",
+          "bytes": 271300
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-gray-pool-field-view-1500.avif",
+          "bytes": 187610
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-gray-pool-field-view-1500.jpg",
+          "bytes": 449530
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-gray-pool-field-view-320.avif",
+          "bytes": 10822
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-gray-pool-field-view-320.jpg",
+          "bytes": 31485
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-gray-pool-field-view-640.avif",
+          "bytes": 37150
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-gray-pool-field-view-640.jpg",
+          "bytes": 116668
+        }
+      ],
+      "altText": "Gray composite deck with white railings and black balusters, looking out over an above-ground pool, a play set and open farm fields under a clear sky",
+      "caption": "Gray composite deck with white-and-black railings, looking out over an above-ground pool and open farmland.",
+      "websiteLocations": [
+        "/projects/"
+      ],
+      "status": "integrated",
+      "questions": [
+        "Same property as P-018 (DKQ-05-03)?"
+      ],
+      "approval": "pending owner confirmation of project details",
+      "category": "Decks",
+      "processing": "Resized (Lanczos) + light unsharp mask; AVIF q52 + progressive JPEG q78. No retouching, no AI upscaling, no content changes.",
+      "optimizedDimensions": {
+        "widths": [
+          320,
+          640,
+          1024,
+          1500
+        ],
+        "aspect": "1500x2000"
+      }
+    },
+    {
+      "id": "DKQ-11-05",
+      "batch": 11,
+      "originalFilename": "55.jpg",
+      "original": "assets-src/uploads/batch-11/55.jpg",
+      "sha256": "adcb7606e3cd62f7dadefd9bf4ded9ff1c4663aae4f7774d0b3eae12944d7c9d",
+      "bytes": 472984,
+      "originalDimensions": [
+        2000,
+        1500
+      ],
+      "format": "jpeg",
+      "duplicateOf": null,
+      "type": "project-photo",
+      "classification": "general-portfolio (completed) — overhead AERIAL, pressure-treated multi-zone deck; hero-eligible but current heroes are stronger. Not P-019 (different house, paver patio)",
+      "projectId": "P-042",
+      "pairId": null,
+      "reviewId": null,
+      "storedFilename": "project-deck-aerial-pressure-treated-multi-zone",
+      "optimized": [
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-pressure-treated-multi-zone-1024.avif",
+          "bytes": 84202
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-pressure-treated-multi-zone-1024.jpg",
+          "bytes": 185246
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-pressure-treated-multi-zone-1600.avif",
+          "bytes": 182157
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-pressure-treated-multi-zone-1600.jpg",
+          "bytes": 408800
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-pressure-treated-multi-zone-2000.avif",
+          "bytes": 279250
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-pressure-treated-multi-zone-2000.jpg",
+          "bytes": 523096
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-pressure-treated-multi-zone-320.avif",
+          "bytes": 8975
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-pressure-treated-multi-zone-320.jpg",
+          "bytes": 18582
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-pressure-treated-multi-zone-640.avif",
+          "bytes": 33371
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-pressure-treated-multi-zone-640.jpg",
+          "bytes": 72674
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-pressure-treated-multi-zone-768.avif",
+          "bytes": 47472
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-pressure-treated-multi-zone-768.jpg",
+          "bytes": 104853
+        }
+      ],
+      "altText": "Overhead aerial view of a large pressure-treated wood deck with two connected zones, angled corners, divider boards and wood railings with black balusters, beside a paver patio",
+      "caption": "Large pressure-treated wood deck in two connected zones, with angled corners, a divider pattern and wood railings with black balusters.",
+      "websiteLocations": [
+        "/projects/"
+      ],
+      "status": "integrated",
+      "questions": [
+        "Confirm pressure-treated lumber",
+        "Did DK build the storage enclosure against the house?"
+      ],
+      "approval": "pending owner confirmation of project details",
+      "category": "Decks",
+      "processing": "Resized (Lanczos) + light unsharp mask; AVIF q52 + progressive JPEG q78. No retouching, no AI upscaling, no content changes.",
+      "optimizedDimensions": {
+        "widths": [
+          320,
+          640,
+          768,
+          1024,
+          1600,
+          2000
+        ],
+        "aspect": "2000x1500"
+      }
     }
   ],
   "heroSelectionRule": {
@@ -4325,7 +4793,8 @@
   "evidence": {
     "trailerSignage": "DKQ-02-01 shows company trailer reading \"DK QUALITY CONSTRUCTION · 734-497-6773 · HOME REMODELING • DECKS • KITCHENS • BATHS\" (a further line is obscured). Corroborates phone and core services.",
     "trailerSignage2": "DKQ-03-03 shows the company trailer again at the P-010 job site.",
-    "trailerSignage3": "DKQ-09-04: trailer reads \"DK QUALITY CONSTRUCTION · 734-497-6773 · HOME REMODELING • DECKS • KITCHEN[S…]\" and a further line beginning \"LICENSED AND …\" (remainder hidden). NOT published as a claim; owner asked to confirm license/insurance."
+    "trailerSignage3": "DKQ-09-04: trailer reads \"DK QUALITY CONSTRUCTION · 734-497-6773 · HOME REMODELING • DECKS • KITCHEN[S…]\" and a further line beginning \"LICENSED AND …\" (remainder hidden). NOT published as a claim; owner asked to confirm license/insurance.",
+    "trailerSignage4": "DKQ-11-01 shows the end of the trailer line: \"…NSURED\". Combined with DKQ-09-04 (\"LICENSED AND …\"), the trailer reads \"LICENSED AND INSURED\". This is the company's own advertising; NOT published on the site pending owner confirmation and a license number."
   },
   "retiredStock": [
     "deck-treated-wooded-lot (batch 4)"

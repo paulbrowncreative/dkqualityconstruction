@@ -24,7 +24,7 @@ MANIFEST = ROOT / "src" / "data" / "images.json"
 
 # 320w serves project-card thumbnails (shown ~72 CSS px wide, so 320 covers 4x DPR).
 DEFAULT_WIDTHS = [320, 640, 1024, 1600]
-HERO_WIDTHS = [320, 640, 1024, 1600, 2000]
+HERO_WIDTHS = [320, 640, 768, 1024, 1600, 2000]  # 768w: phones at ~1.75-2x DPR
 
 # Per-image processing. "crop" is (left, top, right, bottom) on the original.
 PHOTOS = {
@@ -94,6 +94,11 @@ PHOTOS = {
     "project-porch-deck-built-in-benches-aerial": {"src": "assets-src/uploads/batch-10/48.jpg", "widths": HERO_WIDTHS},
     "project-porch-cabin-wraparound": {"src": "assets-src/uploads/batch-10/49.jpg"},
     "project-deck-large-composite-two-tone": {"src": "assets-src/uploads/batch-10/50.jpg"},
+    # Batch 11 (52.jpg is a recompressed near-duplicate of batch-05/25.jpg — not reprocessed)
+    "project-deck-large-composite-divider-trailer": {"src": "assets-src/uploads/batch-11/51.jpg"},
+    "project-deck-aerial-sunroom-planters": {"src": "assets-src/uploads/batch-11/53.jpg"},
+    "project-deck-gray-pool-field-view": {"src": "assets-src/uploads/batch-11/54.jpg"},
+    "project-deck-aerial-pressure-treated-multi-zone": {"src": "assets-src/uploads/batch-11/55.jpg", "widths": HERO_WIDTHS},
     "framing-new-construction": {},
 }
 
