@@ -1,5 +1,5 @@
 import { business, services, serviceUrl } from '../../site.config.mjs';
-import { pageHero, reviewCard, ctaBand, icon, esc } from '../lib/components.mjs';
+import { pageHero, reviewCard, ctaBand, icon, esc, preloadImage } from '../lib/components.mjs';
 import { reviews } from '../data/reviews.mjs';
 
 const trail = [
@@ -14,13 +14,14 @@ export default {
   description:
     'What homeowners say about working with DK Quality Construction on decks, screened porches and basement remodels in Monroe County, MI and Lucas County, OH.',
   breadcrumbs: trail,
+  preload: preloadImage('project-deck-aerial-privacy-screen', '100vw'),
   body: `
 ${pageHero({
   eyebrow: 'Testimonials',
   title: 'What our customers say',
   lede: 'Homeowners on working with David and the crew: the communication, the cleanup and the finished work.',
-  image: 'project-deck-covered-fan-bar-rail',
-  imageAlt: 'Covered composite deck with a stained plank ceiling, ceiling fan and bar-height rail, built by DK Quality Construction',
+  image: 'project-deck-aerial-privacy-screen',
+  imageAlt: 'Aerial view of a raised gray deck with white posts, black balusters, a decorative black privacy screen and a wide staircase, built by DK Quality Construction',
   trail,
 })}
 

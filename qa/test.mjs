@@ -215,7 +215,7 @@ for (const [label, vp] of [['mobile', { width: 375, height: 812 }], ['desktop', 
     names: [...document.querySelectorAll('.review-card__name')].map((n) => n.textContent.trim()),
     reviewSchema: [...document.querySelectorAll('script[type="application/ld+json"]')].some((s) => /"(Review|AggregateRating)"/.test(s.textContent)),
   }));
-  const shortNames = d.names.every((n) => /^(\S+ [A-Z]\.|The [A-Z]\. Family|The Brown Family)$/.test(n));
+  const shortNames = d.names.every((n) => /^(\S+ [A-Z]\.|The [A-Z]\. Family|The Brown Family|The Orwig Family)$/.test(n));
   record('Testimonials: linked in nav + footer, 3 on home, 5 on page, labelled stars in brass (ink) / brass-dark (light), short names, no Review schema',
     navLink >= 2 && footLink === 1 && homeCards === 3 && d.cards === 5 && d.labelled && homeStar === 'rgb(196, 144, 63)' && d.starColor === 'rgb(138, 90, 28)' && shortNames && !d.reviewSchema,
     `nav=${navLink} foot=${footLink} home=${homeCards} page=${d.cards} homeStar=${homeStar} pageStar=${d.starColor} names=${d.names.join('|')} schema=${d.reviewSchema}`);

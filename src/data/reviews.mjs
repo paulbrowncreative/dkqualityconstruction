@@ -18,7 +18,7 @@ export const reviews = [
     text: 'We are so happy with our finished basement from David and his crew. They were so kind and accommodating, made sure we knew what was happening every step of the way. Provided us updates daily and very knowledgeable in answering our questions. Efficient and fast as well. Would recommend to anyone! 10/10. Thanks David and crew!',
   },
   {
-    id: 'R-03', asset: 'DKQ-16-05', name: 'The O. Family', project: 'Covered deck', service: 'decks', projectId: 'P-052',
+    id: 'R-03', asset: 'DKQ-16-05', name: 'The Orwig Family', project: 'Covered deck', service: 'decks', projectId: 'P-052',
     source: 'Customer review',
     headline: 'Highly Recommend!',
     text: 'David was in constant contact with us and adapted to the numerous changes that we had along the way',
