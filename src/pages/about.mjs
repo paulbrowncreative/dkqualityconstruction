@@ -41,6 +41,7 @@ ${pageHero({
     <dl class="facts">
       <div class="facts__item"><dt>Founded</dt><dd>2021, Monroe, MI</dd></div>
       <div class="facts__item"><dt>Owner</dt><dd>${business.owner}</dd></div>
+      <div class="facts__item"><dt>Credentials</dt><dd>Licensed &amp; insured</dd></div>
       <div class="facts__item"><dt>Specialty</dt><dd>Treated &amp; composite decks</dd></div>
       <div class="facts__item"><dt>BBB</dt><dd>Accredited since ${business.bbbAccreditedSince} · <a href="${business.bbb}" rel="noopener" target="_blank">A+ rating<span class="visually-hidden"> (opens in a new tab)</span></a></dd></div>
       <div class="facts__item"><dt>Serving</dt><dd>Monroe County, MI · Lucas County, OH</dd></div>

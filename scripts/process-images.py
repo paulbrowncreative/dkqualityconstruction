@@ -29,7 +29,6 @@ HERO_WIDTHS = [320, 640, 768, 1024, 1600, 2000]  # 768w: phones at ~1.75-2x DPR
 # Per-image processing. "crop" is (left, top, right, bottom) on the original.
 PHOTOS = {
     "fence-backyard-gray": {},
-    "bathroom-walk-in-shower": {},
     "flooring-plank-install": {},
     # ---- DK Quality Construction's own project photos (client uploads; originals untouched) ----
     # Batch 1 — see project-assets-manifest.json for IDs.
@@ -99,6 +98,12 @@ PHOTOS = {
     "project-deck-aerial-sunroom-planters": {"src": "assets-src/uploads/batch-11/53.jpg"},
     "project-deck-gray-pool-field-view": {"src": "assets-src/uploads/batch-11/54.jpg"},
     "project-deck-aerial-pressure-treated-multi-zone": {"src": "assets-src/uploads/batch-11/55.jpg", "widths": HERO_WIDTHS},
+    # Batch 12
+    "project-deck-pressure-treated-multi-zone-aerial-wide": {"src": "assets-src/uploads/batch-12/56.jpg", "widths": HERO_WIDTHS},
+    "project-deck-pressure-treated-multi-zone-yard": {"src": "assets-src/uploads/batch-12/57.jpg"},
+    "project-bathroom-tub-subway-tile": {"src": "assets-src/uploads/batch-12/58.jpg"},
+    "project-bathroom-tub-closet-shelves": {"src": "assets-src/uploads/batch-12/59.jpg"},
+    "project-bathroom-vanity-niche": {"src": "assets-src/uploads/batch-12/60.jpg", "widths": HERO_WIDTHS},
     "framing-new-construction": {},
 }
 

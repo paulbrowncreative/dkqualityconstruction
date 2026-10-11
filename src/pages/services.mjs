@@ -10,7 +10,7 @@ const altText = {
   decks: 'Aerial view of a wide gray deck with built-in benches and white-trimmed center stairs',
   fencing: 'Gray-stained picket fence with flower boxes around a backyard',
   'basement-finishing': 'Remodeled basement with a black painted ceiling, plank flooring and white built-in cabinets',
-  'bathroom-remodeling': 'Walk-in glass shower with marble-look tile',
+  'bathroom-remodeling': 'Remodeled bathroom with a white vanity, round mirror and marble-look tile tub surround',
   'kitchen-remodeling': 'Remodeled kitchen with white shaker cabinets, granite counters and stainless appliances',
   flooring: 'Installer laying plank flooring in an empty room',
   garages: 'Wood wall and roof framing on a building under construction',

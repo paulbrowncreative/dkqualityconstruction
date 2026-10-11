@@ -25,7 +25,8 @@ Each fact carries one of three levels:
 | "Est. 2021" | Printed on the logo | VERIFIED | Facebook profile image |
 | BBB accreditation | Accredited since March 2, 2023, A+ rating | VERIFIED (as of Oct 10, 2026) | [BBB][bbb] |
 | BBB complaints | 0 in the last 3 years | VERIFIED (not published, because the figure changes) | [BBB][bbb] |
-| BBB customer reviews | 4 reviews counted; review text not retrievable | VERIFIED count only | [BBB][bbb] |
+| BBB customer reviews | 4 reviews counted; review text not retrievable (rechecked Oct 11, 2026) | VERIFIED count only | [BBB][bbb] |
+| Licensed and insured | Yes | CONFIRMED BY OWNER'S REPRESENTATIVE (Oct 11, 2026); trailer signage agrees | Client message; photos DKQ-09-04 and DKQ-11-01 |
 | Employees | 1 (BBB) | VERIFIED | [BBB][bbb] |
 | BBB business description | "We are dedicated to providing our customers top notch quality." | VERIFIED | [BBB][bbb] |
 | Facebook followers | 1,011 | VERIFIED (not published) | [Facebook][fb] meta description |
@@ -150,7 +151,7 @@ See the P2 and P3 items in the QA report for each of these.
 
 | Claim | Reason |
 |---|---|
-| Licensed / insured, and license numbers | Not verifiable from any public source found |
+| License numbers | Not supplied. **"Licensed and insured" itself was confirmed by the owner's representative on Oct 11, 2026 and is now published.** The company trailer reads "LICENSED AND INSURED". |
 | Warranties or guarantees | None found |
 | Financing | None found |
 | "Free" estimates | Not verified. The site says "Request an Estimate" and "No obligation" only |

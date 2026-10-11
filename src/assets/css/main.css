@@ -344,7 +344,8 @@ body { padding-bottom: calc(4rem + env(safe-area-inset-bottom)); }
 .proof-strip__item .icon { color: var(--brass); width: 1.35rem; height: 1.35rem; margin-top: 0.05rem; }
 .proof-strip__item a { color: var(--brass); }
 .proof-strip__item a:hover { color: var(--white); }
-@media (min-width: 48em) { .proof-strip__list { grid-template-columns: repeat(3, 1fr); } .proof-strip__item + .proof-strip__item { border-left: 1px solid var(--line-dark); padding-left: var(--space-5); } }
+@media (min-width: 40em) { .proof-strip__list { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 72em) { .proof-strip__list { grid-template-columns: repeat(4, 1fr); } .proof-strip__item + .proof-strip__item { border-left: 1px solid var(--line-dark); padding-left: var(--space-5); } }
 
 /* ---------- Specialty (home) ---------- */
 .specialty__grid { display: grid; gap: var(--space-7); align-items: center; }
@@ -588,7 +589,6 @@ body { padding-bottom: calc(4rem + env(safe-area-inset-bottom)); }
 .facts dt { font-size: var(--fs-xs); text-transform: uppercase; letter-spacing: 0.16em; font-stretch: var(--stretch-wide); font-weight: 700; color: var(--brass); margin-bottom: var(--space-2); }
 .facts dd { margin: 0; color: var(--white); font-weight: 600; font-size: 1.1rem; }
 @media (min-width: 48em) { .facts { grid-template-columns: repeat(3, 1fr); column-gap: var(--space-6); } }
-@media (min-width: 75em) { .facts { grid-template-columns: repeat(5, 1fr); } }
 
 /* ---------- Contact ---------- */
 .contact-aside { display: grid; gap: var(--space-4); }
@@ -620,6 +620,7 @@ body { padding-bottom: calc(4rem + env(safe-area-inset-bottom)); }
 .site-footer a:hover { color: var(--brass); text-decoration: underline; }
 .site-footer__contact li { display: flex; align-items: center; gap: 0.5em; }
 .site-footer .icon { color: var(--brass); }
+.site-footer__cred { display: flex; align-items: center; gap: 0.5em; margin-top: var(--space-4); color: var(--text-on-dark); font-weight: 600; }
 .site-footer__bbb { margin-top: var(--space-4); padding: 0.5rem 0.85rem; border: 1px solid var(--line-dark); border-radius: var(--radius); font-weight: 600; }
 .site-footer__legal { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-2) var(--space-6); padding-block: var(--space-5); border-top: 1px solid var(--line-dark); font-size: var(--fs-xs); color: #8d9197; }
 .site-footer__legal p { margin: 0; }

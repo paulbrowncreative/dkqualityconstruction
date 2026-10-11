@@ -55,6 +55,10 @@ export const business = {
   facebook: 'https://www.facebook.com/DKQConstruction/',
   bbb: 'https://www.bbb.org/us/mi/monroe/profile/general-contractor/dk-quality-construction-llc-0422-211007299',
   bbbAccreditedSince: 2023,
+  // Confirmed by the site owner's representative (2026-10-11); also on the company trailer signage.
+  // Add the Michigan Residential Builder license number here when supplied — it then shows in the footer.
+  licensedInsured: true,
+  licenseNumber: '',
   serviceArea: {
     summary: 'Monroe County, Michigan and Lucas County, Ohio',
     counties: [
@@ -114,7 +118,7 @@ export const services = [
     navName: 'Bathroom Remodeling',
     short: 'Full bathroom remodels and updates: showers, tile, vanities, fixtures and flooring.',
     page: true,
-    image: 'bathroom-walk-in-shower',
+    image: 'project-bathroom-vanity-niche',
   },
   {
     slug: 'kitchen-remodeling',

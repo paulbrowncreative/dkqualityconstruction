@@ -9,16 +9,6 @@
     "width": 2400,
     "height": 1600
   },
-  "bathroom-walk-in-shower": {
-    "widths": [
-      320,
-      640,
-      1024,
-      1600
-    ],
-    "width": 2400,
-    "height": 1600
-  },
   "flooring-plank-install": {
     "widths": [
       320,
@@ -576,6 +566,59 @@
       2000
     ],
     "width": 2000,
+    "height": 1500
+  },
+  "project-deck-pressure-treated-multi-zone-aerial-wide": {
+    "widths": [
+      320,
+      640,
+      768,
+      1024,
+      1600,
+      2000
+    ],
+    "width": 2000,
+    "height": 1500
+  },
+  "project-deck-pressure-treated-multi-zone-yard": {
+    "widths": [
+      320,
+      640,
+      1024,
+      1500
+    ],
+    "width": 1500,
+    "height": 1125
+  },
+  "project-bathroom-tub-subway-tile": {
+    "widths": [
+      320,
+      640,
+      1024,
+      1500
+    ],
+    "width": 1500,
+    "height": 2000
+  },
+  "project-bathroom-tub-closet-shelves": {
+    "widths": [
+      320,
+      640,
+      1024,
+      1125
+    ],
+    "width": 1125,
+    "height": 1500
+  },
+  "project-bathroom-vanity-niche": {
+    "widths": [
+      320,
+      640,
+      768,
+      1024,
+      1125
+    ],
+    "width": 1125,
     "height": 1500
   },
   "framing-new-construction": {

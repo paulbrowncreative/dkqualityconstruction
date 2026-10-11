@@ -6,6 +6,7 @@
 export const categories = [
   { id: 'decks', name: 'Decks', service: '/services/decks/' },
   { id: 'kitchens', name: 'Kitchen Remodeling', service: '/services/kitchen-remodeling/' },
+  { id: 'baths', name: 'Bathroom Remodeling', service: '/services/bathroom-remodeling/' },
   { id: 'basements', name: 'Basement Remodeling', service: '/services/basement-finishing/' },
   // No dedicated service page yet (owner to confirm scope) — the group links to the estimate form.
   { id: 'outdoor', name: 'Covered Patios' },
@@ -285,7 +286,21 @@ export const projects = [
     id: 'P-042', category: 'decks',
     title: 'Multi-zone pressure-treated deck with angled corners',
     caption: 'Large pressure-treated wood deck in two connected zones, with angled corners, a divider pattern and wood railings with black balusters.',
-    images: [{ asset: 'DKQ-11-05', name: 'project-deck-aerial-pressure-treated-multi-zone', alt: 'Overhead aerial view of a large pressure-treated wood deck with two connected zones, angled corners, divider boards and wood railings with black balusters, beside a paver patio' }],
+    images: [
+      { asset: 'DKQ-12-01', name: 'project-deck-pressure-treated-multi-zone-aerial-wide', alt: 'Aerial view of a large pressure-treated wood deck with two connected zones, angled corners, wood railings with black balusters and board skirting, beside a gray home and paver patio' },
+      { asset: 'DKQ-11-05', name: 'project-deck-aerial-pressure-treated-multi-zone', alt: 'Overhead view of the same deck showing the two zones, divider boards and angled corners' },
+      { asset: 'DKQ-12-02', name: 'project-deck-pressure-treated-multi-zone-yard', alt: 'The same deck from the lawn: wood railings with black balusters, board skirting and a storage door underneath' },
+    ],
+  },
+  {
+    id: 'P-043', category: 'baths',
+    title: 'Bathroom remodel with marble-look tile',
+    caption: 'Marble-look subway tile tub surround with a recessed niche, black fixtures, a white shaker vanity with a stone-look top, and plank flooring.',
+    images: [
+      { asset: 'DKQ-12-05', name: 'project-bathroom-vanity-niche', alt: 'Remodeled bathroom with a white shaker vanity and speckled top, black faucet, round black mirror and three-light fixture, beside a tub with marble-look subway tile and a recessed niche' },
+      { asset: 'DKQ-12-03', name: 'project-bathroom-tub-subway-tile', alt: 'Bathtub with a marble-look subway tile surround and black shower and tub fixtures, next to the white vanity and plank flooring' },
+      { asset: 'DKQ-12-04', name: 'project-bathroom-tub-closet-shelves', alt: 'The other side of the bathroom: a dark shaker-style closet door, open shelves and the toilet beside the tiled tub' },
+    ],
   },
 ];
 

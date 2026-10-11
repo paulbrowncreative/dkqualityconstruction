@@ -152,7 +152,8 @@ function footer() {
     <div class="site-footer__brand">
       <img src="/assets/img/brand/dk-logo-480.webp" width="480" height="261" alt="${esc(business.name)} logo — established 2021" loading="lazy" decoding="async" class="site-footer__logo">
       <p>Decks, fencing and interior remodeling for homeowners in ${esc(business.serviceArea.summary)}.</p>
-      <a class="site-footer__bbb" href="${business.bbb}" rel="noopener" target="_blank">${icon('shield')}<span>BBB Accredited Business<span class="visually-hidden"> (opens in a new tab)</span></span></a>
+      <p class="site-footer__cred">${icon('check')}<span>Licensed &amp; insured${business.licenseNumber ? ` · MI Residential Builder #${esc(business.licenseNumber)}` : ''}</span></p>
+      <a class="site-footer__bbb" href="${business.bbb}" rel="noopener" target="_blank">${icon('shield')}<span>BBB Accredited Business · A+<span class="visually-hidden"> (opens in a new tab)</span></span></a>
     </div>
     <nav class="site-footer__col" aria-label="Services">
       <h2 class="site-footer__h">Services</h2>

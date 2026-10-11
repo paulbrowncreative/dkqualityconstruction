@@ -2,8 +2,8 @@
 
 The readable companion to `project-assets-manifest.json`, which is the source of truth. This register is updated after every batch.
 
-**Last updated:** October 11, 2026, after batch 11
-**Workflow status:** batches 1–11 are processed and integrated. Waiting for batch 12. The project stays open until you confirm all batches have been uploaded.
+**Last updated:** October 11, 2026, after batch 12
+**Workflow status:** batches 1–12 are processed and integrated. Waiting for batch 13. The project stays open until you confirm all batches have been uploaded.
 
 ## Current heroes
 
@@ -38,18 +38,18 @@ Within each tier, the most visually compelling shot wins. These photos replace t
 
 | | Count |
 |---|---|
-| Files received (all batches) | 55 |
-| Inspected | 55 |
-| Integrated on the website | 53 unique photos. 2 duplicates are kept on file but not published twice. |
+| Files received (all batches) | 60 |
+| Inspected | 60 |
+| Integrated on the website | 58 unique photos. 2 duplicates are kept on file but not published twice. |
 | Duplicates found | 2: DKQ-10-02 is an exact duplicate of DKQ-06-03; DKQ-11-02 is a recompressed near-duplicate of DKQ-05-05 |
-| Projects in the portfolio | 41 (38 decks, 1 covered patio, 1 kitchen, 1 basement) |
+| Projects in the portfolio | 42 (38 decks, 1 covered patio, 1 kitchen, 1 bathroom, 1 basement) |
 | Confirmed before-and-after pairs | 0 |
 | Possible pairs awaiting your confirmation | 0 |
 | Possible same-project matches awaiting your confirmation | 0. DKQ-06-05 was merged into P-012 on visual evidence in batch 7 |
-| Same project, different angles (not before-and-after) | 8 (P-012: 4 photos; P-009: 3; P-010: 3; P-013: 2; P-021: 2; P-022: 2; P-030: 2; P-039: 2) |
+| Same project, different angles (not before-and-after) | 10 (P-012: 4 photos; P-009: 3; P-010: 3; P-042: 3; P-043: 3; P-013: 2; P-021: 2; P-022: 2; P-030: 2; P-039: 2) |
 | Reviews transcribed | 0 |
 | Reviews published | 0 |
-| Needing clarification (details only, all already in use) | 53 |
+| Needing clarification (details only, all already in use) | 58 |
 | Could not be processed | 0 |
 
 ## Batches
@@ -58,6 +58,7 @@ Within each tier, the most visually compelling shot wins. These photos replace t
 |---|---|---|---|---|
 | 1 | 2026-10-10 | 5 | DKQ-01-01 to DKQ-01-05 | 4 completed decks (1 aerial), 1 completed basement |
 | 2 | 2026-10-10 | 5 | DKQ-02-01 to DKQ-02-05 | 3 completed decks, plus 2 angles of one completed kitchen. DK trailer visible in DKQ-02-01. |
+| 12 | 2026-10-11 | 5 | DKQ-12-01 to DKQ-12-05 | 2 more views of P-042 (a new aerial cover and a yard view), and the first bathroom remodel (3 photos) |
 | 11 | 2026-10-11 | 5 | DKQ-11-01 to DKQ-11-05 | A 2nd angle of P-039 (trailer in frame), a **near-duplicate** of DKQ-05-05, a sunroom wraparound aerial, a pool/farmland deck, and an overhead aerial of a pressure-treated deck |
 | 10 | 2026-10-11 | 5 | DKQ-10-01 to DKQ-10-05 | Lakefront cable-rail deck, **exact duplicate** of the homepage-hero aerial, an aerial of P-022, a cabin porch floor, and a large two-tone composite deck |
 | 9 | 2026-10-11 | 5 | DKQ-09-01 to DKQ-09-05 | 2nd angles of P-021 and P-030, a brick-ranch porch, a 6th aerial with the DK trailer in frame, and a raised pressure-treated deck |
@@ -128,7 +129,12 @@ No EXIF data and no duplicates in any batch so far.
 | DKQ-11-02 | 52.jpg | — | **Near-duplicate of DKQ-05-05** | (P-020) | 1125×1500 | Not published separately |
 | DKQ-11-03 | 53.jpg | project-deck-aerial-sunroom-planters | Completed deck, **aerial** | P-040 | 1500×1125 | Projects (featured) |
 | DKQ-11-04 | 54.jpg | project-deck-gray-pool-field-view | Completed deck, pool view | P-041 | 1500×2000 | Projects |
-| DKQ-11-05 | 55.jpg | project-deck-aerial-pressure-treated-multi-zone | Pressure-treated deck, overhead **aerial** | P-042 | 2000×1500 | Projects |
+| DKQ-11-05 | 55.jpg | project-deck-aerial-pressure-treated-multi-zone | Pressure-treated deck, overhead **aerial** | P-042 | 2000×1500 | Projects (P-042 viewer) |
+| DKQ-12-01 | 56.jpg | project-deck-pressure-treated-multi-zone-aerial-wide | P-042, **aerial** | P-042 | 2000×1500 | Projects (P-042 cover) |
+| DKQ-12-02 | 57.jpg | project-deck-pressure-treated-multi-zone-yard | P-042, yard view | P-042 | 1500×1125 | Projects (P-042 viewer) |
+| DKQ-12-03 | 58.jpg | project-bathroom-tub-subway-tile | Completed bathroom | P-043 | 1500×2000 | Projects; Bathroom (viewer) |
+| DKQ-12-04 | 59.jpg | project-bathroom-tub-closet-shelves | Completed bathroom (opposite side) | P-043 | 1125×1500 | Projects; Bathroom (viewer) |
+| DKQ-12-05 | 60.jpg | project-bathroom-vanity-niche | Completed bathroom | P-043 | 1125×1500 | **Bathroom page hero**; Projects; Home (Recent work); Services |
 
 ## Projects
 
@@ -177,7 +183,8 @@ No EXIF data and no duplicates in any batch so far.
 | P-039 | Large two-tone composite deck | Decks | DKQ-10-05 (cover), DKQ-11-01 |
 | P-040 | Wraparound deck with planters and two stairways | Decks | DKQ-11-03 |
 | P-041 | Gray deck overlooking a pool and open fields | Decks | DKQ-11-04 |
-| P-042 | Multi-zone pressure-treated deck with angled corners | Decks | DKQ-11-05 |
+| P-042 | Multi-zone pressure-treated deck with angled corners | Decks | DKQ-12-01 (cover), DKQ-11-05, DKQ-12-02 |
+| P-043 | Bathroom remodel with marble-look tile | Bathroom Remodeling | DKQ-12-05 (cover), DKQ-12-03, DKQ-12-04 |
 
 P-022 now uses the aerial DKQ-10-03 as its cover, with DKQ-06-01 as the second photo.
 
@@ -201,6 +208,8 @@ Featured projects appear first on /projects/: P-021, P-016, P-012, P-001 and P-0
   - DKQ-07-02 (yard view) is clearly the same build as the DKQ-04-05 aerial: the same house, screened room, stairs and railings.
   - DKQ-07-01 (upper deck) shows the same dining set and grill, plus the same lake, dock, boat and neighboring house with a brown deck that are visible from inside the screened room in DKQ-06-05.
   - So P-025 was merged into P-012 and its ID retired. That group now holds only P-024, so it was renamed "Covered Patios".
+- **DKQ-12-01 and 12-02 → P-042.** Same gray vertical-siding house, paver patio and storage enclosure. The wider aerial DKQ-12-01 is now the cover.
+- **DKQ-12-03, 12-04 and 12-05 → P-043, one bathroom project, flagged.** The tile, vanity top, hardware, flooring, tub and black fixtures all match. DKQ-12-05 has a different shower curtain, so it was either shot at a different time or shows a second, identical bathroom in the same home. Please confirm.
 - **DKQ-11-02 is a near-duplicate of DKQ-05-05.** It's the same photo recompressed, at the same size, with a mean pixel difference of 5/255. It isn't shown twice.
 - **DKQ-11-01 → P-039.** It shows the same arborvitae row, rail fence, wet day and divider and border boards.
 - **New projects, judged from the evidence:**
@@ -223,6 +232,8 @@ Featured projects appear first on /projects/: P-021, P-016, P-012, P-001 and P-0
 - **No batch 2 deck matches a batch 1 deck.** The siding, house styles and railings all differ.
 
 ### Evidence found in the photos
+
+**Licensed and insured: confirmed by you on Oct 11, 2026.** It's now published site-wide in the homepage credentials strip, the "Why DK" section, the estimate panel, the About facts, a Contact "Credentials" card and the footer. Set `licenseNumber` in `site.config.mjs` and the Michigan license number will appear in the footer and the credentials strip.
 
 **DKQ-11-01 (batch 11)** shows the end of that trailer line: "…NSURED". Combined with DKQ-09-04, the trailer reads **"LICENSED AND INSURED"**. This is the company's own advertising, so it's still **not published** until you confirm it and supply the license number.
 
@@ -267,7 +278,8 @@ None of these block anything; all photos are live with neutral captions.
 20. **Porch (P-035).** Is it the same porch as P-026?
 21. **Lakefront deck (P-037).** Did DK build the cable railing too? Can the location be named (optional)?
 22. **Cabin porch (P-038).** Did DK install only the floor, skirting and steps, or the roof and posts too?
-23. **Licensed and insured.** The trailer says "LICENSED AND INSURED". Can the site say so? Please send the Michigan Residential Builder license number, and any Ohio registration.
+23. ~~Licensed and insured~~ Confirmed and published. **Still needed:** the Michigan Residential Builder license number, and any Ohio registration.
+26. **Bathroom (P-043).** Is it one bathroom or two in the same home? Which parts did DK do: tile, tub, vanity, flooring, fixtures, closet?
 24. **Pool deck (P-041).** Is it the same property as P-018?
 25. **Sunroom deck (P-040).** Did DK build the planters? The sunroom?
 13. **Homepage hero aerial (P-021).** Did DK build the covered porch roof and the privacy wall? Was the stamped concrete DK's work?
@@ -284,12 +296,11 @@ Eight stock photos were removed from the site because real project photos replac
 - `basement-living-room`, the one with another company's watermark cropped out
 - `carpentry-measuring-board`
 
-In batch 2, the stock kitchen photo (`kitchen-white-cabinets`) was also retired.
+In batch 2, the stock kitchen photo (`kitchen-white-cabinets`) was also retired. In batch 12, the stock bathroom photo (`bathroom-walk-in-shower`) was retired.
 
 **Still stock, until real photos arrive:**
 
 - the fencing hero
-- the bathroom hero
 - the flooring and garages rows on Services
 - ~~the pressure-treated card on the Decks page~~ replaced in batch 4 by DKQ-04-02 (`deck-treated-wooded-lot` retired)
 

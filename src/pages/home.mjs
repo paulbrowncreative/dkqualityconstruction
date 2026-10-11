@@ -68,6 +68,10 @@ export default {
     </li>
     <li class="proof-strip__item">
       ${icon('check')}
+      <span><strong>Licensed &amp; insured</strong>${business.licenseNumber ? ` · MI license #${business.licenseNumber}` : ''}</span>
+    </li>
+    <li class="proof-strip__item">
+      ${icon('check')}
       <span><strong>Owner-led</strong> — talk directly with ${business.owner}</span>
     </li>
     <li class="proof-strip__item">
@@ -118,7 +122,7 @@ export default {
       </div>
       <a class="link-arrow" href="/projects/">See all projects ${icon('arrow')}</a>
     </div>
-    <div class="project-grid">${['P-030', 'P-009', 'P-016'].map((id) => projectCard(projects.find((p) => p.id === id))).join('')}</div>
+    <div class="project-grid">${['P-030', 'P-009', 'P-043'].map((id) => projectCard(projects.find((p) => p.id === id))).join('')}</div>
   </div>
 </section>
 ${lightboxDialog()}
@@ -176,7 +180,7 @@ ${lightboxDialog()}
     <ul class="why__list" role="list">
       <li>
         <h3>A record you can check</h3>
-        <p>BBB Accredited since ${business.bbbAccreditedSince} with an A+ rating. Don’t take our word for it — <a href="${business.bbb}" rel="noopener" target="_blank">read the profile<span class="visually-hidden"> (opens in a new tab)</span></a>.</p>
+        <p>Licensed and insured, and BBB Accredited since ${business.bbbAccreditedSince} with an A+ rating. Don’t take our word for it — <a href="${business.bbb}" rel="noopener" target="_blank">read the profile<span class="visually-hidden"> (opens in a new tab)</span></a>.</p>
       </li>
       <li>
         <h3>Deck specialists</h3>
@@ -236,6 +240,7 @@ ${lightboxDialog()}
       <h2 id="estimate-home-h" class="section-title">Tell us about your project.</h2>
       <p class="lead">A few details is all it takes to start. We’ll follow up by your preferred method.</p>
       <ul class="checks" role="list">
+        <li>${icon('check')} Licensed &amp; insured</li>
         <li>${icon('check')} No obligation</li>
         <li>${icon('check')} Talk directly with the owner</li>
         <li>${icon('check')} Monroe County, MI &amp; Lucas County, OH</li>

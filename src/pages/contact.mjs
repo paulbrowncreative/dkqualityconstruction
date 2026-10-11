@@ -33,6 +33,13 @@ ${pageHero({
         <p>Talk directly with owner ${business.owner}. If we miss your call, leave a message with your name, number and project type.</p>
       </div>
       <div class="contact-card">
+        <h2 class="contact-card__h">Credentials</h2>
+        <ul class="checks" role="list">
+          <li>${icon('check')} <span>Licensed &amp; insured</span></li>
+          <li>${icon('shield')} <span>BBB Accredited, A+ rating · <a href="${business.bbb}" rel="noopener" target="_blank">view profile<span class="visually-hidden"> (opens in a new tab)</span></a></span></li>
+        </ul>
+      </div>
+      <div class="contact-card">
         <h2 class="contact-card__h">Service area</h2>
         <p>${icon('pin')} Based in ${business.city}, ${business.region}. Serving ${business.serviceArea.summary}. <a href="/service-area/">See communities</a>.</p>
       </div>

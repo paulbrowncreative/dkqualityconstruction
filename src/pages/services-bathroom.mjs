@@ -9,7 +9,7 @@ export default servicePage({
   eyebrow: 'Bathroom Remodeling',
   h1: 'Bathroom remodeling in Monroe, MI',
   lede: 'Full bathroom remodels and focused updates — showers, tile, vanities, fixtures and flooring — for homes in Monroe County and Lucas County.',
-  heroAlt: 'Walk-in shower with frameless glass, marble-look wall tile and black fixtures',
+  heroAlt: 'Bathroom remodeled by DK Quality Construction with a white shaker vanity, round black mirror and a marble-look subway tile tub surround with a recessed niche',
   introHeading: 'A small room with a lot riding on it.',
   intro: `
     <p>Bathrooms pack plumbing, electrical, ventilation, waterproofing and finish work into a few square feet — and they get used every day. A remodel is the chance to fix what bugs you about the room: a tub you never use, a cramped vanity, a fan that doesn’t clear the steam, tile that won’t come clean.</p>
@@ -56,6 +56,7 @@ export default servicePage({
       a: `<p>Yes — bathroom work often goes hand in hand with <a href="/services/basement-finishing/">basement remodeling</a>.</p>`,
     },
   ],
+  projects: ['P-043'],
   related: ['kitchen-remodeling', 'basement-finishing', 'flooring'],
   ctaHeading: 'Let’s plan your new bathroom.',
   ctaText: 'Tell us what’s not working in the room now and what you’d like instead. A photo of the current bathroom helps.',
