@@ -1,6 +1,6 @@
 // Reusable HTML fragments. Plain template strings; no runtime dependencies.
 import { readFileSync } from 'node:fs';
-import { business, services, serviceUrl } from '../../site.config.mjs';
+import { site, business, services, serviceUrl } from '../../site.config.mjs';
 
 const imageManifest = JSON.parse(
   readFileSync(new URL('../data/images.json', import.meta.url), 'utf8'),
@@ -135,12 +135,20 @@ export function estimateForm({ idPrefix = 'est', headingId } = {}) {
   const options = services
     .map((s) => `<option value="${esc(s.name)}">${esc(s.name)}</option>`)
     .join('');
-  return `<form class="estimate-form" name="estimate" method="POST" action="/thank-you/"
-  data-netlify="true" netlify-honeypot="company_website" enctype="multipart/form-data" novalidate
+  // Delivered by FormSubmit.co to business.leadEmail. With JS the form posts in the
+  // background (AJAX) and the visitor never leaves the site; without JS the plain POST
+  // redirects back to /thank-you/ via _next.
+  const target = encodeURIComponent(site.formAlias || business.leadEmail);
+  return `<form class="estimate-form" name="estimate" method="POST"
+  action="https://formsubmit.co/${target}" data-ajax-action="https://formsubmit.co/ajax/${target}"
+  enctype="multipart/form-data" novalidate
   ${headingId ? `aria-labelledby="${headingId}"` : ''} data-estimate-form>
-  <input type="hidden" name="form-name" value="estimate">
+  <input type="hidden" name="_subject" value="New estimate request — DK Quality Construction website">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="${site.url}/thank-you/">
   <p class="visually-hidden" aria-hidden="true">
-    <label>Leave this field empty <input type="text" name="company_website" tabindex="-1" autocomplete="off"></label>
+    <label>Leave this field empty <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label>
   </p>
   <p class="form-note">Fields marked <span class="req" aria-hidden="true">*</span><span class="visually-hidden">with an asterisk</span> are required.</p>
   <div class="form-grid">

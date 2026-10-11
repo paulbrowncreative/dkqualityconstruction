@@ -132,17 +132,20 @@ for (const [label, vp] of [['mobile', { width: 375, height: 812 }], ['desktop', 
   await form.locator('[name="project_location"]').fill('Monroe 48161');
   await form.locator('[name="service"]').selectOption('Decks');
   await form.locator('[name="details"]').fill('Automated QA submission — please ignore.');
+  // FormSubmit is mocked here so automated runs never send real email.
+  await page.route('https://formsubmit.co/**', (route) => route.fulfill({ status: 200, contentType: 'application/json', body: '{"success":"true","message":"The form was submitted successfully."}' }));
   const [req] = await Promise.all([
-    page.waitForRequest((r) => r.method() === 'POST'),
+    page.waitForRequest((r) => r.method() === 'POST' && r.url().startsWith('https://formsubmit.co/')),
     form.locator('button[type="submit"]').click(),
   ]);
   const body = req.postDataBuffer()?.toString() || '';
-  const hasFormName = body.includes('name="form-name"') && body.includes('estimate');
+  const hasFormName = req.url() === 'https://formsubmit.co/ajax/dkqconstruction%40gmail.com' && body.includes('name="_honey"') && body.includes('name="_subject"') && body.includes('name="_replyto"') && body.includes('QA Test');
   await page.waitForURL('**/thank-you/');
   await page.waitForLoadState('load');
   await page.waitForTimeout(300);
   const leads = await page.evaluate(() => (window.dataLayer || []).filter((a) => a[0] === 'event' && a[1] === 'generate_lead').length);
-  record('Valid submission POSTs multipart with form-name=estimate and redirects to /thank-you/', hasFormName, `form-name present=${hasFormName}`);
+  record('Valid submission posts multipart in the background to FormSubmit (dkqconstruction@gmail.com) and redirects to /thank-you/', hasFormName, req.url());
+  await page.unroute('https://formsubmit.co/**');
   record('generate_lead fires exactly once after submission', leads === 1, `count=${leads}`);
   await page.reload();
   await page.waitForTimeout(300);
@@ -151,7 +154,8 @@ for (const [label, vp] of [['mobile', { width: 375, height: 812 }], ['desktop', 
 
   // Server failure path
   await page.goto(BASE + '/contact/');
-  await page.route('**/', (route) => (route.request().method() === 'POST' ? route.fulfill({ status: 500, body: 'err' }) : route.continue()));
+  // FormSubmit answers 200 with success:"false" until the inbox is activated — must be treated as a failure.
+  await page.route('https://formsubmit.co/**', (route) => route.fulfill({ status: 200, contentType: 'application/json', body: '{"success":"false","message":"This form needs Activation."}' }));
   const f2 = page.locator('form[name="estimate"]');
   await f2.locator('[name="name"]').fill('QA Test');
   await f2.locator('[name="phone"]').fill('7345550100');
@@ -165,7 +169,7 @@ for (const [label, vp] of [['mobile', { width: 375, height: 812 }], ['desktop', 
   record('Failed submission shows error with phone fallback and re-enables button', /didn’t go through/.test(errText) && btnEnabled, errText);
 
   // Phone click tracking
-  await page.unroute('**/');
+  await page.unroute('https://formsubmit.co/**');
   await page.goto(BASE + '/');
   await page.evaluate(() => document.querySelectorAll('a[href^="tel:"]').forEach((a) => a.addEventListener('click', (e) => e.preventDefault())));
   await page.locator('.nav-phone').click();

@@ -192,6 +192,18 @@
         "DKQ-14-05"
       ],
       "summary": "Poolside view of P-044; 2nd basement remodel (media wall + bar, P-048); interior shiplap/door trim and stair railing (new Interior Trim & Carpentry group, no service claim). No before/after pairs, no reviews."
+    },
+    {
+      "batch": 15,
+      "received": "2026-10-11",
+      "assetIds": [
+        "DKQ-15-01",
+        "DKQ-15-02",
+        "DKQ-15-03",
+        "DKQ-15-04",
+        "DKQ-15-05"
+      ],
+      "summary": "FINAL batch: basement stairs (P-048), fireplace built-ins, covered front porch with timber gable, covered deck with bar rail, pool-deck aerial (P-018). Client confirmed this is the last photo batch; no reviews or before/after pairs were supplied."
     }
   ],
   "projects": [
@@ -344,7 +356,8 @@
       "title": "Pool deck around an above-ground pool",
       "category": "decks",
       "assets": [
-        "DKQ-05-03"
+        "DKQ-05-03",
+        "DKQ-15-05"
       ]
     },
     {
@@ -587,7 +600,8 @@
       "category": "basements",
       "assets": [
         "DKQ-14-05",
-        "DKQ-14-03"
+        "DKQ-14-03",
+        "DKQ-15-01"
       ]
     },
     {
@@ -604,6 +618,30 @@
       "category": "interior",
       "assets": [
         "DKQ-14-04"
+      ]
+    },
+    {
+      "projectId": "P-051",
+      "title": "Covered front porch with a timber gable",
+      "category": "decks",
+      "assets": [
+        "DKQ-15-03"
+      ]
+    },
+    {
+      "projectId": "P-052",
+      "title": "Covered deck with a stained ceiling and bar rail",
+      "category": "decks",
+      "assets": [
+        "DKQ-15-04"
+      ]
+    },
+    {
+      "projectId": "P-053",
+      "title": "Fireplace wall with built-in cabinets",
+      "category": "interior",
+      "assets": [
+        "DKQ-15-02"
       ]
     }
   ],
@@ -4266,7 +4304,7 @@
       "id": "DKQ-10-02",
       "batch": 10,
       "originalFilename": "47.jpg",
-      "original": "assets-src/uploads/batch-10/47.jpg",
+      "original": null,
       "sha256": "f41e21771943c88e206d3aa0cc4e907b59710cce0846bb06f5f557a845830668",
       "bytes": 507228,
       "originalDimensions": [
@@ -4287,10 +4325,11 @@
       "websiteLocations": [
         "(served via DKQ-06-03)"
       ],
-      "status": "duplicate — not published separately",
+      "status": "removed — duplicate (original file deleted at client request, batch 15)",
       "questions": [],
       "approval": "n/a",
-      "category": "Decks"
+      "category": "Decks",
+      "removedNote": "Duplicate of DKQ-06-03 (SHA-256/pixel diff and 256-bit dHash). The kept copy is DKQ-06-03; the removed file was assets-src/uploads/batch-10/47.jpg."
     },
     {
       "id": "DKQ-10-03",
@@ -4615,7 +4654,7 @@
       "id": "DKQ-11-02",
       "batch": 11,
       "originalFilename": "52.jpg",
-      "original": "assets-src/uploads/batch-11/52.jpg",
+      "original": null,
       "sha256": "6c2809e8bed71418275f500dd6ff808b07e89c0fc5f9d685af6e84f4faa52638",
       "bytes": 451861,
       "originalDimensions": [
@@ -4623,7 +4662,7 @@
         1500
       ],
       "format": "jpeg",
-      "duplicateOf": null,
+      "duplicateOf": "DKQ-05-05",
       "type": "project-photo",
       "classification": "NEAR-DUPLICATE of DKQ-05-05 (same photo, recompressed: same size, mean pixel difference 5/255). Original kept; not published twice.",
       "projectId": "P-020",
@@ -4636,10 +4675,11 @@
       "websiteLocations": [
         "(served via DKQ-05-05)"
       ],
-      "status": "duplicate — not published separately",
+      "status": "removed — duplicate (original file deleted at client request, batch 15)",
       "questions": [],
       "approval": "n/a",
-      "category": "Decks"
+      "category": "Decks",
+      "removedNote": "Duplicate of DKQ-05-05 (SHA-256/pixel diff and 256-bit dHash). The kept copy is DKQ-05-05; the removed file was assets-src/uploads/batch-11/52.jpg."
     },
     {
       "id": "DKQ-11-03",
@@ -5873,7 +5913,7 @@
         }
       ],
       "altText": "Basement bar area with white shiplap fronts, thick stone-look countertops, recessed lights and dark wood-look plank flooring",
-      "caption": "Finished basement with a built-in media wall, louvered closet doors, a shiplap-front bar with stone-look counters, recessed lighting and wood-look plank flooring.",
+      "caption": "Finished basement with a built-in media wall, louvered closet doors, a shiplap-front bar with stone-look counters, two-tone stairs, recessed lighting and wood-look plank flooring.",
       "websiteLocations": [
         "/projects/ (P-048 viewer)",
         "/services/basement-finishing/ (P-048 card)"
@@ -6041,7 +6081,7 @@
         }
       ],
       "altText": "Finished basement media wall with a recessed TV niche, white base cabinets with a dark wood top, louvered closet doors on each side, recessed lights and dark wood-look plank flooring",
-      "caption": "Finished basement with a built-in media wall, louvered closet doors, a shiplap-front bar with stone-look counters, recessed lighting and wood-look plank flooring.",
+      "caption": "Finished basement with a built-in media wall, louvered closet doors, a shiplap-front bar with stone-look counters, two-tone stairs, recessed lighting and wood-look plank flooring.",
       "websiteLocations": [
         "/services/basement-finishing/ (Recent projects, first card)",
         "/projects/ (P-048 cover)"
@@ -6064,6 +6104,399 @@
         ],
         "aspect": "2000x1500"
       }
+    },
+    {
+      "id": "DKQ-15-01",
+      "batch": 15,
+      "originalFilename": "71.jpg",
+      "original": "assets-src/uploads/batch-15/71.jpg",
+      "sha256": "6894fdb96cc5f5b34d616b9c462c97d00496d2f04bc73d60e24001b1cd569865",
+      "bytes": 168942,
+      "originalDimensions": [
+        1500,
+        2000
+      ],
+      "format": "jpeg",
+      "duplicateOf": null,
+      "type": "project-photo",
+      "classification": "general-portfolio (completed) — basement stairs; 3rd photo of P-048 (same dark LVP, gray walls, white shaker door as DKQ-14-03)",
+      "projectId": "P-048",
+      "pairId": null,
+      "reviewId": null,
+      "storedFilename": "project-basement-stairs-two-tone",
+      "optimized": [
+        {
+          "file": "src/assets/img/photos/project-basement-stairs-two-tone-1024.avif",
+          "bytes": 43826
+        },
+        {
+          "file": "src/assets/img/photos/project-basement-stairs-two-tone-1024.jpg",
+          "bytes": 118895
+        },
+        {
+          "file": "src/assets/img/photos/project-basement-stairs-two-tone-1500.avif",
+          "bytes": 82003
+        },
+        {
+          "file": "src/assets/img/photos/project-basement-stairs-two-tone-1500.jpg",
+          "bytes": 185003
+        },
+        {
+          "file": "src/assets/img/photos/project-basement-stairs-two-tone-320.avif",
+          "bytes": 7708
+        },
+        {
+          "file": "src/assets/img/photos/project-basement-stairs-two-tone-320.jpg",
+          "bytes": 19326
+        },
+        {
+          "file": "src/assets/img/photos/project-basement-stairs-two-tone-640.avif",
+          "bytes": 22062
+        },
+        {
+          "file": "src/assets/img/photos/project-basement-stairs-two-tone-640.jpg",
+          "bytes": 57133
+        }
+      ],
+      "altText": "Basement stairs with stained treads, white risers and a white half-wall with a squared post, above the same dark wood-look plank flooring",
+      "caption": "Finished basement with a built-in media wall, louvered closet doors, a shiplap-front bar with stone-look counters, two-tone stairs, recessed lighting and wood-look plank flooring.",
+      "websiteLocations": [
+        "/projects/ (P-048 viewer)"
+      ],
+      "status": "integrated",
+      "questions": [
+        "Same as P-048"
+      ],
+      "approval": "pending owner confirmation of project details",
+      "optimizedDimensions": {
+        "widths": [
+          320,
+          640,
+          1024,
+          1500
+        ],
+        "aspect": "1500x2000"
+      },
+      "category": "Basement remodeling",
+      "processing": "Resized (Lanczos) + light unsharp mask; AVIF q52 + progressive JPEG q78. No retouching, no AI upscaling, no content changes."
+    },
+    {
+      "id": "DKQ-15-02",
+      "batch": 15,
+      "originalFilename": "72.webp",
+      "original": "assets-src/uploads/batch-15/72.webp",
+      "sha256": "3af09dc2f2e758840ae463c722b6d2a874c123f6c844ba00f280e1a172cb7b5f",
+      "bytes": 352122,
+      "originalDimensions": [
+        1488,
+        1984
+      ],
+      "format": "webp",
+      "duplicateOf": null,
+      "type": "project-photo",
+      "classification": "general-portfolio (completed) — fireplace built-ins",
+      "projectId": "P-053",
+      "pairId": null,
+      "reviewId": null,
+      "storedFilename": "project-interior-fireplace-built-ins",
+      "optimized": [
+        {
+          "file": "src/assets/img/photos/project-interior-fireplace-built-ins-1024.avif",
+          "bytes": 57442
+        },
+        {
+          "file": "src/assets/img/photos/project-interior-fireplace-built-ins-1024.jpg",
+          "bytes": 153636
+        },
+        {
+          "file": "src/assets/img/photos/project-interior-fireplace-built-ins-1488.avif",
+          "bytes": 111857
+        },
+        {
+          "file": "src/assets/img/photos/project-interior-fireplace-built-ins-1488.jpg",
+          "bytes": 293788
+        },
+        {
+          "file": "src/assets/img/photos/project-interior-fireplace-built-ins-320.avif",
+          "bytes": 8134
+        },
+        {
+          "file": "src/assets/img/photos/project-interior-fireplace-built-ins-320.jpg",
+          "bytes": 21303
+        },
+        {
+          "file": "src/assets/img/photos/project-interior-fireplace-built-ins-640.avif",
+          "bytes": 25359
+        },
+        {
+          "file": "src/assets/img/photos/project-interior-fireplace-built-ins-640.jpg",
+          "bytes": 67885
+        }
+      ],
+      "altText": "Fireplace wall with white built-in cabinets and arched open shelves on both sides, a shiplap TV wall with crown molding above, a wood mantel and a stone fireplace surround",
+      "caption": "Built-in cabinets and arched shelving on both sides of a fireplace, with a shiplap TV wall, crown molding and a wood mantel.",
+      "websiteLocations": [
+        "/projects/"
+      ],
+      "status": "integrated",
+      "questions": [
+        "Confirm DK built the built-ins/shiplap/mantel"
+      ],
+      "approval": "pending owner confirmation of project details",
+      "optimizedDimensions": {
+        "widths": [
+          320,
+          640,
+          1024,
+          1488
+        ],
+        "aspect": "1488x1984"
+      },
+      "category": "Interior trim & carpentry (UNCONFIRMED SERVICE)",
+      "processing": "Resized (Lanczos) + light unsharp mask; AVIF q52 + progressive JPEG q78. No retouching, no AI upscaling, no content changes."
+    },
+    {
+      "id": "DKQ-15-03",
+      "batch": 15,
+      "originalFilename": "73.webp",
+      "original": "assets-src/uploads/batch-15/73.webp",
+      "sha256": "e7923782497c010ee1b11612edbc49f149336919a9b05978b7d26fe3603d7a2a",
+      "bytes": 445974,
+      "originalDimensions": [
+        2000,
+        1294
+      ],
+      "format": "webp",
+      "duplicateOf": null,
+      "type": "project-photo",
+      "classification": "general-portfolio (completed) — covered front porch with timber gable (wide angle, featured). Caption does not claim the roof, siding or metal roofing",
+      "projectId": "P-051",
+      "pairId": null,
+      "reviewId": null,
+      "storedFilename": "project-porch-covered-gable-front",
+      "optimized": [
+        {
+          "file": "src/assets/img/photos/project-porch-covered-gable-front-1024.avif",
+          "bytes": 53694
+        },
+        {
+          "file": "src/assets/img/photos/project-porch-covered-gable-front-1024.jpg",
+          "bytes": 116776
+        },
+        {
+          "file": "src/assets/img/photos/project-porch-covered-gable-front-1600.avif",
+          "bytes": 111942
+        },
+        {
+          "file": "src/assets/img/photos/project-porch-covered-gable-front-1600.jpg",
+          "bytes": 253536
+        },
+        {
+          "file": "src/assets/img/photos/project-porch-covered-gable-front-2000.avif",
+          "bytes": 162692
+        },
+        {
+          "file": "src/assets/img/photos/project-porch-covered-gable-front-2000.jpg",
+          "bytes": 368087
+        },
+        {
+          "file": "src/assets/img/photos/project-porch-covered-gable-front-320.avif",
+          "bytes": 7147
+        },
+        {
+          "file": "src/assets/img/photos/project-porch-covered-gable-front-320.jpg",
+          "bytes": 14224
+        },
+        {
+          "file": "src/assets/img/photos/project-porch-covered-gable-front-640.avif",
+          "bytes": 23423
+        },
+        {
+          "file": "src/assets/img/photos/project-porch-covered-gable-front-640.jpg",
+          "bytes": 49496
+        },
+        {
+          "file": "src/assets/img/photos/project-porch-covered-gable-front-768.avif",
+          "bytes": 32528
+        },
+        {
+          "file": "src/assets/img/photos/project-porch-covered-gable-front-768.jpg",
+          "bytes": 69588
+        }
+      ],
+      "altText": "Front of a white-sided home with a covered porch: open timber gable with stained posts and beams, a ceiling fan, brown composite decking, black metal railings and steps down to a concrete walk",
+      "caption": "Covered front porch with an open timber gable, stained posts and beams, a brown composite floor, black metal railings and steps to the walk.",
+      "websiteLocations": [
+        "/projects/ (featured)"
+      ],
+      "status": "integrated",
+      "questions": [
+        "Did DK build the porch roof/gable as well as the deck and railings? Siding/roof too?"
+      ],
+      "approval": "pending owner confirmation of project details",
+      "optimizedDimensions": {
+        "widths": [
+          320,
+          640,
+          768,
+          1024,
+          1600,
+          2000
+        ],
+        "aspect": "2000x1294"
+      },
+      "category": "Decks",
+      "processing": "Resized (Lanczos) + light unsharp mask; AVIF q52 + progressive JPEG q78. No retouching, no AI upscaling, no content changes."
+    },
+    {
+      "id": "DKQ-15-04",
+      "batch": 15,
+      "originalFilename": "74.webp",
+      "original": "assets-src/uploads/batch-15/74.webp",
+      "sha256": "080fe752d78146f7698e19b542959171866c3d9f9d6cf383ae79bed4d16ef564",
+      "bytes": 246504,
+      "originalDimensions": [
+        1075,
+        1684
+      ],
+      "format": "webp",
+      "duplicateOf": null,
+      "type": "project-photo",
+      "classification": "general-portfolio (completed) — covered deck with bar rail. Not P-006 (different beams, pool/hot tub, bar top)",
+      "projectId": "P-052",
+      "pairId": null,
+      "reviewId": null,
+      "storedFilename": "project-deck-covered-fan-bar-rail",
+      "optimized": [
+        {
+          "file": "src/assets/img/photos/project-deck-covered-fan-bar-rail-1024.avif",
+          "bytes": 80260
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-covered-fan-bar-rail-1024.jpg",
+          "bytes": 225312
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-covered-fan-bar-rail-1075.avif",
+          "bytes": 86488
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-covered-fan-bar-rail-1075.jpg",
+          "bytes": 240709
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-covered-fan-bar-rail-320.avif",
+          "bytes": 16741
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-covered-fan-bar-rail-320.jpg",
+          "bytes": 37671
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-covered-fan-bar-rail-640.avif",
+          "bytes": 45846
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-covered-fan-bar-rail-640.jpg",
+          "bytes": 115139
+        }
+      ],
+      "altText": "Covered composite deck with a stained wood plank ceiling, recessed lights and a ceiling fan, outdoor seating around a fire table, and a bar-height rail top with stools looking out over the yard",
+      "caption": "Covered composite deck with a stained plank ceiling, recessed lights and a fan, plus a bar-height rail top overlooking the yard and pool.",
+      "websiteLocations": [
+        "/projects/"
+      ],
+      "status": "integrated",
+      "questions": [
+        "Did DK build the roof/ceiling as well as the deck?"
+      ],
+      "approval": "pending owner confirmation of project details",
+      "optimizedDimensions": {
+        "widths": [
+          320,
+          640,
+          1024,
+          1075
+        ],
+        "aspect": "1075x1684"
+      },
+      "category": "Decks",
+      "processing": "Resized (Lanczos) + light unsharp mask; AVIF q52 + progressive JPEG q78. No retouching, no AI upscaling, no content changes."
+    },
+    {
+      "id": "DKQ-15-05",
+      "batch": 15,
+      "originalFilename": "75.webp",
+      "original": "assets-src/uploads/batch-15/75.webp",
+      "sha256": "9972f598a238ed6cb4b90a5787e0523398c1b131414a9f4b43483d5bded4a8d7",
+      "bytes": 318722,
+      "originalDimensions": [
+        2000,
+        985
+      ],
+      "format": "webp",
+      "duplicateOf": null,
+      "type": "project-photo",
+      "classification": "general-portfolio (completed) — AERIAL (video frame, 2000×985). Grouped with P-018 (two-level gray deck, white rails, step-down level curving along an above-ground pool) — flagged. A person (likely the drone pilot) is visible small and unidentifiable",
+      "projectId": "P-018",
+      "pairId": null,
+      "reviewId": null,
+      "storedFilename": "project-deck-pool-aerial-two-level-gray",
+      "optimized": [
+        {
+          "file": "src/assets/img/photos/project-deck-pool-aerial-two-level-gray-1024.avif",
+          "bytes": 46346
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-pool-aerial-two-level-gray-1024.jpg",
+          "bytes": 111978
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-pool-aerial-two-level-gray-1600.avif",
+          "bytes": 85183
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-pool-aerial-two-level-gray-1600.jpg",
+          "bytes": 225505
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-pool-aerial-two-level-gray-320.avif",
+          "bytes": 7234
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-pool-aerial-two-level-gray-320.jpg",
+          "bytes": 14370
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-pool-aerial-two-level-gray-640.avif",
+          "bytes": 21973
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-pool-aerial-two-level-gray-640.jpg",
+          "bytes": 49130
+        }
+      ],
+      "altText": "Aerial view of a two-level gray deck with white railings and black balusters, stepping down to a lower level that curves along the edge of an above-ground pool",
+      "caption": "Gray deck wrapped around an above-ground pool, with white-and-black railings and open views across the yard.",
+      "websiteLocations": [
+        "/projects/ (P-018 viewer)"
+      ],
+      "status": "integrated",
+      "questions": [
+        "Same property as P-018?"
+      ],
+      "approval": "pending owner confirmation of project details",
+      "optimizedDimensions": {
+        "widths": [
+          320,
+          640,
+          1024,
+          1600
+        ],
+        "aspect": "2000x985"
+      },
+      "category": "Decks",
+      "processing": "Resized (Lanczos) + light unsharp mask; AVIF q52 + progressive JPEG q78. No retouching, no AI upscaling, no content changes."
     }
   ],
   "heroSelectionRule": {
@@ -6085,9 +6518,27 @@
   },
   "retiredStock": [
     "deck-treated-wooded-lot (batch 4)",
-    "bathroom-walk-in-shower (batch 12)"
+    "bathroom-walk-in-shower (batch 12)",
+    "fence-backyard-gray",
+    "flooring-plank-install",
+    "framing-new-construction (batch 15 — all stock removed)"
   ],
   "retiredProjectIds": [
     "P-025 (merged into P-012, batch 7)"
-  ]
+  ],
+  "finalReconciliation": {
+    "date": "2026-10-11",
+    "uploadsReceived": 75,
+    "uniquePhotosPublished": 73,
+    "duplicatesRemoved": 2,
+    "duplicateScan": "All 75 uploads compared with SHA-256 and a 256-bit perceptual dHash (threshold 40 bits); only DKQ-10-02≈DKQ-06-03 (distance 0) and DKQ-11-02≈DKQ-05-05 (distance 3) matched",
+    "stockPhotosRemaining": 0,
+    "beforeAfterPairs": 0,
+    "reviewsReceived": 0
+  },
+  "formDelivery": {
+    "service": "FormSubmit.co (AJAX, multipart incl. photo)",
+    "to": "dkqconstruction@gmail.com",
+    "liveTest": "2026-10-11: one test submission (all fields \"test\" + test photo) sent to dkqconstruction@gmail.com and one to paulbrowncreative@gmail.com. Both returned {\"success\":\"false\",\"message\":\"This form needs Activation...\"}: FormSubmit emailed an Activate Form link to each inbox. Leads are NOT delivered until the dkqconstruction@gmail.com link is clicked."
+  }
 }

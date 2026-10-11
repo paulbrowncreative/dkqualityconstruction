@@ -183,7 +183,7 @@ function footer() {
   </div>
   <div class="container site-footer__legal">
     <p>&copy; ${year} ${esc(business.legalName)}. All rights reserved.</p>
-    <p>Project photos show DK Quality Construction’s own work. Other photos are licensed stock used for illustration.</p>
+    <p>All project photos show DK Quality Construction’s own work.</p>
   </div>
 </footer>
 <nav class="mobile-cta" aria-label="Quick contact" data-mobile-cta>

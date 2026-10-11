@@ -8,12 +8,10 @@ const trail = [
 
 const altText = {
   decks: 'Aerial view of a wide gray deck with built-in benches and white-trimmed center stairs',
-  fencing: 'Gray-stained picket fence with flower boxes around a backyard',
   'basement-finishing': 'Remodeled basement with a black painted ceiling, plank flooring and white built-in cabinets',
   'bathroom-remodeling': 'Remodeled bathroom with a white vanity, round mirror and marble-look tile tub surround',
   'kitchen-remodeling': 'Remodeled kitchen with white shaker cabinets, granite counters and stainless appliances',
-  flooring: 'Installer laying plank flooring in an empty room',
-  garages: 'Wood wall and roof framing on a building under construction',
+  flooring: 'Dark wood-look plank flooring in a basement finished by DK Quality Construction',
 };
 
 const extra = {
@@ -39,12 +37,12 @@ ${pageHero({
   <div class="container svc-list">
     ${services
       .map(
-        (s, i) => `<article class="svc-row" id="${s.slug}">
-      <div class="svc-row__media">${picture(s.image, {
+        (s, i) => `<article class="svc-row${s.image ? '' : ' svc-row--text'}" id="${s.slug}">
+      ${s.image ? `<div class="svc-row__media">${picture(s.image, {
         alt: altText[s.slug],
         sizes: '(min-width: 960px) 40vw, 100vw',
         cls: 'frame',
-      })}</div>
+      })}</div>` : ''}
       <div class="svc-row__body">
         <span class="svc-row__num" aria-hidden="true">${String(i + 1).padStart(2, '0')}</span>
         <h2 class="svc-row__title">${esc(s.name)}</h2>

@@ -23,7 +23,7 @@ ${pageHero({ eyebrow: 'Legal', title: 'Privacy policy', lede: `Last updated ${up
     <p>When you send an estimate request, we collect what you enter: your name, phone number, email address, the city or ZIP code of the project, the type of project, any details you write, your preferred contact method, and an optional photo. We use this information only to respond to your request, prepare an estimate, and communicate with you about your project.</p>
 
     <h2>How submissions are handled</h2>
-    <p>This website is hosted by Netlify, Inc. Form submissions are processed and stored by Netlify’s form service and delivered to us. Netlify may use automated spam filtering on submissions. See <a href="https://www.netlify.com/privacy/" rel="noopener">Netlify’s privacy policy</a>.</p>
+    <p>Estimate requests are delivered to our email inbox by FormSubmit (formsubmit.co), a form-to-email service, which processes the details you enter, including any photo you attach, in order to send them to us. This website is hosted by Netlify, Inc. See <a href="https://formsubmit.co/privacy.pdf" rel="noopener">FormSubmit’s privacy policy</a> and <a href="https://www.netlify.com/privacy/" rel="noopener">Netlify’s privacy policy</a>.</p>
 
     <h2>Analytics</h2>
     <p>${

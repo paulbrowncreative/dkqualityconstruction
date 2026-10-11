@@ -33,7 +33,7 @@ Each fact carries one of three levels:
 | Facebook intro | "We offer a wide range of building services to Monroe County, MI and Lucas County, OH." | VERIFIED | [Facebook][fb] meta description |
 | Decking specialty, treated and composite | Decking described as the main specialty, in treated and composite systems | CORROBORATED | Two search-engine summaries of the Facebook page and BBB |
 | Facebook recommendation rate | "98% recommend (54 reviews)" | CORROBORATED, **not published** | Search-engine summary only |
-| Email | DKQConstruction@gmail.com | CORROBORATED, **not published** | Search-engine summary of the Facebook page only |
+| Email | dkqconstruction@gmail.com | CONFIRMED BY CLIENT as the lead-delivery inbox (Oct 11, 2026). Used as the estimate-form destination; not displayed on the page | Client instruction |
 | Website | None found | VERIFIED absence | BBB lists none; DNS for likely domains does not resolve |
 
 ## 2. Services (VERIFIED: BBB "Products and Services")

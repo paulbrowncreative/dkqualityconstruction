@@ -1,24 +1,4 @@
 {
-  "fence-backyard-gray": {
-    "widths": [
-      320,
-      640,
-      1024,
-      1600
-    ],
-    "width": 2400,
-    "height": 1600
-  },
-  "flooring-plank-install": {
-    "widths": [
-      320,
-      640,
-      1024,
-      1600
-    ],
-    "width": 2400,
-    "height": 3600
-  },
   "project-deck-aerial-privacy-screen": {
     "widths": [
       320,
@@ -723,14 +703,56 @@
     "width": 2000,
     "height": 1500
   },
-  "framing-new-construction": {
+  "project-basement-stairs-two-tone": {
+    "widths": [
+      320,
+      640,
+      1024,
+      1500
+    ],
+    "width": 1500,
+    "height": 2000
+  },
+  "project-interior-fireplace-built-ins": {
+    "widths": [
+      320,
+      640,
+      1024,
+      1488
+    ],
+    "width": 1488,
+    "height": 1984
+  },
+  "project-porch-covered-gable-front": {
+    "widths": [
+      320,
+      640,
+      768,
+      1024,
+      1600,
+      2000
+    ],
+    "width": 2000,
+    "height": 1294
+  },
+  "project-deck-covered-fan-bar-rail": {
+    "widths": [
+      320,
+      640,
+      1024,
+      1075
+    ],
+    "width": 1075,
+    "height": 1684
+  },
+  "project-deck-pool-aerial-two-level-gray": {
     "widths": [
       320,
       640,
       1024,
       1600
     ],
-    "width": 2400,
-    "height": 1600
+    "width": 2000,
+    "height": 985
   }
 }

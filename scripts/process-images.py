@@ -28,8 +28,6 @@ HERO_WIDTHS = [320, 640, 768, 1024, 1600, 2000]  # 768w: phones at ~1.75-2x DPR
 
 # Per-image processing. "crop" is (left, top, right, bottom) on the original.
 PHOTOS = {
-    "fence-backyard-gray": {},
-    "flooring-plank-install": {},
     # ---- DK Quality Construction's own project photos (client uploads; originals untouched) ----
     # Batch 1 — see project-assets-manifest.json for IDs.
     "project-deck-aerial-privacy-screen": {"src": "assets-src/uploads/batch-01/3.jpg", "widths": HERO_WIDTHS},
@@ -116,7 +114,12 @@ PHOTOS = {
     "project-basement-bar-shiplap": {"src": "assets-src/uploads/batch-14/68.jpg"},
     "project-interior-stair-railing-iron": {"src": "assets-src/uploads/batch-14/69.jpg"},
     "project-basement-media-wall-built-ins": {"src": "assets-src/uploads/batch-14/70.jpg", "widths": HERO_WIDTHS},
-    "framing-new-construction": {},
+    # Batch 15 (final)
+    "project-basement-stairs-two-tone": {"src": "assets-src/uploads/batch-15/71.jpg"},
+    "project-interior-fireplace-built-ins": {"src": "assets-src/uploads/batch-15/72.webp"},
+    "project-porch-covered-gable-front": {"src": "assets-src/uploads/batch-15/73.webp", "widths": HERO_WIDTHS},
+    "project-deck-covered-fan-bar-rail": {"src": "assets-src/uploads/batch-15/74.webp"},
+    "project-deck-pool-aerial-two-level-gray": {"src": "assets-src/uploads/batch-15/75.webp"},
 }
 
 

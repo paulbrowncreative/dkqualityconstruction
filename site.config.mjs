@@ -21,6 +21,8 @@ const context = env.CONTEXT || 'local';
 const isProductionDeploy = context === 'production';
 
 export const site = {
+  // Optional FormSubmit alias that replaces the raw lead email in form endpoints.
+  formAlias: (env.FORMSUBMIT_ALIAS || '').trim(),
   url: resolveSiteUrl(),
   siteUrlExplicit: Boolean(env.SITE_URL),
   context,
@@ -58,6 +60,11 @@ export const business = {
   // Confirmed by the site owner's representative (2026-10-11); also on the company trailer signage.
   // Add the Michigan Residential Builder license number here when supplied — it then shows in the footer.
   licensedInsured: true,
+  // Estimate-form delivery (FormSubmit.co). Leads are emailed here. After the first
+  // submission FormSubmit emails an activation link to this inbox — it must be clicked once.
+  // Once activated, FormSubmit also emails a random alias string; put it in
+  // FORMSUBMIT_ALIAS (env) to stop exposing the address in page source.
+  leadEmail: 'dkqconstruction@gmail.com',
   licenseNumber: '',
   serviceArea: {
     summary: 'Monroe County, Michigan and Lucas County, Ohio',
@@ -102,7 +109,7 @@ export const services = [
     navName: 'Fencing',
     short: 'Privacy, property-line and pool-area fences set plumb, straight and built for Michigan frost.',
     page: true,
-    image: 'fence-backyard-gray',
+    image: null, // no DK fence photo yet — page uses a text hero
   },
   {
     slug: 'basement-finishing',
@@ -134,7 +141,7 @@ export const services = [
     navName: 'Flooring',
     short: 'Flooring installation as a standalone project or as part of a larger remodel.',
     page: false,
-    image: 'flooring-plank-install',
+    image: 'project-basement-bar-shiplap',
   },
   {
     slug: 'garages',
@@ -142,7 +149,7 @@ export const services = [
     navName: 'Garages',
     short: 'Garage construction and garage projects — talk to us about your plans.',
     page: false,
-    image: 'framing-new-construction',
+    image: null, // no DK garage photo yet
   },
 ];
 

@@ -269,10 +269,18 @@
       label.textContent = 'Sending…';
 
       try {
-        // Netlify Forms accepts multipart POSTs to any site path; the hidden
-        // form-name field routes it. Do not set Content-Type (browser adds the boundary).
-        const res = await fetch('/', { method: 'POST', body: new FormData(form) });
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        // Background (AJAX) submission to FormSubmit; the visitor stays on the site.
+        // Do not set Content-Type: the browser adds the multipart boundary (needed for the photo).
+        const data = new FormData(form);
+        const email = form.querySelector('[name="email"]').value.trim();
+        if (email) data.set('_replyto', email);
+        const res = await fetch(form.dataset.ajaxAction, {
+          method: 'POST',
+          body: data,
+          headers: { Accept: 'application/json' },
+        });
+        const json = await res.json().catch(() => ({}));
+        if (!res.ok || String(json.success) !== 'true') throw new Error(json.message || `HTTP ${res.status}`);
         try {
           sessionStorage.setItem('dk_lead', form.querySelector('[name="service"]').value || 'unknown');
         } catch (_) { /* storage unavailable: conversion simply isn't recorded */ }

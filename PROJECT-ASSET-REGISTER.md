@@ -2,8 +2,8 @@
 
 The readable companion to `project-assets-manifest.json`, which is the source of truth. This register is updated after every batch.
 
-**Last updated:** October 11, 2026, after batch 14
-**Workflow status:** batches 1–14 are processed and integrated. Waiting for batch 15. The project stays open until you confirm all batches have been uploaded.
+**Last updated:** October 11, 2026, after batch 15. **Final reconciliation is complete.**
+**Workflow status:** you confirmed batch 15 was the final photo batch. No customer reviews and no before-and-after pairs were supplied. The project stays open until you confirm all batches have been uploaded.
 
 ## Current heroes
 
@@ -38,18 +38,19 @@ Within each tier, the most visually compelling shot wins. These photos replace t
 
 | | Count |
 |---|---|
-| Files received (all batches) | 70 |
-| Inspected | 70 |
-| Integrated on the website | 68 unique photos. 2 duplicates are kept on file but not published twice. |
-| Duplicates found | 2: DKQ-10-02 is an exact duplicate of DKQ-06-03; DKQ-11-02 is a recompressed near-duplicate of DKQ-05-05 |
-| Projects in the portfolio | 49 (42 decks, 1 covered patio, 1 kitchen, 1 bathroom, 2 basements, 2 interior trim/carpentry) |
+| Files received (all batches) | 75 |
+| Inspected | 75 |
+| Integrated on the website | **73 unique photos, all 73 in use** |
+| Duplicates found and removed | 2: DKQ-10-02 is an exact duplicate of DKQ-06-03; DKQ-11-02 is a recompressed near-duplicate of DKQ-05-05. The duplicate files were deleted in batch 15 at your request, and the kept copies stay published. A final scan of all 75 uploads (SHA-256 checksums plus a 256-bit perceptual hash) found no others. |
+| Stock photos remaining | **0** |
+| Projects in the portfolio | 52 (44 decks and porches, 1 covered patio, 1 kitchen, 1 bathroom, 2 basements, 3 interior trim/carpentry) |
 | Confirmed before-and-after pairs | 0 |
 | Possible pairs awaiting your confirmation | 0 |
 | Possible same-project matches awaiting your confirmation | 0. DKQ-06-05 was merged into P-012 on visual evidence in batch 7 |
 | Same project, different angles (not before-and-after) | 10 (P-012: 4 photos; P-009: 3; P-010: 3; P-042: 3; P-043: 4; P-013: 2; P-021: 2; P-022: 2; P-030: 2; P-039: 2) |
 | Reviews transcribed | 0 |
 | Reviews published | 0 |
-| Needing clarification (details only, all already in use) | 68 |
+| Needing clarification (details only, all already in use) | 73 |
 | Could not be processed | 0 |
 
 ## Batches
@@ -58,6 +59,7 @@ Within each tier, the most visually compelling shot wins. These photos replace t
 |---|---|---|---|---|
 | 1 | 2026-10-10 | 5 | DKQ-01-01 to DKQ-01-05 | 4 completed decks (1 aerial), 1 completed basement |
 | 2 | 2026-10-10 | 5 | DKQ-02-01 to DKQ-02-05 | 3 completed decks, plus 2 angles of one completed kitchen. DK trailer visible in DKQ-02-01. |
+| 15 (final) | 2026-10-11 | 5 | DKQ-15-01 to DKQ-15-05 | Basement stairs (P-048), fireplace built-ins, a covered front porch with a timber gable, a covered deck with a bar rail, and a pool-deck aerial (P-018) |
 | 14 | 2026-10-11 | 5 | DKQ-14-01 to DKQ-14-05 | A poolside view of P-044, a 2nd basement (media wall and bar), shiplap with door trim, and an interior stair railing |
 | 13 | 2026-10-11 | 5 | DKQ-13-01 to DKQ-13-05 | A 4th bathroom photo, a two-level composite pool deck by a canal, a pool deck with a hot-tub platform, lit stairs at dusk, and a side-entry deck |
 | 12 | 2026-10-11 | 5 | DKQ-12-01 to DKQ-12-05 | 2 more views of P-042 (a new aerial cover and a yard view), and the first bathroom remodel (3 photos) |
@@ -123,12 +125,12 @@ No EXIF data and no duplicates in any batch so far.
 | DKQ-09-04 | 44.jpg | project-deck-aerial-box-steps-trailer | Completed deck, **aerial**, DK trailer in frame | P-034 | 2000×1500 | **About page**; Projects (featured) |
 | DKQ-09-05 | 45.jpg | project-deck-pressure-treated-raised-woods | Completed pressure-treated deck | P-036 | 1125×1500 | Projects |
 | DKQ-10-01 | 46.jpg | project-deck-lakefront-cable-rail | Lakefront deck, cable railings | P-037 | 1500×2000 | Projects (featured) |
-| DKQ-10-02 | 47.jpg | — | **Exact duplicate of DKQ-06-03** | (P-021) | 2000×1500 | Not published separately |
+| DKQ-10-02 | 47.jpg | — | **Exact duplicate of DKQ-06-03: removed** | (P-021) | 2000×1500 | File deleted |
 | DKQ-10-03 | 48.jpg | project-porch-deck-built-in-benches-aerial | P-022, **aerial** | P-022 | 2000×1500 | Projects (P-022 cover) |
 | DKQ-10-04 | 49.jpg | project-porch-cabin-wraparound | Covered porch floor | P-038 | 1500×2000 | Projects |
 | DKQ-10-05 | 50.jpg | project-deck-large-composite-two-tone | Large composite deck (wet) | P-039 | 1125×1500 | Projects |
 | DKQ-11-01 | 51.jpg | project-deck-large-composite-divider-trailer | P-039, 2nd angle, DK trailer in frame | P-039 | 1500×2000 | Projects (P-039 thumbnail + viewer) |
-| DKQ-11-02 | 52.jpg | — | **Near-duplicate of DKQ-05-05** | (P-020) | 1125×1500 | Not published separately |
+| DKQ-11-02 | 52.jpg | — | **Near-duplicate of DKQ-05-05: removed** | (P-020) | 1125×1500 | File deleted |
 | DKQ-11-03 | 53.jpg | project-deck-aerial-sunroom-planters | Completed deck, **aerial** | P-040 | 1500×1125 | Projects (featured) |
 | DKQ-11-04 | 54.jpg | project-deck-gray-pool-field-view | Completed deck, pool view | P-041 | 1500×2000 | Projects |
 | DKQ-11-05 | 55.jpg | project-deck-aerial-pressure-treated-multi-zone | Pressure-treated deck, overhead **aerial** | P-042 | 2000×1500 | Projects (P-042 viewer) |
@@ -147,6 +149,11 @@ No EXIF data and no duplicates in any batch so far.
 | DKQ-14-03 | 68.jpg | project-basement-bar-shiplap | Basement bar | P-048 | 1500×2000 | Projects; Basement (viewer) |
 | DKQ-14-04 | 69.jpg | project-interior-stair-railing-iron | Interior stair railing | P-050 | 1492×2000 | Projects ("Interior Trim & Carpentry") |
 | DKQ-14-05 | 70.jpg | project-basement-media-wall-built-ins | Basement media wall + built-ins | P-048 | 2000×1500 | Basement (first Recent project); Projects |
+| DKQ-15-01 | 71.jpg | project-basement-stairs-two-tone | Basement stairs | P-048 | 1500×2000 | Projects (P-048 viewer) |
+| DKQ-15-02 | 72.webp | project-interior-fireplace-built-ins | Fireplace built-ins | P-053 | 1488×1984 | Projects ("Interior Trim & Carpentry") |
+| DKQ-15-03 | 73.webp | project-porch-covered-gable-front | Covered front porch, wide angle | P-051 | 2000×1294 | Projects (featured) |
+| DKQ-15-04 | 74.webp | project-deck-covered-fan-bar-rail | Covered deck, bar rail | P-052 | 1075×1684 | Projects |
+| DKQ-15-05 | 75.webp | project-deck-pool-aerial-two-level-gray | Pool deck, **aerial** (video frame) | P-018 | 2000×985 | Projects (P-018 viewer) |
 
 ## Projects
 
@@ -204,6 +211,11 @@ No EXIF data and no duplicates in any batch so far.
 | P-048 | Finished basement with a media wall and bar | Basement Remodeling | DKQ-14-05 (cover), DKQ-14-03 |
 | P-049 | Shiplap wall and door trim | Interior Trim & Carpentry | DKQ-14-02 |
 | P-050 | Stair railing with iron balusters | Interior Trim & Carpentry | DKQ-14-04 |
+| P-051 | Covered front porch with a timber gable | Decks | DKQ-15-03 |
+| P-052 | Covered deck with a stained ceiling and bar rail | Decks | DKQ-15-04 |
+| P-053 | Fireplace wall with built-in cabinets | Interior Trim & Carpentry | DKQ-15-02 |
+
+P-048 now also includes DKQ-15-01, and P-018 now also includes DKQ-15-05.
 
 P-044 now also includes DKQ-14-01.
 
@@ -232,6 +244,9 @@ Featured projects appear first on /projects/: P-021, P-016, P-012, P-001 and P-0
   - DKQ-07-01 (upper deck) shows the same dining set and grill, plus the same lake, dock, boat and neighboring house with a brown deck that are visible from inside the screened room in DKQ-06-05.
   - So P-025 was merged into P-012 and its ID retired. That group now holds only P-024, so it was renamed "Covered Patios".
 - **DKQ-12-01 and 12-02 → P-042.** Same gray vertical-siding house, paver patio and storage enclosure. The wider aerial DKQ-12-01 is now the cover.
+- **DKQ-15-01 → P-048.** Same dark plank floor, gray walls and white shaker door as DKQ-14-03.
+- **DKQ-15-05 → P-018, flagged.** It's a two-level gray deck with white railings, and its lower level curves along an above-ground pool, consistent with DKQ-05-03.
+- **DKQ-15-04 is not P-006.** The beams differ, and it has a pool, a hot tub and a bar top.
 - **DKQ-14-01 → P-044.** Same pool steps, white railings with black balusters, pool-noodle caddy and brown composite boards.
 - **DKQ-14-03 + 14-05 → P-048, one basement, flagged.** Both have the same dark wood-look plank floor, gray walls, white baseboards and recessed lights. That's a strong match, but the photos don't overlap, so please confirm.
 - **The P-043 bathroom question is resolved: it's one room.** DKQ-13-01 shows the niche and the three-light fixture from DKQ-12-05, with the same striped curtain as DKQ-12-03. The curtain was just changed between photo sessions.
@@ -309,7 +324,9 @@ None of these block anything; all photos are live with neutral captions.
 26. **Bathroom (P-043).** It's one room, confirmed by the batch 13 photo. Which parts did DK do: tile, tub, vanity, flooring, fixtures, closet?
 27. **Pool decks (P-045, P-046).** Are they the same property? Did DK install the step and post lights, and build the barn-style door?
 29. **Basement (P-048).** Is the bar the same basement as the media wall? Which parts did DK do?
-30. **Interior trim (P-049, P-050).** Did DK do this work? Should interior trim and carpentry be listed as a service?
+31. **Covered porch and deck (P-051, P-052).** Did DK build the roofs too? On P-051, the siding and metal roof too?
+32. **Pool aerial.** Is DKQ-15-05 the P-018 property?
+30. **Interior trim (P-049, P-050, P-053).** Did DK do this work? Should interior trim and carpentry be listed as a service?
 28. **Canal pool deck (P-044).** Was it one project, with the raised level and the pool surround? Should the location be named (optional)?
 24. **Pool deck (P-041).** Is it the same property as P-018?
 25. **Sunroom deck (P-040).** Did DK build the planters? The sunroom?
@@ -329,13 +346,15 @@ Eight stock photos were removed from the site because real project photos replac
 
 In batch 2, the stock kitchen photo (`kitchen-white-cabinets`) was also retired. In batch 12, the stock bathroom photo (`bathroom-walk-in-shower`) was retired.
 
-**Still stock, until real photos arrive:**
+**All stock photos are now removed (batch 15).** `fence-backyard-gray`, `flooring-plank-install` and `framing-new-construction` were deleted.
 
-- the fencing hero
-- the flooring and garages rows on Services
-- ~~the pressure-treated card on the Decks page~~ replaced in batch 4 by DKQ-04-02 (`deck-treated-wooded-lot` retired)
+- **Fencing** has no DK fence photo, so the Fencing page uses a text-only hero, and its row on /services/ is text-only.
+- **Garages** also has no DK photo, so its row on /services/ is text-only.
+- **Flooring** on /services/ now uses DK's basement bar photo (DKQ-14-03), which shows the plank floor.
 
-The footer now says that project photos are DK's own work and the remaining photos are licensed stock.
+The footer now reads "All project photos show DK Quality Construction's own work."
+
+**Wanted:** a DK fence photo and a DK garage photo.
 
 ## How files are handled
 

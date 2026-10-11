@@ -138,7 +138,10 @@ export const projects = [
     id: 'P-018', category: 'decks',
     title: 'Pool deck around an above-ground pool',
     caption: 'Gray deck wrapped around an above-ground pool, with white-and-black railings and open views across the yard.',
-    images: [{ asset: 'DKQ-05-03', name: 'project-deck-above-ground-pool', alt: 'Gray deck with white railings and black balusters built around an above-ground pool, with a lawn and open field beyond' }],
+    images: [
+      { asset: 'DKQ-05-03', name: 'project-deck-above-ground-pool', alt: 'Gray deck with white railings and black balusters built around an above-ground pool, with a lawn and open field beyond' },
+      { asset: 'DKQ-15-05', name: 'project-deck-pool-aerial-two-level-gray', alt: 'Aerial view of a two-level gray deck with white railings and black balusters, stepping down to a lower level that curves along the edge of an above-ground pool' },
+    ],
   },
   {
     id: 'P-019', category: 'decks',
@@ -335,10 +338,11 @@ export const projects = [
   {
     id: 'P-048', category: 'basements',
     title: 'Finished basement with a media wall and bar',
-    caption: 'Finished basement with a built-in media wall, louvered closet doors, a shiplap-front bar with stone-look counters, recessed lighting and wood-look plank flooring.',
+    caption: 'Finished basement with a built-in media wall, louvered closet doors, a shiplap-front bar with stone-look counters, two-tone stairs, recessed lighting and wood-look plank flooring.',
     images: [
       { asset: 'DKQ-14-05', name: 'project-basement-media-wall-built-ins', alt: 'Finished basement media wall with a recessed TV niche, white base cabinets with a dark wood top, louvered closet doors on each side, recessed lights and dark wood-look plank flooring' },
       { asset: 'DKQ-14-03', name: 'project-basement-bar-shiplap', alt: 'Basement bar area with white shiplap fronts, thick stone-look countertops, recessed lights and dark wood-look plank flooring' },
+      { asset: 'DKQ-15-01', name: 'project-basement-stairs-two-tone', alt: 'Basement stairs with stained treads, white risers and a white half-wall with a squared post, above the same dark wood-look plank flooring' },
     ],
   },
   {
@@ -352,6 +356,24 @@ export const projects = [
     title: 'Stair railing with iron balusters',
     caption: 'Painted stair railing with box newel posts and twisted iron balusters.',
     images: [{ asset: 'DKQ-14-04', name: 'project-interior-stair-railing-iron', alt: 'Interior stair railing with white paneled box newels, a white handrail and black twisted iron balusters along a stairwell' }],
+  },
+  {
+    id: 'P-051', category: 'decks', featured: true,
+    title: 'Covered front porch with a timber gable',
+    caption: 'Covered front porch with an open timber gable, stained posts and beams, a brown composite floor, black metal railings and steps to the walk.',
+    images: [{ asset: 'DKQ-15-03', name: 'project-porch-covered-gable-front', alt: 'Front of a white-sided home with a covered porch: open timber gable with stained posts and beams, a ceiling fan, brown composite decking, black metal railings and steps down to a concrete walk' }],
+  },
+  {
+    id: 'P-052', category: 'decks',
+    title: 'Covered deck with a stained ceiling and bar rail',
+    caption: 'Covered composite deck with a stained plank ceiling, recessed lights and a fan, plus a bar-height rail top overlooking the yard and pool.',
+    images: [{ asset: 'DKQ-15-04', name: 'project-deck-covered-fan-bar-rail', alt: 'Covered composite deck with a stained wood plank ceiling, recessed lights and a ceiling fan, outdoor seating around a fire table, and a bar-height rail top with stools looking out over the yard' }],
+  },
+  {
+    id: 'P-053', category: 'interior',
+    title: 'Fireplace wall with built-in cabinets',
+    caption: 'Built-in cabinets and arched shelving on both sides of a fireplace, with a shiplap TV wall, crown molding and a wood mantel.',
+    images: [{ asset: 'DKQ-15-02', name: 'project-interior-fireplace-built-ins', alt: 'Fireplace wall with white built-in cabinets and arched open shelves on both sides, a shiplap TV wall with crown molding above, a wood mantel and a stone fireplace surround' }],
   },
 ];
 

@@ -5,12 +5,10 @@
 
 ## Licensing summary
 
-- **Photography:** every photo on the site is stock from Unsplash, used under the [Unsplash License](https://unsplash.com/license). That license allows free commercial use and modification and requires no attribution. Unsplash+ (paid) images were excluded.
+- **Photography:** client-supplied photos of DK Quality Construction's own projects (75 received, 73 published, 2 duplicates removed).
 - **Logo:** the logo belongs to DK Quality Construction and was taken from its own public Facebook profile image.
 
-**None of these photos show DK Quality Construction's work.** The site never captions them as company projects, and the footer says the photography is licensed stock used for illustration. Several images were uploaded to Unsplash by other contractors (Proper Construction, Smart Renovations), so they show those companies' work. Replacing them with DK's own project photos is a P1 recommendation.
-
-**Image enhancement:** all images were resized with Lanczos resampling and given light unsharp masking. They were encoded as AVIF (quality 52) and progressive JPEG (quality 78). **No AI upscaling or generative editing was used**; no such tool was available, and none was needed because every source is 2400 px wide.
+**Image processing:** photos are resized with Lanczos resampling, lightly sharpened, and encoded as AVIF and JPEG. No AI upscaling or content edits were made.
 
 ## Client project photos (DK Quality Construction's own work)
 
@@ -18,21 +16,7 @@ See `PROJECT-ASSET-REGISTER.md` and `project-assets-manifest.json` for the full 
 
 ## Stock photos
 
-These are the stock photos still in use. Retired stock photos are listed in the asset register.
-
-
-| File (`assets-src/photos/`) | Source | Photographer | Original px | Used on | Notes |
-|---|---|---|---|---|---|
-| fence-backyard-gray.jpg | [unsplash.com/photos/gyOmQE2vzWs](https://unsplash.com/photos/gyOmQE2vzWs) | Proper Construction | 2400×1600 | Fencing hero, Services | Another contractor's project |
-| flooring-plank-install.jpg | [unsplash.com/photos/EO_KlX-A6SY](https://unsplash.com/photos/EO_KlX-A6SY) | Ernys | 2400×3600 | Services: flooring | Black and white |
-| framing-new-construction.jpg | [unsplash.com/photos/dUYELbt-H-E](https://unsplash.com/photos/dUYELbt-H-E) | Troy Mortier | 2400×1600 | Services: garages | |
-
-### Output sizes
-
-- **Photo widths:** 640, 1024 and 1600 w; the home hero also gets 2000 w. The portrait crop is 480, 720 and 960 w.
-- **Formats:** AVIF with a JPEG fallback, served through `<picture>`.
-- **Layout stability:** every `<img>` has `width` and `height` set.
-- **Loading:** below-the-fold images use `loading="lazy"`. The hero is preloaded with `fetchpriority="high"`.
+**None.** Every stock photo was removed by October 11, 2026. All photography on the site is DK Quality Construction's own work, supplied by the client.
 
 ## Brand
 
