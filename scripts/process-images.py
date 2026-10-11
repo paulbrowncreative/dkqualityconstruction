@@ -110,6 +110,12 @@ PHOTOS = {
     "project-deck-pressure-treated-side-door": {"src": "assets-src/uploads/batch-13/63.jpg"},
     "project-deck-pressure-treated-stair-lights-night": {"src": "assets-src/uploads/batch-13/64.jpg"},
     "project-deck-composite-pool-two-level": {"src": "assets-src/uploads/batch-13/65.jpg"},
+    # Batch 14
+    "project-deck-composite-pool-two-level-poolside": {"src": "assets-src/uploads/batch-14/66.jpg"},
+    "project-interior-shiplap-door-trim": {"src": "assets-src/uploads/batch-14/67.jpg"},
+    "project-basement-bar-shiplap": {"src": "assets-src/uploads/batch-14/68.jpg"},
+    "project-interior-stair-railing-iron": {"src": "assets-src/uploads/batch-14/69.jpg"},
+    "project-basement-media-wall-built-ins": {"src": "assets-src/uploads/batch-14/70.jpg", "widths": HERO_WIDTHS},
     "framing-new-construction": {},
 }
 

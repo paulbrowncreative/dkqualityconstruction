@@ -56,7 +56,7 @@ export default servicePage({
       a: `<p>Products made for below-grade use, like luxury vinyl plank and tile, are the usual picks because they tolerate humidity. We can install flooring as part of the project — see <a href="/services/#flooring">flooring</a>.</p>`,
     },
   ],
-  projects: ['P-005'],
+  projects: ['P-048', 'P-005'],
   related: ['bathroom-remodeling', 'flooring', 'kitchen-remodeling'],
   ctaHeading: 'Ready to use your basement?',
   ctaText: 'Tell us how you want to use the space and roughly how big it is. Photos of the current basement help.',

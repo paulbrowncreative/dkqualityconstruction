@@ -180,6 +180,18 @@
         "DKQ-13-05"
       ],
       "summary": "4th bathroom photo (confirms P-043 is one room); two-level composite pool deck by a canal (featured); pressure-treated pool deck with hot-tub platform; pressure-treated stairs with lights at dusk (possible same property flagged); small side-entry deck. No before/after pairs, no reviews."
+    },
+    {
+      "batch": 14,
+      "received": "2026-10-11",
+      "assetIds": [
+        "DKQ-14-01",
+        "DKQ-14-02",
+        "DKQ-14-03",
+        "DKQ-14-04",
+        "DKQ-14-05"
+      ],
+      "summary": "Poolside view of P-044; 2nd basement remodel (media wall + bar, P-048); interior shiplap/door trim and stair railing (new Interior Trim & Carpentry group, no service claim). No before/after pairs, no reviews."
     }
   ],
   "projects": [
@@ -541,7 +553,8 @@
       "title": "Two-level pool deck by the canal",
       "category": "decks",
       "assets": [
-        "DKQ-13-05"
+        "DKQ-13-05",
+        "DKQ-14-01"
       ]
     },
     {
@@ -566,6 +579,31 @@
       "category": "decks",
       "assets": [
         "DKQ-13-03"
+      ]
+    },
+    {
+      "projectId": "P-048",
+      "title": "Finished basement with a media wall and bar",
+      "category": "basements",
+      "assets": [
+        "DKQ-14-05",
+        "DKQ-14-03"
+      ]
+    },
+    {
+      "projectId": "P-049",
+      "title": "Shiplap wall and door trim",
+      "category": "interior",
+      "assets": [
+        "DKQ-14-02"
+      ]
+    },
+    {
+      "projectId": "P-050",
+      "title": "Stair railing with iron balusters",
+      "category": "interior",
+      "assets": [
+        "DKQ-14-04"
       ]
     }
   ],
@@ -5628,6 +5666,403 @@
           1500
         ],
         "aspect": "1500x1125"
+      }
+    },
+    {
+      "id": "DKQ-14-01",
+      "batch": 14,
+      "originalFilename": "66.jpg",
+      "original": "assets-src/uploads/batch-14/66.jpg",
+      "sha256": "1931df1c6ecfcbb235069b9daa3a3aa44ad0ffffa66d1a352e222765ef34431c",
+      "bytes": 365034,
+      "originalDimensions": [
+        1500,
+        2000
+      ],
+      "format": "jpeg",
+      "duplicateOf": null,
+      "type": "project-photo",
+      "classification": "general-portfolio (completed) — poolside view of P-044 (same pool steps, white/black railings, pool-noodle caddy, brown composite)",
+      "projectId": "P-044",
+      "pairId": null,
+      "reviewId": null,
+      "storedFilename": "project-deck-composite-pool-two-level-poolside",
+      "optimized": [
+        {
+          "file": "src/assets/img/photos/project-deck-composite-pool-two-level-poolside-1024.avif",
+          "bytes": 90889
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-composite-pool-two-level-poolside-1024.jpg",
+          "bytes": 237430
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-composite-pool-two-level-poolside-1500.avif",
+          "bytes": 185882
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-composite-pool-two-level-poolside-1500.jpg",
+          "bytes": 397881
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-composite-pool-two-level-poolside-320.avif",
+          "bytes": 13826
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-composite-pool-two-level-poolside-320.jpg",
+          "bytes": 31358
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-composite-pool-two-level-poolside-640.avif",
+          "bytes": 41294
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-composite-pool-two-level-poolside-640.jpg",
+          "bytes": 105139
+        }
+      ],
+      "altText": "Poolside view of the same deck: brown composite boards curving around the pool edge, vertical composite skirting on the raised level and white-and-black railings",
+      "caption": "Brown composite deck wrapped around an above-ground pool, with a raised seating level, white-and-black railings and step lights.",
+      "websiteLocations": [
+        "/projects/ (P-044 viewer)"
+      ],
+      "status": "integrated",
+      "questions": [
+        "Same as P-044"
+      ],
+      "approval": "pending owner confirmation of project details",
+      "category": "Decks",
+      "processing": "Resized (Lanczos) + light unsharp mask; AVIF q52 + progressive JPEG q78. No retouching, no AI upscaling, no content changes.",
+      "optimizedDimensions": {
+        "widths": [
+          320,
+          640,
+          1024,
+          1500
+        ],
+        "aspect": "1500x2000"
+      }
+    },
+    {
+      "id": "DKQ-14-02",
+      "batch": 14,
+      "originalFilename": "67.jpg",
+      "original": "assets-src/uploads/batch-14/67.jpg",
+      "sha256": "c537787a865c75b97b037d9f927a8dcf0c89d42aebab8b7f6a0f8ebfe332b263",
+      "bytes": 219143,
+      "originalDimensions": [
+        1500,
+        2000
+      ],
+      "format": "jpeg",
+      "duplicateOf": null,
+      "type": "project-photo",
+      "classification": "general-portfolio (completed) — interior shiplap + door header/casing. New \"Interior Trim & Carpentry\" group, no service page",
+      "projectId": "P-049",
+      "pairId": null,
+      "reviewId": null,
+      "storedFilename": "project-interior-shiplap-door-trim",
+      "optimized": [
+        {
+          "file": "src/assets/img/photos/project-interior-shiplap-door-trim-1024.avif",
+          "bytes": 57660
+        },
+        {
+          "file": "src/assets/img/photos/project-interior-shiplap-door-trim-1024.jpg",
+          "bytes": 156061
+        },
+        {
+          "file": "src/assets/img/photos/project-interior-shiplap-door-trim-1500.avif",
+          "bytes": 101965
+        },
+        {
+          "file": "src/assets/img/photos/project-interior-shiplap-door-trim-1500.jpg",
+          "bytes": 240903
+        },
+        {
+          "file": "src/assets/img/photos/project-interior-shiplap-door-trim-320.avif",
+          "bytes": 11092
+        },
+        {
+          "file": "src/assets/img/photos/project-interior-shiplap-door-trim-320.jpg",
+          "bytes": 25579
+        },
+        {
+          "file": "src/assets/img/photos/project-interior-shiplap-door-trim-640.avif",
+          "bytes": 30203
+        },
+        {
+          "file": "src/assets/img/photos/project-interior-shiplap-door-trim-640.jpg",
+          "bytes": 77486
+        }
+      ],
+      "altText": "Room with white shiplap walls and a built-up gray header and casing around black-framed French doors, with crown molding and baseboard",
+      "caption": "Shiplap accent walls with a built-up header and casing around a set of French doors, plus crown and base trim.",
+      "websiteLocations": [
+        "/projects/"
+      ],
+      "status": "integrated",
+      "questions": [
+        "Confirm DK did the shiplap and trim",
+        "Should interior trim/carpentry be listed as a service?"
+      ],
+      "approval": "pending owner confirmation of project details",
+      "category": "Interior trim & carpentry (UNCONFIRMED SERVICE)",
+      "processing": "Resized (Lanczos) + light unsharp mask; AVIF q52 + progressive JPEG q78. No retouching, no AI upscaling, no content changes.",
+      "optimizedDimensions": {
+        "widths": [
+          320,
+          640,
+          1024,
+          1500
+        ],
+        "aspect": "1500x2000"
+      }
+    },
+    {
+      "id": "DKQ-14-03",
+      "batch": 14,
+      "originalFilename": "68.jpg",
+      "original": "assets-src/uploads/batch-14/68.jpg",
+      "sha256": "4fd7c829c8dafaa64cd57f81a4a1385b36095058d519fad2cb6083b17a77e97e",
+      "bytes": 180423,
+      "originalDimensions": [
+        1500,
+        2000
+      ],
+      "format": "jpeg",
+      "duplicateOf": null,
+      "type": "project-photo",
+      "classification": "general-portfolio (completed) — basement bar; grouped with DKQ-14-05 (same dark LVP, gray paint, white baseboards, recessed lights) — flagged",
+      "projectId": "P-048",
+      "pairId": null,
+      "reviewId": null,
+      "storedFilename": "project-basement-bar-shiplap",
+      "optimized": [
+        {
+          "file": "src/assets/img/photos/project-basement-bar-shiplap-1024.avif",
+          "bytes": 49236
+        },
+        {
+          "file": "src/assets/img/photos/project-basement-bar-shiplap-1024.jpg",
+          "bytes": 121449
+        },
+        {
+          "file": "src/assets/img/photos/project-basement-bar-shiplap-1500.avif",
+          "bytes": 91013
+        },
+        {
+          "file": "src/assets/img/photos/project-basement-bar-shiplap-1500.jpg",
+          "bytes": 194470
+        },
+        {
+          "file": "src/assets/img/photos/project-basement-bar-shiplap-320.avif",
+          "bytes": 7368
+        },
+        {
+          "file": "src/assets/img/photos/project-basement-bar-shiplap-320.jpg",
+          "bytes": 16509
+        },
+        {
+          "file": "src/assets/img/photos/project-basement-bar-shiplap-640.avif",
+          "bytes": 23085
+        },
+        {
+          "file": "src/assets/img/photos/project-basement-bar-shiplap-640.jpg",
+          "bytes": 55162
+        }
+      ],
+      "altText": "Basement bar area with white shiplap fronts, thick stone-look countertops, recessed lights and dark wood-look plank flooring",
+      "caption": "Finished basement with a built-in media wall, louvered closet doors, a shiplap-front bar with stone-look counters, recessed lighting and wood-look plank flooring.",
+      "websiteLocations": [
+        "/projects/ (P-048 viewer)",
+        "/services/basement-finishing/ (P-048 card)"
+      ],
+      "status": "integrated",
+      "questions": [
+        "Same basement as DKQ-14-05?",
+        "Did DK build the bar and counters?"
+      ],
+      "approval": "pending owner confirmation of project details",
+      "category": "Basement remodeling",
+      "processing": "Resized (Lanczos) + light unsharp mask; AVIF q52 + progressive JPEG q78. No retouching, no AI upscaling, no content changes.",
+      "optimizedDimensions": {
+        "widths": [
+          320,
+          640,
+          1024,
+          1500
+        ],
+        "aspect": "1500x2000"
+      }
+    },
+    {
+      "id": "DKQ-14-04",
+      "batch": 14,
+      "originalFilename": "69.jpg",
+      "original": "assets-src/uploads/batch-14/69.jpg",
+      "sha256": "cbc07e19378c223672845bdf18efa8be45a0bc9242b6b1c66a8a8905c4d48082",
+      "bytes": 232254,
+      "originalDimensions": [
+        1492,
+        2000
+      ],
+      "format": "jpeg",
+      "duplicateOf": null,
+      "type": "project-photo",
+      "classification": "general-portfolio (completed) — interior stair railing with iron balusters",
+      "projectId": "P-050",
+      "pairId": null,
+      "reviewId": null,
+      "storedFilename": "project-interior-stair-railing-iron",
+      "optimized": [
+        {
+          "file": "src/assets/img/photos/project-interior-stair-railing-iron-1024.avif",
+          "bytes": 57559
+        },
+        {
+          "file": "src/assets/img/photos/project-interior-stair-railing-iron-1024.jpg",
+          "bytes": 164080
+        },
+        {
+          "file": "src/assets/img/photos/project-interior-stair-railing-iron-1492.avif",
+          "bytes": 103248
+        },
+        {
+          "file": "src/assets/img/photos/project-interior-stair-railing-iron-1492.jpg",
+          "bytes": 254874
+        },
+        {
+          "file": "src/assets/img/photos/project-interior-stair-railing-iron-320.avif",
+          "bytes": 10885
+        },
+        {
+          "file": "src/assets/img/photos/project-interior-stair-railing-iron-320.jpg",
+          "bytes": 25523
+        },
+        {
+          "file": "src/assets/img/photos/project-interior-stair-railing-iron-640.avif",
+          "bytes": 30173
+        },
+        {
+          "file": "src/assets/img/photos/project-interior-stair-railing-iron-640.jpg",
+          "bytes": 79619
+        }
+      ],
+      "altText": "Interior stair railing with white paneled box newels, a white handrail and black twisted iron balusters along a stairwell",
+      "caption": "Painted stair railing with box newel posts and twisted iron balusters.",
+      "websiteLocations": [
+        "/projects/"
+      ],
+      "status": "integrated",
+      "questions": [
+        "Confirm DK built this railing"
+      ],
+      "approval": "pending owner confirmation of project details",
+      "category": "Interior trim & carpentry (UNCONFIRMED SERVICE)",
+      "processing": "Resized (Lanczos) + light unsharp mask; AVIF q52 + progressive JPEG q78. No retouching, no AI upscaling, no content changes.",
+      "optimizedDimensions": {
+        "widths": [
+          320,
+          640,
+          1024,
+          1492
+        ],
+        "aspect": "1492x2000"
+      }
+    },
+    {
+      "id": "DKQ-14-05",
+      "batch": 14,
+      "originalFilename": "70.jpg",
+      "original": "assets-src/uploads/batch-14/70.jpg",
+      "sha256": "f2c0696c63df201a0deea947c474f4e483d30e7da729ff32259e1734b8987344",
+      "bytes": 200533,
+      "originalDimensions": [
+        2000,
+        1500
+      ],
+      "format": "jpeg",
+      "duplicateOf": null,
+      "type": "project-photo",
+      "classification": "general-portfolio (completed) — P-048 cover; basement media wall with built-ins",
+      "projectId": "P-048",
+      "pairId": null,
+      "reviewId": null,
+      "storedFilename": "project-basement-media-wall-built-ins",
+      "optimized": [
+        {
+          "file": "src/assets/img/photos/project-basement-media-wall-built-ins-1024.avif",
+          "bytes": 29873
+        },
+        {
+          "file": "src/assets/img/photos/project-basement-media-wall-built-ins-1024.jpg",
+          "bytes": 88394
+        },
+        {
+          "file": "src/assets/img/photos/project-basement-media-wall-built-ins-1600.avif",
+          "bytes": 57050
+        },
+        {
+          "file": "src/assets/img/photos/project-basement-media-wall-built-ins-1600.jpg",
+          "bytes": 179378
+        },
+        {
+          "file": "src/assets/img/photos/project-basement-media-wall-built-ins-2000.avif",
+          "bytes": 83339
+        },
+        {
+          "file": "src/assets/img/photos/project-basement-media-wall-built-ins-2000.jpg",
+          "bytes": 220739
+        },
+        {
+          "file": "src/assets/img/photos/project-basement-media-wall-built-ins-320.avif",
+          "bytes": 5224
+        },
+        {
+          "file": "src/assets/img/photos/project-basement-media-wall-built-ins-320.jpg",
+          "bytes": 12130
+        },
+        {
+          "file": "src/assets/img/photos/project-basement-media-wall-built-ins-640.avif",
+          "bytes": 14726
+        },
+        {
+          "file": "src/assets/img/photos/project-basement-media-wall-built-ins-640.jpg",
+          "bytes": 39896
+        },
+        {
+          "file": "src/assets/img/photos/project-basement-media-wall-built-ins-768.avif",
+          "bytes": 19798
+        },
+        {
+          "file": "src/assets/img/photos/project-basement-media-wall-built-ins-768.jpg",
+          "bytes": 54560
+        }
+      ],
+      "altText": "Finished basement media wall with a recessed TV niche, white base cabinets with a dark wood top, louvered closet doors on each side, recessed lights and dark wood-look plank flooring",
+      "caption": "Finished basement with a built-in media wall, louvered closet doors, a shiplap-front bar with stone-look counters, recessed lighting and wood-look plank flooring.",
+      "websiteLocations": [
+        "/services/basement-finishing/ (Recent projects, first card)",
+        "/projects/ (P-048 cover)"
+      ],
+      "status": "integrated",
+      "questions": [
+        "Basement scope DK performed (framing, drywall, flooring, built-ins, lighting?)"
+      ],
+      "approval": "pending owner confirmation of project details",
+      "category": "Basement remodeling",
+      "processing": "Resized (Lanczos) + light unsharp mask; AVIF q52 + progressive JPEG q78. No retouching, no AI upscaling, no content changes.",
+      "optimizedDimensions": {
+        "widths": [
+          320,
+          640,
+          768,
+          1024,
+          1600,
+          2000
+        ],
+        "aspect": "2000x1500"
       }
     }
   ],

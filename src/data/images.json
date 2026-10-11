@@ -671,6 +671,58 @@
     "width": 1500,
     "height": 1125
   },
+  "project-deck-composite-pool-two-level-poolside": {
+    "widths": [
+      320,
+      640,
+      1024,
+      1500
+    ],
+    "width": 1500,
+    "height": 2000
+  },
+  "project-interior-shiplap-door-trim": {
+    "widths": [
+      320,
+      640,
+      1024,
+      1500
+    ],
+    "width": 1500,
+    "height": 2000
+  },
+  "project-basement-bar-shiplap": {
+    "widths": [
+      320,
+      640,
+      1024,
+      1500
+    ],
+    "width": 1500,
+    "height": 2000
+  },
+  "project-interior-stair-railing-iron": {
+    "widths": [
+      320,
+      640,
+      1024,
+      1492
+    ],
+    "width": 1492,
+    "height": 2000
+  },
+  "project-basement-media-wall-built-ins": {
+    "widths": [
+      320,
+      640,
+      768,
+      1024,
+      1600,
+      2000
+    ],
+    "width": 2000,
+    "height": 1500
+  },
   "framing-new-construction": {
     "widths": [
       320,

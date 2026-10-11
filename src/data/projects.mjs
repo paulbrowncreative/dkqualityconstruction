@@ -8,6 +8,8 @@ export const categories = [
   { id: 'kitchens', name: 'Kitchen Remodeling', service: '/services/kitchen-remodeling/' },
   { id: 'baths', name: 'Bathroom Remodeling', service: '/services/bathroom-remodeling/' },
   { id: 'basements', name: 'Basement Remodeling', service: '/services/basement-finishing/' },
+  // No dedicated service page — interior finish carpentry (owner to confirm how it's offered).
+  { id: 'interior', name: 'Interior Trim & Carpentry' },
   // No dedicated service page yet (owner to confirm scope) — the group links to the estimate form.
   { id: 'outdoor', name: 'Covered Patios' },
 ];
@@ -307,7 +309,10 @@ export const projects = [
     id: 'P-044', category: 'decks', featured: true,
     title: 'Two-level pool deck by the canal',
     caption: 'Brown composite deck wrapped around an above-ground pool, with a raised seating level, white-and-black railings and step lights.',
-    images: [{ asset: 'DKQ-13-05', name: 'project-deck-composite-pool-two-level', alt: 'Overhead view of a brown composite deck around an above-ground pool, with a raised seating level, white railings with black balusters, lit steps and a canal beside it' }],
+    images: [
+      { asset: 'DKQ-13-05', name: 'project-deck-composite-pool-two-level', alt: 'Overhead view of a brown composite deck around an above-ground pool, with a raised seating level, white railings with black balusters, lit steps and a canal beside it' },
+      { asset: 'DKQ-14-01', name: 'project-deck-composite-pool-two-level-poolside', alt: 'Poolside view of the same deck: brown composite boards curving around the pool edge, vertical composite skirting on the raised level and white-and-black railings' },
+    ],
   },
   {
     id: 'P-045', category: 'decks',
@@ -326,6 +331,27 @@ export const projects = [
     title: 'Side-entry deck with wood railings',
     caption: 'Small pressure-treated deck and steps at a side door, with wood railings, black balusters and board skirting.',
     images: [{ asset: 'DKQ-13-03', name: 'project-deck-pressure-treated-side-door', alt: 'Small pressure-treated deck and steps at a side door, with wood railings, black balusters and board skirting, just after completion' }],
+  },
+  {
+    id: 'P-048', category: 'basements',
+    title: 'Finished basement with a media wall and bar',
+    caption: 'Finished basement with a built-in media wall, louvered closet doors, a shiplap-front bar with stone-look counters, recessed lighting and wood-look plank flooring.',
+    images: [
+      { asset: 'DKQ-14-05', name: 'project-basement-media-wall-built-ins', alt: 'Finished basement media wall with a recessed TV niche, white base cabinets with a dark wood top, louvered closet doors on each side, recessed lights and dark wood-look plank flooring' },
+      { asset: 'DKQ-14-03', name: 'project-basement-bar-shiplap', alt: 'Basement bar area with white shiplap fronts, thick stone-look countertops, recessed lights and dark wood-look plank flooring' },
+    ],
+  },
+  {
+    id: 'P-049', category: 'interior',
+    title: 'Shiplap wall and door trim',
+    caption: 'Shiplap accent walls with a built-up header and casing around a set of French doors, plus crown and base trim.',
+    images: [{ asset: 'DKQ-14-02', name: 'project-interior-shiplap-door-trim', alt: 'Room with white shiplap walls and a built-up gray header and casing around black-framed French doors, with crown molding and baseboard' }],
+  },
+  {
+    id: 'P-050', category: 'interior',
+    title: 'Stair railing with iron balusters',
+    caption: 'Painted stair railing with box newel posts and twisted iron balusters.',
+    images: [{ asset: 'DKQ-14-04', name: 'project-interior-stair-railing-iron', alt: 'Interior stair railing with white paneled box newels, a white handrail and black twisted iron balusters along a stairwell' }],
   },
 ];
 
