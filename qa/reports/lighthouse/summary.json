@@ -2,11 +2,11 @@
   {
     "page": "/",
     "formFactor": "mobile",
-    "performance": 99,
+    "performance": 100,
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "2.0 s",
+    "LCP": "1.9 s",
     "CLS": "0",
     "TBT": "0 ms",
     "FCP": "0.8 s",
@@ -28,15 +28,15 @@
   {
     "page": "/projects/",
     "formFactor": "mobile",
-    "performance": 100,
+    "performance": 99,
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "1.8 s",
+    "LCP": "2.1 s",
     "CLS": "0",
     "TBT": "0 ms",
-    "FCP": "0.8 s",
-    "weightKB": 337
+    "FCP": "0.9 s",
+    "weightKB": 338
   },
   {
     "page": "/contact/",
@@ -48,7 +48,7 @@
     "LCP": "1.4 s",
     "CLS": "0",
     "TBT": "0 ms",
-    "FCP": "0.9 s",
+    "FCP": "1.0 s",
     "weightKB": 66
   },
   {
@@ -74,7 +74,7 @@
     "LCP": "1.4 s",
     "CLS": "0",
     "TBT": "0 ms",
-    "FCP": "0.9 s",
+    "FCP": "0.8 s",
     "weightKB": 102
   },
   {
@@ -87,7 +87,7 @@
     "LCP": "0.6 s",
     "CLS": "0",
     "TBT": "0 ms",
-    "FCP": "0.2 s",
+    "FCP": "0.3 s",
     "weightKB": 387
   },
   {
@@ -114,7 +114,7 @@
     "CLS": "0",
     "TBT": "0 ms",
     "FCP": "0.2 s",
-    "weightKB": 640
+    "weightKB": 636
   },
   {
     "page": "/contact/",
@@ -126,7 +126,7 @@
     "LCP": "0.3 s",
     "CLS": "0",
     "TBT": "0 ms",
-    "FCP": "0.3 s",
+    "FCP": "0.2 s",
     "weightKB": 102
   },
   {
@@ -139,7 +139,7 @@
     "LCP": "0.4 s",
     "CLS": "0",
     "TBT": "0 ms",
-    "FCP": "0.3 s",
+    "FCP": "0.2 s",
     "weightKB": 176
   },
   {
@@ -149,10 +149,10 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "0.3 s",
+    "LCP": "0.4 s",
     "CLS": "0",
     "TBT": "0 ms",
     "FCP": "0.2 s",
-    "weightKB": 164
+    "weightKB": 135
   }
 ]

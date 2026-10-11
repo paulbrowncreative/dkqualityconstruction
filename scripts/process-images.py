@@ -83,6 +83,12 @@ PHOTOS = {
     "project-deck-pressure-treated-pavilion": {"src": "assets-src/uploads/batch-08/38.jpg"},
     "project-deck-aerial-stone-home-stairs": {"src": "assets-src/uploads/batch-08/39.jpg"},
     "project-deck-composite-pavilion": {"src": "assets-src/uploads/batch-08/40.jpg"},
+    # Batch 9
+    "project-deck-aerial-covered-porch-close": {"src": "assets-src/uploads/batch-09/41.jpg"},
+    "project-deck-composite-pavilion-stairs": {"src": "assets-src/uploads/batch-09/42.jpg"},
+    "project-porch-floor-brick-ranch": {"src": "assets-src/uploads/batch-09/43.jpg"},
+    "project-deck-aerial-box-steps-trailer": {"src": "assets-src/uploads/batch-09/44.jpg", "widths": HERO_WIDTHS},
+    "project-deck-pressure-treated-raised-woods": {"src": "assets-src/uploads/batch-09/45.jpg"},
     "framing-new-construction": {},
 }
 

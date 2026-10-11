@@ -2,8 +2,8 @@
 
 The readable companion to `project-assets-manifest.json`, which is the source of truth. This register is updated after every batch.
 
-**Last updated:** October 11, 2026, after batch 8
-**Workflow status:** batches 1–8 are processed and integrated. Waiting for batch 9. The project stays open until you confirm all batches have been uploaded.
+**Last updated:** October 11, 2026, after batch 9
+**Workflow status:** batches 1–9 are processed and integrated. Waiting for batch 10. The project stays open until you confirm all batches have been uploaded.
 
 ## Current heroes
 
@@ -38,17 +38,17 @@ Within each tier, the most visually compelling shot wins. These photos replace t
 
 | | Count |
 |---|---|
-| Files received (all batches) | 40 |
-| Inspected | 40 |
-| Integrated on the website | 40 |
-| Projects in the portfolio | 32 (29 decks, 1 covered patio, 1 kitchen, 1 basement) |
+| Files received (all batches) | 45 |
+| Inspected | 45 |
+| Integrated on the website | 45 |
+| Projects in the portfolio | 35 (32 decks, 1 covered patio, 1 kitchen, 1 basement) |
 | Confirmed before-and-after pairs | 0 |
 | Possible pairs awaiting your confirmation | 0 |
 | Possible same-project matches awaiting your confirmation | 0. DKQ-06-05 was merged into P-012 on visual evidence in batch 7 |
-| Same project, different angles (not before-and-after) | 4 (P-012 lakeside deck: 4 photos; P-009 kitchen: 3; P-010 deck: 3; P-013 stairs: 2) |
+| Same project, different angles (not before-and-after) | 6 (P-012: 4 photos; P-009: 3; P-010: 3; P-013: 2; P-021: 2; P-030: 2) |
 | Reviews transcribed | 0 |
 | Reviews published | 0 |
-| Needing clarification (details only, all already in use) | 40 |
+| Needing clarification (details only, all already in use) | 45 |
 | Could not be processed | 0 |
 
 ## Batches
@@ -57,6 +57,7 @@ Within each tier, the most visually compelling shot wins. These photos replace t
 |---|---|---|---|---|
 | 1 | 2026-10-10 | 5 | DKQ-01-01 to DKQ-01-05 | 4 completed decks (1 aerial), 1 completed basement |
 | 2 | 2026-10-10 | 5 | DKQ-02-01 to DKQ-02-05 | 3 completed decks, plus 2 angles of one completed kitchen. DK trailer visible in DKQ-02-01. |
+| 9 | 2026-10-11 | 5 | DKQ-09-01 to DKQ-09-05 | 2nd angles of P-021 and P-030, a brick-ranch porch, a 6th aerial with the DK trailer in frame, and a raised pressure-treated deck |
 | 8 | 2026-10-11 | 5 | DKQ-08-01 to DKQ-08-05 | A 5th aerial (stone home), 2 decks with matching timber pavilions, an angled picture-frame deck, and a low-resolution white-railing deck |
 | 7 | 2026-10-11 | 5 | DKQ-07-01 to DKQ-07-05 | 2 more views of the P-012 lakeside deck (which also places DKQ-06-05 there), a covered front porch floor, a ground-level deck at dusk, and a side-yard deck |
 | 6 | 2026-10-11 | 5 | DKQ-06-01 to DKQ-06-05 | A 4th aerial deck (new homepage hero), a front porch deck with benches, a deck with planters, a covered patio roof, and a screened room |
@@ -75,7 +76,7 @@ No EXIF data and no duplicates in any batch so far.
 | DKQ-01-03 | 3.jpg | project-deck-aerial-privacy-screen | Completed deck, **aerial** | P-001 | 2000×1500 | Projects (featured) |
 | DKQ-01-04 | 4.jpg | project-deck-cedar-tone-stairs | Completed deck | P-004 | 1500×2000 | Projects; Decks (composite materials card) |
 | DKQ-01-05 | 5.jpg | project-deck-gray-corner-stairs | Completed deck | P-003 | 1500×2000 | Projects |
-| DKQ-02-01 | 6.jpg | project-deck-covered-stained-ceiling | Completed covered deck, wide angle | P-006 | 1500×2000 | Projects; Home (Recent work); Decks (Recent projects); About |
+| DKQ-02-01 | 6.jpg | project-deck-covered-stained-ceiling | Completed covered deck, wide angle | P-006 | 1500×2000 | Projects |
 | DKQ-02-02 | 7.jpg | project-deck-covered-white-columns | Completed covered deck, wide angle | P-007 | 1500×2000 | Projects |
 | DKQ-02-03 | 8.jpg | project-deck-brown-screened-porch | Completed deck | P-008 | 1500×2000 | Projects |
 | DKQ-02-04 | 9.jpg | project-kitchen-white-shaker-fridge-wall | Completed kitchen (2nd angle) | P-009 | 2000×1500 | Projects; Kitchen (Recent projects), as the card thumbnail and in the photo viewer |
@@ -110,6 +111,11 @@ No EXIF data and no duplicates in any batch so far.
 | DKQ-08-03 | 38.jpg | project-deck-pressure-treated-pavilion | Completed pressure-treated deck + pavilion | P-031 | 1500×2000 | Projects |
 | DKQ-08-04 | 39.jpg | project-deck-aerial-stone-home-stairs | Completed deck, **aerial** | P-029 | 1440×1080 | Projects (featured) |
 | DKQ-08-05 | 40.jpg | project-deck-composite-pavilion | Completed composite deck + pavilion | P-030 | 1500×2000 | Projects; Home (Recent work) |
+| DKQ-09-01 | 41.jpg | project-deck-aerial-covered-porch-close | P-021, closer aerial | P-021 | 1500×1125 | Card thumbnail and photo viewer (Projects, Home, Decks) |
+| DKQ-09-02 | 42.jpg | project-deck-composite-pavilion-stairs | P-030, yard view | P-030 | 1125×1500 | Card thumbnail and photo viewer (Projects, Home) |
+| DKQ-09-03 | 43.jpg | project-porch-floor-brick-ranch | Covered front porch floor | P-035 | 1500×2000 | Projects |
+| DKQ-09-04 | 44.jpg | project-deck-aerial-box-steps-trailer | Completed deck, **aerial**, DK trailer in frame | P-034 | 2000×1500 | **About page**; Projects (featured) |
+| DKQ-09-05 | 45.jpg | project-deck-pressure-treated-raised-woods | Completed pressure-treated deck | P-036 | 1125×1500 | Projects |
 
 ## Projects
 
@@ -150,6 +156,11 @@ No EXIF data and no duplicates in any batch so far.
 | P-031 | Pressure-treated deck with a timber pavilion | Decks | DKQ-08-03 |
 | P-032 | Deck with an angled corner and picture-frame border | Decks | DKQ-08-02 |
 | P-033 | Low deck with white railings by a patio door | Decks | DKQ-08-01 |
+| P-034 | Raised deck with angled box steps | Decks | DKQ-09-04 |
+| P-035 | Covered front porch on a brick ranch | Decks | DKQ-09-03 |
+| P-036 | Raised pressure-treated deck in a wooded yard | Decks | DKQ-09-05 |
+
+P-021 now also includes DKQ-09-01, and P-030 now also includes DKQ-09-02.
 
 Featured projects appear first on /projects/: P-021, P-016, P-012, P-001 and P-010.
 
@@ -169,6 +180,9 @@ Featured projects appear first on /projects/: P-021, P-016, P-012, P-001 and P-0
   - DKQ-07-02 (yard view) is clearly the same build as the DKQ-04-05 aerial: the same house, screened room, stairs and railings.
   - DKQ-07-01 (upper deck) shows the same dining set and grill, plus the same lake, dock, boat and neighboring house with a brown deck that are visible from inside the screened room in DKQ-06-05.
   - So P-025 was merged into P-012 and its ID retired. That group now holds only P-024, so it was renamed "Covered Patios".
+- **DKQ-09-01 → P-021.** It's the same ranch home, with the covered porch on cedar posts, the privacy wall and the stamped-concrete border. Shot from a closer angle.
+- **DKQ-09-02 → P-030.** Same timber pavilion, black aluminum railings, horizontal composite skirting and white-sided two-story home.
+- **DKQ-09-03 is possibly related to P-026, but kept separate.** Both are covered porches with white square columns and a brown composite floor with a divider board, but no background features match.
 - **DKQ-08-03 vs DKQ-08-05: kept separate, flagged.** Both have the same timber pavilion with a metal roof and the same bracing, so DK may build these regularly, or they may be one property re-decked later. The evidence doesn't settle it:
   - DKQ-08-03 is pressure-treated wood with wood railings, with a garage and a white pickup truck behind.
   - DKQ-08-05 is composite with black aluminum railings, with a covered pool, a propane tank and a shed behind.
@@ -179,6 +193,9 @@ Featured projects appear first on /projects/: P-021, P-016, P-012, P-001 and P-0
 - **No batch 2 deck matches a batch 1 deck.** The siding, house styles and railings all differ.
 
 ### Evidence found in the photos
+
+**DKQ-09-04 (batch 9)** shows the trailer again, with a further line beginning **"LICENSED AND …"**. The rest is hidden by the railing, but it is probably "Licensed and Insured". It is **not published as a claim**. Please confirm it and supply the license number (see P1-2 in the QA report).
+
 
 DKQ-02-01 shows the company trailer, which reads "DK QUALITY CONSTRUCTION · 734-497-6773 · HOME REMODELING • DECKS • KITCHENS • BATHS". That corroborates the phone number and the core services. A further line is hidden behind the railing.
 
@@ -214,6 +231,8 @@ None of these block anything; all photos are live with neutral captions.
 16. **Pavilions (P-030, P-031).** Did DK build the timber pavilions? Are they two jobs, or one property re-decked? If DK builds pavilions, should they be mentioned on the Decks page?
 17. **Stone home (P-029).** Did DK build only the lower deck and stairs, or the upper balconies too? Is there a full-resolution original?
 18. **Low-res photos (P-033).** A higher-resolution original would display sharper.
+19. **Trailer signage.** The line on the trailer starts "LICENSED AND …". What's the full wording, and what's the license number? Once confirmed, it can go in the footer and near the estimate form.
+20. **Porch (P-035).** Is it the same porch as P-026?
 13. **Homepage hero aerial (P-021).** Did DK build the covered porch roof and the privacy wall? Was the stamped concrete DK's work?
 
 ## Stock imagery retired

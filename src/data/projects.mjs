@@ -153,7 +153,10 @@ export const projects = [
     id: 'P-021', category: 'decks', featured: true,
     title: 'Wraparound deck with a covered porch and privacy wall',
     caption: 'Brown deck wrapping the back of a ranch home, with a covered porch section, a privacy wall and wide steps to a stamped-concrete border.',
-    images: [{ asset: 'DKQ-06-03', name: 'project-deck-aerial-covered-porch-privacy-wall', alt: 'Aerial view of a large brown deck wrapping the back of a white ranch home, with a covered porch section on wood posts, dark railings, a privacy wall and wide steps down to a stamped-concrete border' }],
+    images: [
+      { asset: 'DKQ-06-03', name: 'project-deck-aerial-covered-porch-privacy-wall', alt: 'Aerial view of a large brown deck wrapping the back of a white ranch home, with a covered porch section on wood posts, dark railings, a privacy wall and wide steps down to a stamped-concrete border' },
+      { asset: 'DKQ-09-01', name: 'project-deck-aerial-covered-porch-close', alt: 'Closer aerial view of the same deck: the covered porch section on cedar-toned posts with dark railings, the wide steps and the privacy wall' },
+    ],
   },
   {
     id: 'P-022', category: 'decks',
@@ -201,7 +204,10 @@ export const projects = [
     id: 'P-030', category: 'decks',
     title: 'Composite deck with a timber pavilion',
     caption: 'Large brown composite deck with black metal railings and a timber pavilion with a metal roof.',
-    images: [{ asset: 'DKQ-08-05', name: 'project-deck-composite-pavilion', alt: 'Large brown composite deck with black metal railings and a timber pavilion with a metal roof, with trees behind' }],
+    images: [
+      { asset: 'DKQ-08-05', name: 'project-deck-composite-pavilion', alt: 'Large brown composite deck with black metal railings and a timber pavilion with a metal roof, with trees behind' },
+      { asset: 'DKQ-09-02', name: 'project-deck-composite-pavilion-stairs', alt: 'The same deck from the yard: composite skirting, a staircase with black metal railings and the timber pavilion above' },
+    ],
   },
   {
     id: 'P-031', category: 'decks',
@@ -220,6 +226,24 @@ export const projects = [
     title: 'Low deck with white railings by a patio door',
     caption: 'Gray deck with white-and-black railings and gray skirting outside a sliding patio door.',
     images: [{ asset: 'DKQ-08-01', name: 'project-deck-gray-white-rail-patio-door', alt: 'Low gray deck with white railings, black balusters and gray skirting outside a sliding patio door on a gray home' }],
+  },
+  {
+    id: 'P-034', category: 'decks', featured: true,
+    title: 'Raised deck with angled box steps',
+    caption: 'Brown composite deck with black-and-cedar-tone railings, composite skirting and angled box steps down to the yard.',
+    images: [{ asset: 'DKQ-09-04', name: 'project-deck-aerial-box-steps-trailer', alt: 'Aerial view of a brown composite deck with black railings with cedar-tone accents, horizontal composite skirting and angled box steps, with the DK Quality Construction trailer parked beside the house' }],
+  },
+  {
+    id: 'P-035', category: 'decks',
+    title: 'Covered front porch on a brick ranch',
+    caption: 'Brown composite porch floor with a divider board, matching skirting and box steps, under a covered porch with white columns.',
+    images: [{ asset: 'DKQ-09-03', name: 'project-porch-floor-brick-ranch', alt: 'Covered front porch on a brick ranch home with a brown composite floor, a divider board, matching skirting, box steps and white square columns' }],
+  },
+  {
+    id: 'P-036', category: 'decks',
+    title: 'Raised pressure-treated deck in a wooded yard',
+    caption: 'Pressure-treated wood deck with a divider board and wood railings with black balusters, overlooking a wooded yard.',
+    images: [{ asset: 'DKQ-09-05', name: 'project-deck-pressure-treated-raised-woods', alt: 'Raised pressure-treated wood deck with a divider board and wood railings with black balusters, with stairs down to a wooded yard' }],
   },
 ];
 
