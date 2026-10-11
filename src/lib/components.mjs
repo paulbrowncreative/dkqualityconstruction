@@ -115,9 +115,9 @@ export function breadcrumbs(trail) {
 }
 
 /* ---------- Page hero for inner pages ---------- */
-export function pageHero({ eyebrow, title, lede, image, imageAlt = '', trail, actions = true }) {
-  return `<header class="page-hero${image ? ' page-hero--image' : ''}">
-  ${image ? `<div class="page-hero__media">${picture(image, { alt: imageAlt, sizes: '100vw', eager: true })}</div>` : ''}
+export function pageHero({ eyebrow, title, lede, image, imageAlt = '', imgCls = '', band = false, trail, actions = true }) {
+  return `<header class="page-hero${image ? ' page-hero--image' : ''}${image && band ? ' page-hero--band' : ''}">
+  ${image ? `<div class="page-hero__media">${picture(image, { alt: imageAlt, sizes: '100vw', eager: true, imgCls })}</div>` : ''}
   <div class="container page-hero__inner">
     ${trail ? breadcrumbs(trail) : ''}
     ${eyebrow ? `<p class="eyebrow eyebrow--light">${eyebrow}</p>` : ''}

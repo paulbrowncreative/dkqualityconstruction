@@ -273,6 +273,25 @@ for (const [label, vp] of [['mobile', { width: 375, height: 812 }], ['desktop', 
     BLOG_PAGES.length >= 7 && svcs.size === 7 && !problems.length, problems.join('; ') + ` sections=${[...svcs].join('|')}`);
 }
 
+/* 5f. Cover-fit images are cropped by object-fit, never clipped by their frame */
+{
+  const problems = [];
+  for (const w of [1440, 390]) {
+    const page = await browser.newPage({ viewport: { width: w, height: 900 } });
+    for (const p of PAGES) {
+      await page.goto(BASE + p);
+      const n = await page.evaluate(() => [...document.querySelectorAll('img')].filter((img) => {
+        if (getComputedStyle(img).objectFit !== 'cover') return false;
+        let a = img.parentElement; while (a && getComputedStyle(a).overflow === 'visible') a = a.parentElement;
+        return a && img.getBoundingClientRect().height - a.getBoundingClientRect().height > 2;
+      }).length);
+      if (n) problems.push(`${p}@${w}: ${n}`);
+    }
+    await page.close();
+  }
+  record('Cover-fit images fill their frames (cropped, not clipped to the top of the photo)', !problems.length, problems.join('; '));
+}
+
 /* 6. On-page SEO checks */
 {
   const page = await browser.newPage();

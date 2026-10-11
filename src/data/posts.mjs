@@ -4,6 +4,8 @@
 // Code (IRC), which both the Michigan Residential Code and the Residential Code of Ohio
 // are based on. No prices, statistics or claims we can't support.
 const PUBLISHED = '2026-10-11';
+// focus: { card, hero } — vertical object-position (%) for the 16:10 blog card and
+// 4:3 mobile hero band (card), and the wide desktop hero (hero). Default 50.
 
 export const posts = [
   {
@@ -310,6 +312,8 @@ export const posts = [
     description: 'Before finishing a basement in Michigan or Ohio: moisture, egress window sizes for bedrooms, ceiling height, permits and flooring that works below grade.',
     lede: 'A finished basement is some of the most affordable living space you can add. The work that makes it last happens before the drywall goes up.',
     image: 'project-basement-remodel-built-ins',
+    // Vertical focal point (%) so crops land on the work, not the ceiling.
+    focus: { card: 75, hero: 50 },
     imageAlt: 'Finished basement with a black painted ceiling, plank flooring and white built-in cabinets, by DK Quality Construction',
     places: ['monroe-mi', 'toledo-oh'],
     relatedServices: ['basement-finishing', 'flooring'],
@@ -389,6 +393,8 @@ export const posts = [
     description: 'What to decide before a bathroom remodel: layout, tub-to-shower conversions, shower waterproofing, exhaust fan sizing (50 cfm), GFCI outlets and storage.',
     lede: 'Bathrooms pack plumbing, electrical, tile and water into a small room. Getting the hidden layers right is what keeps a new bathroom looking new.',
     image: 'project-bathroom-vanity-niche',
+    // Vertical focal point (%) so crops land on the work, not the ceiling.
+    focus: { card: 65, hero: 60 },
     imageAlt: 'Remodeled bathroom with a white vanity, round mirror and tiled tub surround with a built-in niche, by DK Quality Construction',
     places: ['monroe-mi', 'sylvania-oh'],
     relatedServices: ['bathroom-remodeling', 'flooring'],
@@ -457,6 +463,8 @@ export const posts = [
     description: 'The order of decisions for a kitchen remodel — layout, appliances, cabinets, counters, lighting and electrical — so it runs smoothly from demolition to finish.',
     lede: 'Most kitchen remodel headaches come from decisions made in the wrong order. Here’s the sequence that keeps a project on track.',
     image: 'project-kitchen-white-shaker',
+    // Vertical focal point (%) so crops land on the work, not the ceiling.
+    focus: { card: 55, hero: 60 },
     imageAlt: 'Remodeled kitchen with white shaker cabinets, granite counters and stainless appliances, by DK Quality Construction',
     places: ['maumee-oh', 'monroe-mi'],
     relatedServices: ['kitchen-remodeling', 'flooring'],
@@ -522,6 +530,8 @@ export const posts = [
     description: 'How luxury vinyl plank, tile, engineered wood and solid hardwood compare for basements, kitchens and bathrooms — and the subfloor prep every floor needs.',
     lede: 'The right floor depends on the room: moisture, traffic and what’s underneath matter more than the sample board.',
     image: 'project-basement-bar-shiplap',
+    // Vertical focal point (%) so crops land on the work, not the ceiling.
+    focus: { card: 60, hero: 60 },
     imageAlt: 'Basement bar area with shiplap walls and dark wood-look plank flooring, by DK Quality Construction',
     places: ['monroe-mi', 'temperance-mi'],
     relatedServices: ['flooring', 'basement-finishing', 'bathroom-remodeling', 'kitchen-remodeling'],

@@ -10,6 +10,10 @@ export const postTitle = (p) => titleCaseText(p.h1);
 
 export const postUrl = (p) => `/blog/${p.slug}/`;
 
+// Crop focal points: small frames (card, mobile band) and the wide desktop hero.
+export const focusClasses = (p) =>
+  [p.focus?.card && `focus-y-${p.focus.card}`, p.focus?.hero && `md-focus-y-${p.focus.hero}`].filter(Boolean).join(' ');
+
 const words = (html) => html.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length;
 export const readMinutes = (p) =>
   Math.max(1, Math.ceil(words(p.intro + p.sections.map((s) => s.html).join(' ') + (p.faqs || []).map((f) => f.a).join(' ')) / 230));
@@ -68,6 +72,8 @@ ${pageHero({
   lede: p.lede,
   image: p.image || undefined,
   imageAlt: p.imageAlt,
+  imgCls: focusClasses(p),
+  band: true,
   trail,
   actions: false,
 })}

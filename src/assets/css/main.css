@@ -737,7 +737,8 @@ body { padding-bottom: calc(4rem + env(safe-area-inset-bottom)); }
 .project-card__count { position: absolute; left: var(--space-3); bottom: var(--space-3); padding: 0.25rem 0.6rem; border-radius: var(--radius-sm); background: rgb(18 18 20 / 0.78); color: var(--white); font-size: var(--fs-xs); font-weight: 700; }
 .project-card__thumbs { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-4); }
 .project-card__thumb { display: block; width: 4.5rem; aspect-ratio: 4 / 3; overflow: hidden; border-radius: var(--radius-sm); outline-offset: 2px; }
-.project-card__thumb img { width: 100%; height: 100%; object-fit: cover; }
+.project-card__thumb picture { display: block; width: 100%; height: 100%; }
+.project-card__thumb img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .project-card__thumb:hover { box-shadow: 0 0 0 2px var(--brass); }
 
 .svc-row--text { grid-template-columns: 1fr !important; padding: var(--space-6); border: 1px solid var(--line); border-left: 4px solid var(--brass); border-radius: var(--radius); background: var(--white); }
@@ -790,7 +791,10 @@ body { padding-bottom: calc(4rem + env(safe-area-inset-bottom)); }
 @media (min-width: 72em) { .post-grid { grid-template-columns: repeat(3, 1fr); } }
 .post-card { display: flex; flex-direction: column; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
 .post-card__media { display: block; aspect-ratio: 16 / 10; overflow: hidden; background: var(--ink); }
-.post-card__media img { width: 100%; height: 100%; object-fit: cover; }
+/* The <picture> must fill the frame too; otherwise the img sizes to its natural height
+   and the frame clips it (showing only the top of the photo) instead of cover-cropping. */
+.post-card__media picture { display: block; width: 100%; height: 100%; }
+.post-card__media img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .post-card__media--text { display: grid; place-items: center; color: var(--brass); font-weight: 800; font-stretch: var(--stretch-display); font-size: 1.4rem; letter-spacing: 0.02em; }
 .post-card__body { display: grid; gap: var(--space-2); padding: var(--space-5); }
 .post-card__body p { margin: 0; }
@@ -844,3 +848,36 @@ body { padding-bottom: calc(4rem + env(safe-area-inset-bottom)); }
 .loc-photo__pic { display: block; aspect-ratio: 2 / 1; overflow: hidden; border-radius: var(--radius); background: var(--paper-2); }
 .loc-photo__pic img { width: 100%; height: 100%; object-fit: cover; }
 .loc-photo figcaption { margin-top: var(--space-2); font-size: var(--fs-sm); color: var(--steel-500); }
+
+/* ---------- Crop focal points (vertical) ---------- */
+.focus-y-30 { object-position: 50% 30%; }
+.focus-y-35 { object-position: 50% 35%; }
+.focus-y-40 { object-position: 50% 40%; }
+.focus-y-45 { object-position: 50% 45%; }
+.focus-y-50 { object-position: 50% 50%; }
+.focus-y-55 { object-position: 50% 55%; }
+.focus-y-60 { object-position: 50% 60%; }
+.focus-y-65 { object-position: 50% 65%; }
+.focus-y-70 { object-position: 50% 70%; }
+.focus-y-75 { object-position: 50% 75%; }
+.focus-y-80 { object-position: 50% 80%; }
+@media (min-width: 48em) {
+  img.md-focus-y-30 { object-position: 50% 30%; }
+  img.md-focus-y-35 { object-position: 50% 35%; }
+  img.md-focus-y-40 { object-position: 50% 40%; }
+  img.md-focus-y-45 { object-position: 50% 45%; }
+  img.md-focus-y-50 { object-position: 50% 50%; }
+  img.md-focus-y-55 { object-position: 50% 55%; }
+  img.md-focus-y-60 { object-position: 50% 60%; }
+  img.md-focus-y-65 { object-position: 50% 65%; }
+  img.md-focus-y-70 { object-position: 50% 70%; }
+  img.md-focus-y-75 { object-position: 50% 75%; }
+  img.md-focus-y-80 { object-position: 50% 80%; }
+}
+/* Blog post heroes on phones: the photo sits as an unobstructed 4:3 band above the
+   headline instead of behind it, so the project isn't hidden under the copy. */
+@media (max-width: 47.99em) {
+  .page-hero--band { min-height: 0; display: block; }
+  .page-hero--band .page-hero__media { position: relative; inset: auto; aspect-ratio: 4 / 3; z-index: 0; }
+  .page-hero--band::before { display: none; }
+}
