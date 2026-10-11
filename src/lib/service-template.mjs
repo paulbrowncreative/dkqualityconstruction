@@ -3,6 +3,8 @@
 import { site, business, services, serviceUrl } from '../../site.config.mjs';
 import { pageHero, picture, icon, faq, ctaBand, esc, projectCard, lightboxDialog } from './components.mjs';
 import { projects as allProjects } from '../data/projects.mjs';
+import { reviewById } from '../data/reviews.mjs';
+import { reviewCard } from './components.mjs';
 import { ORG_ID } from './layout.mjs';
 
 export function servicePage(cfg) {
@@ -118,6 +120,18 @@ ${
         })}${g.caption ? `<figcaption>${g.caption}</figcaption>` : ''}</figure>`,
       )
       .join('')}
+  </div>
+</section>`
+    : ''
+}
+
+${
+  cfg.review
+    ? `<section class="section section--ink testimonials testimonials--single" aria-labelledby="svc-review-h">
+  <div class="container">
+    <h2 id="svc-review-h" class="visually-hidden">Customer review</h2>
+    ${reviewCard(reviewById(cfg.review))}
+    <a class="link-arrow link-arrow--light" href="/testimonials/">Read more testimonials ${icon('arrow')}</a>
   </div>
 </section>`
     : ''

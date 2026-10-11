@@ -102,6 +102,7 @@ function header(path) {
         </li>
         <li><a href="/services/decks/"${isCurrent('/services/decks/')}>Decks</a></li>
         <li><a href="/projects/"${isCurrent('/projects/')}>Projects</a></li>
+        <li><a href="/testimonials/"${isCurrent('/testimonials/')}>Testimonials</a></li>
         <li><a href="/service-area/"${isCurrent('/service-area/')}>Service Area</a></li>
         <li><a href="/about/"${isCurrent('/about/')}>About</a></li>
         <li><a href="/contact/"${isCurrent('/contact/')}>Contact</a></li>
@@ -128,6 +129,7 @@ function header(path) {
       </ul>
       <ul class="mobile-menu__main" role="list">
         <li><a href="/projects/"${isCurrent('/projects/')}>Projects</a></li>
+        <li><a href="/testimonials/"${isCurrent('/testimonials/')}>Testimonials</a></li>
         <li><a href="/service-area/"${isCurrent('/service-area/')}>Service Area</a></li>
         <li><a href="/about/"${isCurrent('/about/')}>About</a></li>
         <li><a href="/contact/"${isCurrent('/contact/')}>Contact</a></li>
@@ -164,6 +166,7 @@ function footer() {
       <ul role="list">
         <li><a href="/about/">About</a></li>
         <li><a href="/projects/">Projects</a></li>
+        <li><a href="/testimonials/">Testimonials</a></li>
         <li><a href="/service-area/">Service Area</a></li>
         <li><a href="/contact/">Contact &amp; Estimates</a></li>
         <li><a href="/privacy-policy/">Privacy Policy</a></li>

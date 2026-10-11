@@ -57,6 +57,7 @@ export default servicePage({
     },
   ],
   projects: ['P-048', 'P-005'],
+  review: 'R-02',
   related: ['bathroom-remodeling', 'flooring', 'kitchen-remodeling'],
   ctaHeading: 'Ready to use your basement?',
   ctaText: 'Tell us how you want to use the space and roughly how big it is. Photos of the current basement help.',

@@ -314,3 +314,22 @@ export const lightboxDialog = () => `<dialog class="lightbox" data-lightbox-dial
     </div>
   </div>
 </dialog>`;
+
+/* ---------- Customer reviews ---------- */
+const starPath = '<path d="M12 2.5l2.94 6.17 6.56.82-4.8 4.57 1.2 6.69L12 17.5l-5.9 3.25 1.2-6.69-4.8-4.57 6.56-.82z"/>';
+export const stars = (n = 5) =>
+  `<span class="stars" role="img" aria-label="${n} out of 5 stars">${Array.from({ length: n }, () => `<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">${starPath}</svg>`).join('')}</span>`;
+
+export function reviewCard(r, { headingLevel = 3, projectHref } = {}) {
+  const h = `h${headingLevel}`;
+  return `<figure class="review-card" id="${r.id.toLowerCase()}">
+  ${stars(5)}
+  ${r.headline ? `<${h} class="review-card__headline">${esc(r.headline)}</${h}>` : ''}
+  <blockquote class="review-card__quote"><p>${esc(r.text)}</p></blockquote>
+  <figcaption class="review-card__by">
+    <span class="review-card__name">${esc(r.name)}</span>
+    <span class="review-card__meta">${esc(r.project)} · ${esc(r.source)}</span>
+    ${projectHref ? `<a class="review-card__link" href="${projectHref}">See this project ${icon('arrow')}</a>` : ''}
+  </figcaption>
+</figure>`;
+}

@@ -131,6 +131,7 @@ No keyword-volume tool was available in this environment (the Ahrefs and Similar
 /services/bathroom-remodeling/  Bathroom remodeling
 /services/kitchen-remodeling/   Kitchen remodeling
 /service-area/                  Monroe County MI + Lucas County OH
+/testimonials/                  Customer reviews (5, client-supplied)
 /about/                         About / owner
 /contact/                       Request an estimate (form) + phone
 /privacy-policy/                Privacy policy
@@ -141,7 +142,6 @@ No keyword-volume tool was available in this environment (the Ahrefs and Similar
 **Pages deliberately not built:**
 
 - **Projects/Gallery:** there are no authorized project photos yet.
-- **Reviews:** no review text is reusable with permission.
 - **Individual city pages:** there is no unique local content to support them yet.
 - **Blog:** out of scope until content and owner input exist.
 
@@ -156,7 +156,7 @@ See the P2 and P3 items in the QA report for each of these.
 | Financing | None found |
 | "Free" estimates | Not verified. The site says "Request an Estimate" and "No obligation" only |
 | Years of experience beyond "Est. 2021" | Not verified |
-| Review quotes, star ratings, review counts, the 98% figure | Review text was not accessible, and there is no reuse permission |
+| Review counts, aggregate ratings, the 98% figure | Not verified. **The 5 customer reviews the client supplied (Oct 11, 2026) are published on `/testimonials/`** verbatim, with shortened names. |
 | Email address | Only corroborated by search summaries, not verified |
 | Business hours | Not published anywhere found |
 | Street address and geo-coordinates | Not published (service-area business). BBB coordinates are a ZIP centroid. |

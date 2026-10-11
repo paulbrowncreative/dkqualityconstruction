@@ -2,8 +2,8 @@
 
 The readable companion to `project-assets-manifest.json`, which is the source of truth. This register is updated after every batch.
 
-**Last updated:** October 11, 2026, after batch 15. **Final reconciliation is complete.**
-**Workflow status:** you confirmed batch 15 was the final photo batch. No customer reviews and no before-and-after pairs were supplied. The project stays open until you confirm all batches have been uploaded.
+**Last updated:** October 11, 2026, after batch 16 (customer reviews). **Final reconciliation is complete.**
+**Workflow status:** you confirmed batch 15 was the final photo batch. Batch 16 added 5 customer reviews, now published. No before-and-after pairs were supplied. The project stays open until you confirm all batches have been uploaded.
 
 ## Current heroes
 
@@ -38,8 +38,8 @@ Within each tier, the most visually compelling shot wins. These photos replace t
 
 | | Count |
 |---|---|
-| Files received (all batches) | 75 |
-| Inspected | 75 |
+| Files received (all batches) | 80 (75 photos + 5 review screenshots) |
+| Inspected | 80 |
 | Integrated on the website | **73 unique photos, all 73 in use** |
 | Duplicates found and removed | 2: DKQ-10-02 is an exact duplicate of DKQ-06-03; DKQ-11-02 is a recompressed near-duplicate of DKQ-05-05. The duplicate files were deleted in batch 15 at your request, and the kept copies stay published. A final scan of all 75 uploads (SHA-256 checksums plus a 256-bit perceptual hash) found no others. |
 | Stock photos remaining | **0** |
@@ -48,8 +48,9 @@ Within each tier, the most visually compelling shot wins. These photos replace t
 | Possible pairs awaiting your confirmation | 0 |
 | Possible same-project matches awaiting your confirmation | 0. DKQ-06-05 was merged into P-012 on visual evidence in batch 7 |
 | Same project, different angles (not before-and-after) | 10 (P-012: 4 photos; P-009: 3; P-010: 3; P-042: 3; P-043: 4; P-013: 2; P-021: 2; P-022: 2; P-030: 2; P-039: 2) |
-| Reviews transcribed | 0 |
-| Reviews published | 0 |
+| Reviews transcribed | 5 (verbatim) |
+| Reviews published | **5**, on /testimonials/; 3 also on the homepage, 1 each on the Decks and Basement pages |
+| Review screenshots published | 0. They show reviewers' full names, so only the text is used. |
 | Needing clarification (details only, all already in use) | 73 |
 | Could not be processed | 0 |
 
@@ -59,7 +60,8 @@ Within each tier, the most visually compelling shot wins. These photos replace t
 |---|---|---|---|---|
 | 1 | 2026-10-10 | 5 | DKQ-01-01 to DKQ-01-05 | 4 completed decks (1 aerial), 1 completed basement |
 | 2 | 2026-10-10 | 5 | DKQ-02-01 to DKQ-02-05 | 3 completed decks, plus 2 angles of one completed kitchen. DK trailer visible in DKQ-02-01. |
-| 15 (final) | 2026-10-11 | 5 | DKQ-15-01 to DKQ-15-05 | Basement stairs (P-048), fireplace built-ins, a covered front porch with a timber gable, a covered deck with a bar rail, and a pool-deck aerial (P-018) |
+| 16 | 2026-10-11 | 5 | DKQ-16-01 to DKQ-16-05 | 5 customer review screenshots (2 Facebook recommendations, 3 review graphics). Transcribed as R-01 to R-05. R-04 confirms DK built the P-012 screened porch. |
+| 15 (final photos) | 2026-10-11 | 5 | DKQ-15-01 to DKQ-15-05 | Basement stairs (P-048), fireplace built-ins, a covered front porch with a timber gable, a covered deck with a bar rail, and a pool-deck aerial (P-018) |
 | 14 | 2026-10-11 | 5 | DKQ-14-01 to DKQ-14-05 | A poolside view of P-044, a 2nd basement (media wall and bar), shiplap with door trim, and an interior stair railing |
 | 13 | 2026-10-11 | 5 | DKQ-13-01 to DKQ-13-05 | A 4th bathroom photo, a two-level composite pool deck by a canal, a pool deck with a hot-tub platform, lit stairs at dusk, and a side-entry deck |
 | 12 | 2026-10-11 | 5 | DKQ-12-01 to DKQ-12-05 | 2 more views of P-042 (a new aerial cover and a yard view), and the first bathroom remodel (3 photos) |
@@ -154,6 +156,11 @@ No EXIF data and no duplicates in any batch so far.
 | DKQ-15-03 | 73.webp | project-porch-covered-gable-front | Covered front porch, wide angle | P-051 | 2000×1294 | Projects (featured) |
 | DKQ-15-04 | 74.webp | project-deck-covered-fan-bar-rail | Covered deck, bar rail | P-052 | 1075×1684 | Projects |
 | DKQ-15-05 | 75.webp | project-deck-pool-aerial-two-level-gray | Pool deck, **aerial** (video frame) | P-018 | 2000×985 | Projects (P-018 viewer) |
+| DKQ-16-01 | 76.png | — (not published) | Review screenshot: Nikky B., Facebook recommendation | — | 1294×313 | Text only, as R-02 |
+| DKQ-16-02 | 77.png | — (not published) | Review screenshot: Todd S., Facebook recommendation | — | screenshot | Text only, as R-01 |
+| DKQ-16-03 | 78.jpg | — (not published) | Review graphic: Alicia D. | P-012 | graphic | Text only, as R-04 |
+| DKQ-16-04 | 79.jpg | — (not published) | Review graphic: The B. Family | — | graphic | Text only, as R-05 |
+| DKQ-16-05 | 80.jpg | — (not published) | Review graphic with project collage: The O. Family | P-052 | graphic | Text only, as R-03 |
 
 ## Projects
 
@@ -290,7 +297,20 @@ _None yet._ All thirty photos so far show finished work. Pairs are matched only 
 
 ## Reviews
 
-_None yet._ Testimonials and the Testimonials page will be added when review files arrive. Neither is published empty.
+Five reviews from batch 16, transcribed word for word, keeping the reviewers' own spelling ("through out", "each days work"). Names are shortened to first name and last initial, as you asked. Reviews signed by a family appear as "The O. Family" and "The B. Family".
+
+| ID | Name shown | Project | Source | Stars shown | Where it appears |
+|---|---|---|---|---|---|
+| R-01 | Todd S. | Replacement deck | Facebook recommendation (DKQ-16-02) | 5 ⚑ | /testimonials/, homepage, Decks page |
+| R-02 | Nikky B. | Finished basement | Facebook recommendation (DKQ-16-01) | 5 ⚑ | /testimonials/, homepage, Basement page |
+| R-03 | The O. Family | Covered deck (P-052) | Review graphic (DKQ-16-05) | 5 | /testimonials/, homepage; links to P-052 |
+| R-04 | Alicia D. | Deck and screened porch (P-012) | Review graphic (DKQ-16-03) | 5 | /testimonials/; links to P-012 |
+| R-05 | The B. Family | Elevated deck | Review graphic (DKQ-16-04) | 5 | /testimonials/ |
+
+- **⚑ Stars on the Facebook reviews.** Facebook recommendations are recommend or don't recommend; there's no star scale. The three review graphics do show 5 stars. As you instructed, the site shows 5 stars on every card. To show stars only where the source had them is a one-line change.
+- **Star color.** Brass (`#C4903F`) on dark sections and dark brass (`#8A5A1C`) on light cards. Both pass WCAG non-text contrast. Screen readers announce each star row as "5 out of 5 stars".
+- **Not published:** the screenshots themselves, because they show full surnames and profile photos. There's also no Review or AggregateRating schema, because Google doesn't allow self-serving review markup.
+- **R-05 project.** "Elevated deck" isn't matched to a portfolio project yet. Tell us which one it is and the card can link to it.
 
 ## Open questions for you
 
@@ -305,7 +325,7 @@ None of these block anything; all photos are live with neutral captions.
 4. **Locations.** Do you want city names in the captions? This is optional.
 5. **DKQ-01-02 vs DKQ-01-03.** Are they separate projects?
 6. **Pergola (P-011).** Did DK build the pergola, or was it already there? The caption doesn't claim DK built it.
-7. **Screened room (P-012).** Did DK build the screened room under the deck?
+7. ~~Screened room (P-012)~~ Answered by review R-04: "We love our new deck and screened in porch!" The caption now says the porch was built with the deck.
 8. **Stairs (P-013).** Did DK build the upper landing as well as the stairs?
 9. **Pressure-treated (P-014, P-019).** Can you confirm both are pressure-treated lumber? P-014 is on the Decks page "Pressure-treated lumber" card.
 10. **Pool deck (P-017).** Did DK build the pool fence or patio, or only the deck?

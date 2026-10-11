@@ -29,7 +29,7 @@
 
 | Check | Result |
 |---|---|
-| Functional, responsive, accessibility and SEO tests | **42 of 42 passed** (2 cross-engine smoke tests skipped: engines not installed) |
+| Functional, responsive, accessibility and SEO tests | **43 of 43 passed** (2 cross-engine smoke tests skipped: engines not installed) |
 | Before/after slider tests | **17 of 17 passed** |
 | Accessibility scan (axe-core, WCAG 2.2 AA), 14 pages, mobile and desktop | 0 violations |
 | HTML validation (html-validate) | Valid |
@@ -50,7 +50,6 @@ Three things are outside my access (section 16, P0):
 
 **Never supplied, so not built:**
 
-- **Customer reviews.** The Testimonials page, the homepage reviews section and the Testimonials nav item were therefore not built. Publishing them empty or with invented reviews would be worse than omitting them.
 - **Before/after photo pairs.** The comparison slider is built and fully tested, but it isn't placed on any live page.
 
 ## 2. Research completed
@@ -94,14 +93,15 @@ Keyword research is qualitative only. No search volumes are claimed.
 
 | URL | Purpose |
 |---|---|
-| `/` | Aerial hero; credentials strip (BBB A+, licensed and insured, owner-led, local); deck specialty; recent work; services; process; "Why DK"; service area; FAQ; estimate form |
+| `/` | Aerial hero; credentials strip (BBB A+, licensed and insured, owner-led, local); deck specialty; recent work; 3 customer reviews; services; process; "Why DK"; service area; FAQ; estimate form |
 | `/services/` | All 7 services. Garages is shown as text only because there's no DK photo. |
-| `/services/decks/` | Aerial hero; real composite vs. pressure-treated comparison; build guidance; recent projects; FAQ |
+| `/services/decks/` | Aerial hero; real composite vs. pressure-treated comparison; build guidance; recent projects; Todd S. review; FAQ |
 | `/services/fencing/` | Text-only hero, because there's no DK fence photo |
-| `/services/basement-finishing/` | DK basement hero and 2 basement projects |
+| `/services/basement-finishing/` | DK basement hero, 2 basement projects and the Nikky B. review |
 | `/services/bathroom-remodeling/` | DK bathroom hero and project |
 | `/services/kitchen-remodeling/` | DK kitchen hero and project |
 | `/projects/` | **Portfolio: 52 projects, 73 photos.** Grouped into Decks, Kitchen Remodeling, Bathroom Remodeling, Basement Remodeling, Covered Patios, and Interior Trim & Carpentry, with category jump links. Strongest projects appear first. Each card opens an accessible full-size photo viewer. |
+| `/testimonials/` | **5 customer reviews** (batch 16), quoted word for word, with names shortened to first name and last initial. Each card has 5 stars, the project and the source. Two cards link to their portfolio project. Linked in the desktop nav, mobile menu and footer. |
 | `/service-area/`, `/about/`, `/contact/`, `/privacy-policy/` | Supporting pages |
 | `/thank-you/` (noindex), `/404.html` | Confirmation and error pages |
 
@@ -178,9 +178,9 @@ I sent one test submission (every field "test", plus a test photo) to **dkqconst
 ## 7. SEO and local SEO
 
 - **Every indexable page** has a unique title (66 characters or fewer) and description (160 or fewer), one H1, a canonical URL, Open Graph tags and JSON-LD. All of this is verified by automated tests.
-- **Sitemap:** 12 URLs, now including `/projects/`. Previews and branch deploys are `noindex` with a `Disallow: /` robots.txt.
+- **Sitemap:** 13 URLs, now including `/projects/` and `/testimonials/`. Previews and branch deploys are `noindex` with a `Disallow: /` robots.txt.
 - **Projects page** carries `ImageGallery` structured data, with an `ImageObject` for each photo.
-- **No review markup.** There is no `aggregateRating` or `Review` schema, in line with Google's guidelines on self-serving reviews.
+- **No review markup.** The reviews are shown as visible text only. There is no `aggregateRating` or `Review` schema, in line with Google's guidelines on self-serving reviews.
 - **NAP consistency:** name, address and phone come from one config file. It's a service-area business, with no street address or coordinates. "Licensed & insured" appears in the credentials strip, "Why DK", the estimate panel, the About facts, the Contact credentials card and the footer.
 
 ## 8. Accessibility
@@ -202,12 +202,13 @@ I sent one test submission (every field "test", plus a test photo) to **dkqconst
 
 | Page | Mobile Perf | Mobile LCP | Mobile transfer | Desktop Perf | Desktop LCP |
 |---|---|---|---|---|---|
-| `/` | 100 | 1.7 s | 156 KB | 100 | 0.6 s |
+| `/` | 100 | 1.8 s | 158 KB | 100 | 0.6 s |
 | `/services/decks/` | 100 | 1.6 s | 107 KB | 100 | 0.5 s |
 | `/projects/` | 99 | 2.1 s | 248 KB | 100 | 0.7 s |
 | `/contact/` | 100 | 1.3 s | 66 KB | 100 | 0.3 s |
 | `/services/` | 100 | 1.5 s | 160 KB | 100 | 0.4 s |
 | `/about/` | 100 | 1.5 s | 102 KB | 100 | 0.3 s |
+| `/testimonials/` | 100 | 1.8 s | 145 KB | 100 | 0.4 s |
 
 Accessibility, Best Practices and SEO scored 100 on every run, and CLS was 0 everywhere.
 
@@ -232,9 +233,10 @@ Accessibility, Best Practices and SEO scored 100 on every run, and CLS was 0 eve
 
 Final run, October 11, 2026, against the built `dist/`:
 
-- **Layout:** no horizontal overflow, every image loads and no console errors, at 320, 375, 414, 768, 1024, 1280, 1440 and 1920 px on all 14 pages.
-- **Navigation:** desktop dropdown, mobile menu and skip link all pass. The desktop nav appears at 1152 px and up; below that, the mobile menu is used.
+- **Layout:** no horizontal overflow, every image loads and no console errors, at 320, 375, 414, 768, 1024, 1280, 1440 and 1920 px on all 15 pages.
+- **Navigation:** desktop dropdown, mobile menu and skip link all pass. The desktop nav appears at 1152 px and up; below that, the mobile menu is used. It was rechecked with the Testimonials item added; a compact spacing step from 1152 to 1279 px keeps it on one line with no overflow.
 - **Photo viewer:** pass.
+- **Testimonials:** pass. The test covers nav and footer links, 3 cards on the homepage and 5 on the page, labelled stars in the correct contrasting color per section, shortened names, and no Review schema.
 - **Form:** validation, background FormSubmit submission (mocked), the activation and failure path, and `generate_lead` firing once all pass.
 - **Analytics:** a phone click records `click_call` once.
 - **Other checks:** the 404 status, CSP and reduced-motion all pass.
@@ -274,7 +276,7 @@ The size is almost entirely responsive photo variants. Pages transfer 66–632 K
 
 ## 14. Known limitations
 
-1. **No customer reviews were supplied.** So there's no Testimonials page, nav item or homepage reviews section. BBB counts 4 reviews, but its profile doesn't display their text.
+1. **Two of the five reviews are Facebook recommendations,** which have no star rating. They show 5 stars at the client's instruction; see the register.
 2. **No before/after pairs were supplied.** The slider is built and tested but isn't on any public page.
 3. **Lead email delivery depends on FormSubmit activation,** and email arrival hasn't been verified.
 4. **No DK fence or garage photos,** so those use text-only layouts.
@@ -295,7 +297,7 @@ The size is almost entirely responsive photo variants. Pages transfer 66–632 K
 
 | # | Issue | Needs |
 |---|---|---|
-| P1-1 | Customer reviews, with permission, for a Testimonials page and homepage section. The structure is ready to build as soon as they arrive. | Owner / you |
+| P1-1 | ~~Customer reviews~~ Done: 5 published. More can be added in `src/data/reviews.mjs` (one entry each). Optional: which portfolio project R-05 ("elevated deck") is. | Owner / you |
 | P1-2 | Michigan Residential Builder license number. A single config value (`licenseNumber`) shows it site-wide. | Owner |
 | P1-3 | Google Business Profile: verify it and request reviews | Owner's Google account |
 | P1-4 | GA4 and Search Console | IDs and access |
@@ -325,7 +327,7 @@ The size is almost entirely responsive photo variants. Pages transfer 66–632 K
 - [ ] **paulbrowncreative@gmail.com:** click its own "Activate Form" link, then resubmit the test to confirm delivery.
 - [ ] **Production domain.**
 - [ ] **Michigan Residential Builder license number,** plus any Ohio registration.
-- [ ] **Customer reviews** you have permission to quote, with names as they should appear and source links.
+- [x] **Customer reviews:** 5 published. Send more anytime.
 - [ ] **Before/after photo pairs,** if any exist.
 - [ ] **Answers to the photo questions** in `PROJECT-ASSET-REGISTER.md`: scope, materials and groupings.
 - [ ] **Business hours,** a vector logo, and GA4 and Search Console access.

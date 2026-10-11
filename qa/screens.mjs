@@ -8,7 +8,7 @@ const out = process.argv[3] || 'reports/screens';
 mkdirSync(out, { recursive: true });
 
 export const PAGES = ['/', '/services/', '/services/decks/', '/services/fencing/', '/services/basement-finishing/',
-  '/services/bathroom-remodeling/', '/services/kitchen-remodeling/', '/projects/', '/service-area/', '/about/', '/contact/',
+  '/services/bathroom-remodeling/', '/services/kitchen-remodeling/', '/projects/', '/testimonials/', '/service-area/', '/about/', '/contact/',
   '/thank-you/', '/privacy-policy/', '/missing-page'];
 const VIEWPORTS = (process.env.VP || '375x812,1440x900').split(',').map((v) => v.split('x').map(Number));
 const only = process.env.ONLY ? process.env.ONLY.split(',') : PAGES;

@@ -122,6 +122,7 @@ export default servicePage({
       a: `<p>Yes. We build decks across Lucas County, Ohio — Toledo, Sylvania, Maumee, Oregon and nearby — as well as throughout Monroe County, Michigan. <a href="/service-area/">See the full service area</a>.</p>`,
     },
   ],
+  review: 'R-01',
   related: ['fencing', 'garages', 'basement-finishing'],
   ctaHeading: 'Let’s plan your deck.',
   ctaText: 'Send a few details — size, material you’re leaning toward, and where you are — and we’ll set up a time to look at the space.',

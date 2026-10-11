@@ -92,7 +92,7 @@ export const projects = [
   {
     id: 'P-012', category: 'decks', featured: true,
     title: 'Raised lakeside deck over a screened room',
-    caption: 'Raised dining deck with black metal railings and a long staircase, built above a screened room that looks out over the lake.',
+    caption: 'Raised dining deck with black metal railings and a long staircase, built together with the screened porch beneath it, looking out over the lake.',
     // P-025 (screened-room interior, DKQ-06-05) merged here in batch 7: DKQ-07-01 shows the same lake, dock, boat and neighboring house.
     images: [
       { asset: 'DKQ-04-05', name: 'project-deck-aerial-screened-room', alt: 'Aerial view of a raised brown deck with black metal railings, a dining table and a long staircase, built above a screened room with its own steps, behind a two-story home' },

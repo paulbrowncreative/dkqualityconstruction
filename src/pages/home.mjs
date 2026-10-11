@@ -1,7 +1,8 @@
 import { business } from '../../site.config.mjs';
 import { projects } from '../data/projects.mjs';
+import { reviewById } from '../data/reviews.mjs';
 import {
-  picture, preloadImage, icon, estimateButton, phoneLink, serviceIndex, faq, estimateForm, projectCard, lightboxDialog,
+  picture, preloadImage, icon, estimateButton, phoneLink, serviceIndex, faq, estimateForm, projectCard, lightboxDialog, reviewCard,
 } from '../lib/components.mjs';
 
 const heroSizes = '100vw';
@@ -126,6 +127,21 @@ export default {
   </div>
 </section>
 ${lightboxDialog()}
+
+<section class="section section--ink testimonials" aria-labelledby="home-reviews-h">
+  <div class="container">
+    <div class="project-group__head">
+      <div>
+        <p class="eyebrow eyebrow--light">Testimonials</p>
+        <h2 id="home-reviews-h" class="section-title">In our customers’ words.</h2>
+      </div>
+      <a class="link-arrow link-arrow--light" href="/testimonials/">Read all testimonials ${icon('arrow')}</a>
+    </div>
+    <div class="review-grid">
+      ${['R-01', 'R-02', 'R-03'].map((id) => reviewCard(reviewById(id))).join('')}
+    </div>
+  </div>
+</section>
 
 <section class="section section--paper2" aria-labelledby="services-h">
   <div class="container">

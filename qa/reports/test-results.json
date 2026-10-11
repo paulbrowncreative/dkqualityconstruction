@@ -1,9 +1,9 @@
 {
   "base": "http://localhost:8080",
-  "ranAt": "2026-10-11T14:45:46.802Z",
+  "ranAt": "2026-10-11T15:08:03.381Z",
   "checks": [
     {
-      "name": "No horizontal overflow @320px (14 pages)",
+      "name": "No horizontal overflow @320px (15 pages)",
       "ok": true,
       "detail": ""
     },
@@ -18,7 +18,7 @@
       "detail": ""
     },
     {
-      "name": "No horizontal overflow @375px (14 pages)",
+      "name": "No horizontal overflow @375px (15 pages)",
       "ok": true,
       "detail": ""
     },
@@ -33,7 +33,7 @@
       "detail": ""
     },
     {
-      "name": "No horizontal overflow @414px (14 pages)",
+      "name": "No horizontal overflow @414px (15 pages)",
       "ok": true,
       "detail": ""
     },
@@ -48,7 +48,7 @@
       "detail": ""
     },
     {
-      "name": "No horizontal overflow @768px (14 pages)",
+      "name": "No horizontal overflow @768px (15 pages)",
       "ok": true,
       "detail": ""
     },
@@ -63,7 +63,7 @@
       "detail": ""
     },
     {
-      "name": "No horizontal overflow @1024px (14 pages)",
+      "name": "No horizontal overflow @1024px (15 pages)",
       "ok": true,
       "detail": ""
     },
@@ -78,7 +78,7 @@
       "detail": ""
     },
     {
-      "name": "No horizontal overflow @1280px (14 pages)",
+      "name": "No horizontal overflow @1280px (15 pages)",
       "ok": true,
       "detail": ""
     },
@@ -93,7 +93,7 @@
       "detail": ""
     },
     {
-      "name": "No horizontal overflow @1440px (14 pages)",
+      "name": "No horizontal overflow @1440px (15 pages)",
       "ok": true,
       "detail": ""
     },
@@ -108,7 +108,7 @@
       "detail": ""
     },
     {
-      "name": "No horizontal overflow @1920px (14 pages)",
+      "name": "No horizontal overflow @1920px (15 pages)",
       "ok": true,
       "detail": ""
     },
@@ -186,6 +186,11 @@
       "name": "Project viewer: opens full photo, arrow keys page through, alt carried over, Esc closes, focus returns",
       "ok": true,
       "detail": "cards=73 open=true /assets/img/photos/project-deck-ground-level-brown-wide-2000.jpg -> /assets/img/photos/project-deck-ground-level-brown-corner-1500.jpg closed=true focusBack=true"
+    },
+    {
+      "name": "Testimonials: linked in nav + footer, 3 on home, 5 on page, labelled stars in brass (ink) / brass-dark (light), short names, no Review schema",
+      "ok": true,
+      "detail": "nav=2 foot=1 home=3 page=5 homeStar=rgb(196, 144, 63) pageStar=rgb(138, 90, 28) names=Todd S.|Nikky B.|The O. Family|Alicia D.|The B. Family schema=false"
     },
     {
       "name": "Titles/descriptions unique & sized, canonical, single H1, OG, JSON-LD, heading order, alt, dimensions",

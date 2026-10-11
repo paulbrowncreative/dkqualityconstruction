@@ -8,7 +8,7 @@ import { writeFileSync, mkdirSync } from 'node:fs';
 
 const BASE = process.argv[2] || 'http://localhost:8080';
 const PAGES = ['/', '/services/', '/services/decks/', '/services/fencing/', '/services/basement-finishing/',
-  '/services/bathroom-remodeling/', '/services/kitchen-remodeling/', '/projects/', '/service-area/', '/about/', '/contact/',
+  '/services/bathroom-remodeling/', '/services/kitchen-remodeling/', '/projects/', '/testimonials/', '/service-area/', '/about/', '/contact/',
   '/thank-you/', '/privacy-policy/', '/404.html'];
 const WIDTHS = [320, 375, 414, 768, 1024, 1280, 1440, 1920];
 
@@ -196,6 +196,29 @@ for (const [label, vp] of [['mobile', { width: 375, height: 812 }], ['desktop', 
   const closed = !(await page.locator('[data-lightbox-dialog]').evaluate((d) => d.open));
   const focusBack = await page.evaluate(() => document.activeElement?.matches('[data-lightbox]'));
   record('Project viewer: opens full photo, arrow keys page through, alt carried over, Esc closes, focus returns', n >= 5 && open && t1 !== t2 && !!alt && closed && focusBack, `cards=${n} open=${open} ${t1} -> ${t2} closed=${closed} focusBack=${focusBack}`);
+  await page.close();
+}
+
+/* 5c. Testimonials: nav links, five reviews, accessible contrasting stars, no surnames, no Review schema */
+{
+  const page = await browser.newPage({ viewport: { width: 1280, height: 800 } });
+  await page.goto(BASE + '/');
+  const navLink = await page.locator('.primary-nav a[href="/testimonials/"], .mobile-menu a[href="/testimonials/"]').count();
+  const footLink = await page.locator('footer a[href="/testimonials/"]').count();
+  const homeCards = await page.locator('.testimonials .review-card').count();
+  const homeStar = await page.locator('.testimonials .stars').first().evaluate((el) => getComputedStyle(el).color);
+  await page.goto(BASE + '/testimonials/');
+  const d = await page.evaluate(() => ({
+    cards: document.querySelectorAll('.review-card').length,
+    labelled: [...document.querySelectorAll('.stars')].every((s) => s.getAttribute('role') === 'img' && /5 out of 5 stars/.test(s.getAttribute('aria-label'))),
+    starColor: getComputedStyle(document.querySelector('.review-card .stars')).color,
+    names: [...document.querySelectorAll('.review-card__name')].map((n) => n.textContent.trim()),
+    reviewSchema: [...document.querySelectorAll('script[type="application/ld+json"]')].some((s) => /"(Review|AggregateRating)"/.test(s.textContent)),
+  }));
+  const shortNames = d.names.every((n) => /^(\S+ [A-Z]\.|The [A-Z]\. Family)$/.test(n));
+  record('Testimonials: linked in nav + footer, 3 on home, 5 on page, labelled stars in brass (ink) / brass-dark (light), short names, no Review schema',
+    navLink >= 2 && footLink === 1 && homeCards === 3 && d.cards === 5 && d.labelled && homeStar === 'rgb(196, 144, 63)' && d.starColor === 'rgb(138, 90, 28)' && shortNames && !d.reviewSchema,
+    `nav=${navLink} foot=${footLink} home=${homeCards} page=${d.cards} homeStar=${homeStar} pageStar=${d.starColor} names=${d.names.join('|')} schema=${d.reviewSchema}`);
   await page.close();
 }
 
