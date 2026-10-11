@@ -19,7 +19,7 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "1.5 s",
+    "LCP": "1.6 s",
     "CLS": "0",
     "TBT": "0 ms",
     "FCP": "0.8 s",
@@ -32,11 +32,11 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "2.1 s",
+    "LCP": "2.0 s",
     "CLS": "0",
     "TBT": "0 ms",
     "FCP": "0.9 s",
-    "weightKB": 244
+    "weightKB": 245
   },
   {
     "page": "/contact/",
@@ -45,10 +45,10 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "1.4 s",
+    "LCP": "1.2 s",
     "CLS": "0",
     "TBT": "0 ms",
-    "FCP": "1.0 s",
+    "FCP": "0.8 s",
     "weightKB": 66
   },
   {
@@ -58,10 +58,10 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "1.7 s",
+    "LCP": "1.6 s",
     "CLS": "0",
     "TBT": "0 ms",
-    "FCP": "0.8 s",
+    "FCP": "0.9 s",
     "weightKB": 267
   },
   {
@@ -71,7 +71,7 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "1.5 s",
+    "LCP": "1.4 s",
     "CLS": "0",
     "TBT": "0 ms",
     "FCP": "0.8 s",
@@ -88,7 +88,7 @@
     "CLS": "0",
     "TBT": "0 ms",
     "FCP": "0.3 s",
-    "weightKB": 388
+    "weightKB": 389
   },
   {
     "page": "/services/decks/",
@@ -110,11 +110,11 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "0.8 s",
+    "LCP": "0.7 s",
     "CLS": "0",
     "TBT": "0 ms",
     "FCP": "0.2 s",
-    "weightKB": 663
+    "weightKB": 664
   },
   {
     "page": "/contact/",
@@ -139,7 +139,7 @@
     "LCP": "0.4 s",
     "CLS": "0",
     "TBT": "0 ms",
-    "FCP": "0.3 s",
+    "FCP": "0.2 s",
     "weightKB": 190
   },
   {
@@ -149,7 +149,7 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "0.4 s",
+    "LCP": "0.3 s",
     "CLS": "0",
     "TBT": "0 ms",
     "FCP": "0.2 s",

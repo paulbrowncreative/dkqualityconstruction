@@ -300,7 +300,32 @@ export const projects = [
       { asset: 'DKQ-12-05', name: 'project-bathroom-vanity-niche', alt: 'Remodeled bathroom with a white shaker vanity and speckled top, black faucet, round black mirror and three-light fixture, beside a tub with marble-look subway tile and a recessed niche' },
       { asset: 'DKQ-12-03', name: 'project-bathroom-tub-subway-tile', alt: 'Bathtub with a marble-look subway tile surround and black shower and tub fixtures, next to the white vanity and plank flooring' },
       { asset: 'DKQ-12-04', name: 'project-bathroom-tub-closet-shelves', alt: 'The other side of the bathroom: a dark shaker-style closet door, open shelves and the toilet beside the tiled tub' },
+      { asset: 'DKQ-13-01', name: 'project-bathroom-vanity-niche-alt', alt: 'The vanity and tub again, showing the recessed tile niche, the three-light fixture over the round mirror and the plank flooring' },
     ],
+  },
+  {
+    id: 'P-044', category: 'decks', featured: true,
+    title: 'Two-level pool deck by the canal',
+    caption: 'Brown composite deck wrapped around an above-ground pool, with a raised seating level, white-and-black railings and step lights.',
+    images: [{ asset: 'DKQ-13-05', name: 'project-deck-composite-pool-two-level', alt: 'Overhead view of a brown composite deck around an above-ground pool, with a raised seating level, white railings with black balusters, lit steps and a canal beside it' }],
+  },
+  {
+    id: 'P-045', category: 'decks',
+    title: 'Raised pool deck with a hot-tub platform',
+    caption: 'Pressure-treated deck built beside an above-ground pool, with a raised hot-tub platform, wood railings with black balusters and a sliding barn-style access door.',
+    images: [{ asset: 'DKQ-13-02', name: 'project-deck-pressure-treated-pool-hot-tub', alt: 'Raised pressure-treated deck beside an above-ground pool, with a hot tub on the upper platform, wood railings with black balusters, board skirting and a sliding barn-style access door' }],
+  },
+  {
+    id: 'P-046', category: 'decks',
+    title: 'Pressure-treated deck with lit stairs',
+    caption: 'Wide pressure-treated stairs with built-in step lights and post lights, photographed at dusk.',
+    images: [{ asset: 'DKQ-13-04', name: 'project-deck-pressure-treated-stair-lights-night', alt: 'Wide pressure-treated deck stairs with built-in step lights and lighted posts, wood railings with black balusters, photographed at dusk' }],
+  },
+  {
+    id: 'P-047', category: 'decks',
+    title: 'Side-entry deck with wood railings',
+    caption: 'Small pressure-treated deck and steps at a side door, with wood railings, black balusters and board skirting.',
+    images: [{ asset: 'DKQ-13-03', name: 'project-deck-pressure-treated-side-door', alt: 'Small pressure-treated deck and steps at a side door, with wood railings, black balusters and board skirting, just after completion' }],
   },
 ];
 

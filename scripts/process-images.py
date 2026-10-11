@@ -104,6 +104,12 @@ PHOTOS = {
     "project-bathroom-tub-subway-tile": {"src": "assets-src/uploads/batch-12/58.jpg"},
     "project-bathroom-tub-closet-shelves": {"src": "assets-src/uploads/batch-12/59.jpg"},
     "project-bathroom-vanity-niche": {"src": "assets-src/uploads/batch-12/60.jpg", "widths": HERO_WIDTHS},
+    # Batch 13
+    "project-bathroom-vanity-niche-alt": {"src": "assets-src/uploads/batch-13/61.jpg"},
+    "project-deck-pressure-treated-pool-hot-tub": {"src": "assets-src/uploads/batch-13/62.jpg"},
+    "project-deck-pressure-treated-side-door": {"src": "assets-src/uploads/batch-13/63.jpg"},
+    "project-deck-pressure-treated-stair-lights-night": {"src": "assets-src/uploads/batch-13/64.jpg"},
+    "project-deck-composite-pool-two-level": {"src": "assets-src/uploads/batch-13/65.jpg"},
     "framing-new-construction": {},
 }
 
