@@ -486,6 +486,47 @@
     "width": 1125,
     "height": 1500
   },
+  "project-deck-lakefront-cable-rail": {
+    "widths": [
+      320,
+      640,
+      1024,
+      1500
+    ],
+    "width": 1500,
+    "height": 2000
+  },
+  "project-porch-deck-built-in-benches-aerial": {
+    "widths": [
+      320,
+      640,
+      1024,
+      1600,
+      2000
+    ],
+    "width": 2000,
+    "height": 1500
+  },
+  "project-porch-cabin-wraparound": {
+    "widths": [
+      320,
+      640,
+      1024,
+      1500
+    ],
+    "width": 1500,
+    "height": 2000
+  },
+  "project-deck-large-composite-two-tone": {
+    "widths": [
+      320,
+      640,
+      1024,
+      1125
+    ],
+    "width": 1125,
+    "height": 1500
+  },
   "framing-new-construction": {
     "widths": [
       320,

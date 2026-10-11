@@ -34,7 +34,7 @@ PASS  generate_lead fires exactly once after submission — count=1
 PASS  Reloading /thank-you/ does not re-fire generate_lead — count=0
 PASS  Failed submission shows error with phone fallback and re-enables button — Sorry — your request didn’t go through. Please try again, or call (734) 497-6773.
 PASS  Phone link click pushes one click_call event — count=1
-PASS  Project viewer: opens full photo, arrow keys page through, alt carried over, Esc closes, focus returns — cards=45 open=true /assets/img/photos/project-deck-ground-level-brown-wide-2000.jpg -> /assets/img/photos/project-deck-ground-level-brown-corner-1500.jpg closed=true focusBack=true
+PASS  Project viewer: opens full photo, arrow keys page through, alt carried over, Esc closes, focus returns — cards=49 open=true /assets/img/photos/project-deck-ground-level-brown-wide-2000.jpg -> /assets/img/photos/project-deck-ground-level-brown-corner-1500.jpg closed=true focusBack=true
 PASS  Titles/descriptions unique & sized, canonical, single H1, OG, JSON-LD, heading order, alt, dimensions
 PASS  Unknown URL returns 404 status with custom page — status=404
 PASS  Skip link first in tab order, visible on focus, targets main — skip=true visible=true main=true

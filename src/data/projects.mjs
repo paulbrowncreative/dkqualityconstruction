@@ -162,7 +162,10 @@ export const projects = [
     id: 'P-022', category: 'decks',
     title: 'Front porch deck with built-in benches',
     caption: 'Gray deck extending a covered front porch, with long built-in benches along two sides.',
-    images: [{ asset: 'DKQ-06-01', name: 'project-porch-deck-built-in-benches', alt: 'Gray deck extending a covered front porch, with long built-in benches on two sides, above landscaped flower beds' }],
+    images: [
+      { asset: 'DKQ-10-03', name: 'project-porch-deck-built-in-benches-aerial', alt: 'Aerial view of a gray deck extending a covered front porch, with angled built-in benches on both sides framed by flowering shrubs' },
+      { asset: 'DKQ-06-01', name: 'project-porch-deck-built-in-benches', alt: 'Ground-level view of the same deck: long built-in benches on two sides of the deck, above landscaped flower beds' },
+    ],
   },
   {
     id: 'P-023', category: 'decks',
@@ -244,6 +247,24 @@ export const projects = [
     title: 'Raised pressure-treated deck in a wooded yard',
     caption: 'Pressure-treated wood deck with a divider board and wood railings with black balusters, overlooking a wooded yard.',
     images: [{ asset: 'DKQ-09-05', name: 'project-deck-pressure-treated-raised-woods', alt: 'Raised pressure-treated wood deck with a divider board and wood railings with black balusters, with stairs down to a wooded yard' }],
+  },
+  {
+    id: 'P-037', category: 'decks', featured: true,
+    title: 'Lakefront deck with cable railings',
+    caption: 'Pressure-treated wood deck with wood-framed cable railings, built on the waterfront under a mature shade tree.',
+    images: [{ asset: 'DKQ-10-01', name: 'project-deck-lakefront-cable-rail', alt: 'Pressure-treated wood deck with wood-framed horizontal cable railings beside a gray home, looking out over open water under a large shade tree' }],
+  },
+  {
+    id: 'P-038', category: 'decks',
+    title: 'Long covered porch with a composite floor',
+    caption: 'Brown composite porch floor with a divider board, matching skirting and box steps, along a covered porch with wood posts.',
+    images: [{ asset: 'DKQ-10-04', name: 'project-porch-cabin-wraparound', alt: 'Long covered porch on a wood-sided home with a brown composite floor, a divider board, matching skirting and box steps, under exposed rafters and wood posts' }],
+  },
+  {
+    id: 'P-039', category: 'decks',
+    title: 'Large two-tone composite deck',
+    caption: 'Large ground-level composite deck with a darker contrasting border and divider boards.',
+    images: [{ asset: 'DKQ-10-05', name: 'project-deck-large-composite-two-tone', alt: 'Large ground-level composite deck with a darker border and divider boards, wet after rain, beside a two-story home with a fenced yard' }],
   },
 ];
 

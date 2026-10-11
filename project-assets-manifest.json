@@ -132,6 +132,18 @@
         "DKQ-09-05"
       ],
       "summary": "2nd angle of P-021 (aerial), 2nd angle of P-030 (pavilion deck), covered brick-ranch porch (possible P-026 relation flagged), 6th aerial with DK trailer (About page), raised pressure-treated deck. No before/after pairs, no reviews."
+    },
+    {
+      "batch": 10,
+      "received": "2026-10-11",
+      "assetIds": [
+        "DKQ-10-01",
+        "DKQ-10-02",
+        "DKQ-10-03",
+        "DKQ-10-04",
+        "DKQ-10-05"
+      ],
+      "summary": "Lakefront cable-rail deck, exact duplicate of homepage-hero aerial (DKQ-06-03), aerial of P-022 bench deck, cabin covered porch floor, large two-tone composite deck. No before/after pairs, no reviews."
     }
   ],
   "projects": [
@@ -317,6 +329,7 @@
       "title": "Front porch deck with built-in benches",
       "category": "decks",
       "assets": [
+        "DKQ-10-03",
         "DKQ-06-01"
       ]
     },
@@ -423,6 +436,30 @@
       "category": "decks",
       "assets": [
         "DKQ-09-05"
+      ]
+    },
+    {
+      "projectId": "P-037",
+      "title": "Lakefront deck with cable railings",
+      "category": "decks",
+      "assets": [
+        "DKQ-10-01"
+      ]
+    },
+    {
+      "projectId": "P-038",
+      "title": "Long covered porch with a composite floor",
+      "category": "decks",
+      "assets": [
+        "DKQ-10-04"
+      ]
+    },
+    {
+      "projectId": "P-039",
+      "title": "Large two-tone composite deck",
+      "category": "decks",
+      "assets": [
+        "DKQ-10-05"
       ]
     }
   ],
@@ -2462,7 +2499,7 @@
           "bytes": 88961
         }
       ],
-      "altText": "Gray deck extending a covered front porch, with long built-in benches on two sides, above landscaped flower beds",
+      "altText": "Ground-level view of the same deck: long built-in benches on two sides of the deck, above landscaped flower beds",
       "caption": "Gray deck extending a covered front porch, with long built-in benches along two sides.",
       "websiteLocations": [
         "/projects/"
@@ -3919,6 +3956,347 @@
       "status": "integrated",
       "questions": [
         "Confirm pressure-treated lumber"
+      ],
+      "approval": "pending owner confirmation of project details",
+      "category": "Decks",
+      "processing": "Resized (Lanczos) + light unsharp mask; AVIF q52 + progressive JPEG q78. No retouching, no AI upscaling, no content changes.",
+      "optimizedDimensions": {
+        "widths": [
+          320,
+          640,
+          1024,
+          1125
+        ],
+        "aspect": "1125x1500"
+      }
+    },
+    {
+      "id": "DKQ-10-01",
+      "batch": 10,
+      "originalFilename": "46.jpg",
+      "original": "assets-src/uploads/batch-10/46.jpg",
+      "sha256": "5a9e10f9740c78ed6dc11e1a14abf14b7a508e974d4408746fd1acdb4379fa06",
+      "bytes": 469635,
+      "originalDimensions": [
+        1500,
+        2000
+      ],
+      "format": "jpeg",
+      "duplicateOf": null,
+      "type": "project-photo",
+      "classification": "general-portfolio (completed) — lakefront pressure-treated deck with cable rail",
+      "projectId": "P-037",
+      "pairId": null,
+      "reviewId": null,
+      "storedFilename": "project-deck-lakefront-cable-rail",
+      "optimized": [
+        {
+          "file": "src/assets/img/photos/project-deck-lakefront-cable-rail-1024.avif",
+          "bytes": 140458
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-lakefront-cable-rail-1024.jpg",
+          "bytes": 305212
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-lakefront-cable-rail-1500.avif",
+          "bytes": 270796
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-lakefront-cable-rail-1500.jpg",
+          "bytes": 509266
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-lakefront-cable-rail-320.avif",
+          "bytes": 18508
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-lakefront-cable-rail-320.jpg",
+          "bytes": 37271
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-lakefront-cable-rail-640.avif",
+          "bytes": 62851
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-lakefront-cable-rail-640.jpg",
+          "bytes": 133043
+        }
+      ],
+      "altText": "Pressure-treated wood deck with wood-framed horizontal cable railings beside a gray home, looking out over open water under a large shade tree",
+      "caption": "Pressure-treated wood deck with wood-framed cable railings, built on the waterfront under a mature shade tree.",
+      "websiteLocations": [
+        "/projects/ (featured)"
+      ],
+      "status": "integrated",
+      "questions": [
+        "Body of water / city (optional)",
+        "Did DK build the cable railing as well as the deck?"
+      ],
+      "approval": "pending owner confirmation of project details",
+      "category": "Decks",
+      "processing": "Resized (Lanczos) + light unsharp mask; AVIF q52 + progressive JPEG q78. No retouching, no AI upscaling, no content changes.",
+      "optimizedDimensions": {
+        "widths": [
+          320,
+          640,
+          1024,
+          1500
+        ],
+        "aspect": "1500x2000"
+      }
+    },
+    {
+      "id": "DKQ-10-02",
+      "batch": 10,
+      "originalFilename": "47.jpg",
+      "original": "assets-src/uploads/batch-10/47.jpg",
+      "sha256": "f41e21771943c88e206d3aa0cc4e907b59710cce0846bb06f5f557a845830668",
+      "bytes": 507228,
+      "originalDimensions": [
+        2000,
+        1500
+      ],
+      "format": "jpeg",
+      "duplicateOf": "DKQ-06-03",
+      "type": "project-photo",
+      "classification": "EXACT DUPLICATE of DKQ-06-03 (identical SHA-256 and pixels). Original kept for the record; not reprocessed or published twice.",
+      "projectId": "P-021",
+      "pairId": null,
+      "reviewId": null,
+      "storedFilename": null,
+      "optimized": [],
+      "altText": null,
+      "caption": null,
+      "websiteLocations": [
+        "(served via DKQ-06-03)"
+      ],
+      "status": "duplicate — not published separately",
+      "questions": [],
+      "approval": "n/a",
+      "category": "Decks"
+    },
+    {
+      "id": "DKQ-10-03",
+      "batch": 10,
+      "originalFilename": "48.jpg",
+      "original": "assets-src/uploads/batch-10/48.jpg",
+      "sha256": "2c93bdbe52cf69d23aaa394403087ffad5d59a5398daa32356e74da3ac3bfa4f",
+      "bytes": 447179,
+      "originalDimensions": [
+        2000,
+        1500
+      ],
+      "format": "jpeg",
+      "duplicateOf": null,
+      "type": "project-photo",
+      "classification": "general-portfolio (completed) — AERIAL of P-022 (same green metal roof, turned porch columns, glider bench, hot-air-balloon spinner, duck figurines, angled benches); now P-022 cover",
+      "projectId": "P-022",
+      "pairId": null,
+      "reviewId": null,
+      "storedFilename": "project-porch-deck-built-in-benches-aerial",
+      "optimized": [
+        {
+          "file": "src/assets/img/photos/project-porch-deck-built-in-benches-aerial-1024.avif",
+          "bytes": 78727
+        },
+        {
+          "file": "src/assets/img/photos/project-porch-deck-built-in-benches-aerial-1024.jpg",
+          "bytes": 181409
+        },
+        {
+          "file": "src/assets/img/photos/project-porch-deck-built-in-benches-aerial-1600.avif",
+          "bytes": 154675
+        },
+        {
+          "file": "src/assets/img/photos/project-porch-deck-built-in-benches-aerial-1600.jpg",
+          "bytes": 381706
+        },
+        {
+          "file": "src/assets/img/photos/project-porch-deck-built-in-benches-aerial-2000.avif",
+          "bytes": 224774
+        },
+        {
+          "file": "src/assets/img/photos/project-porch-deck-built-in-benches-aerial-2000.jpg",
+          "bytes": 486264
+        },
+        {
+          "file": "src/assets/img/photos/project-porch-deck-built-in-benches-aerial-320.avif",
+          "bytes": 10400
+        },
+        {
+          "file": "src/assets/img/photos/project-porch-deck-built-in-benches-aerial-320.jpg",
+          "bytes": 21318
+        },
+        {
+          "file": "src/assets/img/photos/project-porch-deck-built-in-benches-aerial-640.avif",
+          "bytes": 35302
+        },
+        {
+          "file": "src/assets/img/photos/project-porch-deck-built-in-benches-aerial-640.jpg",
+          "bytes": 76241
+        }
+      ],
+      "altText": "Aerial view of a gray deck extending a covered front porch, with angled built-in benches on both sides framed by flowering shrubs",
+      "caption": "Gray deck extending a covered front porch, with long built-in benches along two sides.",
+      "websiteLocations": [
+        "/projects/ (P-022 cover)"
+      ],
+      "status": "integrated",
+      "questions": [
+        "Same as P-022"
+      ],
+      "approval": "pending owner confirmation of project details",
+      "category": "Decks",
+      "processing": "Resized (Lanczos) + light unsharp mask; AVIF q52 + progressive JPEG q78. No retouching, no AI upscaling, no content changes.",
+      "optimizedDimensions": {
+        "widths": [
+          320,
+          640,
+          1024,
+          1600,
+          2000
+        ],
+        "aspect": "2000x1500"
+      }
+    },
+    {
+      "id": "DKQ-10-04",
+      "batch": 10,
+      "originalFilename": "49.jpg",
+      "original": "assets-src/uploads/batch-10/49.jpg",
+      "sha256": "ad1c8b0adc46aaeda610295482d820c36be09df69b2da23003bed40cf17a3f16",
+      "bytes": 380315,
+      "originalDimensions": [
+        1500,
+        2000
+      ],
+      "format": "jpeg",
+      "duplicateOf": null,
+      "type": "project-photo",
+      "classification": "general-portfolio (completed) — covered porch floor on wood-sided home",
+      "projectId": "P-038",
+      "pairId": null,
+      "reviewId": null,
+      "storedFilename": "project-porch-cabin-wraparound",
+      "optimized": [
+        {
+          "file": "src/assets/img/photos/project-porch-cabin-wraparound-1024.avif",
+          "bytes": 108675
+        },
+        {
+          "file": "src/assets/img/photos/project-porch-cabin-wraparound-1024.jpg",
+          "bytes": 255388
+        },
+        {
+          "file": "src/assets/img/photos/project-porch-cabin-wraparound-1500.avif",
+          "bytes": 205762
+        },
+        {
+          "file": "src/assets/img/photos/project-porch-cabin-wraparound-1500.jpg",
+          "bytes": 420030
+        },
+        {
+          "file": "src/assets/img/photos/project-porch-cabin-wraparound-320.avif",
+          "bytes": 13622
+        },
+        {
+          "file": "src/assets/img/photos/project-porch-cabin-wraparound-320.jpg",
+          "bytes": 30383
+        },
+        {
+          "file": "src/assets/img/photos/project-porch-cabin-wraparound-640.avif",
+          "bytes": 48550
+        },
+        {
+          "file": "src/assets/img/photos/project-porch-cabin-wraparound-640.jpg",
+          "bytes": 111610
+        }
+      ],
+      "altText": "Long covered porch on a wood-sided home with a brown composite floor, a divider board, matching skirting and box steps, under exposed rafters and wood posts",
+      "caption": "Brown composite porch floor with a divider board, matching skirting and box steps, along a covered porch with wood posts.",
+      "websiteLocations": [
+        "/projects/"
+      ],
+      "status": "integrated",
+      "questions": [
+        "Did DK install only the porch floor/skirting/steps, or also the roof and posts?"
+      ],
+      "approval": "pending owner confirmation of project details",
+      "category": "Decks",
+      "processing": "Resized (Lanczos) + light unsharp mask; AVIF q52 + progressive JPEG q78. No retouching, no AI upscaling, no content changes.",
+      "optimizedDimensions": {
+        "widths": [
+          320,
+          640,
+          1024,
+          1500
+        ],
+        "aspect": "1500x2000"
+      }
+    },
+    {
+      "id": "DKQ-10-05",
+      "batch": 10,
+      "originalFilename": "50.jpg",
+      "original": "assets-src/uploads/batch-10/50.jpg",
+      "sha256": "716302f2a65f80e5713a1b7cdae67c471abd73e8645a39dd0e1e28a790ecc3c8",
+      "bytes": 224795,
+      "originalDimensions": [
+        1125,
+        1500
+      ],
+      "format": "jpeg",
+      "duplicateOf": null,
+      "type": "project-photo",
+      "classification": "general-portfolio (completed) — large composite deck (photographed wet)",
+      "projectId": "P-039",
+      "pairId": null,
+      "reviewId": null,
+      "storedFilename": "project-deck-large-composite-two-tone",
+      "optimized": [
+        {
+          "file": "src/assets/img/photos/project-deck-large-composite-two-tone-1024.avif",
+          "bytes": 66987
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-large-composite-two-tone-1024.jpg",
+          "bytes": 187469
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-large-composite-two-tone-1125.avif",
+          "bytes": 84059
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-large-composite-two-tone-1125.jpg",
+          "bytes": 217764
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-large-composite-two-tone-320.avif",
+          "bytes": 10250
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-large-composite-two-tone-320.jpg",
+          "bytes": 27031
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-large-composite-two-tone-640.avif",
+          "bytes": 31884
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-large-composite-two-tone-640.jpg",
+          "bytes": 88209
+        }
+      ],
+      "altText": "Large ground-level composite deck with a darker border and divider boards, wet after rain, beside a two-story home with a fenced yard",
+      "caption": "Large ground-level composite deck with a darker contrasting border and divider boards.",
+      "websiteLocations": [
+        "/projects/"
+      ],
+      "status": "integrated",
+      "questions": [
+        "Decking product",
+        "A dry/sunny photo would show it better, if available"
       ],
       "approval": "pending owner confirmation of project details",
       "category": "Decks",

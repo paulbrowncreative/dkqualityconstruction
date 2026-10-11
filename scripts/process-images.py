@@ -89,6 +89,11 @@ PHOTOS = {
     "project-porch-floor-brick-ranch": {"src": "assets-src/uploads/batch-09/43.jpg"},
     "project-deck-aerial-box-steps-trailer": {"src": "assets-src/uploads/batch-09/44.jpg", "widths": HERO_WIDTHS},
     "project-deck-pressure-treated-raised-woods": {"src": "assets-src/uploads/batch-09/45.jpg"},
+    # Batch 10 (47.jpg is a byte-identical duplicate of batch-06/28.jpg — not reprocessed)
+    "project-deck-lakefront-cable-rail": {"src": "assets-src/uploads/batch-10/46.jpg"},
+    "project-porch-deck-built-in-benches-aerial": {"src": "assets-src/uploads/batch-10/48.jpg", "widths": HERO_WIDTHS},
+    "project-porch-cabin-wraparound": {"src": "assets-src/uploads/batch-10/49.jpg"},
+    "project-deck-large-composite-two-tone": {"src": "assets-src/uploads/batch-10/50.jpg"},
     "framing-new-construction": {},
 }
 
