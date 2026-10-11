@@ -1,6 +1,7 @@
 import { business, services, serviceUrl } from '../../site.config.mjs';
 import { pageHero, picture, icon, ctaBand, esc } from '../lib/components.mjs';
 import { postsForService } from '../data/posts.mjs';
+import { postTitle } from '../lib/post-template.mjs';
 
 const trail = [
   { name: 'Home', path: '/' },
@@ -54,7 +55,7 @@ ${pageHero({
             ? `<a class="link-arrow" href="${serviceUrl(s)}">${esc(s.name)} in Monroe, MI ${icon('arrow')}</a>`
             : `<a class="link-arrow" href="/contact/#estimate">Request a ${esc(s.name.toLowerCase())} estimate ${icon('arrow')}</a>`
         }
-        ${postsForService(s.slug).map((p) => `<p class="svc-row__guide">Guide: <a href="/blog/${p.slug}/">${p.h1}</a></p>`).join('')}
+        ${postsForService(s.slug).map((p) => `<p class="svc-row__guide">Guide: <a href="/blog/${p.slug}/">${postTitle(p)}</a></p>`).join('')}
       </div>
     </article>`,
       )

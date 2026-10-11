@@ -17,6 +17,7 @@ export const states = {
 export const locations = [
   {
     slug: 'monroe-mi', name: 'Monroe', county: 'MI', schemaType: 'City',
+    title: 'City of Monroe, MI: Decks, Permits & Remodeling | DK Quality',
     typeLabel: 'City · Monroe County seat',
     zips: ['48161', '48162'], lat: 41.916586, lon: -83.384324,
     hero: 'project-porch-covered-gable-front',

@@ -37,7 +37,7 @@ ${pageHero({
 
 <section class="section section--ink" aria-labelledby="facts-h">
   <div class="container">
-    <h2 id="facts-h" class="section-title section-title--center">At a glance</h2>
+    <h2 id="facts-h" class="section-title">At a glance</h2>
     <dl class="facts">
       <div class="facts__item"><dt>Founded</dt><dd>2021, Monroe, MI</dd></div>
       <div class="facts__item"><dt>Owner</dt><dd>${business.owner}</dd></div>

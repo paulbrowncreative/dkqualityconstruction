@@ -813,3 +813,19 @@ body { padding-bottom: calc(4rem + env(safe-area-inset-bottom)); }
 .related__list--wide { grid-template-columns: 1fr !important; }
 @media (min-width: 60em) { .related__list--wide { grid-template-columns: repeat(2, 1fr) !important; } }
 .svc-row__guide { margin: var(--space-3) 0 0; font-size: var(--fs-sm); }
+
+/* ---------- Balance refinements ---------- */
+/* Homepage reviews: the long review is featured; the two short ones stack beside it. */
+@media (min-width: 72em) {
+  .review-grid--feature { grid-template-columns: 1.15fr 1fr; grid-template-rows: auto auto; align-items: stretch; }
+  .review-grid--feature > :first-child { grid-row: span 2; }
+}
+/* A single review reads as a centered pull quote instead of a half-width card. */
+.testimonials--single .container { display: flex; flex-direction: column; align-items: center; text-align: left; }
+.testimonials--single .review-card { width: 100%; }
+/* County cards match heights on the service-area hub. */
+.county-grid > .county { height: 100%; }
+/* Blog cards without a photo get a branded tile rather than an empty block. */
+.post-card__media--text { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--space-3); background: var(--ink) radial-gradient(circle at 50% 40%, rgb(196 144 63 / 0.14), transparent 60%); }
+.post-card__media--text img { width: 6rem; height: auto; opacity: 0.9; }
+.post-card__media--text span { font-size: var(--fs-sm); text-transform: uppercase; letter-spacing: 0.16em; font-stretch: var(--stretch-wide, 125%); }

@@ -1,7 +1,7 @@
 import { services } from '../../site.config.mjs';
 import { pageHero, picture, icon, ctaBand, esc } from '../lib/components.mjs';
 import { posts } from '../data/posts.mjs';
-import { postUrl, readMinutes, formatDate } from '../lib/post-template.mjs';
+import { postUrl, readMinutes, formatDate, postTitle } from '../lib/post-template.mjs';
 
 const trail = [
   { name: 'Home', path: '/' },
@@ -10,7 +10,7 @@ const trail = [
 const svcName = (slug) => services.find((s) => s.slug === slug).name;
 
 const card = (p) => `<article class="post-card">
-  ${p.image ? `<a class="post-card__media" href="${postUrl(p)}" tabindex="-1" aria-hidden="true">${picture(p.image, { alt: '', sizes: '(min-width: 1100px) 33vw, (min-width: 600px) 50vw, 100vw' })}</a>` : `<span class="post-card__media post-card__media--text" aria-hidden="true">${esc(svcName(p.service))}</span>`}
+  ${p.image ? `<a class="post-card__media" href="${postUrl(p)}" tabindex="-1" aria-hidden="true">${picture(p.image, { alt: '', sizes: '(min-width: 1100px) 33vw, (min-width: 600px) 50vw, 100vw' })}</a>` : `<span class="post-card__media post-card__media--text" aria-hidden="true"><img src="/assets/img/brand/dk-emblem-160.webp" width="160" height="62" alt="" loading="lazy" decoding="async"><span>${esc(svcName(p.service))}</span></span>`}
   <div class="post-card__body">
     <p class="post-card__cat">${esc(svcName(p.service))}</p>
     <h2 class="post-card__title"><a href="${postUrl(p)}">${p.h1}</a></h2>
@@ -28,7 +28,7 @@ export default {
   schema: [
     {
       '@type': 'ItemList',
-      itemListElement: posts.map((p, i) => ({ '@type': 'ListItem', position: i + 1, url: postUrl(p), name: p.h1 })),
+      itemListElement: posts.map((p, i) => ({ '@type': 'ListItem', position: i + 1, url: postUrl(p), name: postTitle(p) })),
     },
   ],
   body: `

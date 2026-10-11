@@ -8,6 +8,7 @@ import { dirname, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { site, business } from './site.config.mjs';
 import { renderPage } from './src/lib/layout.mjs';
+import { titleCaseHeadings } from './src/lib/title-case.mjs';
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
 const SRC = join(ROOT, 'src');
@@ -72,7 +73,7 @@ async function build() {
     const mod = await import(modPath);
     // A module exports one page, or an array of pages (e.g. the location pages).
     for (const page of [mod.default].flat()) {
-      const html = renderPage(page).replace('{{css}}', cssName).replace('{{js}}', jsName);
+      const html = titleCaseHeadings(renderPage(page)).replace('{{css}}', cssName).replace('{{js}}', jsName);
       const out = page.outFile || join(page.path.replace(/^\//, ''), 'index.html');
       mkdirSync(dirname(join(DIST, out)), { recursive: true });
       writeFileSync(join(DIST, out), html);

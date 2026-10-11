@@ -29,7 +29,7 @@
 
 | Check | Result |
 |---|---|
-| Functional, responsive, accessibility and SEO tests | **44 of 44 passed** across 39 pages (2 cross-engine smoke tests skipped: engines not installed) |
+| Functional, responsive, accessibility and SEO tests | **45 of 45 passed** across 48 pages (2 cross-engine smoke tests skipped: engines not installed) |
 | Before/after slider tests | **17 of 17 passed** |
 | Accessibility scan (axe-core, WCAG 2.2 AA), 14 pages, mobile and desktop | 0 violations |
 | HTML validation (html-validate) | Valid |
@@ -179,7 +179,9 @@ I sent one test submission (every field "test", plus a test photo) to **dkqconst
 ## 7. SEO and local SEO
 
 - **Every indexable page** has a unique title (66 characters or fewer) and description (160 or fewer), one H1, a canonical URL, Open Graph tags and JSON-LD. All of this is verified by automated tests.
-- **Sitemap:** 37 URLs, including `/projects/`, `/testimonials/` and the 24 community pages. Previews and branch deploys are `noindex` with a `Disallow: /` robots.txt.
+- **Sitemap:** 46 URLs, including `/projects/`, `/testimonials/`, the 24 community pages, `/blog/` and its 8 guides.
+- **Blog:** 8 planning guides covering every service (2 for decks). Each has `BlogPosting` schema, `og:type` article, a table of contents, an FAQ, and links to related services and community pages. Every service page and `/services/` links to its guides.
+- **Headings:** every heading is set in AP title case at build time (`src/lib/title-case.mjs`), with no closing periods and question marks on questions. Quoted review headlines are left verbatim. A site-wide scan of visible text found no stray straight quotes, spaced hyphens, doubled punctuation or double spaces. Previews and branch deploys are `noindex` with a `Disallow: /` robots.txt.
 - **Projects page** carries `ImageGallery` structured data, with an `ImageObject` for each photo.
 - **No review markup.** The reviews are shown as visible text only. There is no `aggregateRating` or `Review` schema, in line with Google's guidelines on self-serving reviews.
 - **NAP consistency:** name, address and phone come from one config file. It's a service-area business, with no street address or coordinates. "Licensed & insured" appears in the credentials strip, "Why DK", the estimate panel, the About facts, the Contact credentials card and the footer.
@@ -234,7 +236,7 @@ Accessibility, Best Practices and SEO scored 100 on every run, and CLS was 0 eve
 
 Final run, October 11, 2026, against the built `dist/`:
 
-- **Layout:** no horizontal overflow, every image loads and no console errors, at 320, 375, 414, 768, 1024, 1280, 1440 and 1920 px on all 39 pages.
+- **Layout:** no horizontal overflow, every image loads and no console errors, at 320, 375, 414, 768, 1024, 1280, 1440 and 1920 px on all 48 pages.
 - **Navigation:** desktop dropdown, mobile menu and skip link all pass. The desktop nav appears at 1152 px and up; below that, the mobile menu is used. It was rechecked with the Testimonials item added; a compact spacing step from 1152 to 1279 px keeps it on one line with no overflow.
 - **Photo viewer:** pass.
 - **Community pages:** pass. The test checks that every page is linked from the hub, has `Service` schema whose `areaServed` is the city or place within its county, links to the official permit office, has 5 nearby links and a correct canonical, and has no review markup.

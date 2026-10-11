@@ -138,7 +138,7 @@ ${lightboxDialog()}
       </div>
       <a class="link-arrow link-arrow--light" href="/testimonials/">Read all testimonials ${icon('arrow')}</a>
     </div>
-    <div class="review-grid">
+    <div class="review-grid review-grid--feature">
       ${['R-01', 'R-02', 'R-03'].map((id) => reviewCard(reviewById(id))).join('')}
     </div>
   </div>
@@ -148,7 +148,7 @@ ${lightboxDialog()}
   <div class="container">
     <div class="section-head">
       <p class="eyebrow">What we build</p>
-      <h2 id="services-h" class="section-title">Outside and in, one contractor.</h2>
+      <h2 id="services-h" class="section-title">Inside and out, one contractor.</h2>
       <p class="section-head__text">From a new deck and fence line to a finished basement, kitchen or bath — one point of contact from the first call to the final walkthrough.</p>
     </div>
     ${serviceIndex()}

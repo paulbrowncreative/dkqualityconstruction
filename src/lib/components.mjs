@@ -324,7 +324,7 @@ export function reviewCard(r, { headingLevel = 3, projectHref } = {}) {
   const h = `h${headingLevel}`;
   return `<figure class="review-card" id="${r.id.toLowerCase()}">
   ${stars(5)}
-  ${r.headline ? `<${h} class="review-card__headline">${esc(r.headline)}</${h}>` : ''}
+  ${r.headline ? `<${h} class="review-card__headline" data-case="keep">${esc(r.headline)}</${h}>` : ''}
   <blockquote class="review-card__quote"><p>${esc(r.text)}</p></blockquote>
   <figcaption class="review-card__by">
     <span class="review-card__name">${esc(r.name)}</span>

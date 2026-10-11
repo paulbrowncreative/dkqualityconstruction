@@ -5,6 +5,7 @@ import { pageHero, picture, icon, faq, ctaBand, esc, projectCard, lightboxDialog
 import { projects as allProjects } from '../data/projects.mjs';
 import { reviewById } from '../data/reviews.mjs';
 import { postsForService } from '../data/posts.mjs';
+import { postTitle } from './post-template.mjs';
 import { reviewCard } from './components.mjs';
 import { ORG_ID } from './layout.mjs';
 
@@ -98,7 +99,7 @@ ${
     ? `<section class="section" aria-labelledby="work-h">
   <div class="container">
     <div class="project-group__head">
-      <h2 id="work-h" class="section-title">Recent ${esc(svc.name.toLowerCase())} projects</h2>
+      <h2 id="work-h" class="section-title">Recent ${esc(svc.slug === 'decks' ? 'deck' : svc.name.toLowerCase())} projects</h2>
       <a class="link-arrow" href="/projects/">See all projects ${icon('arrow')}</a>
     </div>
     <div class="project-grid">${cfg.projects.map((id) => projectCard(allProjects.find((p) => p.id === id))).join('')}</div>
@@ -142,9 +143,9 @@ ${
   postsForService(cfg.slug).length
     ? `<section class="section section--tight related" aria-labelledby="svc-guides-h">
   <div class="container">
-    <h2 id="svc-guides-h" class="related__h">${esc(svc.name)} planning guides</h2>
+    <h2 id="svc-guides-h" class="related__h">${esc(svc.slug === 'decks' ? 'Deck' : svc.name)} planning guides</h2>
     <ul class="related__list related__list--wide" role="list">${postsForService(cfg.slug)
-      .map((p) => `<li><a class="related__link" href="/blog/${p.slug}/"><span>${p.h1}</span>${icon('arrow')}</a></li>`)
+      .map((p) => `<li><a class="related__link" href="/blog/${p.slug}/"><span>${postTitle(p)}</span>${icon('arrow')}</a></li>`)
       .join('')}</ul>
   </div>
 </section>`

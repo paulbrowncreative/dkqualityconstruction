@@ -4,12 +4,15 @@ import { site, business, services, serviceUrl } from '../../site.config.mjs';
 import { pageHero, icon, faq, ctaBand, esc, largestJpg, preloadImage } from './components.mjs';
 import { locations, locationUrl } from '../data/locations.mjs';
 import { ORG_ID } from './layout.mjs';
+import { titleCaseText } from './title-case.mjs';
+
+export const postTitle = (p) => titleCaseText(p.h1);
 
 export const postUrl = (p) => `/blog/${p.slug}/`;
 
 const words = (html) => html.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length;
 export const readMinutes = (p) =>
-  Math.max(1, Math.round(words(p.intro + p.sections.map((s) => s.html).join(' ') + (p.faqs || []).map((f) => f.a).join(' ')) / 230));
+  Math.max(1, Math.ceil(words(p.intro + p.sections.map((s) => s.html).join(' ') + (p.faqs || []).map((f) => f.a).join(' ')) / 230));
 
 export const formatDate = (iso) =>
   new Date(`${iso}T12:00:00Z`).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
@@ -20,7 +23,7 @@ export function postPage(p) {
   const trail = [
     { name: 'Home', path: '/' },
     { name: 'Blog', path: '/blog/' },
-    { name: p.short || p.h1, path },
+    { name: titleCaseText(p.short || p.h1), path },
   ];
   const related = (p.relatedServices || [p.service])
     .map((slug) => services.find((s) => s.slug === slug))
@@ -44,7 +47,7 @@ export function postPage(p) {
       {
         '@type': 'BlogPosting',
         '@id': `${site.url}${path}#article`,
-        headline: p.h1,
+        headline: postTitle(p),
         description: p.description,
         datePublished: p.date,
         dateModified: p.updated || p.date,

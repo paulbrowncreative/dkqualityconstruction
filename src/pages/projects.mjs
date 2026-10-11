@@ -13,7 +13,7 @@ const groups = categories
 
 export default {
   path: '/projects/',
-  title: 'Deck & Remodeling Projects | DK Quality Construction, Monroe MI',
+  title: 'Deck & Remodeling Projects | DK Quality Construction, Monroe, MI',
   description:
     'Photos of decks, kitchens and basements built by DK Quality Construction for homeowners in Monroe County, MI and Lucas County, OH.',
   breadcrumbs: trail,
