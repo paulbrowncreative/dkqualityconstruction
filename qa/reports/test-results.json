@@ -1,6 +1,6 @@
 {
   "base": "http://localhost:8080",
-  "ranAt": "2026-10-11T15:08:03.381Z",
+  "ranAt": "2026-10-11T15:14:12.176Z",
   "checks": [
     {
       "name": "No horizontal overflow @320px (15 pages)",
@@ -190,7 +190,7 @@
     {
       "name": "Testimonials: linked in nav + footer, 3 on home, 5 on page, labelled stars in brass (ink) / brass-dark (light), short names, no Review schema",
       "ok": true,
-      "detail": "nav=2 foot=1 home=3 page=5 homeStar=rgb(196, 144, 63) pageStar=rgb(138, 90, 28) names=Todd S.|Nikky B.|The O. Family|Alicia D.|The B. Family schema=false"
+      "detail": "nav=2 foot=1 home=3 page=5 homeStar=rgb(196, 144, 63) pageStar=rgb(138, 90, 28) names=Todd S.|Nikky B.|The O. Family|Alicia D.|The Brown Family schema=false"
     },
     {
       "name": "Titles/descriptions unique & sized, canonical, single H1, OG, JSON-LD, heading order, alt, dimensions",

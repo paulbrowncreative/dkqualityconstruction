@@ -29,7 +29,7 @@ export const reviews = [
     text: 'We love our new deck and screened in porch! Thank you for your professionalism and communication',
   },
   {
-    id: 'R-05', asset: 'DKQ-16-04', name: 'The B. Family', project: 'Elevated deck', service: 'decks',
+    id: 'R-05', asset: 'DKQ-16-04', name: 'The Brown Family', project: 'Elevated deck', service: 'decks',
     source: 'Customer review',
     headline: 'Highly Recommend',
     text: 'David was punctual on his time frame and communicated through out each step of the project. They transformed my backyard with a beautiful elevated deck',

@@ -159,7 +159,7 @@ No EXIF data and no duplicates in any batch so far.
 | DKQ-16-01 | 76.png | — (not published) | Review screenshot: Nikky B., Facebook recommendation | — | 1294×313 | Text only, as R-02 |
 | DKQ-16-02 | 77.png | — (not published) | Review screenshot: Todd S., Facebook recommendation | — | screenshot | Text only, as R-01 |
 | DKQ-16-03 | 78.jpg | — (not published) | Review graphic: Alicia D. | P-012 | graphic | Text only, as R-04 |
-| DKQ-16-04 | 79.jpg | — (not published) | Review graphic: The B. Family | — | graphic | Text only, as R-05 |
+| DKQ-16-04 | 79.jpg | — (not published) | Review graphic: The Brown Family | — | graphic | Text only, as R-05 |
 | DKQ-16-05 | 80.jpg | — (not published) | Review graphic with project collage: The O. Family | P-052 | graphic | Text only, as R-03 |
 
 ## Projects
@@ -297,7 +297,7 @@ _None yet._ All thirty photos so far show finished work. Pairs are matched only 
 
 ## Reviews
 
-Five reviews from batch 16, transcribed word for word, keeping the reviewers' own spelling ("through out", "each days work"). Names are shortened to first name and last initial, as you asked. Reviews signed by a family appear as "The O. Family" and "The B. Family".
+Five reviews from batch 16, transcribed word for word, keeping the reviewers' own spelling ("through out", "each days work"). Names are shortened to first name and last initial, as you asked. Reviews signed by a family appear as "The O. Family" and, at your request (Oct 11, 2026), "The Brown Family" in full.
 
 | ID | Name shown | Project | Source | Stars shown | Where it appears |
 |---|---|---|---|---|---|
@@ -305,7 +305,7 @@ Five reviews from batch 16, transcribed word for word, keeping the reviewers' ow
 | R-02 | Nikky B. | Finished basement | Facebook recommendation (DKQ-16-01) | 5 ⚑ | /testimonials/, homepage, Basement page |
 | R-03 | The O. Family | Covered deck (P-052) | Review graphic (DKQ-16-05) | 5 | /testimonials/, homepage; links to P-052 |
 | R-04 | Alicia D. | Deck and screened porch (P-012) | Review graphic (DKQ-16-03) | 5 | /testimonials/; links to P-012 |
-| R-05 | The B. Family | Elevated deck | Review graphic (DKQ-16-04) | 5 | /testimonials/ |
+| R-05 | The Brown Family | Elevated deck | Review graphic (DKQ-16-04) | 5 | /testimonials/ |
 
 - **⚑ Stars on the Facebook reviews.** Facebook recommendations are recommend or don't recommend; there's no star scale. The three review graphics do show 5 stars. As you instructed, the site shows 5 stars on every card. To show stars only where the source had them is a one-line change.
 - **Star color.** Brass (`#C4903F`) on dark sections and dark brass (`#8A5A1C`) on light cards. Both pass WCAG non-text contrast. Screen readers announce each star row as "5 out of 5 stars".
