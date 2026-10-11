@@ -147,7 +147,7 @@ function footer() {
   const year = new Date().getFullYear();
   const svc = services.map((s) => `<li><a href="${serviceUrl(s)}">${esc(s.name)}</a></li>`).join('');
   const areas = business.serviceArea.counties
-    .map((c) => `<li>${esc(c.name)}, ${c.stateAbbr}</li>`)
+    .map((c) => `<li><a href="/service-area/#${c.slug}">${esc(c.name)}, ${c.stateAbbr}</a></li>`)
     .join('');
   return `<footer class="site-footer">
   <div class="container site-footer__grid">

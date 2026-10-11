@@ -1,8 +1,9 @@
 import { business } from '../../site.config.mjs';
 import { projects } from '../data/projects.mjs';
 import { reviewById } from '../data/reviews.mjs';
+import { locationByName, locationUrl } from '../data/locations.mjs';
 import {
-  picture, preloadImage, icon, estimateButton, phoneLink, serviceIndex, faq, estimateForm, projectCard, lightboxDialog, reviewCard,
+  picture, preloadImage, icon, estimateButton, phoneLink, serviceIndex, faq, estimateForm, projectCard, lightboxDialog, reviewCard, esc,
 } from '../lib/components.mjs';
 
 const heroSizes = '100vw';
@@ -229,7 +230,7 @@ ${lightboxDialog()}
         <h3 class="area-teaser__county">${c.name}, ${c.stateAbbr}</h3>
         <ul class="tag-list" role="list">${c.communities
           .slice(0, 8)
-          .map((t) => `<li>${t}</li>`)
+          .map(((t) => { const l = locationByName(t, c.stateAbbr); return `<li>${l ? `<a href="${locationUrl(l)}">${esc(t)}</a>` : esc(t)}</li>`; }))
           .join('')}</ul>
       </div>`,
         )

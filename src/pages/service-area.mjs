@@ -1,5 +1,6 @@
 import { business } from '../../site.config.mjs';
-import { pageHero, icon, ctaBand, phoneLink } from '../lib/components.mjs';
+import { pageHero, icon, ctaBand, phoneLink, esc } from '../lib/components.mjs';
+import { locationByName, locationUrl } from '../data/locations.mjs';
 
 const trail = [
   { name: 'Home', path: '/' },
@@ -8,14 +9,14 @@ const trail = [
 
 const [monroe, lucas] = business.serviceArea.counties;
 
-const countyBlock = (c, intro) => `<article class="county card">
+const countyBlock = (c, intro) => `<article class="county card" id="${c.slug}">
   <header class="county__head">
     ${icon('pin')}
     <h2 class="county__title">${c.name}, ${c.state}</h2>
   </header>
   <p>${intro}</p>
-  <h3 class="county__sub">Communities we serve include</h3>
-  <ul class="tag-list" role="list">${c.communities.map((t) => `<li>${t}</li>`).join('')}</ul>
+  <h3 class="county__sub">Communities we serve</h3>
+  <ul class="tag-list" role="list">${c.communities.map(((t) => { const l = locationByName(t, c.stateAbbr); return `<li>${l ? `<a href="${locationUrl(l)}">${esc(t)}</a>` : esc(t)}</li>`; })).join('')}</ul>
 </article>`;
 
 export default {

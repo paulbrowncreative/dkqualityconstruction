@@ -71,6 +71,7 @@ export const business = {
     counties: [
       {
         name: 'Monroe County',
+        slug: 'monroe-county',
         state: 'Michigan',
         stateAbbr: 'MI',
         communities: [
@@ -81,6 +82,7 @@ export const business = {
       },
       {
         name: 'Lucas County',
+        slug: 'lucas-county',
         state: 'Ohio',
         stateAbbr: 'OH',
         communities: [

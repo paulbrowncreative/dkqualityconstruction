@@ -15,7 +15,7 @@ const DIST = join(ROOT, 'dist');
 
 const pageModules = [
   'home', 'services', 'services-decks', 'services-fencing', 'services-basement',
-  'services-bathroom', 'services-kitchen', 'projects', 'testimonials', 'service-area', 'about', 'contact',
+  'services-bathroom', 'services-kitchen', 'projects', 'testimonials', 'service-area', 'locations', 'about', 'contact',
   'thank-you', 'privacy', 'not-found',
 ];
 
@@ -70,12 +70,14 @@ async function build() {
   if (process.env.BUILD_FIXTURES === '1' && site.context !== 'production') modules.push('./src/fixtures/compare.mjs');
   for (const modPath of modules) {
     const mod = await import(modPath);
-    const page = mod.default;
-    const html = renderPage(page).replace('{{css}}', cssName).replace('{{js}}', jsName);
-    const out = page.outFile || join(page.path.replace(/^\//, ''), 'index.html');
-    mkdirSync(dirname(join(DIST, out)), { recursive: true });
-    writeFileSync(join(DIST, out), html);
-    pages.push({ ...page, out, html });
+    // A module exports one page, or an array of pages (e.g. the location pages).
+    for (const page of [mod.default].flat()) {
+      const html = renderPage(page).replace('{{css}}', cssName).replace('{{js}}', jsName);
+      const out = page.outFile || join(page.path.replace(/^\//, ''), 'index.html');
+      mkdirSync(dirname(join(DIST, out)), { recursive: true });
+      writeFileSync(join(DIST, out), html);
+      pages.push({ ...page, out, html });
+    }
   }
   log(`rendered ${pages.length} pages`);
 
