@@ -34,7 +34,7 @@ export function businessSchema() {
   };
 }
 
-function head({ title, description, path, ogImage, noindex, preload = '', schema = [] }) {
+function head({ title, description, path, ogImage, ogType = 'website', noindex, preload = '', schema = [] }) {
   const canonical = abs(path);
   const robots = !site.indexable || noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large';
   const graph = { '@context': 'https://schema.org', '@graph': schema };
@@ -56,7 +56,7 @@ ${preload}
 <link rel="icon" href="/assets/img/brand/icon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="/assets/img/brand/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<meta property="og:type" content="website">
+<meta property="og:type" content="${ogType}">
 <meta property="og:site_name" content="${esc(business.name)}">
 <meta property="og:locale" content="${site.locale}">
 <meta property="og:title" content="${esc(title)}">
@@ -131,6 +131,7 @@ function header(path) {
         <li><a href="/projects/"${isCurrent('/projects/')}>Projects</a></li>
         <li><a href="/testimonials/"${isCurrent('/testimonials/')}>Testimonials</a></li>
         <li><a href="/service-area/"${isCurrent('/service-area/')}>Service Area</a></li>
+        <li><a href="/blog/"${isCurrent('/blog/')}>Blog</a></li>
         <li><a href="/about/"${isCurrent('/about/')}>About</a></li>
         <li><a href="/contact/"${isCurrent('/contact/')}>Contact</a></li>
       </ul>
@@ -168,6 +169,7 @@ function footer() {
         <li><a href="/projects/">Projects</a></li>
         <li><a href="/testimonials/">Testimonials</a></li>
         <li><a href="/service-area/">Service Area</a></li>
+        <li><a href="/blog/">Blog</a></li>
         <li><a href="/contact/">Contact &amp; Estimates</a></li>
         <li><a href="/privacy-policy/">Privacy Policy</a></li>
       </ul>

@@ -4,6 +4,7 @@ import { site, business, services, serviceUrl } from '../../site.config.mjs';
 import { pageHero, picture, icon, faq, ctaBand, esc, projectCard, lightboxDialog } from './components.mjs';
 import { projects as allProjects } from '../data/projects.mjs';
 import { reviewById } from '../data/reviews.mjs';
+import { postsForService } from '../data/posts.mjs';
 import { reviewCard } from './components.mjs';
 import { ORG_ID } from './layout.mjs';
 
@@ -132,6 +133,19 @@ ${
     <h2 id="svc-review-h" class="visually-hidden">Customer review</h2>
     ${reviewCard(reviewById(cfg.review))}
     <a class="link-arrow link-arrow--light" href="/testimonials/">Read more testimonials ${icon('arrow')}</a>
+  </div>
+</section>`
+    : ''
+}
+
+${
+  postsForService(cfg.slug).length
+    ? `<section class="section section--tight related" aria-labelledby="svc-guides-h">
+  <div class="container">
+    <h2 id="svc-guides-h" class="related__h">${esc(svc.name)} planning guides</h2>
+    <ul class="related__list related__list--wide" role="list">${postsForService(cfg.slug)
+      .map((p) => `<li><a class="related__link" href="/blog/${p.slug}/"><span>${p.h1}</span>${icon('arrow')}</a></li>`)
+      .join('')}</ul>
   </div>
 </section>`
     : ''

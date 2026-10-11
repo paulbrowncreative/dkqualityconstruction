@@ -200,8 +200,8 @@ ${lightboxDialog()}
         <p>Licensed and insured, and BBB Accredited since ${business.bbbAccreditedSince} with an A+ rating. Don’t take our word for it — <a href="${business.bbb}" rel="noopener" target="_blank">read the profile<span class="visually-hidden"> (opens in a new tab)</span></a>.</p>
       </li>
       <li>
-        <h3>Deck specialists</h3>
-        <p>Decking is our main focus, in both treated and composite systems — not a sideline to roofing or siding.</p>
+        <h3>Built right where you can’t see it</h3>
+        <p>Footings below the frost line, flashed ledger connections, framing sized for the load. The hidden parts decide how long a deck or remodel lasts, so that’s where we put our attention.</p>
       </li>
       <li>
         <h3>Local on both sides of the state line</h3>

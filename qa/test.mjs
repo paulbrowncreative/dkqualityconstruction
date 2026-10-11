@@ -13,6 +13,8 @@ const PAGES = ['/', '/services/', '/services/decks/', '/services/fencing/', '/se
 // Community pages are read from the built service-area hub so new ones are tested automatically.
 const LOCATION_PAGES = [...new Set([...(await (await fetch(BASE + '/service-area/')).text()).matchAll(/href="(\/service-area\/[a-z0-9-]+\/)"/g)].map((m) => m[1]))];
 PAGES.push(...LOCATION_PAGES);
+const BLOG_PAGES = [...new Set([...(await (await fetch(BASE + '/blog/')).text()).matchAll(/href="(\/blog\/[a-z0-9-]+\/)"/g)].map((m) => m[1]))];
+PAGES.push('/blog/', ...BLOG_PAGES);
 const WIDTHS = [320, 375, 414, 768, 1024, 1280, 1440, 1920];
 
 const results = { base: BASE, ranAt: new Date().toISOString(), checks: [] };
@@ -244,6 +246,31 @@ for (const [label, vp] of [['mobile', { width: 375, height: 812 }], ['desktop', 
   }
   record(`Community pages (${LOCATION_PAGES.length}): linked from hub, City/Place schema in its county, official permit link, 5 nearby links, canonical, no review schema`,
     LOCATION_PAGES.length >= 24 && !problems.length, problems.join('; '));
+}
+
+/* 5e. Blog: BlogPosting schema, article OG type, contents links, every service has a guide linked from its page */
+{
+  const problems = [];
+  const svcs = new Set();
+  for (const p of BLOG_PAGES) {
+    const h = await (await fetch(BASE + p)).text();
+    const ld = [...h.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].flatMap((m) => JSON.parse(m[1])['@graph']);
+    const a = ld.find((n) => n['@type'] === 'BlogPosting');
+    if (!a || !a.headline || !a.datePublished || !a.author || !a.publisher || !a.articleSection) problems.push(`${p}: BlogPosting incomplete`);
+    else svcs.add(a.articleSection);
+    if (!h.includes('<meta property="og:type" content="article">')) problems.push(`${p}: og:type`);
+    const ids = [...h.matchAll(/<nav class="card post__toc"[\s\S]*?<\/nav>/g)][0]?.[0].match(/href="#([^"]+)"/g) || [];
+    for (const id of ids) if (!h.includes(`id="${id.slice(7, -1)}"`)) problems.push(`${p}: toc ${id}`);
+    if (!/<time datetime="\d{4}-\d{2}-\d{2}">/.test(h)) problems.push(`${p}: no date`);
+  }
+  for (const sp of ['/services/decks/', '/services/fencing/', '/services/basement-finishing/', '/services/bathroom-remodeling/', '/services/kitchen-remodeling/']) {
+    const h = await (await fetch(BASE + sp)).text();
+    if (!/href="\/blog\/[a-z0-9-]+\/"/.test(h)) problems.push(`${sp}: no guide link`);
+  }
+  const overview = await (await fetch(BASE + '/services/')).text();
+  for (const id of ['flooring', 'garages']) if (!new RegExp(`id="${id}"[\\s\\S]*?svc-row__guide`).test(overview)) problems.push(`/services/#${id}: no guide link`);
+  record(`Blog (${BLOG_PAGES.length} posts): complete BlogPosting schema, og:type article, working contents links, a guide for all 7 services linked from service pages`,
+    BLOG_PAGES.length >= 7 && svcs.size === 7 && !problems.length, problems.join('; ') + ` sections=${[...svcs].join('|')}`);
 }
 
 /* 6. On-page SEO checks */

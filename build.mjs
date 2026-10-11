@@ -15,7 +15,7 @@ const DIST = join(ROOT, 'dist');
 
 const pageModules = [
   'home', 'services', 'services-decks', 'services-fencing', 'services-basement',
-  'services-bathroom', 'services-kitchen', 'projects', 'testimonials', 'service-area', 'locations', 'about', 'contact',
+  'services-bathroom', 'services-kitchen', 'projects', 'testimonials', 'service-area', 'locations', 'blog', 'posts', 'about', 'contact',
   'thank-you', 'privacy', 'not-found',
 ];
 
@@ -86,7 +86,7 @@ async function build() {
   const indexable = pages.filter((p) => !p.noindex && p.sitemap !== false);
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${indexable.map((p) => `  <url><loc>${site.url}${p.path}</loc><lastmod>${today}</lastmod></url>`).join('\n')}
+${indexable.map((p) => `  <url><loc>${site.url}${p.path}</loc><lastmod>${p.lastmod || today}</lastmod></url>`).join('\n')}
 </urlset>
 `;
   writeFileSync(join(DIST, 'sitemap.xml'), sitemap);

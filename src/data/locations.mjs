@@ -44,7 +44,7 @@ export const locations = [
     typeLabel: 'Charter township',
     zips: ['48162', '48166', '48117'], lat: 41.960969, lon: -83.35808,
     hero: 'project-deck-waterfront-covered',
-    heroAlt: 'Large gray composite deck partly under a roof overhang, with white railings and black balusters looking out over the water, built by DK Quality Construction',
+    heroAlt: 'Large gray deck partly under a roof overhang, with white railings and black balusters looking out over the water, built by DK Quality Construction',
     description: 'Decks, porches, fencing and remodeling in Frenchtown Township, MI — Stony Point, Detroit Beach, Woodland Beach and inland. Township permits handled for you.',
     lede: 'From the Lake Erie shoreline at Stony Point, Detroit Beach and Woodland Beach to the subdivisions inland, we build decks and fences and remodel homes across Frenchtown Township.',
     intro: `<p>Frenchtown Charter Township wraps around the north side of Monroe and runs to Lake Erie. It takes in the lakeshore communities of Stony Point, Detroit Beach and Woodland Beach, and most of Sterling State Park — Michigan’s only state park on Lake Erie.</p>
@@ -173,7 +173,7 @@ export const locations = [
     typeLabel: 'La Salle Township',
     zips: ['48145'], lat: 41.857808, lon: -83.478302,
     hero: 'project-deck-ground-level-brown-wide',
-    heroAlt: 'Wide view across a large low brown composite deck with a darker border and matching skirting along a brick home, built by DK Quality Construction',
+    heroAlt: 'Wide view across a large low brown deck with a darker border and matching skirting along a brick home, built by DK Quality Construction',
     description: 'Decks, fences and remodeling in La Salle Township, MI (48145), from the Lake Erie shore to the open country inland. Township permits handled for you.',
     lede: 'Decks, fences and home remodels across La Salle Township — from the lakeshore at Grand View and North Shores to the open country inland.',
     intro: `<p>La Salle Township lies just southwest of the City of Monroe, between Monroe Charter Township and Erie and Bedford townships, with Lake Erie on its eastern edge. Lakeshore neighborhoods such as Grand View and North Shores sit on the water; most of the township inland is open country.</p>
@@ -215,7 +215,7 @@ export const locations = [
     typeLabel: 'Village in Dundee Township',
     zips: ['48131'], lat: 41.966485, lon: -83.669419,
     hero: 'project-deck-waterfront-covered',
-    heroAlt: 'Large gray composite deck partly under a roof overhang, with white railings looking out over the water, built by DK Quality Construction',
+    heroAlt: 'Large gray deck partly under a roof overhang, with white railings looking out over the water, built by DK Quality Construction',
     description: 'Deck builder and remodeler in Dundee, MI (48131). Decks, fences and remodels near the River Raisin, with Village of Dundee zoning and building permits handled.',
     lede: 'Decks, fences and home remodels in the Village of Dundee and Dundee Township — from the River Raisin neighborhoods to the newer homes off US-23.',
     intro: `<p>Dundee is a village of about 5,300 people where US-23 meets M-50 — the “Hub of the Highways.” The River Raisin runs through the middle of town, past the Old Mill Museum on the river dam and the National Register-listed Dundee Historic District.</p>
@@ -257,7 +257,7 @@ export const locations = [
     typeLabel: 'Village in Exeter Township',
     zips: ['48159'], lat: 42.010183, lon: -83.509259,
     hero: 'project-deck-ground-level-brown-wide',
-    heroAlt: 'Wide view across a large low brown composite deck with a darker border and matching skirting along a brick home, built by DK Quality Construction',
+    heroAlt: 'Wide view across a large low brown deck with a darker border and matching skirting along a brick home, built by DK Quality Construction',
     description: 'Deck builder and remodeler for Maybee, MI (48159) and Exeter Township. Decks, fences, basements and baths with Village of Maybee permits handled.',
     lede: 'Decks, fences and interior remodels for homes in the Village of Maybee and the surrounding Exeter Township countryside.',
     intro: `<p>Maybee is a small village in Exeter Township, roughly halfway between Milan and Monroe. Sandy Creek and the Antes Drain run through the village toward Lake Erie, and the area around it is mostly farmland and rural homes.</p>
@@ -362,7 +362,7 @@ export const locations = [
     typeLabel: 'City · Lucas County seat',
     zips: ['436xx (varies by neighborhood)'], lat: 41.664071, lon: -83.581861,
     hero: 'project-deck-ground-level-brown-wide',
-    heroAlt: 'Wide view across a large low brown composite deck with a darker border and matching skirting along a brick home, built by DK Quality Construction',
+    heroAlt: 'Wide view across a large low brown deck with a darker border and matching skirting along a brick home, built by DK Quality Construction',
     description: 'Toledo, OH deck builder and remodeler. Decks, porches, fences, basements and baths, with City of Toledo permits and historic-district approvals handled.',
     lede: 'Decks, porches, fences and remodels across Toledo neighborhoods — built to the Residential Code of Ohio and permitted through the City of Toledo.',
     intro: `<p>Toledo sits at the western end of Lake Erie along the Maumee River, less than 20 miles from our Monroe base. It runs its own Division of Building Inspection, so Toledo projects are permitted by the city rather than Lucas County.</p>
@@ -404,7 +404,7 @@ export const locations = [
     typeLabel: 'City on the Maumee River',
     zips: ['43537'], lat: 41.571125, lon: -83.66625,
     hero: 'project-deck-waterfront-covered',
-    heroAlt: 'Large gray composite deck partly under a roof overhang, with white railings looking out over the water, built by DK Quality Construction',
+    heroAlt: 'Large gray deck partly under a roof overhang, with white railings looking out over the water, built by DK Quality Construction',
     description: 'Deck builder and remodeler in Maumee, OH (43537). Decks, fences and remodels with City of Maumee zoning and building permits handled for you.',
     lede: 'Decks, fences and remodels in Maumee — from the historic Uptown streets to the neighborhoods along the Maumee River.',
     intro: `<p>Maumee is a city on the Maumee River about 10 miles southwest of Toledo, with a National Register-listed Uptown Historic District along Conant, Wayne and Dudley streets. It runs its own building and zoning department.</p>
