@@ -433,7 +433,8 @@ body { padding-bottom: calc(4rem + env(safe-area-inset-bottom)); }
 .estimate__grid { display: grid; gap: var(--space-7); align-items: start; }
 @media (min-width: 60em) { .estimate__grid { grid-template-columns: 0.85fr 1.15fr; gap: clamp(3rem, 5vw, 5rem); } .estimate--page .estimate__grid { grid-template-columns: 1.35fr 0.65fr; } }
 .estimate__form { padding: clamp(1.25rem, 0.75rem + 2.5vw, 2.5rem); border-top: 4px solid var(--brass); }
-.estimate__call { margin-top: var(--space-5); font-weight: 600; }
+.estimate__call { display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 0.6rem; margin-top: var(--space-5); font-weight: 600; line-height: 1.2; }
+.estimate__call .link-phone .icon { width: 1.15em; height: 1.15em; flex: none; }
 .link-phone { display: inline-flex; align-items: center; gap: 0.35em; font-weight: 800; color: var(--ink); font-size: 1.15rem; text-decoration: none; }
 .link-phone .icon { color: var(--brass-dark); }
 .form-title { font-size: 1.5rem; }
