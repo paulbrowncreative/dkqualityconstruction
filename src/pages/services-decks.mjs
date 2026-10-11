@@ -68,7 +68,7 @@ export default servicePage({
   eyebrow: 'Decks · Our specialty',
   h1: 'Deck builder in Monroe, MI',
   lede: 'New pressure-treated and composite decks for homes across Monroe County, Michigan and Lucas County, Ohio — framed right, finished clean.',
-  heroAlt: 'Aerial view of a raised gray deck built by DK Quality Construction, with white-and-black railings, a decorative privacy screen and a wide staircase',
+  heroAlt: 'Aerial view of a raised deck built by DK Quality Construction, with black metal railings, a dining area and a long staircase, above a screened room',
   introHeading: 'Decks are what we do most.',
   intro: `
     <p>A deck is the most-used “room” of a lot of Monroe-area homes from May through October. Decking is DK Quality Construction’s specialty, and we build in both <strong>pressure-treated lumber</strong> and <strong>composite decking systems</strong>.</p>
@@ -103,7 +103,7 @@ export default servicePage({
       p: `<p>Deck surfaces more than 30 inches above grade need guards, and stairs need consistent rise and run with a graspable handrail. Most new decks also need a building permit — the specifics depend on your city or township, and we’ll talk it through at the estimate.</p>`,
     },
   ],
-  projects: ['P-012', 'P-010', 'P-014'],
+  projects: ['P-016', 'P-018', 'P-014'],
   faqs: [
     {
       q: 'How much does a new deck cost in Monroe?',

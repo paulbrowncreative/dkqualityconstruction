@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "project": "DK Quality Construction website — client-supplied project photos and reviews",
-  "updated": "2026-10-10",
+  "updated": "2026-10-11",
   "conventions": {
     "assetId": "DKQ-<batch 2 digits>-<seq 2 digits>, e.g. DKQ-01-03. Never reused or renumbered.",
     "originals": "assets-src/uploads/batch-NN/<original filename, sanitized> — never modified",
@@ -72,6 +72,18 @@
         "DKQ-04-05"
       ],
       "summary": "2nd aerial deck (raised deck over screened room → new homepage hero), 1 pressure-treated deck (replaces last stock deck photo), stairs+landing project from 2 angles, 1 pond platform deck. No before/after pairs, no reviews."
+    },
+    {
+      "batch": 5,
+      "received": "2026-10-11",
+      "assetIds": [
+        "DKQ-05-01",
+        "DKQ-05-02",
+        "DKQ-05-03",
+        "DKQ-05-04",
+        "DKQ-05-05"
+      ],
+      "summary": "3rd aerial deck (built-in benches → new homepage hero), above-ground pool deck, 2nd pressure-treated deck, 2 more completed decks. No before/after pairs, no reviews."
     }
   ],
   "projects": [
@@ -198,6 +210,46 @@
       "category": "decks",
       "assets": [
         "DKQ-04-04"
+      ]
+    },
+    {
+      "projectId": "P-016",
+      "title": "Wide deck with built-in benches and center stairs",
+      "category": "decks",
+      "assets": [
+        "DKQ-05-01"
+      ]
+    },
+    {
+      "projectId": "P-017",
+      "title": "Deck with black metal railings and side stairs",
+      "category": "decks",
+      "assets": [
+        "DKQ-05-02"
+      ]
+    },
+    {
+      "projectId": "P-018",
+      "title": "Pool deck around an above-ground pool",
+      "category": "decks",
+      "assets": [
+        "DKQ-05-03"
+      ]
+    },
+    {
+      "projectId": "P-019",
+      "title": "Large pressure-treated deck with wood railings",
+      "category": "decks",
+      "assets": [
+        "DKQ-05-04"
+      ]
+    },
+    {
+      "projectId": "P-020",
+      "title": "Raised deck with white railings and dark skirting",
+      "category": "decks",
+      "assets": [
+        "DKQ-05-05"
       ]
     }
   ],
@@ -365,7 +417,7 @@
       "format": "jpeg",
       "duplicateOf": null,
       "type": "project-photo",
-      "classification": "general-portfolio (completed) — aerial; DECKS PAGE HERO (homepage hero moved to DKQ-04-05)",
+      "classification": "general-portfolio (completed) — AERIAL; PROJECTS PAGE HERO",
       "projectId": "P-001",
       "pairId": null,
       "reviewId": null,
@@ -407,9 +459,7 @@
       "altText": "Aerial view of a raised gray deck with a dark border, white posts and black balusters, a decorative black privacy screen along one side, and a wide staircase down to the yard",
       "caption": "Gray deck with a contrasting border, white-and-black railings, a decorative privacy screen and a wide staircase.",
       "websiteLocations": [
-        "/services/decks/ (page hero)",
-        "/services/ (Decks row)",
-        "/projects/ (featured)"
+        "/projects/ (page hero + featured card)"
       ],
       "status": "integrated",
       "questions": [
@@ -431,13 +481,7 @@
       "derivedCrops": [
         {
           "name": "project-deck-aerial-privacy-screen-portrait",
-          "crop": [
-            520,
-            0,
-            1720,
-            1500
-          ],
-          "use": "kept for possible future phone hero; not currently referenced"
+          "status": "retired"
         }
       ]
     },
@@ -624,9 +668,7 @@
       "caption": "Covered deck with a stained plank ceiling, black beams and gable bracing, dark brown boards and black metal railings.",
       "websiteLocations": [
         "/projects/",
-        "/ (Recent work)",
-        "/services/decks/ (Recent projects)",
-        "/about/ (See recent work)"
+        "/about/"
       ],
       "status": "integrated",
       "questions": [
@@ -1008,7 +1050,7 @@
       "format": "jpeg",
       "duplicateOf": null,
       "type": "project-photo",
-      "classification": "general-portfolio (completed) — wide angle; PROJECTS PAGE HERO; cover of P-010",
+      "classification": "general-portfolio (completed) — wide angle; cover of P-010 (featured)",
       "projectId": "P-010",
       "pairId": null,
       "reviewId": null,
@@ -1050,9 +1092,8 @@
       "altText": "Wide view across a large low brown deck with a darker picture-frame border and matching skirting, running along a red-brick home into the backyard",
       "caption": "Wide, low deck across the back of a brick home, with a contrasting picture-frame border and matching skirting.",
       "websiteLocations": [
-        "/projects/ (page hero + featured card)",
-        "/ (Recent work)",
-        "/services/decks/ (Recent projects)"
+        "/projects/ (featured card)",
+        "/ (Recent work)"
       ],
       "status": "integrated",
       "questions": [
@@ -1556,7 +1597,7 @@
       "format": "jpeg",
       "duplicateOf": null,
       "type": "project-photo",
-      "classification": "general-portfolio (completed) — AERIAL; HOMEPAGE HERO (desktop + phone crop) and social share image, per client aerial-first rule",
+      "classification": "general-portfolio (completed) — AERIAL; DECKS PAGE HERO (homepage hero moved to DKQ-05-01)",
       "projectId": "P-012",
       "pairId": null,
       "reviewId": null,
@@ -1598,10 +1639,9 @@
       "altText": "Aerial view of a raised brown deck with black metal railings, a dining table and a long staircase, built above a screened room with its own steps, behind a two-story home",
       "caption": "Raised deck with black metal railings and a long staircase, above a screened room with its own steps.",
       "websiteLocations": [
-        "/ (homepage hero)",
-        "/services/decks/ (Recent projects)",
-        "/projects/ (featured)",
-        "Open Graph / social share image"
+        "/services/decks/ (page hero)",
+        "/services/ (Decks row)",
+        "/projects/ (featured)"
       ],
       "status": "integrated",
       "questions": [
@@ -1615,13 +1655,7 @@
       "derivedCrops": [
         {
           "name": "project-deck-aerial-screened-room-portrait",
-          "crop": [
-            420,
-            0,
-            1620,
-            1500
-          ],
-          "use": "homepage hero on phones (<48em)"
+          "status": "retired (no longer homepage hero)"
         }
       ],
       "optimizedDimensions": {
@@ -1632,6 +1666,354 @@
           2000
         ],
         "aspect": "2000x1500"
+      }
+    },
+    {
+      "id": "DKQ-05-01",
+      "batch": 5,
+      "originalFilename": "21.jpg",
+      "original": "assets-src/uploads/batch-05/21.jpg",
+      "sha256": "343a80ff18a8cf10213ef8daeda10451575169f244c2e45db12b66328f678fee",
+      "bytes": 423898,
+      "originalDimensions": [
+        2000,
+        1500
+      ],
+      "format": "jpeg",
+      "duplicateOf": null,
+      "type": "project-photo",
+      "classification": "general-portfolio (completed) — AERIAL; HOMEPAGE HERO (full 4:3 band on phones/tablets, framed low on desktop) and social share image",
+      "projectId": "P-016",
+      "pairId": null,
+      "reviewId": null,
+      "storedFilename": "project-deck-aerial-built-in-benches",
+      "optimized": [
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-built-in-benches-1024.avif",
+          "bytes": 64402
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-built-in-benches-1024.jpg",
+          "bytes": 166378
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-built-in-benches-1600.avif",
+          "bytes": 131331
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-built-in-benches-1600.jpg",
+          "bytes": 361620
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-built-in-benches-2000.avif",
+          "bytes": 196786
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-built-in-benches-2000.jpg",
+          "bytes": 465834
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-built-in-benches-640.avif",
+          "bytes": 27681
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-aerial-built-in-benches-640.jpg",
+          "bytes": 67612
+        }
+      ],
+      "altText": "Aerial view of a wide gray deck across the back of a two-story home, with built-in benches on both sides, white-trimmed center stairs and gray skirting",
+      "caption": "Deck spanning the back of the home, with built-in benches on both sides and wide center stairs trimmed in white.",
+      "websiteLocations": [
+        "/ (homepage hero)",
+        "/services/decks/ (Recent projects)",
+        "/projects/ (featured)",
+        "Open Graph / social share image"
+      ],
+      "status": "integrated",
+      "questions": [
+        "Decking/trim products (appear composite with white PVC trim)",
+        "City (optional) — a lake/river is visible in the distance"
+      ],
+      "approval": "pending owner confirmation of project details",
+      "category": "Decks",
+      "processing": "Resized (Lanczos) + light unsharp mask; AVIF q52 + progressive JPEG q78. No retouching, no AI upscaling, no content changes.",
+      "optimizedDimensions": {
+        "widths": [
+          640,
+          1024,
+          1600,
+          2000
+        ],
+        "aspect": "2000x1500"
+      }
+    },
+    {
+      "id": "DKQ-05-02",
+      "batch": 5,
+      "originalFilename": "22.jpg",
+      "original": "assets-src/uploads/batch-05/22.jpg",
+      "sha256": "899c694cfbd78fe02f5d7c3144d6b60e2f4c05beaff6716b3c5ea89b7c6a7647",
+      "bytes": 472381,
+      "originalDimensions": [
+        1500,
+        2000
+      ],
+      "format": "jpeg",
+      "duplicateOf": null,
+      "type": "project-photo",
+      "classification": "general-portfolio (completed)",
+      "projectId": "P-017",
+      "pairId": null,
+      "reviewId": null,
+      "storedFilename": "project-deck-brown-black-rail-patio",
+      "optimized": [
+        {
+          "file": "src/assets/img/photos/project-deck-brown-black-rail-patio-1024.avif",
+          "bytes": 135839
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-brown-black-rail-patio-1024.jpg",
+          "bytes": 310970
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-brown-black-rail-patio-1500.avif",
+          "bytes": 249692
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-brown-black-rail-patio-1500.jpg",
+          "bytes": 518996
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-brown-black-rail-patio-640.avif",
+          "bytes": 60741
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-brown-black-rail-patio-640.jpg",
+          "bytes": 131372
+        }
+      ],
+      "altText": "Brown deck with black metal railings, matching skirting and side stairs down to a concrete patio, beside a white-sided home with a fenced pool",
+      "caption": "Brown deck with black metal railings, matching skirting and side stairs down to a concrete patio.",
+      "websiteLocations": [
+        "/projects/"
+      ],
+      "status": "integrated",
+      "questions": [
+        "Did DK build the pool fence/patio, or the deck only?",
+        "Decking/railing products"
+      ],
+      "approval": "pending owner confirmation of project details",
+      "category": "Decks",
+      "processing": "Resized (Lanczos) + light unsharp mask; AVIF q52 + progressive JPEG q78. No retouching, no AI upscaling, no content changes.",
+      "optimizedDimensions": {
+        "widths": [
+          640,
+          1024,
+          1500
+        ],
+        "aspect": "1500x2000"
+      }
+    },
+    {
+      "id": "DKQ-05-03",
+      "batch": 5,
+      "originalFilename": "23.jpg",
+      "original": "assets-src/uploads/batch-05/23.jpg",
+      "sha256": "f6b32f669ab6f062281da79649e248834d62c7d9d37bd2be85c31ec755b298b0",
+      "bytes": 386846,
+      "originalDimensions": [
+        1500,
+        2000
+      ],
+      "format": "jpeg",
+      "duplicateOf": null,
+      "type": "project-photo",
+      "classification": "general-portfolio (completed) — pool deck",
+      "projectId": "P-018",
+      "pairId": null,
+      "reviewId": null,
+      "storedFilename": "project-deck-above-ground-pool",
+      "optimized": [
+        {
+          "file": "src/assets/img/photos/project-deck-above-ground-pool-1024.avif",
+          "bytes": 99407
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-above-ground-pool-1024.jpg",
+          "bytes": 256707
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-above-ground-pool-1500.avif",
+          "bytes": 188655
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-above-ground-pool-1500.jpg",
+          "bytes": 423026
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-above-ground-pool-640.avif",
+          "bytes": 45919
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-above-ground-pool-640.jpg",
+          "bytes": 114782
+        }
+      ],
+      "altText": "Gray deck with white railings and black balusters built around an above-ground pool, with a lawn and open field beyond",
+      "caption": "Gray deck wrapped around an above-ground pool, with white-and-black railings and open views across the yard.",
+      "websiteLocations": [
+        "/projects/",
+        "/ (Recent work)",
+        "/services/decks/ (Recent projects)"
+      ],
+      "status": "integrated",
+      "questions": [
+        "Decking/railing products",
+        "City (optional)"
+      ],
+      "approval": "pending owner confirmation of project details",
+      "category": "Decks",
+      "processing": "Resized (Lanczos) + light unsharp mask; AVIF q52 + progressive JPEG q78. No retouching, no AI upscaling, no content changes.",
+      "optimizedDimensions": {
+        "widths": [
+          640,
+          1024,
+          1500
+        ],
+        "aspect": "1500x2000"
+      }
+    },
+    {
+      "id": "DKQ-05-04",
+      "batch": 5,
+      "originalFilename": "24.jpg",
+      "original": "assets-src/uploads/batch-05/24.jpg",
+      "sha256": "e5e8d2e4e407b089a5bf5f405c6ff5ddbbdb692b30d41a8fe1825857a932760e",
+      "bytes": 472654,
+      "originalDimensions": [
+        1125,
+        1500
+      ],
+      "format": "jpeg",
+      "duplicateOf": null,
+      "type": "project-photo",
+      "classification": "general-portfolio (completed) — pressure-treated deck",
+      "projectId": "P-019",
+      "pairId": null,
+      "reviewId": null,
+      "storedFilename": "project-deck-pressure-treated-wood-rail",
+      "optimized": [
+        {
+          "file": "src/assets/img/photos/project-deck-pressure-treated-wood-rail-1024.avif",
+          "bytes": 182130
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-pressure-treated-wood-rail-1024.jpg",
+          "bytes": 384958
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-pressure-treated-wood-rail-1125.avif",
+          "bytes": 231146
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-pressure-treated-wood-rail-1125.jpg",
+          "bytes": 452559
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-pressure-treated-wood-rail-640.avif",
+          "bytes": 81913
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-pressure-treated-wood-rail-640.jpg",
+          "bytes": 165770
+        }
+      ],
+      "altText": "Newly built pressure-treated wood deck with angled corners and wood railings with black metal balusters, under a large shade tree",
+      "caption": "Pressure-treated wood deck with angled corners and wood railings with black metal balusters.",
+      "websiteLocations": [
+        "/projects/"
+      ],
+      "status": "integrated",
+      "questions": [
+        "Confirm pressure-treated lumber",
+        "City (optional)"
+      ],
+      "approval": "pending owner confirmation of project details",
+      "category": "Decks",
+      "processing": "Resized (Lanczos) + light unsharp mask; AVIF q52 + progressive JPEG q78. No retouching, no AI upscaling, no content changes.",
+      "optimizedDimensions": {
+        "widths": [
+          640,
+          1024,
+          1125
+        ],
+        "aspect": "1125x1500"
+      }
+    },
+    {
+      "id": "DKQ-05-05",
+      "batch": 5,
+      "originalFilename": "25.jpg",
+      "original": "assets-src/uploads/batch-05/25.jpg",
+      "sha256": "437634f95da4122397331dbf2ffc64e0c49a06a536d38be5aa6b216b0a2854d6",
+      "bytes": 445140,
+      "originalDimensions": [
+        1125,
+        1500
+      ],
+      "format": "jpeg",
+      "duplicateOf": null,
+      "type": "project-photo",
+      "classification": "general-portfolio (completed)",
+      "projectId": "P-020",
+      "pairId": null,
+      "reviewId": null,
+      "storedFilename": "project-deck-white-rail-dark-skirting",
+      "optimized": [
+        {
+          "file": "src/assets/img/photos/project-deck-white-rail-dark-skirting-1024.avif",
+          "bytes": 168128
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-white-rail-dark-skirting-1024.jpg",
+          "bytes": 359212
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-white-rail-dark-skirting-1125.avif",
+          "bytes": 218281
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-white-rail-dark-skirting-1125.jpg",
+          "bytes": 424793
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-white-rail-dark-skirting-640.avif",
+          "bytes": 70712
+        },
+        {
+          "file": "src/assets/img/photos/project-deck-white-rail-dark-skirting-640.jpg",
+          "bytes": 149062
+        }
+      ],
+      "altText": "Raised gray deck with white railings and black balusters, white fascia trim, dark skirting and a staircase to the lawn, behind a gray two-story home",
+      "caption": "Gray deck with white-and-black railings, white fascia, dark skirting and a staircase to the yard.",
+      "websiteLocations": [
+        "/projects/"
+      ],
+      "status": "integrated",
+      "questions": [
+        "Decking/railing/skirting products"
+      ],
+      "approval": "pending owner confirmation of project details",
+      "category": "Decks",
+      "processing": "Resized (Lanczos) + light unsharp mask; AVIF q52 + progressive JPEG q78. No retouching, no AI upscaling, no content changes.",
+      "optimizedDimensions": {
+        "widths": [
+          640,
+          1024,
+          1125
+        ],
+        "aspect": "1125x1500"
       }
     }
   ],

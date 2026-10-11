@@ -84,6 +84,9 @@
     const handle = root.querySelector('[data-compare-handle]');
     let pos = 50;
     let drag = null;
+    // Frame ratio + shared object-position come from data attributes (CSP forbids inline styles).
+    if (root.dataset.ratio) root.style.setProperty('--ratio', root.dataset.ratio);
+    if (root.dataset.position) root.style.setProperty('--obj', root.dataset.position);
     const set = (v) => {
       pos = Math.round(Math.min(100, Math.max(0, v)) * 10) / 10;
       root.style.setProperty('--pos', `${pos}%`);

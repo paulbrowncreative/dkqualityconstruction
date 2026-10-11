@@ -244,7 +244,7 @@ ${items
 export function compareSlider({ id, before, after, beforeAlt, afterAlt, label, ratio = '4 / 3', position = '50% 50%', sizes = '(min-width: 960px) 60vw, 100vw', eager = false }) {
   if (!id || !label) throw new Error('compareSlider needs id and label');
   const hint = `${id}-hint`;
-  return `<figure class="compare-slider" data-compare style="--ratio: ${ratio}; --pos: 50%; --obj: ${position}">
+  return `<figure class="compare-slider" data-compare data-ratio="${esc(ratio)}" data-position="${esc(position)}">
   <div class="compare-slider__frame">
     <div class="compare-slider__layer compare-slider__layer--after">${picture(after, { alt: afterAlt, sizes, eager })}</div>
     <div class="compare-slider__layer compare-slider__layer--before" data-compare-before>${picture(before, { alt: beforeAlt, sizes, eager })}</div>

@@ -33,7 +33,7 @@ PHOTOS = {
     # ---- DK Quality Construction's own project photos (client uploads; originals untouched) ----
     # Batch 1 — see project-assets-manifest.json for IDs.
     "project-deck-aerial-privacy-screen": {"src": "assets-src/uploads/batch-01/3.jpg", "widths": HERO_WIDTHS},
-    "project-deck-aerial-privacy-screen-portrait": {"src": "assets-src/uploads/batch-01/3.jpg", "crop": (520, 0, 1720, 1500), "widths": [480, 720, 960]},
+    # Phone crop of this aerial (crop (520, 0, 1720, 1500)) retired when it stopped being the homepage hero.
     "project-deck-waterfront-covered": {"src": "assets-src/uploads/batch-01/2.jpg", "widths": HERO_WIDTHS},
     "project-deck-cedar-tone-stairs": {"src": "assets-src/uploads/batch-01/4.jpg"},
     "project-deck-gray-corner-stairs": {"src": "assets-src/uploads/batch-01/5.jpg"},
@@ -56,7 +56,14 @@ PHOTOS = {
     "project-stairs-landing-brick-close": {"src": "assets-src/uploads/batch-04/18.jpg"},
     "project-deck-pond-platform": {"src": "assets-src/uploads/batch-04/19.jpg"},
     "project-deck-aerial-screened-room": {"src": "assets-src/uploads/batch-04/20.jpg", "widths": HERO_WIDTHS},
-    "project-deck-aerial-screened-room-portrait": {"src": "assets-src/uploads/batch-04/20.jpg", "crop": (420, 0, 1620, 1500), "widths": [480, 720, 960]},
+    # Phone crop of this aerial (crop (420, 0, 1620, 1500)) retired when it stopped being the homepage hero.
+    # Batch 5
+    "project-deck-aerial-built-in-benches": {"src": "assets-src/uploads/batch-05/21.jpg", "widths": HERO_WIDTHS},
+    # Homepage hero on phones now shows the full 4:3 aerial as a band above the copy, so no portrait crop is needed.
+    "project-deck-brown-black-rail-patio": {"src": "assets-src/uploads/batch-05/22.jpg"},
+    "project-deck-above-ground-pool": {"src": "assets-src/uploads/batch-05/23.jpg"},
+    "project-deck-pressure-treated-wood-rail": {"src": "assets-src/uploads/batch-05/24.jpg"},
+    "project-deck-white-rail-dark-skirting": {"src": "assets-src/uploads/batch-05/25.jpg"},
     "framing-new-construction": {},
 }
 
@@ -154,8 +161,8 @@ def process_brand():
     icon(48, 0.03).save(ROOT / "src" / "static" / "favicon.ico", sizes=[(16, 16), (32, 32), (48, 48)])
 
     # Open Graph image: hero photo, darkened, with the full logo.
-    hero = Image.open(ROOT / "assets-src/uploads/batch-04/20.jpg").convert("RGB")  # DKQ-04-05, aerial deck (homepage hero)
-    hero = ImageOps.fit(hero, (1200, 630), Image.LANCZOS, centering=(0.62, 0.45))
+    hero = Image.open(ROOT / "assets-src/uploads/batch-05/21.jpg").convert("RGB")  # DKQ-05-01, aerial deck (homepage hero)
+    hero = ImageOps.fit(hero, (1200, 630), Image.LANCZOS, centering=(0.55, 0.62))
     shade = Image.new("RGBA", (1200, 630), (10, 10, 12, 0))
     # Darkest on the left where the logo sits, easing off to the right.
     grad = Image.linear_gradient("L").rotate(90).resize((1200, 630))

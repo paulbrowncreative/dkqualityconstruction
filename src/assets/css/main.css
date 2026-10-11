@@ -304,28 +304,33 @@ body { padding-bottom: calc(4rem + env(safe-area-inset-bottom)); }
 .frame { display: block; overflow: hidden; border-radius: var(--radius); background: var(--paper-2); }
 .frame img { width: 100%; height: 100%; object-fit: cover; }
 
-/* ---------- Hero (home) ---------- */
-.hero { position: relative; isolation: isolate; color: var(--white); background: var(--ink); min-height: min(88svh, 52rem); display: grid; align-items: end; }
-.hero__media, .hero__media picture { position: absolute; inset: 0; z-index: -2; }
-.hero__media img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
-.hero::before {
-  content: ''; position: absolute; inset: 0; z-index: -1;
-  background:
-    linear-gradient(180deg, rgb(18 18 20 / 0.5) 0%, rgb(18 18 20 / 0.62) 28%, rgb(18 18 20 / 0.86) 58%, rgb(18 18 20 / 0.95) 100%);
-}
-.hero__inner { padding-block: clamp(4.5rem, 14vh, 12rem) clamp(2.5rem, 6vw, 5rem); max-width: calc(var(--container) + var(--gutter) * 2); }
+/* ---------- Hero (home) ----------
+   Phones and tablets (<64em): the full aerial photo sits as a 4:3 band under the header, with the copy below it
+   on ink, so the deck itself is never hidden behind text. ≥64em: full-bleed photo behind
+   the copy. Modifier classes frame the desktop crop per photo (no inline styles: CSP). */
+.hero { position: relative; isolation: isolate; color: var(--white); background: var(--ink); }
+.hero__media { position: relative; aspect-ratio: 4 / 3; overflow: hidden; }
+.hero__media picture { position: absolute; inset: 0; }
+.hero__media img { width: 100%; height: 100%; object-fit: cover; }
+.hero__media::after { content: ''; position: absolute; inset: auto 0 0 0; height: 30%; background: linear-gradient(180deg, rgb(18 18 20 / 0), var(--ink)); }
+.hero__inner { padding-block: var(--space-5) var(--space-7); max-width: calc(var(--container) + var(--gutter) * 2); }
 .hero__title { font-size: var(--fs-h1); max-width: 15ch; margin-bottom: var(--space-5); font-weight: 800; line-height: 1.04; }
 .hero__accent { color: var(--brass); }
 .hero__lede { max-width: 40rem; font-size: var(--fs-lg); color: #dcdcd8; margin-bottom: var(--space-6); }
 .hero__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); }
-@media (min-width: 48em) {
+@media (min-width: 64em) {
+  .hero { min-height: min(88svh, 52rem); display: grid; align-items: center; }
+  .hero__media { position: absolute; inset: 0; z-index: -2; aspect-ratio: auto; }
+  .hero__media::after { content: none; }
+  .hero__media img { object-position: 70% 55%; }
+  .hero--frame-low .hero__media img { object-position: 55% 80%; }
   .hero::before {
+    content: ''; position: absolute; inset: 0; z-index: -1;
     background:
       linear-gradient(90deg, rgb(18 18 20 / 0.94) 0%, rgb(18 18 20 / 0.8) 40%, rgb(18 18 20 / 0.2) 68%, rgb(18 18 20 / 0) 100%),
       linear-gradient(180deg, rgb(18 18 20 / 0.3) 0%, rgb(18 18 20 / 0) 25%, rgb(18 18 20 / 0) 70%, rgb(18 18 20 / 0.5) 100%);
   }
-  .hero { align-items: center; }
-  .hero__media img { object-position: 70% 55%; }
+  .hero__inner { padding-block: clamp(4.5rem, 14vh, 12rem) clamp(2.5rem, 6vw, 5rem); }
 }
 @media (max-width: 29.99em) {
   .hero__actions .btn { width: 100%; }
@@ -645,6 +650,7 @@ body { padding-bottom: calc(4rem + env(safe-area-inset-bottom)); }
 
 /* ---------- Before / after comparison ---------- */
 .compare-slider { margin: 0; }
+.compare-slider { --pos: 50%; }
 .compare-slider__frame {
   position: relative; aspect-ratio: var(--ratio, 4 / 3); overflow: hidden;
   border-radius: var(--radius); background: var(--ink-2);

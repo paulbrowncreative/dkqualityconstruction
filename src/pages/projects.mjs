@@ -1,5 +1,5 @@
 import { site, business } from '../../site.config.mjs';
-import { pageHero, projectCard, lightboxDialog, ctaBand, icon, esc, largestJpg } from '../lib/components.mjs';
+import { pageHero, projectCard, lightboxDialog, ctaBand, icon, esc, largestJpg, preloadImage } from '../lib/components.mjs';
 import { categories, projects } from '../data/projects.mjs';
 
 const trail = [
@@ -17,6 +17,7 @@ export default {
   description:
     'Photos of decks, kitchens and basements built by DK Quality Construction for homeowners in Monroe County, MI and Lucas County, OH.',
   breadcrumbs: trail,
+  preload: preloadImage('project-deck-aerial-privacy-screen', '100vw'),
   schema: [
     {
       '@type': 'ImageGallery',
@@ -29,8 +30,8 @@ ${pageHero({
   eyebrow: 'Our work',
   title: 'Projects',
   lede: 'Decks, kitchens and basements built by DK Quality Construction. Select any photo to see it full size.',
-  image: 'project-deck-ground-level-brown-wide',
-  imageAlt: 'Large low brown deck by DK Quality Construction, with a darker picture-frame border and skirting, along a brick home',
+  image: 'project-deck-aerial-privacy-screen',
+  imageAlt: 'Aerial view of a raised gray deck by DK Quality Construction, with white-and-black railings, a decorative privacy screen and a wide staircase',
   trail,
 })}
 

@@ -5,7 +5,7 @@ import * as chromeLauncher from 'chrome-launcher';
 import { writeFileSync, mkdirSync } from 'node:fs';
 
 const base = process.argv[2] || 'http://localhost:8080';
-const pages = ['/', '/services/decks/', '/projects/', '/contact/', '/services/', '/about/'];
+const pages = process.env.LH_PAGES ? process.env.LH_PAGES.split(',') : ['/', '/services/decks/', '/projects/', '/contact/', '/services/', '/about/'];
 mkdirSync('reports/lighthouse', { recursive: true });
 const chrome = await chromeLauncher.launch({ chromeFlags: ['--headless=new', '--no-sandbox'] });
 const summary = [];

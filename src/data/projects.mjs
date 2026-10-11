@@ -111,6 +111,36 @@ export const projects = [
     caption: 'Low gray platform deck with a picture-frame border, set at the edge of a pond.',
     images: [{ asset: 'DKQ-04-04', name: 'project-deck-pond-platform', alt: 'Low gray platform deck with a picture-frame border at the edge of a pond, under a cloudy sky' }],
   },
+  {
+    id: 'P-016', category: 'decks', featured: true,
+    title: 'Wide deck with built-in benches and center stairs',
+    caption: 'Deck spanning the back of the home, with built-in benches on both sides and wide center stairs trimmed in white.',
+    images: [{ asset: 'DKQ-05-01', name: 'project-deck-aerial-built-in-benches', alt: 'Aerial view of a wide gray deck across the back of a two-story home, with built-in benches on both sides, white-trimmed center stairs and gray skirting' }],
+  },
+  {
+    id: 'P-017', category: 'decks',
+    title: 'Deck with black metal railings and side stairs',
+    caption: 'Brown deck with black metal railings, matching skirting and side stairs down to a concrete patio.',
+    images: [{ asset: 'DKQ-05-02', name: 'project-deck-brown-black-rail-patio', alt: 'Brown deck with black metal railings, matching skirting and side stairs down to a concrete patio, beside a white-sided home with a fenced pool' }],
+  },
+  {
+    id: 'P-018', category: 'decks',
+    title: 'Pool deck around an above-ground pool',
+    caption: 'Gray deck wrapped around an above-ground pool, with white-and-black railings and open views across the yard.',
+    images: [{ asset: 'DKQ-05-03', name: 'project-deck-above-ground-pool', alt: 'Gray deck with white railings and black balusters built around an above-ground pool, with a lawn and open field beyond' }],
+  },
+  {
+    id: 'P-019', category: 'decks',
+    title: 'Large pressure-treated deck with wood railings',
+    caption: 'Pressure-treated wood deck with angled corners and wood railings with black metal balusters.',
+    images: [{ asset: 'DKQ-05-04', name: 'project-deck-pressure-treated-wood-rail', alt: 'Newly built pressure-treated wood deck with angled corners and wood railings with black metal balusters, under a large shade tree' }],
+  },
+  {
+    id: 'P-020', category: 'decks',
+    title: 'Raised deck with white railings and dark skirting',
+    caption: 'Gray deck with white-and-black railings, white fascia, dark skirting and a staircase to the yard.',
+    images: [{ asset: 'DKQ-05-05', name: 'project-deck-white-rail-dark-skirting', alt: 'Raised gray deck with white railings and black balusters, white fascia trim, dark skirting and a staircase to the lawn, behind a gray two-story home' }],
+  },
 ];
 
 export const projectById = (id) => projects.find((p) => p.id === id);
