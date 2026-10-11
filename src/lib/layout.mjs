@@ -78,6 +78,8 @@ ${site.analytics.ga4Id ? `<script src="/assets/js/analytics.js" data-ga4-id="${e
 
 function header(path) {
   const isCurrent = (p) => (path === p ? ' aria-current="page"' : '');
+  // Landing page gets aria-current; pages inside its section get a visual marker only.
+  const isSection = (p) => (path === p ? ' aria-current="page"' : path.startsWith(p) ? ' data-current' : '');
   const inServices = path.startsWith('/services/');
   const serviceLinks = services
     .map((s) => `<li><a href="${serviceUrl(s)}"${isCurrent(serviceUrl(s))}>${esc(s.navName)}</a></li>`)
@@ -100,10 +102,10 @@ function header(path) {
             ${serviceLinks}
           </ul>
         </li>
-        <li><a href="/services/decks/"${isCurrent('/services/decks/')}>Decks</a></li>
+        <li><a href="/blog/"${isSection('/blog/')}>Blog</a></li>
         <li><a href="/projects/"${isCurrent('/projects/')}>Projects</a></li>
         <li><a href="/testimonials/"${isCurrent('/testimonials/')}>Testimonials</a></li>
-        <li><a href="/service-area/"${isCurrent('/service-area/')}>Service Area</a></li>
+        <li><a href="/service-area/"${isSection('/service-area/')}>Service Area</a></li>
         <li><a href="/about/"${isCurrent('/about/')}>About</a></li>
         <li><a href="/contact/"${isCurrent('/contact/')}>Contact</a></li>
       </ul>
@@ -130,8 +132,8 @@ function header(path) {
       <ul class="mobile-menu__main" role="list">
         <li><a href="/projects/"${isCurrent('/projects/')}>Projects</a></li>
         <li><a href="/testimonials/"${isCurrent('/testimonials/')}>Testimonials</a></li>
-        <li><a href="/service-area/"${isCurrent('/service-area/')}>Service Area</a></li>
-        <li><a href="/blog/"${isCurrent('/blog/')}>Blog</a></li>
+        <li><a href="/service-area/"${isSection('/service-area/')}>Service Area</a></li>
+        <li><a href="/blog/"${isSection('/blog/')}>Blog</a></li>
         <li><a href="/about/"${isCurrent('/about/')}>About</a></li>
         <li><a href="/contact/"${isCurrent('/contact/')}>Contact</a></li>
       </ul>

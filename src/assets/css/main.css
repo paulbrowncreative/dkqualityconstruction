@@ -11,6 +11,15 @@
   font-style: normal;
   font-display: swap;
 }
+/* Ampersand only: Archivo's '&' is an unusual 'Et' form, so that single glyph comes
+   from Inter (SIL OFL 1.1; see fonts/OFL-Inter.txt). unicode-range limits these faces
+   to U+0026, so they download only on pages that show an '&', at the weights used. */
+@font-face { font-family: 'DK Amp'; src: url('/assets/fonts/amp-300.woff2') format('woff2'); font-weight: 300; font-display: swap; unicode-range: U+0026; }
+@font-face { font-family: 'DK Amp'; src: url('/assets/fonts/amp-400.woff2') format('woff2'); font-weight: 400; font-display: swap; unicode-range: U+0026; }
+@font-face { font-family: 'DK Amp'; src: url('/assets/fonts/amp-500.woff2') format('woff2'); font-weight: 500; font-display: swap; unicode-range: U+0026; }
+@font-face { font-family: 'DK Amp'; src: url('/assets/fonts/amp-600.woff2') format('woff2'); font-weight: 600; font-display: swap; unicode-range: U+0026; }
+@font-face { font-family: 'DK Amp'; src: url('/assets/fonts/amp-700.woff2') format('woff2'); font-weight: 700; font-display: swap; unicode-range: U+0026; }
+@font-face { font-family: 'DK Amp'; src: url('/assets/fonts/amp-800.woff2') format('woff2'); font-weight: 800; font-display: swap; unicode-range: U+0026; }
 /* Metric-matched fallback to minimise layout shift while the web font loads. */
 @font-face {
   font-family: 'Archivo Fallback';
@@ -47,7 +56,7 @@
   --line-dark: #34363b;
 
   /* Type */
-  --font: 'Archivo', 'Archivo Fallback', system-ui, sans-serif;
+  --font: 'DK Amp', 'Archivo', 'Archivo Fallback', system-ui, sans-serif;
   --fs-xs: 0.8125rem;
   --fs-sm: 0.9375rem;
   --fs-base: 1.0625rem;
@@ -233,7 +242,7 @@ main:focus { outline: none; }
 .mobile-menu[hidden] { display: none; }
 .mobile-menu__label { margin: 0 0 var(--space-2); font-size: var(--fs-xs); font-weight: 700; text-transform: uppercase; letter-spacing: 0.16em; font-stretch: var(--stretch-wide); color: var(--brass); }
 .mobile-menu a:not(.btn) { display: block; padding: 0.7rem 0; color: var(--text-on-dark); text-decoration: none; font-weight: 600; border-bottom: 1px solid var(--line-dark); }
-.mobile-menu a:not(.btn)[aria-current='page'] { color: var(--brass); }
+.mobile-menu a:not(.btn)[aria-current='page'], .mobile-menu a:not(.btn)[data-current] { color: var(--brass); }
 .mobile-menu__main { margin-top: var(--space-5); }
 .mobile-menu__main a:not(.btn) { font-size: 1.15rem; font-stretch: var(--stretch-display); }
 .mobile-menu__cta { display: grid; gap: var(--space-3); margin-top: var(--space-6); }
@@ -250,7 +259,7 @@ main:focus { outline: none; }
     font-weight: 600; font-size: var(--fs-sm); text-decoration: none; border-radius: var(--radius);
   }
   .primary-nav__list > li > a:hover, .primary-nav__toggle:hover { color: var(--brass); }
-  .primary-nav__list > li > a[aria-current='page'], .primary-nav__toggle[data-current] { color: var(--brass); box-shadow: inset 0 -2px 0 var(--brass); border-radius: 0; }
+  .primary-nav__list > li > a[aria-current='page'], .primary-nav__list > li > a[data-current], .primary-nav__toggle[data-current] { color: var(--brass); box-shadow: inset 0 -2px 0 var(--brass); border-radius: 0; }
   .primary-nav__toggle .icon { width: 1rem; height: 1rem; transition: transform var(--dur) var(--ease); }
   .primary-nav__toggle[aria-expanded='true'] .icon { transform: rotate(180deg); }
   .has-sub { position: relative; }
