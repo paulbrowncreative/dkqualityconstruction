@@ -830,3 +830,8 @@ body { padding-bottom: calc(4rem + env(safe-area-inset-bottom)); }
 .post-card__media--text { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--space-3); background: var(--ink) radial-gradient(circle at 50% 40%, rgb(196 144 63 / 0.14), transparent 60%); }
 .post-card__media--text img { width: 6rem; height: auto; opacity: 0.9; }
 .post-card__media--text span { font-size: var(--fs-sm); text-transform: uppercase; letter-spacing: 0.16em; font-stretch: var(--stretch-wide, 125%); }
+/* Community pages: a portfolio photo fills the space under the intro copy. */
+.loc-photo { margin: var(--space-6) 0 0; }
+.loc-photo__pic { display: block; aspect-ratio: 2 / 1; overflow: hidden; border-radius: var(--radius); background: var(--paper-2); }
+.loc-photo__pic img { width: 100%; height: 100%; object-fit: cover; }
+.loc-photo figcaption { margin-top: var(--space-2); font-size: var(--fs-sm); color: var(--steel-500); }

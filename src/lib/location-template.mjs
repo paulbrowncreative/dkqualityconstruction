@@ -4,7 +4,8 @@
 // fact is sourced. Pages are only built for communities with verified local content —
 // no city-name-swap doorway pages.
 import { site, business, services, serviceUrl } from '../../site.config.mjs';
-import { pageHero, icon, faq, ctaBand, esc, projectCard, lightboxDialog, reviewCard, preloadImage } from './components.mjs';
+import { readFileSync } from 'node:fs';
+import { pageHero, icon, faq, ctaBand, esc, projectCard, lightboxDialog, reviewCard, preloadImage, picture } from './components.mjs';
 import { projects as allProjects } from '../data/projects.mjs';
 import { reviewById } from '../data/reviews.mjs';
 import { locations, states, countyOf, locationUrl } from '../data/locations.mjs';
@@ -26,6 +27,26 @@ const DECK_PROJECTS = allProjects
   .sort((a, b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured)))
   .map((p) => p.id);
 const REVIEWS = ['R-01', 'R-04', 'R-05', 'R-03'];
+
+// Intro photo under the "Building in …" copy. Sharp landscape deck and porch photos,
+// largest first. Each page takes the next one that isn't already used on another
+// community page and doesn't come from the page's hero or project-card projects.
+const imageMeta = JSON.parse(readFileSync(new URL('../data/images.json', import.meta.url), 'utf8'));
+const projectOfImage = new Map(allProjects.flatMap((p) => p.images.map((i) => [i.name, p])));
+const INTRO_POOL = allProjects
+  .filter((p) => p.category === 'decks')
+  .flatMap((p) => p.images.map((img) => ({ ...img, project: p, ...imageMeta[img.name] })))
+  .filter((i) => i.width >= 1200 && i.width / i.height >= 1.25)
+  .sort((a, b) => b.width - a.width);
+const usedIntro = new Set();
+function introPhoto(index, hero, projectIds) {
+  const blocked = new Set([projectOfImage.get(hero)?.id, ...projectIds]);
+  const ok = (i) => i.name !== hero && !blocked.has(i.project.id);
+  const ordered = [...INTRO_POOL.slice(index % INTRO_POOL.length), ...INTRO_POOL.slice(0, index % INTRO_POOL.length)];
+  const pick = ordered.find((i) => ok(i) && !usedIntro.has(i.name)) || ordered.find(ok);
+  usedIntro.add(pick.name);
+  return pick;
+}
 
 const schemaPlace = (loc, county) => ({
   '@type': loc.schemaType,
@@ -54,6 +75,7 @@ export function locationPage(loc, index) {
     .slice(0, 5);
   const projectIds = [0, 1, 2].map((k) => DECK_PROJECTS[(index * 3 + k) % DECK_PROJECTS.length]);
   const review = reviewById(REVIEWS[index % REVIEWS.length]);
+  const photo = introPhoto(index, loc.hero, projectIds);
   const pageServices = services.filter((s) => s.page);
 
   const facts = [
@@ -113,6 +135,10 @@ ${pageHero({
     <div class="split__copy prose">
       <h2 id="loc-intro-h" class="section-title">Building in ${esc(loc.name)}.</h2>
       ${loc.intro}
+      <figure class="loc-photo">
+        ${picture(photo.name, { alt: photo.alt, sizes: '(min-width: 1240px) 640px, (min-width: 960px) 52vw, 100vw', cls: 'loc-photo__pic' })}
+        <figcaption>From our portfolio: ${esc(photo.project.title.charAt(0).toLowerCase() + photo.project.title.slice(1))}.</figcaption>
+      </figure>
     </div>
     <div class="split__aside">
       <div class="card scope loc-facts">
