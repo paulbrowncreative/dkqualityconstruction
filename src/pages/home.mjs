@@ -94,7 +94,7 @@ export default {
     </div>
     <div class="specialty__copy">
       <p class="eyebrow">Our specialty</p>
-      <h2 id="specialty-h" class="section-title">Decks, in treated lumber or composite.</h2>
+      <h2 id="specialty-h" class="section-title">Decks in treated lumber or composite.</h2>
       <p class="lead">Decks are the core of what we do. We build in pressure-treated wood and in composite decking systems, and we’ll help you pick the one that fits your budget and how much upkeep you want.</p>
       <dl class="compare">
         <div class="compare__col">
