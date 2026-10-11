@@ -155,7 +155,7 @@ Featured projects appear first on /projects/: P-021, P-016, P-012, P-001 and P-0
 - **Batch 7 settled the screened-room question: DKQ-06-05 is the screened room under P-012.**
   - DKQ-07-02 (yard view) is clearly the same build as the DKQ-04-05 aerial: the same house, screened room, stairs and railings.
   - DKQ-07-01 (upper deck) shows the same dining set and grill, plus the same lake, dock, boat and neighboring house with a brown deck that are visible from inside the screened room in DKQ-06-05.
-  - So P-025 was merged into P-012 and its ID retired. The "Covered Patios & Screened Rooms" group now holds only P-024.
+  - So P-025 was merged into P-012 and its ID retired. That group now holds only P-024, so it was renamed "Covered Patios".
 - **DKQ-07-03, 07-04 and 07-05 are new projects.** DKQ-07-05 isn't P-020: its skirting is gray rather than dark, and the house is single-story.
 - **DKQ-06-01 to 06-04: all new projects.** None of them matches an earlier one.
 - **DKQ-01-02 vs DKQ-01-03: judged separate projects.** The board tones and neighboring houses differ.

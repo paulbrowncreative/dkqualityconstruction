@@ -8,7 +8,7 @@ export const categories = [
   { id: 'kitchens', name: 'Kitchen Remodeling', service: '/services/kitchen-remodeling/' },
   { id: 'basements', name: 'Basement Remodeling', service: '/services/basement-finishing/' },
   // No dedicated service page yet (owner to confirm scope) — the group links to the estimate form.
-  { id: 'outdoor', name: 'Covered Patios & Screened Rooms' },
+  { id: 'outdoor', name: 'Covered Patios' },
 ];
 
 export const projects = [
