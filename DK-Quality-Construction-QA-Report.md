@@ -29,7 +29,7 @@
 
 | Check | Result |
 |---|---|
-| Functional, responsive, accessibility and SEO tests | **43 of 43 passed** (2 cross-engine smoke tests skipped: engines not installed) |
+| Functional, responsive, accessibility and SEO tests | **44 of 44 passed** across 39 pages (2 cross-engine smoke tests skipped: engines not installed) |
 | Before/after slider tests | **17 of 17 passed** |
 | Accessibility scan (axe-core, WCAG 2.2 AA), 14 pages, mobile and desktop | 0 violations |
 | HTML validation (html-validate) | Valid |
@@ -102,7 +102,8 @@ Keyword research is qualitative only. No search volumes are claimed.
 | `/services/kitchen-remodeling/` | DK kitchen hero and project |
 | `/projects/` | **Portfolio: 52 projects, 73 photos.** Grouped into Decks, Kitchen Remodeling, Bathroom Remodeling, Basement Remodeling, Covered Patios, and Interior Trim & Carpentry, with category jump links. Strongest projects appear first. Each card opens an accessible full-size photo viewer. |
 | `/testimonials/` | **5 customer reviews** (batch 16), quoted word for word, with names shortened to first name and last initial. Each card has 5 stars, the project and the source. Two cards link to their portfolio project. Linked in the desktop nav, mobile menu and footer. |
-| `/service-area/`, `/about/`, `/contact/`, `/privacy-policy/` | Supporting pages |
+| `/service-area/{community}/` | **24 community pages**, one per community on the service-area page (16 in Monroe County, 8 in Lucas County). Each is built around verified local facts: the permit office (linked to the official site), the township or county it sits in, ZIP codes, the state's frost depth and call-before-you-dig service, distance from Monroe, and local planning issues such as flood zones, historic districts and fence limits. Each also has local FAQs and links to the 5 nearest communities. Sources are in `docs/locations-research.md`. Text is 36–53% unique to each page, and no page shares more than 60% with any other. |
+| `/service-area/`, `/about/`, `/contact/`, `/privacy-policy/` | Supporting pages. The service-area hub, the homepage area list and the footer now link to the community pages. |
 | `/thank-you/` (noindex), `/404.html` | Confirmation and error pages |
 
 **Portfolio groups without a service claim.** "Covered Patios" and "Interior Trim & Carpentry" appear in the portfolio only, with no service page and no service claim. These services aren't on the BBB list, so the groups link to the estimate form until the owner confirms.
@@ -178,7 +179,7 @@ I sent one test submission (every field "test", plus a test photo) to **dkqconst
 ## 7. SEO and local SEO
 
 - **Every indexable page** has a unique title (66 characters or fewer) and description (160 or fewer), one H1, a canonical URL, Open Graph tags and JSON-LD. All of this is verified by automated tests.
-- **Sitemap:** 13 URLs, now including `/projects/` and `/testimonials/`. Previews and branch deploys are `noindex` with a `Disallow: /` robots.txt.
+- **Sitemap:** 37 URLs, including `/projects/`, `/testimonials/` and the 24 community pages. Previews and branch deploys are `noindex` with a `Disallow: /` robots.txt.
 - **Projects page** carries `ImageGallery` structured data, with an `ImageObject` for each photo.
 - **No review markup.** The reviews are shown as visible text only. There is no `aggregateRating` or `Review` schema, in line with Google's guidelines on self-serving reviews.
 - **NAP consistency:** name, address and phone come from one config file. It's a service-area business, with no street address or coordinates. "Licensed & insured" appears in the credentials strip, "Why DK", the estimate panel, the About facts, the Contact credentials card and the footer.
@@ -233,9 +234,10 @@ Accessibility, Best Practices and SEO scored 100 on every run, and CLS was 0 eve
 
 Final run, October 11, 2026, against the built `dist/`:
 
-- **Layout:** no horizontal overflow, every image loads and no console errors, at 320, 375, 414, 768, 1024, 1280, 1440 and 1920 px on all 15 pages.
+- **Layout:** no horizontal overflow, every image loads and no console errors, at 320, 375, 414, 768, 1024, 1280, 1440 and 1920 px on all 39 pages.
 - **Navigation:** desktop dropdown, mobile menu and skip link all pass. The desktop nav appears at 1152 px and up; below that, the mobile menu is used. It was rechecked with the Testimonials item added; a compact spacing step from 1152 to 1279 px keeps it on one line with no overflow.
 - **Photo viewer:** pass.
+- **Community pages:** pass. The test checks that every page is linked from the hub, has `Service` schema whose `areaServed` is the city or place within its county, links to the official permit office, has 5 nearby links and a correct canonical, and has no review markup.
 - **Testimonials:** pass. The test covers nav and footer links, 3 cards on the homepage and 5 on the page, labelled stars in the correct contrasting color per section, shortened names, and no Review schema.
 - **Form:** validation, background FormSubmit submission (mocked), the activation and failure path, and `generate_lead` firing once all pass.
 - **Analytics:** a phone click records `click_call` once.

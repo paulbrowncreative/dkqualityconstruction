@@ -10,6 +10,9 @@ const BASE = process.argv[2] || 'http://localhost:8080';
 const PAGES = ['/', '/services/', '/services/decks/', '/services/fencing/', '/services/basement-finishing/',
   '/services/bathroom-remodeling/', '/services/kitchen-remodeling/', '/projects/', '/testimonials/', '/service-area/', '/about/', '/contact/',
   '/thank-you/', '/privacy-policy/', '/404.html'];
+// Community pages are read from the built service-area hub so new ones are tested automatically.
+const LOCATION_PAGES = [...new Set([...(await (await fetch(BASE + '/service-area/')).text()).matchAll(/href="(\/service-area\/[a-z0-9-]+\/)"/g)].map((m) => m[1]))];
+PAGES.push(...LOCATION_PAGES);
 const WIDTHS = [320, 375, 414, 768, 1024, 1280, 1440, 1920];
 
 const results = { base: BASE, ranAt: new Date().toISOString(), checks: [] };
@@ -220,6 +223,27 @@ for (const [label, vp] of [['mobile', { width: 375, height: 812 }], ['desktop', 
     navLink >= 2 && footLink === 1 && homeCards === 3 && d.cards === 5 && d.labelled && homeStar === 'rgb(196, 144, 63)' && d.starColor === 'rgb(138, 90, 28)' && shortNames && !d.reviewSchema,
     `nav=${navLink} foot=${footLink} home=${homeCards} page=${d.cards} homeStar=${homeStar} pageStar=${d.starColor} names=${d.names.join('|')} schema=${d.reviewSchema}`);
   await page.close();
+}
+
+/* 5d. Community pages: hub links, local schema, permit source, nearby links */
+{
+  const problems = [];
+  for (const p of LOCATION_PAGES) {
+    const h = await (await fetch(BASE + p)).text();
+    const name = (h.match(/<h1[^>]*>[\s\S]*? in ([^<]+?)<\/h1>/) || [])[1] || '';
+    const ld = [...h.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].flatMap((m) => JSON.parse(m[1])['@graph']);
+    const svc = ld.find((n) => n['@type'] === 'Service');
+    if (!svc || !svc.areaServed?.name || !name.includes(svc.areaServed.name.replace(/&amp;/g, '&'))) problems.push(`${p}: areaServed ${svc?.areaServed?.name} vs h1 "${name}"`);
+    if (!svc?.areaServed?.containedInPlace?.name?.includes('County')) problems.push(`${p}: no county containedInPlace`);
+    if (ld.some((n) => /Review|AggregateRating/.test(n['@type']))) problems.push(`${p}: review schema`);
+    const permit = h.match(/<dt>Building permits<\/dt><dd><a href="(https:\/\/[^"]+)"/);
+    if (!permit) problems.push(`${p}: no official permit link`);
+    const near = (h.match(/aria-labelledby="loc-near-h"[\s\S]*?<\/section>/) || [''])[0].match(/href="\/service-area\/[a-z0-9-]+\/"/g) || [];
+    if (near.length < 5) problems.push(`${p}: ${near.length} nearby links`);
+    if (!h.includes(`<link rel="canonical" href="${BASE}${p}">`)) problems.push(`${p}: canonical`);
+  }
+  record(`Community pages (${LOCATION_PAGES.length}): linked from hub, City/Place schema in its county, official permit link, 5 nearby links, canonical, no review schema`,
+    LOCATION_PAGES.length >= 24 && !problems.length, problems.join('; '));
 }
 
 /* 6. On-page SEO checks */

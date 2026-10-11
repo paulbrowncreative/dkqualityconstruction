@@ -19,7 +19,12 @@ export function miles(a, b) {
 }
 
 // Rotations keep neighbouring pages from looking identical without inventing anything.
-const DECK_PROJECTS = ['P-021', 'P-012', 'P-001', 'P-010', 'P-016', 'P-029', 'P-037', 'P-040', 'P-044', 'P-034', 'P-018', 'P-014'];
+// Every deck project, featured first; each page takes the next three, so no two pages
+// show the same set.
+const DECK_PROJECTS = allProjects
+  .filter((p) => p.category === 'decks')
+  .sort((a, b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured)))
+  .map((p) => p.id);
 const REVIEWS = ['R-01', 'R-04', 'R-05', 'R-03'];
 
 const schemaPlace = (loc, county) => ({
