@@ -2,14 +2,14 @@
   {
     "page": "/",
     "formFactor": "mobile",
-    "performance": 100,
+    "performance": 99,
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "1.9 s",
+    "LCP": "2.1\u00a0s",
     "CLS": "0",
-    "TBT": "0 ms",
-    "FCP": "1.0 s",
+    "TBT": "80\u00a0ms",
+    "FCP": "1.2\u00a0s",
     "weightKB": 215
   },
   {
@@ -19,10 +19,10 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "1.8 s",
+    "LCP": "1.8\u00a0s",
     "CLS": "0",
-    "TBT": "0 ms",
-    "FCP": "0.8 s",
+    "TBT": "0\u00a0ms",
+    "FCP": "0.8\u00a0s",
     "weightKB": 132
   },
   {
@@ -32,11 +32,11 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "1.9 s",
+    "LCP": "1.8\u00a0s",
     "CLS": "0",
-    "TBT": "0 ms",
-    "FCP": "0.8 s",
-    "weightKB": 416
+    "TBT": "0\u00a0ms",
+    "FCP": "0.8\u00a0s",
+    "weightKB": 336
   },
   {
     "page": "/contact/",
@@ -45,23 +45,23 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "1.4 s",
+    "LCP": "1.4\u00a0s",
     "CLS": "0",
-    "TBT": "0 ms",
-    "FCP": "0.8 s",
+    "TBT": "0\u00a0ms",
+    "FCP": "0.8\u00a0s",
     "weightKB": 66
   },
   {
     "page": "/services/",
     "formFactor": "mobile",
-    "performance": 100,
+    "performance": 99,
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "1.6 s",
+    "LCP": "2.0\u00a0s",
     "CLS": "0",
-    "TBT": "0 ms",
-    "FCP": "0.8 s",
+    "TBT": "0\u00a0ms",
+    "FCP": "0.8\u00a0s",
     "weightKB": 293
   },
   {
@@ -71,10 +71,10 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "1.4 s",
+    "LCP": "1.3\u00a0s",
     "CLS": "0",
-    "TBT": "0 ms",
-    "FCP": "0.8 s",
+    "TBT": "0\u00a0ms",
+    "FCP": "0.8\u00a0s",
     "weightKB": 102
   },
   {
@@ -84,10 +84,10 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "0.6 s",
+    "LCP": "0.6\u00a0s",
     "CLS": "0",
-    "TBT": "0 ms",
-    "FCP": "0.2 s",
+    "TBT": "0\u00a0ms",
+    "FCP": "0.3\u00a0s",
     "weightKB": 373
   },
   {
@@ -97,10 +97,10 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "0.5 s",
+    "LCP": "0.5\u00a0s",
     "CLS": "0",
-    "TBT": "0 ms",
-    "FCP": "0.2 s",
+    "TBT": "0\u00a0ms",
+    "FCP": "0.3\u00a0s",
     "weightKB": 287
   },
   {
@@ -110,11 +110,11 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "0.7 s",
+    "LCP": "0.7\u00a0s",
     "CLS": "0",
-    "TBT": "0 ms",
-    "FCP": "0.2 s",
-    "weightKB": 720
+    "TBT": "0\u00a0ms",
+    "FCP": "0.2\u00a0s",
+    "weightKB": 638
   },
   {
     "page": "/contact/",
@@ -123,10 +123,10 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "0.3 s",
+    "LCP": "0.3\u00a0s",
     "CLS": "0",
-    "TBT": "0 ms",
-    "FCP": "0.2 s",
+    "TBT": "0\u00a0ms",
+    "FCP": "0.2\u00a0s",
     "weightKB": 102
   },
   {
@@ -136,10 +136,10 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "0.4 s",
+    "LCP": "0.4\u00a0s",
     "CLS": "0",
-    "TBT": "0 ms",
-    "FCP": "0.2 s",
+    "TBT": "0\u00a0ms",
+    "FCP": "0.2\u00a0s",
     "weightKB": 176
   },
   {
@@ -149,10 +149,10 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "LCP": "0.3 s",
+    "LCP": "0.4\u00a0s",
     "CLS": "0",
-    "TBT": "0 ms",
-    "FCP": "0.2 s",
+    "TBT": "0\u00a0ms",
+    "FCP": "0.2\u00a0s",
     "weightKB": 164
   }
 ]

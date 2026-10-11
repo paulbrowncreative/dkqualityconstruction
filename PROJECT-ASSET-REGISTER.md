@@ -2,8 +2,8 @@
 
 The readable companion to `project-assets-manifest.json`, which is the source of truth. This register is updated after every batch.
 
-**Last updated:** October 11, 2026, after batch 6
-**Workflow status:** batches 1–6 are processed and integrated. Waiting for batch 7. The project stays open until you confirm all batches have been uploaded.
+**Last updated:** October 11, 2026, after batch 7
+**Workflow status:** batches 1–7 are processed and integrated. Waiting for batch 8. The project stays open until you confirm all batches have been uploaded.
 
 ## Current heroes
 
@@ -36,17 +36,17 @@ Within each tier, the most visually compelling shot wins. These photos replace t
 
 | | Count |
 |---|---|
-| Files received (all batches) | 30 |
-| Inspected | 30 |
-| Integrated on the website | 30 |
-| Projects in the portfolio | 25 (21 decks, 2 covered patios/screened rooms, 1 kitchen, 1 basement) |
+| Files received (all batches) | 35 |
+| Inspected | 35 |
+| Integrated on the website | 35 |
+| Projects in the portfolio | 27 (24 decks, 1 covered patio, 1 kitchen, 1 basement) |
 | Confirmed before-and-after pairs | 0 |
 | Possible pairs awaiting your confirmation | 0 |
-| Possible same-project matches awaiting your confirmation | 1 (DKQ-06-05 screened room, possibly under P-012) |
-| Same project, different angles (not before-and-after) | 3 (P-009 kitchen: 3 photos; P-010 deck: 3 photos; P-013 stairs: 2 photos) |
+| Possible same-project matches awaiting your confirmation | 0. DKQ-06-05 was merged into P-012 on visual evidence in batch 7 |
+| Same project, different angles (not before-and-after) | 4 (P-012 lakeside deck: 4 photos; P-009 kitchen: 3; P-010 deck: 3; P-013 stairs: 2) |
 | Reviews transcribed | 0 |
 | Reviews published | 0 |
-| Needing clarification (details only, all already in use) | 30 |
+| Needing clarification (details only, all already in use) | 35 |
 | Could not be processed | 0 |
 
 ## Batches
@@ -55,6 +55,7 @@ Within each tier, the most visually compelling shot wins. These photos replace t
 |---|---|---|---|---|
 | 1 | 2026-10-10 | 5 | DKQ-01-01 to DKQ-01-05 | 4 completed decks (1 aerial), 1 completed basement |
 | 2 | 2026-10-10 | 5 | DKQ-02-01 to DKQ-02-05 | 3 completed decks, plus 2 angles of one completed kitchen. DK trailer visible in DKQ-02-01. |
+| 7 | 2026-10-11 | 5 | DKQ-07-01 to DKQ-07-05 | 2 more views of the P-012 lakeside deck (which also places DKQ-06-05 there), a covered front porch floor, a ground-level deck at dusk, and a side-yard deck |
 | 6 | 2026-10-11 | 5 | DKQ-06-01 to DKQ-06-05 | A 4th aerial deck (new homepage hero), a front porch deck with benches, a deck with planters, a covered patio roof, and a screened room |
 | 5 | 2026-10-11 | 5 | DKQ-05-01 to DKQ-05-05 | A 3rd aerial deck (new homepage hero), an above-ground pool deck, a 2nd pressure-treated deck, and 2 more completed decks |
 | 4 | 2026-10-10 | 5 | DKQ-04-01 to DKQ-04-05 | A 2nd aerial deck (new homepage hero), a pressure-treated deck, a stairs + landing project from 2 angles, and a pond platform deck |
@@ -95,7 +96,12 @@ No EXIF data and no duplicates in any batch so far.
 | DKQ-06-02 | 27.jpg | project-deck-planters-pond | Completed deck with planters | P-023 | 2000×1500 | Projects; Home (Recent work) |
 | DKQ-06-03 | 28.jpg | project-deck-aerial-covered-porch-privacy-wall | Completed deck, **aerial** | P-021 | 2000×1500 | **Homepage hero**; social share image; Decks (Recent projects); Projects (featured) |
 | DKQ-06-04 | 29.jpg | project-covered-patio-gable-roof | Completed covered patio roof (not a deck) | P-024 | 1500×2000 | Projects ("Covered Patios & Screened Rooms") |
-| DKQ-06-05 | 30.jpg | project-screened-room-lake-view | Completed screened room | P-025 | 1500×2000 | Projects ("Covered Patios & Screened Rooms") |
+| DKQ-06-05 | 30.jpg | project-screened-room-lake-view | Screened room **under the P-012 deck** | P-012 (was P-025) | 1500×2000 | Projects (P-012 viewer + thumbnail) |
+| DKQ-07-01 | 31.jpg | project-deck-lakeside-dining-level | P-012 upper dining level | P-012 | 1500×2000 | Projects (P-012 viewer + thumbnail) |
+| DKQ-07-02 | 32.jpg | project-deck-lakeside-screened-room-yard | P-012 seen from the yard | P-012 | 2000×1500 | Projects (P-012 viewer + thumbnail) |
+| DKQ-07-03 | 33.jpg | project-porch-floor-composite-columns | Covered front porch floor | P-026 | 1500×2000 | Projects |
+| DKQ-07-04 | 34.jpg | project-deck-ground-level-picture-frame-dusk | Ground-level deck (dusk) | P-027 | 1125×1500 | Projects |
+| DKQ-07-05 | 35.jpg | project-deck-gray-white-rail-side-yard | Completed deck | P-028 | 1500×2000 | Projects |
 
 ## Projects
 
@@ -112,7 +118,7 @@ No EXIF data and no duplicates in any batch so far.
 | P-009 | Kitchen remodel with white shaker cabinets | Kitchen remodeling | DKQ-02-05 (cover), DKQ-03-01, DKQ-02-04 |
 | P-010 | Large ground-level deck with picture-frame border | Decks | DKQ-03-02 (cover), DKQ-03-03, DKQ-03-04 |
 | P-011 | Deck with white railings under a pergola | Decks | DKQ-03-05 |
-| P-012 | Raised deck with an elevated dining level over a screened room | Decks | DKQ-04-05 |
+| P-012 | Raised lakeside deck over a screened room | Decks | DKQ-04-05 (cover), DKQ-07-02, DKQ-07-01, DKQ-06-05 |
 | P-013 | Stairs and landing on a brick home | Decks | DKQ-04-01 (cover), DKQ-04-03 |
 | P-014 | Pressure-treated deck with black metal railings | Decks | DKQ-04-02 |
 | P-015 | Platform deck at the edge of a pond | Decks | DKQ-04-04 |
@@ -127,7 +133,10 @@ No EXIF data and no duplicates in any batch so far.
 | P-022 | Front porch deck with built-in benches | Decks | DKQ-06-01 |
 | P-023 | Deck with built-in planters and bench | Decks | DKQ-06-02 |
 | P-024 | Covered patio with a gable roof | Covered Patios & Screened Rooms | DKQ-06-04 |
-| P-025 | Screened room with a lake view | Covered Patios & Screened Rooms | DKQ-06-05 |
+| ~~P-025~~ | ~~Screened room with a lake view~~ | Retired. Merged into P-012 in batch 7. IDs are never reused. | — |
+| P-026 | Covered front porch with new composite floor | Decks | DKQ-07-03 |
+| P-027 | Ground-level deck with a picture-frame border | Decks | DKQ-07-04 |
+| P-028 | Side-yard deck with white railings | Decks | DKQ-07-05 |
 
 Featured projects appear first on /projects/: P-021, P-016, P-012, P-001 and P-010.
 
@@ -143,7 +152,11 @@ Featured projects appear first on /projects/: P-021, P-016, P-012, P-001 and P-0
 - **DKQ-04-02, 04-04 and 04-05 are new projects.** None of them matches an earlier deck.
 - **DKQ-05-02 vs DKQ-05-03: separate projects.** Both have a camper at the left edge, but the decks differ: brown boards with black metal railings versus gray boards with white railings, with an in-ground pool behind a fence versus an above-ground pool.
 - **DKQ-05-04 vs DKQ-04-02: different pressure-treated decks.** DKQ-05-04 is octagonal with wood railings; DKQ-04-02 has aluminum railings and a white house.
-- **DKQ-06-05 is possibly the screened room under P-012 (DKQ-04-05).** Both show the same black screen framing system, painted joists overhead, brown boards, and a lily-pad shoreline with a dock. But the photo doesn't show enough of the house to be sure, so it's **kept as a separate project until you confirm**.
+- **Batch 7 settled the screened-room question: DKQ-06-05 is the screened room under P-012.**
+  - DKQ-07-02 (yard view) is clearly the same build as the DKQ-04-05 aerial: the same house, screened room, stairs and railings.
+  - DKQ-07-01 (upper deck) shows the same dining set and grill, plus the same lake, dock, boat and neighboring house with a brown deck that are visible from inside the screened room in DKQ-06-05.
+  - So P-025 was merged into P-012 and its ID retired. The "Covered Patios & Screened Rooms" group now holds only P-024.
+- **DKQ-07-03, 07-04 and 07-05 are new projects.** DKQ-07-05 isn't P-020: its skirting is gray rather than dark, and the house is single-story.
 - **DKQ-06-01 to 06-04: all new projects.** None of them matches an earlier one.
 - **DKQ-01-02 vs DKQ-01-03: judged separate projects.** The board tones and neighboring houses differ.
 - **No batch 2 deck matches a batch 1 deck.** The siding, house styles and railings all differ.
@@ -178,7 +191,9 @@ None of these block anything; all photos are live with neutral captions.
 9. **Pressure-treated (P-014, P-019).** Can you confirm both are pressure-treated lumber? P-014 is on the Decks page "Pressure-treated lumber" card.
 10. **Pool deck (P-017).** Did DK build the pool fence or patio, or only the deck?
 11. **Covered patio (P-024).** DK built the roof? Also the concrete patio and stone column bases? Should covered patios and porch roofs become an advertised service with their own page?
-12. **Screened room (P-025).** Is it the screened room under the raised deck in P-012? If so, I'll merge the two.
+12. ~~Screened room (P-025)~~ Answered by the batch 7 photos: it's under P-012, and the two projects are now merged. Tell us if that's wrong.
+14. **Porch floor (P-026).** Did DK install only the deck floor, or also the columns and roof?
+15. **Dusk deck (P-027).** Is there a daylight photo of this deck?
 13. **Homepage hero aerial (P-021).** Did DK build the covered porch roof and the privacy wall? Was the stamped concrete DK's work?
 
 ## Stock imagery retired

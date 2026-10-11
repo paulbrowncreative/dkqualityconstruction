@@ -22,8 +22,9 @@ OUT_PHOTOS = ROOT / "src" / "assets" / "img" / "photos"
 OUT_BRAND = ROOT / "src" / "assets" / "img" / "brand"
 MANIFEST = ROOT / "src" / "data" / "images.json"
 
-DEFAULT_WIDTHS = [640, 1024, 1600]
-HERO_WIDTHS = [640, 1024, 1600, 2000]
+# 320w serves project-card thumbnails (shown ~72 CSS px wide, so 320 covers 4x DPR).
+DEFAULT_WIDTHS = [320, 640, 1024, 1600]
+HERO_WIDTHS = [320, 640, 1024, 1600, 2000]
 
 # Per-image processing. "crop" is (left, top, right, bottom) on the original.
 PHOTOS = {
@@ -70,6 +71,12 @@ PHOTOS = {
     "project-deck-aerial-covered-porch-privacy-wall": {"src": "assets-src/uploads/batch-06/28.jpg", "widths": HERO_WIDTHS},
     "project-covered-patio-gable-roof": {"src": "assets-src/uploads/batch-06/29.jpg"},
     "project-screened-room-lake-view": {"src": "assets-src/uploads/batch-06/30.jpg"},
+    # Batch 7
+    "project-deck-lakeside-dining-level": {"src": "assets-src/uploads/batch-07/31.jpg"},
+    "project-deck-lakeside-screened-room-yard": {"src": "assets-src/uploads/batch-07/32.jpg"},
+    "project-porch-floor-composite-columns": {"src": "assets-src/uploads/batch-07/33.jpg"},
+    "project-deck-ground-level-picture-frame-dusk": {"src": "assets-src/uploads/batch-07/34.jpg"},
+    "project-deck-gray-white-rail-side-yard": {"src": "assets-src/uploads/batch-07/35.jpg"},
     "framing-new-construction": {},
 }
 

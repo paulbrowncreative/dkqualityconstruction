@@ -88,9 +88,15 @@ export const projects = [
   },
   {
     id: 'P-012', category: 'decks', featured: true,
-    title: 'Raised deck with an elevated dining level over a screened room',
-    caption: 'Raised deck with black metal railings and a long staircase, above a screened room with its own steps.',
-    images: [{ asset: 'DKQ-04-05', name: 'project-deck-aerial-screened-room', alt: 'Aerial view of a raised brown deck with black metal railings, a dining table and a long staircase, built above a screened room with its own steps, behind a two-story home' }],
+    title: 'Raised lakeside deck over a screened room',
+    caption: 'Raised dining deck with black metal railings and a long staircase, built above a screened room that looks out over the lake.',
+    // P-025 (screened-room interior, DKQ-06-05) merged here in batch 7: DKQ-07-01 shows the same lake, dock, boat and neighboring house.
+    images: [
+      { asset: 'DKQ-04-05', name: 'project-deck-aerial-screened-room', alt: 'Aerial view of a raised brown deck with black metal railings, a dining table and a long staircase, built above a screened room with its own steps, behind a two-story home' },
+      { asset: 'DKQ-07-02', name: 'project-deck-lakeside-screened-room-yard', alt: 'The same deck from the yard: the raised dining deck with black railings, the long staircase, and the screened room underneath with its own steps' },
+      { asset: 'DKQ-07-01', name: 'project-deck-lakeside-dining-level', alt: 'On the upper deck: brown deck boards, a dining table and covered grill, and black metal railings looking out over the lake' },
+      { asset: 'DKQ-06-05', name: 'project-screened-room-lake-view', alt: 'Inside the screened room under the deck: brown deck boards, black-framed screens and a screen door, looking out to the lake' },
+    ],
   },
   {
     id: 'P-013', category: 'decks',
@@ -168,10 +174,22 @@ export const projects = [
     images: [{ asset: 'DKQ-06-04', name: 'project-covered-patio-gable-roof', alt: 'Covered patio with an open gable roof, white beams and trusses, a stained wood ceiling with recessed lights and a fan, and white columns on stone bases over a concrete patio' }],
   },
   {
-    id: 'P-025', category: 'outdoor',
-    title: 'Screened room with a lake view',
-    caption: 'Screened room with brown deck flooring, black-framed screens and a door out to the yard, looking over a lake.',
-    images: [{ asset: 'DKQ-06-05', name: 'project-screened-room-lake-view', alt: 'Inside a screened room with brown deck boards, black-framed screen panels and a screen door, looking out over a lawn to a lake' }],
+    id: 'P-026', category: 'decks',
+    title: 'Covered front porch with new composite floor',
+    caption: 'Brown composite decking with a contrasting divider board on a covered front porch with white columns.',
+    images: [{ asset: 'DKQ-07-03', name: 'project-porch-floor-composite-columns', alt: 'Covered front porch with brown composite deck boards and a contrasting divider board, white square columns, outdoor furniture and potted flowers, looking out over a lawn' }],
+  },
+  {
+    id: 'P-027', category: 'decks',
+    title: 'Ground-level deck with a picture-frame border',
+    caption: 'Low brown deck beside the house, finished with a picture-frame border.',
+    images: [{ asset: 'DKQ-07-04', name: 'project-deck-ground-level-picture-frame-dusk', alt: 'Low brown deck with a picture-frame border built beside a house, photographed at dusk under a work light' }],
+  },
+  {
+    id: 'P-028', category: 'decks',
+    title: 'Side-yard deck with white railings',
+    caption: 'Gray deck with white-and-black railings, white fascia, gray skirting and stairs at each end.',
+    images: [{ asset: 'DKQ-07-05', name: 'project-deck-gray-white-rail-side-yard', alt: 'Gray deck with white railings and black balusters, white fascia, gray skirting and stairs at each end, built along the side of a gray home' }],
   },
 ];
 
