@@ -881,3 +881,18 @@ body { padding-bottom: calc(4rem + env(safe-area-inset-bottom)); }
   .page-hero--band .page-hero__media { position: relative; inset: auto; aspect-ratio: 4 / 3; z-index: 0; }
   .page-hero--band::before { display: none; }
 }
+
+/* ---------- Header fit (desktop) ----------
+   Nothing in the header may shrink: if space ever runs short it must never let the
+   phone number slide under the button. Where the full number shows (90em+), the row
+   is tightened so brand + menu + phone + button fit the 1200px container with margin. */
+@media (min-width: 72em) {
+  .brand, .primary-nav__cta, .primary-nav__cta > *, .primary-nav__list > li { flex: none; }
+}
+@media (min-width: 90em) {
+  .primary-nav { gap: var(--space-4); }
+  .primary-nav__list { gap: 0; }
+  .primary-nav__list > li > a, .primary-nav__toggle { padding-inline: 0.55rem; }
+  .primary-nav__cta { gap: var(--space-4); }
+  .nav-phone { font-size: 1rem; font-stretch: 100%; }
+}

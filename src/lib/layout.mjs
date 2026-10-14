@@ -111,7 +111,7 @@ function header(path) {
       </ul>
       <div class="primary-nav__cta">
         <a class="nav-phone" href="tel:${business.phoneE164}" data-track="click_call">${icon('phone')}<span>${business.phoneDisplay}</span></a>
-        ${estimateButton('btn btn--brass btn--sm', 'Request an Estimate')}
+        ${estimateButton('btn btn--brass btn--sm', 'Get an Estimate')}
       </div>
     </nav>
     <div class="header-actions">

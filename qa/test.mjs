@@ -292,6 +292,25 @@ for (const [label, vp] of [['mobile', { width: 375, height: 812 }], ['desktop', 
   record('Cover-fit images fill their frames (cropped, not clipped to the top of the photo)', !problems.length, problems.join('; '));
 }
 
+/* 5g. Desktop header fits its container with no overlap, at every desktop width */
+{
+  const problems = [];
+  const page = await browser.newPage();
+  for (const w of [1152, 1280, 1366, 1440, 1536, 1680, 1920, 2560]) {
+    await page.setViewportSize({ width: w, height: 800 });
+    await page.goto(BASE + '/');
+    const m = await page.evaluate(() => {
+      const r = (s) => document.querySelector(s).getBoundingClientRect();
+      const inner = document.querySelector('.site-header__inner'), cs = getComputedStyle(inner), ib = inner.getBoundingClientRect();
+      const phone = document.querySelector('.nav-phone'), pb = phone.getBoundingClientRect(), btn = r('.primary-nav__cta .btn');
+      return { overflow: Math.round(btn.right - (ib.right - parseFloat(cs.paddingRight))), gap: Math.round(btn.left - pb.right), squeezed: phone.scrollWidth > Math.ceil(pb.width), listGap: Math.round(pb.left - r('.primary-nav__list').right) };
+    });
+    if (m.overflow > 0 || m.gap < 8 || m.squeezed || m.listGap < 8) problems.push(`${w}px ${JSON.stringify(m)}`);
+  }
+  await page.close();
+  record('Desktop header fits its container at 1152–2560px: phone number never squeezed or overlapping the button', !problems.length, problems.join('; '));
+}
+
 /* 6. On-page SEO checks */
 {
   const page = await browser.newPage();
